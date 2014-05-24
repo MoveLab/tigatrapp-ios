@@ -14,3 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define C_GRAY   [UIColor colorWithRed:249.0f/255.0f green:249.0f/255.0f blue:249.0f/255.0f alpha:1.0f]
+#define C_YELLOW [UIColor colorWithRed:244.0f/255.0f green:179.0f/255.0f blue:0.0f/255.0f alpha:1.0f]
+#define SHOW_LOGS YES
