@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "Report.h"
+
+@class ActivityMapAnnotation;
 
 @interface ChooseOnMapViewController : UIViewController <MKMapViewDelegate>
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
+@property (nonatomic, strong) ActivityMapAnnotation *annotation;
+
+@property (nonatomic, weak) Report *report;
+
+
+- (IBAction)pressSegmentedControl:(id)sender;
 
 @end

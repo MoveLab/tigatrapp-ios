@@ -10,6 +10,7 @@
 #import "MosquitoChecklistViewController.h"
 #import "PickPhotoViewController.h"
 #import "NoteViewController.h"
+#import "ChooseOnMapViewController.h"
 #import "Report.h"
 #import "CurrentLocation.h"
 
@@ -120,6 +121,9 @@
         viewController.report = _report;
     } else if ([segue.identifier isEqualToString:@"photoSegue"]) {
         PickPhotoViewController *viewController = segue.destinationViewController;
+        viewController.report = _report;
+    } else if ([segue.identifier isEqualToString:@"mapSegue"]) {
+        ChooseOnMapViewController *viewController = segue.destinationViewController;
         viewController.report = _report;
     } else if ([segue.identifier isEqualToString:@"noteSegue"]) {
         NoteViewController *viewController = segue.destinationViewController;

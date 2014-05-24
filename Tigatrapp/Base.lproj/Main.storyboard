@@ -387,6 +387,7 @@
                                         <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="Cqn-ez-gyo" kind="push" trigger="accessoryAction" id="3pr-yE-yMJ"/>
+                                            <segue destination="Cqn-ez-gyo" kind="push" identifier="mapSegue" id="Jau-Pr-EoA"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="32" id="vIP-Cv-KRs">
@@ -849,7 +850,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqR-1U-TU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="1323"/>
+            <point key="canvasLocation" x="314" y="739"/>
         </scene>
         <!--Gallery View Controller - Tigatrapp-->
         <scene sceneID="JhL-V5-xjA">
@@ -888,7 +889,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESS-WY-4W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="-102"/>
+            <point key="canvasLocation" x="314" y="18"/>
         </scene>
         <!--Note View Controller - Tigatrapp-->
         <scene sceneID="GUK-mH-fBe">
@@ -919,9 +920,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7iS-Tf-Ugi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="483"/>
+            <point key="canvasLocation" x="974" y="155"/>
         </scene>
-        <!--Choose On Map View Controller - Choose location-->
+        <!--Choose On Map View Controller - Tigatrapp-->
         <scene sceneID="6fq-ua-QYX">
             <objects>
                 <viewController id="Cqn-ez-gyo" customClass="ChooseOnMapViewController" sceneMemberID="viewController">
@@ -929,19 +930,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" id="WxI-bN-jyq">
-                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" id="WxI-bN-jyq">
+                                <rect key="frame" x="0.0" y="65" width="320" height="459"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="Cqn-ez-gyo" id="bV3-Hy-Ref"/>
                                 </connections>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bGW-2d-ubk">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sXL-HL-wib"/>
+                                    <barButtonItem style="plain" id="ufi-t9-UOJ">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Dbb-wx-CVa">
+                                            <rect key="frame" x="177" y="8" width="127" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Street"/>
+                                                <segment title="Satellite"/>
+                                            </segments>
+                                            <color key="tintColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressSegmentedControl:" destination="Cqn-ez-gyo" eventType="valueChanged" id="ck4-Wj-j3Q"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Choose location" id="Cz6-lg-KGF"/>
+                    <navigationItem key="navigationItem" title="Tigatrapp" id="Cz6-lg-KGF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="y3i-wB-f3E"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="WxI-bN-jyq" id="zbB-4m-WCn"/>
+                        <outlet property="segmentedControl" destination="Dbb-wx-CVa" id="6zB-ob-a6I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3S8-ff-70L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1011,7 +1036,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x01-n0-HRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="-493"/>
+            <point key="canvasLocation" x="974" y="-548"/>
         </scene>
         <!--Photo View Controller - Tigatrapp-->
         <scene sceneID="V2G-25-7iQ">
@@ -1268,4 +1293,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jau-Pr-EoA"/>
+    </inferredMetricsTieBreakers>
 </document>
