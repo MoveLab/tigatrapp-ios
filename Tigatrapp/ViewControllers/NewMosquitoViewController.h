@@ -27,5 +27,6 @@
 @property (nonatomic, strong) Report *report;
 
 -(IBAction)pressSwitch:(id)sender;
+-(IBAction)pressSend:(id)sender;
 
 @end

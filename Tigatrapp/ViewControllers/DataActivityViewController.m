@@ -7,6 +7,10 @@
 //
 
 #import "DataActivityViewController.h"
+#import "ActivityMapAnnotation.h"
+#import "UserReports.h"
+#import "Report.h"
+#import "NewMosquitoViewController.h"
 
 @interface DataActivityViewController ()
 
@@ -28,9 +32,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSMutableArray *annotationsArray = [[NSMutableArray alloc] init];
 
-
-    
+    for (Report *report in [UserReports sharedInstance].reports) {        
+        ActivityMapAnnotation *annotation = [[ActivityMapAnnotation alloc] initWithReport:report];
+        [_mapView addAnnotation:annotation];
+        [annotationsArray addObject:annotation];
+    }
+    [_mapView showAnnotations:annotationsArray animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,7 +50,6 @@
 
 
 - (IBAction)pressSegmentedControl:(id)sender {
-    NSLog(@"pressSegment");
     if (_segmentedControl.selectedSegmentIndex == 0) {
         _mapView.mapType = MKMapTypeStandard;
     } else {
@@ -50,8 +58,63 @@
     
 }
 
+- (IBAction)pressShareButton:(id)sender {
+    
+}
+
+- (IBAction)pressPictureButton:(id)sender {
+    
+}
+
+#pragma mark - MKMapView delegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    static NSString *AnnotationViewID = @"annotationViewID";
+    
+    MKAnnotationView *annotationView = (MKAnnotationView *)[_mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
+    
+    if (annotationView == nil)
+    {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
+                                                      reuseIdentifier:AnnotationViewID];
+    }
+    
+    annotationView.canShowCallout = YES;
+    annotationView.centerOffset = CGPointMake(0, -20);
+    
+    UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [rightButton setImage:[UIImage imageNamed:@"chevron.png"] forState:UIControlStateNormal];
+    [rightButton addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
+    [rightButton setTintColor:[UIColor lightGrayColor]];
+    annotationView.rightCalloutAccessoryView = rightButton;
+    
+    ActivityMapAnnotation *mapAnnotation = (ActivityMapAnnotation *) annotation;
+    
+    if ([mapAnnotation.type isEqualToString:@"adult"]) {
+        annotationView.image = [UIImage imageNamed:@"mappoint1"];
+        annotationView.annotation = annotation;
+    } else if ([mapAnnotation.type isEqualToString:@"site"]) {
+        annotationView.image = [UIImage imageNamed:@"mappoint2"];
+        annotationView.annotation = annotation;
+    }
+    
+    return annotationView;
+}
 
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+
+    ActivityMapAnnotation *annotation = view.annotation;
+    Report *report = [[UserReports sharedInstance] reportWithId:annotation.reportId];
+    [report print];
+    
+    NewMosquitoViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
+    mvc.report = report;
+    
+    [self.navigationController pushViewController:mvc animated:YES];
+    
+}
 
 /*
 #pragma mark - Navigation

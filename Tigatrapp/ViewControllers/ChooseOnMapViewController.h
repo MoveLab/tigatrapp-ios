@@ -16,11 +16,12 @@
 
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *removeButton;
 @property (nonatomic, strong) ActivityMapAnnotation *annotation;
 
 @property (nonatomic, weak) Report *report;
 
-
 - (IBAction)pressSegmentedControl:(id)sender;
+- (IBAction)pressRemove:(id)sender;
 
 @end

@@ -29,14 +29,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-    _annotation = [[ActivityMapAnnotation alloc] init];
-    [_mapView addAnnotation:_annotation];
-    
     MKCoordinateRegion region;
-    if (_report.selectedLocationLat) {
+    if ([_report.locationChoice isEqualToString:@"selected"]) {
         region.center.latitude = [_report.selectedLocationLat floatValue];
         region.center.longitude = [_report.selectedLocationLon floatValue];
+        _annotation = [[ActivityMapAnnotation alloc] init];
+        [_mapView addAnnotation:_annotation];
         _annotation.coordinate = region.center;
         
     } else {
@@ -74,6 +72,19 @@
 
 #pragma mark - select location
 
+
+- (IBAction)pressRemove:(id)sender {
+
+    if (_annotation) {
+        [_mapView removeAnnotation:_annotation];
+        _report.locationChoice = nil;
+        _report.selectedLocationLon = nil;
+        _report.selectedLocationLat = nil;
+    }
+    
+}
+
+
 - (void)handleLongPress:(UIGestureRecognizer *)gestureRecognizer
 {
     if (gestureRecognizer.state != UIGestureRecognizerStateBegan) {
@@ -86,13 +97,12 @@
     _report.locationChoice = @"selected";
     _report.selectedLocationLon = [NSNumber numberWithFloat:touchMapCoordinate.longitude];
     _report.selectedLocationLat = [NSNumber numberWithFloat:touchMapCoordinate.latitude];
-    _report.currentLocationLat = nil;
-    _report.currentLocationLon = nil;
     
+    if (!_annotation) {
+        _annotation = [[ActivityMapAnnotation alloc] initWithReport:_report];
+    }
     _annotation.coordinate = touchMapCoordinate;
     [_mapView addAnnotation:_annotation];
-
-    
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation

@@ -63,8 +63,7 @@ static CurrentLocation *sharedInstance = nil;
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     
      CLLocation *location  = [locations lastObject];
-    if (SHOW_LOGS) NSLog(@"LocationManager at %f %f",location.coordinate.latitude,location.coordinate.longitude);
-    
+    //if (SHOW_LOGS) NSLog(@"LocationManager at %f %f",location.coordinate.latitude,location.coordinate.longitude);
     _currentLatitude = location.coordinate.latitude;
     _currentLongitude = location.coordinate.longitude;
 }

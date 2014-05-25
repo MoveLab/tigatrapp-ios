@@ -16,6 +16,7 @@
 		8D7273A619309E3300536DBF /* PickPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273A519309E3300536DBF /* PickPhotoViewController.m */; };
 		8D7273A91930B4A600536DBF /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273A81930B4A600536DBF /* PhotoViewController.m */; };
 		8D7273AC1930C16900536DBF /* CurrentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273AB1930C16900536DBF /* CurrentLocation.m */; };
+		8D7273B21931CAFA00536DBF /* UserReports.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273B11931CAFA00536DBF /* UserReports.m */; };
 		8D7CA0F5192FA5EB00B54ECF /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CA0F4192FA5EB00B54ECF /* Report.m */; };
 		8DB5586E190AAB13005DBDA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB5586D190AAB13005DBDA2 /* Foundation.framework */; };
 		8DB55870190AAB13005DBDA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB5586F190AAB13005DBDA2 /* CoreGraphics.framework */; };
@@ -79,6 +80,8 @@
 		8D7273A81930B4A600536DBF /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		8D7273AA1930C16900536DBF /* CurrentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentLocation.h; sourceTree = "<group>"; };
 		8D7273AB1930C16900536DBF /* CurrentLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentLocation.m; sourceTree = "<group>"; };
+		8D7273B01931CAFA00536DBF /* UserReports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserReports.h; sourceTree = "<group>"; };
+		8D7273B11931CAFA00536DBF /* UserReports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserReports.m; sourceTree = "<group>"; };
 		8D7CA0F3192FA5EB00B54ECF /* Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Report.h; sourceTree = "<group>"; };
 		8D7CA0F4192FA5EB00B54ECF /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
 		8DB5586A190AAB13005DBDA2 /* Tigatrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tigatrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +165,8 @@
 			children = (
 				8D7CA0F3192FA5EB00B54ECF /* Report.h */,
 				8D7CA0F4192FA5EB00B54ECF /* Report.m */,
+				8D7273B01931CAFA00536DBF /* UserReports.h */,
+				8D7273B11931CAFA00536DBF /* UserReports.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				8D7CA0F5192FA5EB00B54ECF /* Report.m in Sources */,
 				8D7273A3192FEB0A00536DBF /* NoteViewController.m in Sources */,
 				8DB558B1190AB335005DBDA2 /* MosquitoChecklistViewController.m in Sources */,
+				8D7273B21931CAFA00536DBF /* UserReports.m in Sources */,
 				8D7273AC1930C16900536DBF /* CurrentLocation.m in Sources */,
 				8DC9E032192E6E8D00F69D5E /* ActivityMapAnnotation.m in Sources */,
 				8DB5587A190AAB13005DBDA2 /* main.m in Sources */,

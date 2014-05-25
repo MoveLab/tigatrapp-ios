@@ -36,4 +36,8 @@
 @property (nonatomic, strong) NSString *user;
 @property (nonatomic, strong) NSMutableArray *images;
 
+- (id) initWithDictionary:(NSDictionary *)dictionary;
+- (void) print;
+- (NSDictionary *) reportDictionary;
+
 @end

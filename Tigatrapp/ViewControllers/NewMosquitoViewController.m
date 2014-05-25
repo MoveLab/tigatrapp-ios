@@ -12,6 +12,7 @@
 #import "NoteViewController.h"
 #import "ChooseOnMapViewController.h"
 #import "Report.h"
+#import "UserReports.h"
 #import "CurrentLocation.h"
 
 @interface NewMosquitoViewController ()
@@ -33,7 +34,9 @@
 {
     [super viewDidLoad];
     
-    self.report = [[Report alloc] init];
+    if (self.report == nil) {
+        self.report = [[Report alloc] initWithDictionary:nil];
+    }
     self.tableView.tableFooterView = [UIView new];
 }
 
@@ -43,6 +46,12 @@
         _numberOfImagesLabel.text = [NSString stringWithFormat:@"%d",_report.images.count];
     } else {
         _numberOfImagesLabel.text = @"";
+    }
+    
+    if ([_report.locationChoice isEqualToString:@"current"]) {
+        _actualSwitch.on = YES;
+    } else {
+        _actualSwitch.on = NO;
     }
     
 }
@@ -60,10 +69,8 @@
         
         if([CLLocationManager locationServicesEnabled]) {
             _report.locationChoice = @"current";
-            _report.currentLocationLon = [NSNumber numberWithFloat:2.0];
-            _report.currentLocationLat = [NSNumber numberWithFloat:1.0];
-            _report.selectedLocationLon = [NSNumber numberWithFloat:[CurrentLocation sharedInstance].currentLongitude];
-            _report.selectedLocationLat = [NSNumber numberWithFloat:[CurrentLocation sharedInstance].currentLatitude];
+            _report.selectedLocationLon = nil;
+            _report.selectedLocationLat = nil;
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                             message:[NSString stringWithFormat:@"Posición actual guardada\n\nLat: %f\nLon: %f",[CurrentLocation sharedInstance].currentLatitude,[CurrentLocation sharedInstance].currentLongitude]
@@ -74,8 +81,6 @@
 
         } else {
             _report.locationChoice = nil;
-            _report.currentLocationLon = nil;
-            _report.currentLocationLat = nil;
 
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                             message:@"Turn on Location Services to allow Tigatrapp to determine your location"
@@ -83,19 +88,27 @@
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
             [alert show];
-            
         }
-
-        
-        
-        
         
     } else {
         _report.locationChoice = nil;
-        _report.currentLocationLon = nil;
-        _report.currentLocationLat = nil;
     }
 }
+
+
+#pragma mark - Validation and send
+
+- (IBAction)pressSend:(id)sender {
+    
+    _report.type = @"adult";
+    _report.currentLocationLon = [NSNumber numberWithFloat:[CurrentLocation sharedInstance].currentLongitude];
+    _report.currentLocationLat = [NSNumber numberWithFloat:[CurrentLocation sharedInstance].currentLatitude];
+
+    [[UserReports sharedInstance] addReport:_report];
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
 
 #pragma mark - UITableViewDelegate
 
@@ -129,7 +142,6 @@
         NoteViewController *viewController = segue.destinationViewController;
         viewController.report = _report;
     }
-    
 }
 
 @end
