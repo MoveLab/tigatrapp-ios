@@ -36,6 +36,9 @@
     
     if (self.report == nil) {
         self.report = [[Report alloc] initWithDictionary:nil];
+        _reportarMosquitoLabel.text = @"Nou mosquit tigre";
+    } else {
+        _reportarMosquitoLabel.text = [NSString stringWithFormat:@"Troballa de mosquit tigre\n%@",[self.report niceCreationTime]];
     }
     self.tableView.tableFooterView = [UIView new];
 }

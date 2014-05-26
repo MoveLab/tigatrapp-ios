@@ -11,16 +11,7 @@
 
 @implementation ActivityMapAnnotation
 
-- (NSString *) niceDate:(NSString *)dateString {
-    // Convert string to date object
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"];
-    NSDate *date = [dateFormat dateFromString:dateString];
-    
-    // Convert date object to desired output format
-    [dateFormat setDateFormat:@"HH:mm dd/MM/yyyy"];
-    return [dateFormat stringFromDate:date];
-}
+
 
 - (id)initWithReport:(Report *)report {
     if ((self = [super init])) {
@@ -29,7 +20,7 @@
         } else if ([report.type isEqualToString:@"site"]) {
             self.title = @"Troballa de lloc";
         }
-        self.subtitle = [self niceDate:report.creationTime];
+        self.subtitle = report.niceCreationTime;
         self.type = report.type;
         self.reportId = report.reportId;
         if ([report.locationChoice isEqualToString:@"current"]) {

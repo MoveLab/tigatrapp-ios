@@ -96,6 +96,17 @@
     return self;
 }
 
+- (NSString *) niceCreationTime {
+    // Convert string to date object
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"];
+    NSDate *date = [dateFormat dateFromString:self.creationTime];
+    
+    // Convert date object to desired output format
+    [dateFormat setDateFormat:@"HH:mm dd/MM/yyyy"];
+    return [dateFormat stringFromDate:date];
+}
+
 - (NSString *) defineReportId {
     int nextReportId;
     

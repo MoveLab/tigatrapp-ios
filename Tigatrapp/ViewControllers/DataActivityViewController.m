@@ -31,15 +31,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     NSMutableArray *annotationsArray = [[NSMutableArray alloc] init];
-
-    for (Report *report in [UserReports sharedInstance].reports) {        
+    
+    for (Report *report in [UserReports sharedInstance].reports) {
         ActivityMapAnnotation *annotation = [[ActivityMapAnnotation alloc] initWithReport:report];
         [_mapView addAnnotation:annotation];
         [annotationsArray addObject:annotation];
     }
     [_mapView showAnnotations:annotationsArray animated:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning
