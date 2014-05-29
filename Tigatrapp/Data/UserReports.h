@@ -16,6 +16,7 @@
 + (UserReports *)sharedInstance;
 
 - (void) addReport:(Report *)report;
+- (void) deleteReport:(Report *)report;
 
 - (Report *) reportWithId:(NSString *)reportId;
 

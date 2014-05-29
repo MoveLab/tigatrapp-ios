@@ -13,7 +13,6 @@
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) IBOutlet UIPageControl *pageControl;
 
-- (IBAction) pressPageControl:(id)sender;
-
+- (IBAction)pressChangePage:(UIPageControl *) pageControl;
 
 @end

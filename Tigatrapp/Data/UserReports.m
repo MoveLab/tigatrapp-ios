@@ -36,6 +36,13 @@ static UserReports *sharedInstance = nil;
     [self saveReports];
 }
 
+- (void) deleteReport:(Report *)report {
+    if (SHOW_LOGS) NSLog(@"delete report");
+    if (SHOW_LOGS) [report print];
+    [self.reports removeObject:report];
+    [self saveReports];
+}
+
 
 - (void)saveReports {
     

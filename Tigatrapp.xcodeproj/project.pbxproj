@@ -52,6 +52,7 @@
 		8DC9E047192EAE2F00F69D5E /* j.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03C192EAE2F00F69D5E /* j.jpg */; };
 		8DC9E048192EAE2F00F69D5E /* k.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03D192EAE2F00F69D5E /* k.jpg */; };
 		8DC9E049192EAE2F00F69D5E /* l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03E192EAE2F00F69D5E /* l.jpg */; };
+		8DFF536819378F17009D3389 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF536719378F17009D3389 /* HelpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		8DC9E03C192EAE2F00F69D5E /* j.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j.jpg; sourceTree = "<group>"; };
 		8DC9E03D192EAE2F00F69D5E /* k.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = k.jpg; sourceTree = "<group>"; };
 		8DC9E03E192EAE2F00F69D5E /* l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = l.jpg; sourceTree = "<group>"; };
+		8DFF536619378F17009D3389 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		8DFF536719378F17009D3389 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +283,8 @@
 				8D207178190C3429007E3B96 /* DetailViewController.m */,
 				8D20717A190C536E007E3B96 /* ChooseOnMapViewController.h */,
 				8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */,
+				8DFF536619378F17009D3389 /* HelpViewController.h */,
+				8DFF536719378F17009D3389 /* HelpViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				8DB55884190AAB13005DBDA2 /* ViewController.m in Sources */,
 				8DB5587E190AAB13005DBDA2 /* AppDelegate.m in Sources */,
 				8D7CA0F5192FA5EB00B54ECF /* Report.m in Sources */,
+				8DFF536819378F17009D3389 /* HelpViewController.m in Sources */,
 				8D7273A3192FEB0A00536DBF /* NoteViewController.m in Sources */,
 				8DB558B1190AB335005DBDA2 /* MosquitoChecklistViewController.m in Sources */,
 				8D7273B21931CAFA00536DBF /* UserReports.m in Sources */,

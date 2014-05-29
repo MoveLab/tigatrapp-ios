@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UIViewController <UIActionSheetDelegate>
+@interface MenuViewController : UIViewController <UIActionSheetDelegate,NSURLSessionDelegate>
 
 @property (nonatomic, weak) IBOutlet UIButton *breedingButton;
 @property (nonatomic, weak) IBOutlet UIButton *mosquitoButton;

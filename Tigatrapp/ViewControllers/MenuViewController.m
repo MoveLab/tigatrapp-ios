@@ -57,8 +57,10 @@
      */
     
     
-    NSString *queryEsc = @"http://161.111.254.98/api/users/?format=json";
-    
+    NSString *queryEsc = [NSString stringWithFormat:@"%@users/?format=json",C_API];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+
     NSURL *url= [NSURL URLWithString:queryEsc];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
@@ -66,19 +68,62 @@
     NSString *token = @"Token 3791ad3995d31cfb56add03030a804a7436079cc";
     [request setValue:token forHTTPHeaderField:@"Authorization"];
     
-    NSError * error = nil;
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"POST"];
+    
+    NSError *error;
+    //NSDictionary *mapData = @{@"user_UDID":udid};
+   
+    NSDictionary *mapData = [[NSDictionary alloc] initWithObjectsAndKeys:udid,@"user_UUID",nil];
+    
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:mapData options:0 error:&error];
+    [request setHTTPBody:postData];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+
+        NSLog(@"crida = %@",mapData);
+        NSString* newStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSLog(@"json = %@",newStr);
+        
+        NSError *herror;
+        NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        if (herror) {
+            NSLog(@"Error parsejant %@",[error localizedDescription]);
+        } else {
+            NSLog(@"dict %@",responseDict);
+        }
+
+        
+    }];
+    
+    [postDataTask resume];
+/*
+    NSError *connectionError = nil;
     NSData *jsonData = [NSURLConnection sendSynchronousRequest: request
                                              returningResponse: nil
-                                                         error: &error];
+                                                         error: &connectionError];
+    if (connectionError) {
+        NSLog(@"Error connexio %@",[connectionError localizedDescription]);
+        NSLog(@"bytes = %d",jsonData.length);
+    } else {
+        NSLog(@"Connexio OK");
+        NSLog(@"bytes = %d",jsonData.length);
+        NSString* newStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSLog(@"json = %@",newStr);
+    }
     
+    NSError *error;
     NSDictionary *response = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&error] : nil;
     
     if (error) {
-            NSLog(@"Error connexio %@",[error localizedDescription]);
-            NSLog(@"Capturo d'user defaults");
+            NSLog(@"Error parsejant %@",[error localizedDescription]);
     } else {
         NSLog(@"dict %@",response);
     }
+    
+ */
     
 }
 

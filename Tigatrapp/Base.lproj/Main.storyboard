@@ -95,6 +95,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="yC4-y9-uHv" kind="push" id="fGB-Jh-QpE"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="oU5-Xs-Str" imageView="wpI-gQ-Veu" style="IBUITableViewCellStyleDefault" id="CSr-0I-QqD">
                                         <rect key="frame" x="0.0" y="132" width="320" height="44"/>
@@ -464,11 +467,11 @@
                                             <segue destination="dAi-8X-o0F" kind="push" identifier="noteSegue" id="EnJ-uL-pMe"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="172" id="tZY-hG-eRP">
-                                        <rect key="frame" x="0.0" y="334" width="320" height="172"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="85" id="tZY-hG-eRP">
+                                        <rect key="frame" x="0.0" y="334" width="320" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tZY-hG-eRP" id="kId-lX-uFA">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mT0-hW-OXl">
@@ -498,7 +501,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tigatrapp" id="Phw-8P-HPM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Y7C-bN-KDf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Y7C-bN-KDf">
+                            <connections>
+                                <action selector="pressDelete:" destination="ZIb-LL-rjL" id="dKn-0b-zOs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="actualLabel" destination="WbI-Lx-SK4" id="Fjg-O7-nnF"/>
@@ -882,7 +889,7 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="0.95686274510000002" green="0.70196078429999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="pressPageControl:" destination="ibB-ze-oJ5" eventType="touchUpInside" id="Pcv-qo-iGV"/>
+                                    <action selector="pressChangePage:" destination="ibB-ze-oJ5" eventType="touchUpInside" id="6ZY-Vz-lKQ"/>
                                 </connections>
                             </pageControl>
                         </subviews>
@@ -1079,6 +1086,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2h-T3-PVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1478" y="-493"/>
+        </scene>
+        <!--Help View Controller - Tigratrapp-->
+        <scene sceneID="4Lg-J7-ndG">
+            <objects>
+                <viewController id="yC4-y9-uHv" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xdl-Ne-ZE4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="OsI-o6-HiJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yC4-y9-uHv" id="LrY-O1-HTp"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tigratrapp" id="nnA-1J-7Vo"/>
+                    <connections>
+                        <outlet property="webView" destination="OsI-o6-HiJ" id="Nh7-i4-cvc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R48-8D-yp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="-2595"/>
         </scene>
         <!--Mosquito Checklist View Controller - Tigatrapp-->
         <scene sceneID="cQc-yK-s6l">

@@ -25,8 +25,10 @@
 @property (nonatomic, weak) IBOutlet UIButton *enviarButton;
 
 @property (nonatomic, strong) Report *report;
+@property (nonatomic, strong) Report *sourceReport;
 
 -(IBAction)pressSwitch:(id)sender;
 -(IBAction)pressSend:(id)sender;
+-(IBAction)pressDelete:(id)sender;
 
 @end

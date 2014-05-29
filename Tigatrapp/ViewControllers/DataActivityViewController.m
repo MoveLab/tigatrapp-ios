@@ -40,7 +40,28 @@
     }
     [_mapView showAnnotations:annotationsArray animated:NO];
     
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Volver"
+                                   style:UIBarButtonItemStylePlain
+                                   target:nil
+                                   action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
+
+    
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"selected annotations = %d",[_mapView selectedAnnotations].count);
+    
+    for (ActivityMapAnnotation *annotation in [_mapView selectedAnnotations]) {
+        if ([[UserReports sharedInstance] reportWithId:annotation.reportId]==nil) {
+            NSLog(@"elimino annotation %@",annotation.subtitle);
+            [_mapView removeAnnotation:annotation];
+        }
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -110,7 +131,7 @@
     [report print];
     
     NewMosquitoViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
-    mvc.report = report;
+    mvc.sourceReport = report;
     
     [self.navigationController pushViewController:mvc animated:YES];
     
