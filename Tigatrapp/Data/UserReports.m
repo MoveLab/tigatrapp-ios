@@ -8,6 +8,8 @@
 
 #import "UserReports.h"
 #import "Report.h"
+#import "RestApi.h"
+#import "FormatDate.h"
 
 @implementation UserReports
 
@@ -30,10 +32,20 @@ static UserReports *sharedInstance = nil;
 }
 
 - (void) addReport:(Report *)report {
-    
     [self.reports addObject:report];
     if (SHOW_LOGS) [report print];
     [self saveReports];
+
+    for (NSData *image in report.images) {
+        NSDictionary *imageDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:image,@"photo", report.versionUUID, @"report", nil];
+        [[[RestApi sharedInstance] imagesToUpload] addObject:imageDictionary];
+    }
+
+    NSMutableDictionary *reportDictionary = [report dictionaryIncludingImages:NO];
+    [reportDictionary setObject:[FormatDate nowToString] forKey:@"phone_upload_time"];
+    [[[RestApi sharedInstance] reportsToUpload] addObject:reportDictionary];
+
+    [[RestApi sharedInstance] callReports];
 }
 
 - (void) deleteReport:(Report *)report {
@@ -43,16 +55,14 @@ static UserReports *sharedInstance = nil;
     [self saveReports];
 }
 
-
 - (void)saveReports {
     
     NSMutableArray *archiveArray = [[NSMutableArray alloc] init];
     
     for (Report *report in self.reports) {
-        NSDictionary *dictionary = [report reportDictionary];
+        NSDictionary *dictionary = [report dictionaryIncludingImages:YES];
         [archiveArray addObject:dictionary];
     }
-    
     [[NSUserDefaults standardUserDefaults] setObject:archiveArray forKey:@"UserReports"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -77,6 +87,7 @@ static UserReports *sharedInstance = nil;
     }
     return nil;
 }
+
 
 
 @end

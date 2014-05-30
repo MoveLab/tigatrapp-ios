@@ -1,0 +1,606 @@
+/* 
+  Localizable.strings
+  Tigatrapp
+
+  Created by jordi on 29/05/14.
+  Copyright (c) 2014 ibeji. All rights reserved.
+*/
+/* */
+"consent_button_label" = "He leído y acepto las condiciones de uso";
+
+/* */
+"decline_button_label" = "No estoy de acuerdo";
+
+/* */
+"gallery_array" = "Hembra de mosquito tigre. Sólo los mosquitos que: 1) son pequeños, \n        negros y con rayas blancas, 2) tienen una raya blanca en la cabeza y en el tórax y 3) tienen  \n        rayas blancas en el abdomen y en \n        las patas son mosquito tigre. Hay otros \n        insectos parecidos, !no los ¡confundas!";
+
+/* */
+"gallery_array_1" = "Hembra de mosquito tigre. Observa las rayas en el abdomen. \n           Recuerda que el mosquito tigre es muy pequeño, \n           no mide más de 5 mm (con patas incluidas, aproximadamente la mitad de una moneda de 1 céntimo).";
+
+/* */
+"gallery_array_2" = "Hembra de mosquito tigre preparada para picar. \n              Observa la raya blanca en la cabeza y en el tórax y las rayas en las patas.";
+
+/* */
+"gallery_array_3" = "Hembra de mosquito tigre picando. \n        Observa la característica raya blanca en la cabeza y en el tórax.";
+
+/* */
+"gallery_array_4" = "Hembra de mosquito tigre picando. \n        Observa la característica raya blanca en la cabeza y en el tórax.";
+
+/* */
+"gallery_array_5" = "Dos hembras de mosquito tigre picando. Recuerda que sólo pican las hembras. \n        En el caso del mosquito tigre, acostumbran a hacerlo durante el día (y no cuando oscurece) y normalmente \n        pican en las piernas.";
+
+/* */
+"gallery_array_6" = "Hembra de mosquito tigre picando. La sangre que acumula en el abdomen \n        servirá para generar una puesta de huevos.";
+
+/* */
+"gallery_array_7" = "Puesta de huevos de mosquito tigre. Observa el color oscuro y la forma alargada. \n        Los huevos son tan pequeños que son casi invisibles a simple vista. \n        Recuerda que el mosquito tigre pone los huevos en recipientes pequeños, en paredes  \n        secas cerca de agua estancada y sucia.";
+
+/* */
+"gallery_array_8" = "Larvas (más alargadas) y pupas (más redondeadas) de mosquito tigre. Observa que son acuáticas. \n        Las larvas emergen de los huevos cuando éstos quedan cubiertos de agua y con el tiempo mudan a pupas.";
+
+/* */
+"gallery_array_9" = "Larvas(más alargadas) y pupas (más redondeadas) de mosquito tigre. \n        Recuerda evitar tener pequeñas acumulaciones de agua en casa.";
+
+/* */
+"gallery_array_10" = "Dos pupas de mosquito tigre. En esta fase se produce la metamorfosis, \n        y el mosquito adulto emerge de la pupa hacia el medio aéreo.";
+
+/* */
+"toast_report_before_submitting_site" = "Para enviar este lugar de cría:";
+
+/* */
+"toast_report_before_submitting_adult" = "Para enviar este avistamiento de adulto:";
+
+/* */
+"toast_complete_checklist" = "- Completa descripción";
+
+/* */
+"toast_specify_location" = "- Especifica posición";
+
+/* */
+"toast_attach_photo" = "- Adjunta imagen";
+
+/* */
+"dataMap_CD" = "Mis datos";
+
+/* */
+"switchboard_button_text_report" = "ENVIA";
+
+/* */
+"switchboard_button_text_sites" = "LUGAR DE CRIA";
+
+/* */
+"switchboard_button_text_adult" = "MOSQUITO TIGRE";
+
+/* */
+"switchboard_button_text_map" = "MI MAPA";
+
+/* */
+"switchboard_button_text_gallery" = "GALERIA";
+
+/* */
+"activity_label_report_editing" = "Tigatrapp: Edita informe";
+
+/* */
+"activity_label_report_new" = "Tigatrapp: Nuevo informe";
+
+/* */
+"activity_label_map" = "Tigatrapp: Mi Mapa";
+
+/* */
+"activity_label_gallery" = "Tigatrapp: Galeria";
+
+/* */
+"checklist_label_editing" = "Descripción*";
+
+/* */
+"location_label_editing" = "Localización*";
+
+/* */
+"photo_check_label_editing" = "Imágenes";
+
+/* */
+"note_check_label_editing" = "Nota";
+
+/* */
+"report_title_adult" = "Mosquito tigre";
+
+/* */
+"report_title_site" = "Lugar de cría";
+
+/* */
+"checklist_label" = "Completa descripción*";
+
+/* */
+"location_label" = "Añade localización*";
+
+/* */
+"location_current_label" = "Utiliza GPS";
+
+/* */
+"location_select_label" = "Selecciona en el mapa";
+
+/* */
+"location_current_label_button" = "Actual";
+
+/* */
+"location_select_label_button" = "Señala";
+
+/* */
+"location_menu_title" = "Utiliza posición actual o señala posición en el mapa";
+
+/* */
+"photo_check_label" = "Adjunta imágenes";
+
+/* */
+"note_check_label" = "Añade nota";
+
+/* */
+"update" = "Actualiza";
+
+/* */
+"created_on" = "Enviado:";
+
+/* */
+"delete_report_warning" = "¿Elimina informe?";
+
+/* */
+"word_report" = "Informe";
+
+/* */
+"photo_label" = "Imágenes";
+
+/* */
+"photo_label_star" = "Imágenes*";
+
+/* */
+"site_report_q1" = "Tipo de lugar de cría";
+
+/* */
+"site_report_q2" = "¿Contiene agua?";
+
+/* */
+"site_report_q3" = "¿Contiene larvas o pupas de mosquito (de cualquier especie)?";
+
+/* */
+"adult_report_q3" = "¿Tiene rayas blancas en el abdomen y en las patas?";
+
+/* */
+"q3_headthorax_text" = "El mosquito tigre tiene una raya blanca en la cabeza y en el tórax. Evita enviar datos de mosquitos que no sean tigre.";
+
+/* */
+"q2_abdomenlegs_text" = "El mosquito tigre tiene rayas blancas en el abdomen y en las patas. Evita enviar datos de mosquitos que no sean tigre.";
+
+/* */
+"identifying_mosquitoes_title" = "Descripción del mosquito";
+
+/* */
+"confirmation_q1_adult_sizecolor" = "¿Es pequeño y negro con rayas blancas?";
+
+/* */
+"q1_sizecolor_text" = "El mosquito tigre es pequeño y negro con rayas blancas. Normalmente es activo sólo de día y acostumbra a picar en las piernas. Evita enviar datos de mosquitos que no sean tigre.";
+
+/* */
+"adult_report_help_html" = "\n\n<p><b>AYUDA:</b><br/>\n<b>¿Crees que has encontrado un mosquito tigre? Responde el informe y envía los datos. Es necesario completar los campos con asterisco (*).</b>\n</p>\n<p>\n<ul>\n<li><b>Descripción</b>: responde el formulario, te ayudará a saber si es un mosquito tigre y facilitará la interpretación de los datos.</li> \n<br/>\n<li><b>Localización</b>: elige posición actual si el mosquito lo has atrapado en el lugar donde se encuentra el teléfono, o señala la posición en el mapa si lo has encontrado en otro lugar. Activa el GPS si quieres que la posición de tu hallazgo sea más precisa.</li>  \n<br/>\n<li><b>Imágenes</b>: haz una foto o adjunta una foto de tu mosquito que hayas hecho con otro dispositivo.</li>\n<br/>\n<li><b>Notas</b>: si quieres, describe mejor tu hallazgo.</li>\n</ul>\n</p> \n<p>Una vez enviado, podrás consultar y editar el informe en tu mapa. Los datos que envíes serán publicados en el mapa del mosquito tigre en la web <a href=\"www.atrapaeltigre.com\">www.atrapaeltigre.com</a>.</p>        \n   ";
+
+/* */
+"site_report_help_html" = "\n<p><b>AYUDA:</b><br/>\n<b>¿Has encontrado un lugar público donde crees que el mosquito tigre puede criar? Responde el informe y envía los datos. Es necesario completar los campos con asterisco (*).</b>\n</p>\n<ul> \n<li><b>Descripción</b>: responde el formulario para facilitar la interpretación de los datos.</li> \n<br/>\n<li><b>Localización</b>: elige posición actual si el lugar de cría se encuentra en el lugar donde tienes el teléfono, o señala la posición en el mapa si lo has encontrado en otro lugar. Activa el GPS si quieres que la posición de tu hallazgo sea más precisa.</li>  \n<br/>\n<li><b>Imágenes</b>: haz una foto o adjunta una foto del lugar de cría hecha con otro dispositivo.</li> \n<br/>\n<li><b>Notas</b>: si quieres, describe mejor tu hallazgo.</li>\n</ul> \n</p>\n<p>Una vez enviado, podrás consultar y editar el informe en tu mapa. Los datos que envíes serán publicados en el mapa del mosquito tigre en la web www.atrapaeltigre.com.</p>        \n       ";
+
+/* */
+"site_report_item_help_1" = "  \n<p>Las larvas y pupas de mosquito tigre viven en depósitos o recipientes pequeños, con agua estancada o sucia (sin peces). Ejemplos: sumideros, fuentes, depósitos, pozos, cubos, etc.</p> \n<p>El mosquito tigre no cría en playas, ríos, lagos, humedales o estanques. Las larvas que encuentres allí no son de mosquito tigre.</p>    \n       ";
+
+/* */
+"site_report_item_help_2" = "      \n<p>Las larvas y las pupas necesitan agua estancada con materia orgánica (alimento) para vivir. Evita tener pequeñas acumulaciones de agua en tu casa para combatir el mosquito tigre.</p> \n";
+
+/* */
+"site_report_item_help_3" = "      \n<p>Las larvas de mosquito son muy fáciles de reconocer. Son alargadas, más pequeñas que una moneda de 1 céntimo y nadan haciendo piruetas. Se mueven mucho y suben a la superficie del agua para respirar.</p>\n\n<p>Si encuentras larvas de mosquito en un recipiente (de cualquier especie), has encontrado un lugar potencial de cría de mosquito tigre. Si evitas tener pequeñas acumulaciones de agua en tu casa estarás combatiendo el mosquito tigre.</p> \n       ";
+
+/* */
+"embornals" = "Sumideros";
+
+/* */
+"fonts" = "Fuentes";
+
+/* */
+"basses" = "Pequeñas balsas artificiales";
+
+/* */
+"bidons" = "Bidones";
+
+/* */
+"pous" = "Pozos";
+
+/* */
+"altres" = "Otros";
+
+/* */
+"report_checklist_title_adult" = "Descripción del mosquito";
+
+/* */
+"report_checklist_title_site" = "Descripción del lugar de cría";
+
+/* */
+"return_to_map" = "Atrás";
+
+/* */
+"delete_report" = "Elimina";
+
+/* */
+"edit_report" = "Edita";
+
+/* */
+"report_not_saved_warning" = "El informe no se ha guardado. ¿Quieres salir igualmente?";
+
+/* */
+"exit_question" = "¿Salir?";
+
+/* */
+"no_note_attached" = "Ninguna nota adjunta";
+
+/* */
+"no_photo_attached" = "Ninguna imagen adjunta";
+
+/* */
+"checklist_tab_title" = "Descripción";
+
+/* */
+"photos_tab_title" = "Imágenes";
+
+/* */
+"notes_tab_title" = "Notas";
+
+/* */
+"view_report_title_adult" = "Hallazgo de mosquito tigre";
+
+/* */
+"view_report_title_site" = "Lugar de cría";
+
+/* */
+"photo_selector_title" = "Añade imágenes";
+
+/* */
+"photo_selector_take_photo_button" = "Haz foto";
+
+/* */
+"photo_selector_attach_photo_button" = "Adjunta foto";
+
+/* */
+"photo_selector_remove_attachment" = "Elimina adjunto";
+
+/* */
+"photo_selector_remove_this_photo" = "Elimina";
+
+/* */
+"photo_selector_from_thisreport" = "de este informe";
+
+/* */
+"photo_selector_remove_button_label" = "Elimina";
+
+/* */
+"rss_internet_connection_warning" = "Sin conexión a internet.\n\nPara ver el contenido, conéctate y selecciona 'actualiza' en el menú";
+
+/* */
+"rss_title_tigatrapp" = "Noticias de AtrapaelTigre.com";
+
+/* */
+"task_list_title" = "Misiones";
+
+/* */
+"task_list_pending" = "Pendientes";
+
+/* */
+"task_list_completed" = "Completadas";
+
+/* */
+"delete_task_from_list_question" = "Elimina misión de la lista";
+
+/* */
+"delete" = "Elimina";
+
+/* */
+"new_mission" = "Nueva misión Tigatrapp!";
+
+/* */
+"mission_button_left_survey" = "Envia respuestas";
+
+/* */
+"mission_button_left_url" = "Visite la página";
+
+/* */
+"mission_button_middle" = "Hazlo más adelante";
+
+/* */
+"mission_button_right" = "Elimina misión";
+
+/* */
+"mission_button_mark_complete" = "Marca la como completada";
+
+/* */
+"toast__mission_already_complete" = "Esta misión ya ha sido realizada. ¡Gracias!";
+
+/* */
+"toast_mission_expired" = "Esta misión ha expirado.";
+
+/* */
+"menu_option_task_list" = "Misiones";
+
+/* */
+"menu_option_tigatrapp_news" = "Noticias";
+
+/* */
+"menu_option_settings" = "Ajustes";
+
+/* */
+"menu_option_help" = "Ayuda";
+
+/* */
+"menu_option_about" = "Sobre";
+
+/* */
+"menu_option_share" = "Comparte";
+
+/* */
+"menu_option_filter" = "Filtra";
+
+/* */
+"menu_option_show_pending_tasks_only" = "Sólo misiones pendientes";
+
+/* */
+"menu_option_show_all_tasks" = "Todas";
+
+/* */
+"menu_option_map_type_label" = "Tipo de mapa";
+
+/* */
+"menu_option_map_type_satellite" = "Imagen";
+
+/* */
+"menu_option_map_type_street" = "Topográfico";
+
+/* */
+"menu_option_share_map" = "Comparte mapa";
+
+/* */
+"menu_option_save_map" = "Guarda mapa";
+
+/* */
+"menu_map_save" = "Guarda";
+
+/* */
+"menu_map_share" = "Comparte";
+
+/* */
+"menu_toggle_view" = "Imagen";
+
+/* */
+"menu_option_refresh" = "Actualiza";
+
+/* */
+"settings_language_title" = "Idioma";
+
+/* */
+"settings_language_detail" = "Selecciona idioma";
+
+/* */
+"settings_language_button" = "Selecciona";
+
+/* */
+"settings_sync_title" = "Sincroniza";
+
+/* */
+"settings_sync_detail" = "Forzar conexión con servidor para enviar datos y descargar misiones";
+
+/* */
+"settings_sync_button" = "Sinc.";
+
+/* */
+"settings_syncing" = "Sincronizando datos";
+
+/* */
+"on" = "Encendido";
+
+/* */
+"off" = "Apagado";
+
+/* */
+"sample_my_locations" = "Geolocalización";
+
+/* */
+"sampling_is_off" = "Permitir envío de datos aproximados de mi localización en background";
+
+/* */
+"sampling_is_on" = "Permitir envío de datos aproximados de mi localización en background";
+
+/* */
+"added_current_loc" = "Posición actual guardada";
+
+/* */
+"refresh" = "Actualiza";
+
+/* */
+"report_deleted" = "Informe borrado";
+
+/* */
+"edit" = "Edita";
+
+/* */
+"edit_title_adult" = "Hallazgo de mosquito tigre";
+
+/* */
+"edit_title_site" = "Lugar de cría";
+
+/* */
+"cd_help_icon" = "Ayuda";
+
+/* */
+"open" = "Abre";
+
+/* */
+"spinner_prompt" = "Selecciona respuesta";
+
+/* */
+"spinner_nothing_selected" = "Selecciona";
+
+/* */
+"help" = "Ayuda";
+
+/* */
+"photo_credit_gallery" = "Fotografía de R. Eritja (www.eritja.com)";
+
+/* */
+"photo_credit" = "Fotografías de R. Eritja (www.eritja.com)";
+
+/* */
+"nolocnogps_alert" = "No se ha podido detectar tu posición porque ni el GPS ni la ubicación por red móvil y/o Wi-Fi están activados. Actívalos o señala la posición en el mapa";
+
+/* */
+"progtitle_report" = "Enviando";
+
+/* */
+"nolocation_alert_report" = "No se ha podido detectar tu posición. Espera unos segundos y vuélvelo a intentar o señala la posición en el mapa";
+
+/* */
+"upload_error_report" = "Error de envío. Tu informe se ha guardado en el móvil y se enviará más tarde. Gracias por participar";
+
+/* */
+"offline_report" = "Sin conexión a internet. Tu informe se enviará automáticamente cuando vuelva la conexión. Gracias por participar";
+
+/* */
+"about" = "Información";
+
+/* */
+"add_note" = "Descripción o nota opcional para acompañar tu informe";
+
+/* */
+"app_directory" = "Tigatrapp";
+
+/* */
+"app_name" = "Tigatrapp";
+
+/* */
+"button_submit_CD" = "Botón para enviar tu informe al centro de investigación";
+
+/* */
+"cancel" = "Anula";
+
+/* */
+"ceab_CD" = "CEAB logo";
+
+/* */
+"data_saved" = "Datos guardados como ";
+
+/* */
+"data_SD_error" = "Error al guardar el archivo en la tarjeta SD";
+
+/* */
+"data_SD_unavailable" = "Tarjeta SD No Disponible – el archivo no se puede guardar";
+
+/* */
+"dipsalut_CD" = "Dipsalut logo";
+
+/* */
+"dontknow" = "No lo sé";
+
+/* */
+"fecyt_CD" = "FECYT logo";
+
+/* */
+"funded_by" = "Financiado por: ";
+
+/* */
+"funding_and_support" = "Financiación y Apoyo";
+
+/* */
+"gallery" = "Galería de Imágenes";
+
+/* */
+"GPL" = "Ver GPL";
+
+/* */
+"gpl_heading" = "GPL";
+
+/* */
+"LGPL" = "Ver LGPL";
+
+/* */
+"license" = "Licencia";
+
+/* */
+"mailing_spec_title" = "Envía una muestra";
+
+/* */
+"movelab" = "MoveLab\nCentro de Estudios Avanzados de Blanes (CEAB-CSIC)";
+
+/* */
+"movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
+
+/* */
+"movelab_address2" = "Blanes. Girona. E-17300";
+
+/* */
+"movelab_banner_CD" = "MoveLab logo";
+
+/* */
+"no" = "No";
+
+/* */
+"noGPSnoNetAlert" = "El GPS y la recepción de red telefónica están desactivados. No se te puede localizar si no tienes al menos uno de ellos activado. ¿Quieres activarlos?";
+
+/* */
+"notes_title" = "Mensaje";
+
+/* */
+"ok" = "OK";
+
+/* */
+"project_email" = "info@atrapaeltigre.com";
+
+/* */
+"project_website" = "http://atrapaeltigre.com/";
+
+/* */
+"report_sent" = "Si clicas OK, tus datos se enviarán al grupo de investigación responsable del proyecto. Parte de los datos se harán públicos en el mapa web del mosquito tigre en la pàgina web www.atrapaeltigre.com";
+
+/* */
+"report_sent_confirmation" = "Gracias por participar";
+
+/* */
+"reportGallery_CD" = "Botón para acceder a la galería de imágenes del mosquito tigre";
+
+/* */
+"saved_image_prefix" = "MiMapa";
+
+/* */
+"scm_CD" = "SCM logo";
+
+/* */
+"send_spec_text" = "¿Enviarás tu mosquito por correo postal al centro de investigación?";
+
+/* */
+"share_with" = "Comparte";
+
+/* */
+"submit" = "Envía";
+
+/* */
+"supported_by" = "Con el apoyo de:";
+
+/* */
+"confirmation_q2_adult_headthorax" = "¿Tiene una raya blanca en la cabeza y en el tórax?";
+
+/* */
+"type_here" = "Utiliza este espacio para añadir una nota o comentario si es necesario";
+
+/* */
+"view_gpl_english" = "Ver GPL versión oficial";
+
+/* */
+"yes" = "Sí";
+
+/* */
+"your_report_id_is" = "El código de tu Tigre hallazgo es: ";
+
+/* */
+"photo_credits" = "Las fotografías de la App Tigatrapp han sido cedidas por R. Eritja (www.eritja.com).";
+
+/* */
+"copyright" = "\n<p>Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga y Frederic Bartumeus</p>\n    ";

@@ -30,6 +30,9 @@
     
     NSArray *imagesArray = @[@"a.jpg",@"c.jpg",@"d.jpg",@"e.jpg",@"f.jpg",@"g.jpg"
                              ,@"h.jpg",@"i.jpg",@"j.jpg",@"k.jpg",@"l.jpg"];
+    NSArray *labelsArray = @[@"gallery_array",@"gallery_array_1",@"gallery_array_2",@"gallery_array_3",@"gallery_array_4"
+                             ,@"gallery_array_5",@"gallery_array_6",@"gallery_array_7",@"gallery_array_8"
+                             ,@"gallery_array_9",@"gallery_array_10"];
     
     _pageControl.numberOfPages = imagesArray.count;
     
@@ -47,9 +50,24 @@
 
         UIView *pageView = [[UIView alloc]  initWithFrame:CGRectMake(scrollviewWidth*i,0.0,scrollviewWidth,scrollviewHeight)];
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0,20.0,scrollviewWidth-40.0,260.0)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0,20.0,scrollviewWidth-40.0,200.0)];
         imageView.image = [UIImage imageNamed:[imagesArray objectAtIndex:i]];
         [pageView addSubview:imageView];
+        
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0,230.0,scrollviewWidth-40.0,scrollviewHeight-200.0)];
+        label.numberOfLines = 0;
+        label.font = [UIFont fontWithName:@"Futura-Medium" size:15.0];
+        
+        
+        NSString *theString = NSLocalizedString([labelsArray objectAtIndex:i],nil);
+        theString = [theString stringByReplacingOccurrencesOfString:@" +" withString:@" "
+                                                            options:NSRegularExpressionSearch
+                                                              range:NSMakeRange(0, theString.length)];
+        
+        NSLog(@"stringo=%@",theString);
+        label.text = theString;
+        [pageView addSubview:label];
         
         [_scrollView addSubview:pageView];
     }

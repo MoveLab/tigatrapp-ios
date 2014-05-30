@@ -7,6 +7,7 @@
 //
 
 #import "Report.h"
+#import "FormatDate.h"
 
 @implementation Report
 
@@ -44,12 +45,7 @@
         self.images = [[NSMutableArray alloc] init];
 
         if (dictionary == nil) {
-            NSString *nowString;
-            NSDate *now = [NSDate date];
-            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"];
-            nowString = [dateFormatter stringFromDate:now];
-            dateFormatter=nil;
+            NSString *nowString = [FormatDate nowToString];
             
             self.user = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
             self.versionUUID = [[NSUUID UUID] UUIDString];
@@ -57,9 +53,9 @@
             self.reportId = [self defineReportId];
             self.creationTime = nowString;
             self.versionTime = nowString;
-            
             self.packageName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
-            self.packageVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+            //self.packageVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+            self.packageVersion = [NSString stringWithFormat:@"%d",PACKAGE_VERSION];
             self.deviceManufacturer = @"Apple";
             self.deviceModel = [[UIDevice currentDevice] model];
             self.os = [[UIDevice currentDevice] systemName];
@@ -74,6 +70,7 @@
             if ([dictionary valueForKey:@"report_id"]) self.reportId = [dictionary valueForKey:@"report_id"];
             if ([dictionary valueForKey:@"creation_time"]) self.creationTime = [dictionary valueForKey:@"creation_time"];
             if ([dictionary valueForKey:@"version_time"]) self.versionTime = [dictionary valueForKey:@"version_time"];
+            if ([dictionary valueForKey:@"phone_upload_time"]) self.phoneUploadTime = [dictionary valueForKey:@"phone_upload_time"];
             if ([dictionary valueForKey:@"type"]) self.type = [dictionary valueForKey:@"type"];
             if ([dictionary valueForKey:@"location_choice"]) self.locationChoice = [dictionary valueForKey:@"location_choice"];
             if ([dictionary valueForKey:@"current_location_lon"]) self.currentLocationLon = [dictionary valueForKey:@"current_location_lon"];
@@ -121,7 +118,7 @@
     return [[[NSString stringWithFormat:@"0x%04x",nextReportId] stringByReplacingOccurrencesOfString:@"0" withString:@"z"] substringFromIndex:2];
 }
 
-- (NSMutableDictionary *) reportDictionary {
+- (NSMutableDictionary *) dictionaryIncludingImages:(BOOL)imagesIncluded {
     
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     
@@ -131,6 +128,7 @@
     if (self.reportId) [dictionary setObject:self.reportId forKey:@"report_id"];
     if (self.creationTime) [dictionary setObject:self.creationTime forKey:@"creation_time"];
     if (self.versionTime) [dictionary setObject:self.versionTime forKey:@"version_time"];
+    if (self.phoneUploadTime) [dictionary setObject:self.phoneUploadTime forKey:@"phone_upload_time"];
     if (self.type) [dictionary setObject:self.type forKey:@"type"];
     if (self.locationChoice) [dictionary setObject:self.locationChoice forKey:@"location_choice"];
     if (self.currentLocationLon) [dictionary setObject:self.currentLocationLon forKey:@"current_location_lon"];
@@ -147,7 +145,10 @@
     if (self.osLanguage) [dictionary setObject:self.osLanguage forKey:@"os_language"];
     if (self.appLanguage) [dictionary setObject:self.appLanguage forKey:@"app_language"];
     if (self.responses) [dictionary setObject:self.responses forKey:@"responses"];
-    if (self.images) [dictionary setObject:self.images forKey:@"images"];
+    
+    if (imagesIncluded) {
+        if (self.images) [dictionary setObject:self.images forKey:@"images"];
+    }
     
     return dictionary;
 }
@@ -175,7 +176,7 @@
     NSLog(@"selectedLon    :%f", [self.selectedLocationLon floatValue]);
     NSLog(@"note           :%@", self.note);
     NSLog(@"responses      :%@", self.responses);
-    NSLog(@"images         :%d", self.images.count);
+    NSLog(@"images         :%lu", self.images.count);
     NSLog(@"===========================");
 }
 

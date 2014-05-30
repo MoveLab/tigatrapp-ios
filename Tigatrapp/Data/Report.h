@@ -39,6 +39,6 @@
 - (id) initWithDictionary:(NSDictionary *)dictionary;
 - (void) print;
 - (NSString *)niceCreationTime;
-- (NSDictionary *) reportDictionary;
+- (NSMutableDictionary *) dictionaryIncludingImages:(BOOL)imagesIncluded;
 
 @end

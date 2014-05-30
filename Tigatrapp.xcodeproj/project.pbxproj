@@ -12,6 +12,7 @@
 		8D20717C190C536F007E3B96 /* ChooseOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */; };
 		8D20717E190C54BC007E3B96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717D190C54BC007E3B96 /* CoreLocation.framework */; };
 		8D207180190C54C8007E3B96 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717F190C54C8007E3B96 /* MapKit.framework */; };
+		8D6BC4E21937DAFD00A04648 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D6BC4E41937DAFD00A04648 /* Localizable.strings */; };
 		8D7273A3192FEB0A00536DBF /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273A2192FEB0A00536DBF /* NoteViewController.m */; };
 		8D7273A619309E3300536DBF /* PickPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273A519309E3300536DBF /* PickPhotoViewController.m */; };
 		8D7273A91930B4A600536DBF /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7273A81930B4A600536DBF /* PhotoViewController.m */; };
@@ -52,6 +53,8 @@
 		8DC9E047192EAE2F00F69D5E /* j.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03C192EAE2F00F69D5E /* j.jpg */; };
 		8DC9E048192EAE2F00F69D5E /* k.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03D192EAE2F00F69D5E /* k.jpg */; };
 		8DC9E049192EAE2F00F69D5E /* l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03E192EAE2F00F69D5E /* l.jpg */; };
+		8DEFE8D61938D2AE00FD2BAE /* RestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFE8D51938D2AE00FD2BAE /* RestApi.m */; };
+		8DEFE8D91938EE1300FD2BAE /* FormatDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFE8D81938EE1300FD2BAE /* FormatDate.m */; };
 		8DFF536819378F17009D3389 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF536719378F17009D3389 /* HelpViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,10 @@
 		8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseOnMapViewController.m; sourceTree = "<group>"; };
 		8D20717D190C54BC007E3B96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D20717F190C54C8007E3B96 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D6BC4E31937DAFD00A04648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D6BC4E51937DB1600A04648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D6BC4E61937DBA300A04648 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D6BC4E71937DBB200A04648 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D7273A1192FEB0A00536DBF /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
 		8D7273A2192FEB0A00536DBF /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		8D7273A419309E3300536DBF /* PickPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickPhotoViewController.h; sourceTree = "<group>"; };
@@ -133,6 +140,10 @@
 		8DC9E03C192EAE2F00F69D5E /* j.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j.jpg; sourceTree = "<group>"; };
 		8DC9E03D192EAE2F00F69D5E /* k.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = k.jpg; sourceTree = "<group>"; };
 		8DC9E03E192EAE2F00F69D5E /* l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = l.jpg; sourceTree = "<group>"; };
+		8DEFE8D41938D2AE00FD2BAE /* RestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestApi.h; sourceTree = "<group>"; };
+		8DEFE8D51938D2AE00FD2BAE /* RestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestApi.m; sourceTree = "<group>"; };
+		8DEFE8D71938EE1300FD2BAE /* FormatDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatDate.h; sourceTree = "<group>"; };
+		8DEFE8D81938EE1300FD2BAE /* FormatDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatDate.m; sourceTree = "<group>"; };
 		8DFF536619378F17009D3389 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		8DFF536719378F17009D3389 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +181,10 @@
 				8D7CA0F4192FA5EB00B54ECF /* Report.m */,
 				8D7273B01931CAFA00536DBF /* UserReports.h */,
 				8D7273B11931CAFA00536DBF /* UserReports.m */,
+				8DEFE8D41938D2AE00FD2BAE /* RestApi.h */,
+				8DEFE8D51938D2AE00FD2BAE /* RestApi.m */,
+				8DEFE8D71938EE1300FD2BAE /* FormatDate.h */,
+				8DEFE8D81938EE1300FD2BAE /* FormatDate.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -232,6 +247,7 @@
 				8DB55876190AAB13005DBDA2 /* InfoPlist.strings */,
 				8DB55879190AAB13005DBDA2 /* main.m */,
 				8DB5587B190AAB13005DBDA2 /* Tigatrapp-Prefix.pch */,
+				8D6BC4E41937DAFD00A04648 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -377,6 +393,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ca,
+				es,
 			);
 			mainGroup = 8DB55861190AAB13005DBDA2;
 			productRefGroup = 8DB5586B190AAB13005DBDA2 /* Products */;
@@ -407,6 +425,7 @@
 				8DC9E040192EAE2F00F69D5E /* c.jpg in Resources */,
 				8DC9E03F192EAE2F00F69D5E /* a.jpg in Resources */,
 				8DC9E046192EAE2F00F69D5E /* i.jpg in Resources */,
+				8D6BC4E21937DAFD00A04648 /* Localizable.strings in Resources */,
 				8DC9E041192EAE2F00F69D5E /* d.jpg in Resources */,
 				8DB55881190AAB13005DBDA2 /* Main.storyboard in Resources */,
 			);
@@ -438,9 +457,11 @@
 				8D7273AC1930C16900536DBF /* CurrentLocation.m in Sources */,
 				8DC9E032192E6E8D00F69D5E /* ActivityMapAnnotation.m in Sources */,
 				8DB5587A190AAB13005DBDA2 /* main.m in Sources */,
+				8DEFE8D91938EE1300FD2BAE /* FormatDate.m in Sources */,
 				8D20717C190C536F007E3B96 /* ChooseOnMapViewController.m in Sources */,
 				8D7273A619309E3300536DBF /* PickPhotoViewController.m in Sources */,
 				8DB558A8190AB27C005DBDA2 /* NewBreedingSiteTableViewController.m in Sources */,
+				8DEFE8D61938D2AE00FD2BAE /* RestApi.m in Sources */,
 				8DB558AB190AB2BD005DBDA2 /* SiteChecklistViewController.m in Sources */,
 				8D207179190C3429007E3B96 /* DetailViewController.m in Sources */,
 				8DB558A5190AB25C005DBDA2 /* MenuViewController.m in Sources */,
@@ -470,6 +491,17 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8D6BC4E41937DAFD00A04648 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D6BC4E31937DAFD00A04648 /* Base */,
+				8D6BC4E51937DB1600A04648 /* en */,
+				8D6BC4E61937DBA300A04648 /* ca */,
+				8D6BC4E71937DBB200A04648 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8DB55876190AAB13005DBDA2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -529,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -561,7 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

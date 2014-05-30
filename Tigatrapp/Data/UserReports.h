@@ -17,7 +17,7 @@
 
 - (void) addReport:(Report *)report;
 - (void) deleteReport:(Report *)report;
-
+- (void) saveReports;
 - (Report *) reportWithId:(NSString *)reportId;
 
 @end

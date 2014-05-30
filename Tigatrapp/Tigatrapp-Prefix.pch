@@ -15,6 +15,7 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#define PACKAGE_VERSION 0
 #define C_API    @"http://tigaserver.atrapaeltigre.com/api/"
 #define C_GRAY   [UIColor colorWithRed:249.0f/255.0f green:249.0f/255.0f blue:249.0f/255.0f alpha:1.0f]
 #define C_YELLOW [UIColor colorWithRed:244.0f/255.0f green:179.0f/255.0f blue:0.0f/255.0f alpha:1.0f]

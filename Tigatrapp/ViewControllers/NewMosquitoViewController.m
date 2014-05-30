@@ -40,7 +40,7 @@
         _reportarMosquitoLabel.text = @"Nou mosquit tigre";
         _report.type = @"adult";
     } else {
-        self.report = [[Report alloc] initWithDictionary:_sourceReport.reportDictionary];
+        self.report = [[Report alloc] initWithDictionary:[_sourceReport dictionaryIncludingImages:YES] ];
         self.report.versionNumber = [NSNumber numberWithInt:[self.report.versionNumber intValue]+1];
         _reportarMosquitoLabel.text = [NSString stringWithFormat:@"Troballa de mosquit tigre\n%@",[_report niceCreationTime]];
     }
@@ -49,7 +49,7 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     if (_report.images.count>0) {
-        _numberOfImagesLabel.text = [NSString stringWithFormat:@"%d",_report.images.count];
+        _numberOfImagesLabel.text = [NSString stringWithFormat:@"%lu",_report.images.count];
     } else {
         _numberOfImagesLabel.text = @"";
     }

@@ -1,0 +1,606 @@
+/* 
+  Localizable.strings
+  Tigatrapp
+
+  Created by jordi on 29/05/14.
+  Copyright (c) 2014 ibeji. All rights reserved.
+*/
+/* */
+"consent_button_label" = "He llegit i accepto les condicions d'ús";
+
+/* */
+"decline_button_label" = "No hi estic d'acord";
+
+/* */
+"gallery_array" = "Femella de mosquit tigre. Només els mosquits que: 1) són petits, \n        negres i amb ratlles blanques, 2) tenen una ratlla blanca al cap i al tòrax i 3) tenen \n        ratlles blanques a l'abdomen i a \n        les potes són mosquit tigre. Hi ha altres \n        insectes semblants, cal evitar confondre'ls!";
+
+/* */
+"gallery_array_1" = "Femella de mosquit tigre. Observa les ratlles a l'abdomen. \n           Recorda que el mosquit tigre és molt petit, \n           no fa més de 5 mm (amb potes incloses, aproximadament la meitat d'una moneda d'1 cèntim).";
+
+/* */
+"gallery_array_2" = "Femella de mosquit tigre preparada per picar. \n              Observa la ratlla blanca al cap i al tòrax i les ratlles a les potes.";
+
+/* */
+"gallery_array_3" = "Femella de mosquit tigre picant. \n        Observa la característica ratlla blanca al cap i al tòrax. ";
+
+/* */
+"gallery_array_4" = "Femella de mosquit tigre picant. \n        Observa la característica ratlla blanca al cap i al tòrax. ";
+
+/* */
+"gallery_array_5" = "Dues femelles de mosquit tigre picant. Recorda que només piquen les femelles. \n        En el cas del mosquit tigre, acostumen a fer-ho durant el dia (i no quan és fosc) i normalment \n        piquen a les cames. ";
+
+/* */
+"gallery_array_6" = "Femella de mosquit tigre picant. La sang que acumula a l'abdomen \n        servirà per generar una posta d'ous. ";
+
+/* */
+"gallery_array_7" = "Posta d'ous de mosquit tigre. Observa el color fosc i la forma allargada. \n        Els ous són tan petits que són quasi invisibles a ull nu. \n        Recorda que el mosquit tigre posa els ous en recipients petits, en parets \n        seques prop d'aigua estancada i bruta. ";
+
+/* */
+"gallery_array_8" = "Larves (més allargades) i pupes (més arrodonides) de mosquit tigre. Observa que són aquàtiques. \n        Les larves emergeixen dels ous quan aquests queden coberts d'aigua i amb el temps fan la muda a pupes. ";
+
+/* */
+"gallery_array_9" = "Larves (més allargades) i pupes (més arrodonides) de mosquit tigre. \n        Recorda que per evitar tenir mosquit tigre a casa, \n        cal evitar les petites acumulacions d'aigua.";
+
+/* */
+"gallery_array_10" = "Dues pupes de mosquit tigre. En aquesta fase es produeix la metamorfosi, \n        i el mosquit adult emergeix de la pupa cap al medi aeri. ";
+
+/* */
+"toast_report_before_submitting_site" = "Per enviar aquest lloc de cria:";
+
+/* */
+"toast_report_before_submitting_adult" = "Per enviar aquest albirament d'adult:";
+
+/* */
+"toast_complete_checklist" = "- Completa descripció";
+
+/* */
+"toast_specify_location" = "- Especifica posició";
+
+/* */
+"toast_attach_photo" = "- Adjunta imatge";
+
+/* */
+"dataMap_CD" = "Les meves dades";
+
+/* */
+"switchboard_button_text_report" = "ENVIA";
+
+/* */
+"switchboard_button_text_sites" = "LLOC DE CRIA";
+
+/* */
+"switchboard_button_text_adult" = "MOSQUIT TIGRE";
+
+/* */
+"switchboard_button_text_map" = "EL MEU MAPA";
+
+/* */
+"switchboard_button_text_gallery" = "GALERIA";
+
+/* */
+"activity_label_report_editing" = "Tigatrapp: Edita informe";
+
+/* */
+"activity_label_report_new" = "Tigatrapp: Nou informe";
+
+/* */
+"activity_label_map" = "Tigatrapp: El meu Mapa";
+
+/* */
+"activity_label_gallery" = "Tigatrapp: Galeria";
+
+/* */
+"checklist_label_editing" = "Descripció*";
+
+/* */
+"location_label_editing" = "Localització*";
+
+/* */
+"photo_check_label_editing" = "Imatges";
+
+/* */
+"note_check_label_editing" = "Nota";
+
+/* */
+"report_title_adult" = "Mosquit tigre";
+
+/* */
+"report_title_site" = "Lloc de cria";
+
+/* */
+"checklist_label" = "Completa descripció*";
+
+/* */
+"location_label" = "Afegeix localització*";
+
+/* */
+"location_current_label" = "Utilitza GPS";
+
+/* */
+"location_select_label" = "Seleciona al mapa";
+
+/* */
+"location_current_label_button" = "Actual";
+
+/* */
+"location_select_label_button" = "Senyala";
+
+/* */
+"location_menu_title" = "Utilitza posició actual o senyala posició al mapa";
+
+/* */
+"photo_check_label" = "Adjunta imatges";
+
+/* */
+"note_check_label" = "Afegeix nota";
+
+/* */
+"update" = "Actualitza";
+
+/* */
+"created_on" = "Enviat:";
+
+/* */
+"delete_report_warning" = "Elimina informe?";
+
+/* */
+"word_report" = "Informe";
+
+/* */
+"photo_label" = "Imatges";
+
+/* */
+"photo_label_star" = "Imatges*";
+
+/* */
+"site_report_q1" = "Selecciona lloc de cria";
+
+/* */
+"site_report_q2" = "Conté aigua?";
+
+/* */
+"site_report_q3" = "Conté larves o pupes de mosquit (de qualsevol espècie)?";
+
+/* */
+"adult_report_q3" = "Té ratlles blanques a l'abdomen i a les potes?";
+
+/* */
+"q3_headthorax_text" = "El mosquit tigre té una ratlla blanca al cap i al tòrax. Evita enviar dades d'altres insectes.";
+
+/* */
+"q2_abdomenlegs_text" = "El mosquit tigre té ratlles blanques a l'abdomen i a les potes. Evita enviar dades d'altres insectes.";
+
+/* */
+"identifying_mosquitoes_title" = "Descripció del mosquit";
+
+/* */
+"confirmation_q1_adult_sizecolor" = "És petit i negre amb ratlles blanques?";
+
+/* */
+"q1_sizecolor_text" = "El mosquit tigre és petit i negre amb ratlles blanques. Normalment és actiu només de dia i acostuma a picar a les cames. Evita enviar dades d'altres insectes.";
+
+/* */
+"adult_report_help_html" = "\n<p><b>AJUDA:</b><br/>\n<b>Creus que has trobat un mosquit tigre? Respon l'informe i envia les dades. Els camps amb asterisc (*) són obligatoris.</b>\n</p>\n<p>\n<ul>\n<li><b>Descripció</b>: respon el formulari, t'ajudarà a saber si és un mosquit tigre i facilitarà la interpretació de les dades.</li> \n<br/>\n<li><b>Localització</b>: escull posició actual si el mosquit l'has atrapat al lloc on es troba el telèfon, o senyala la posició al mapa si l'has trobat a un altre lloc. Activa el GPS si vols que la posició de la teva troballa sigui més precisa.</li>  \n<br/>\n<li><b>Imatges</b>: fes una foto  o adjunta una foto del mosquit que hagis fet amb un altre dispositiu.</li>\n<br/>\n<li><b>Notes</b>: si vols, descriu millor la teva troballa.</li>\n</ul>\n</p> \n<p>Un cop enviat, podràs consultar i editar l'informe al teu mapa. Les dades que enviïs seran publicades al mapa del mosquit tigre a la web <a href=\"www.atrapaeltigre.com\">www.atrapaeltigre.com</a>.</p>        \n   ";
+
+/* */
+"site_report_help_html" = "\n<p><b>AJUDA:</b><br/> \n<b>Has trobat un lloc públic on creus que el mosquit tigre pot criar? Respon l'informe i envia les dades. És necessari completar els camps amb asterisc (*).</b>\n</p>\n<ul> \n<li><b>Descripció</b>: respon el formulari per facilitar la interpretació de les dades.</li> \n<br/>\n<li><b>Localització</b>: escull posició actual si el lloc de cria es troba al lloc on tens el telèfon, o senyala la posició al mapa si l'has trobat a un altre lloc. Activa el GPS si vols que la posició de la teva troballa sigui més precisa.</li>  \n<br/>\n<li><b>Imatges</b>: fes una foto o adjunta una foto de lloc de cria feta amb un altre dispositiu.</li> \n<br/>\n<li><b>Notes</b>: si vols, descriu millor la teva troballa.</li>\n</ul> \n</p>\n<p>Un cop enviat, podràs consultar i editar l'informe al teu mapa. Les dades que enviïs seran publicades al mapa del mosquit tigre a la web www.atrapaeltigre.com.</p>        \n       ";
+
+/* */
+"site_report_item_help_1" = "  \n<p>Les larves i pupes de mosquit tigre viuen en dipòsits o recipients petits, amb aigua estancada o bruta (sense peixos). Exemples: embornals, fonts, dipòsits, pous, galledes, etc.</p> \n<p>El mosquit tigre no cria a la platja, ni als rius, ni als llacs, ni als aiguamolls o estanys. Les larves que hi trobis no són de mosquit tigre.</p>    \n       ";
+
+/* */
+"site_report_item_help_2" = "      \n<p>Les larves i pupes necessiten aigua estancada i amb matèria orgànica (aliment) per viure. Evita tenir petites acumulacions d'aigua a casa teva.</p> \n";
+
+/* */
+"site_report_item_help_3" = "      \n<p>Les larves de mosquit són fàcils de reconèixer. Són allargades, més petites que una moneda d'1 cèntim i naden fent piruetes. Es belluguen molt i pugen a la superfície de l'aigua per respirar.</p>\n\n<p>Si trobes larves de mosquit en un recipient (de qualsevol espècie), has trobat un potencial lloc de cria de mosquit tigre. Si evites tenir petites acumulacions d'aigua a casa teva, estaràs combatent el mosquit tigre.</p> \n       ";
+
+/* */
+"embornals" = "Embornals";
+
+/* */
+"fonts" = "Fonts";
+
+/* */
+"basses" = "Basses artificials petites";
+
+/* */
+"bidons" = "Bidons";
+
+/* */
+"pous" = "Pous";
+
+/* */
+"altres" = "Altres";
+
+/* */
+"report_checklist_title_adult" = "Descripció del mosquit";
+
+/* */
+"report_checklist_title_site" = "Descripció del lloc de cria";
+
+/* */
+"return_to_map" = "Torna";
+
+/* */
+"delete_report" = "Elimina";
+
+/* */
+"edit_report" = "Edita";
+
+/* */
+"report_not_saved_warning" = "L'informe no s'ha guardat. Vols sortit igualment?";
+
+/* */
+"exit_question" = "Sortir?";
+
+/* */
+"no_note_attached" = "Cap nota adjunta";
+
+/* */
+"no_photo_attached" = "Cap imatge adjunta";
+
+/* */
+"checklist_tab_title" = "Descripció";
+
+/* */
+"photos_tab_title" = "Imatges";
+
+/* */
+"notes_tab_title" = "Notes";
+
+/* */
+"view_report_title_adult" = "Troballa de mosquit tigre";
+
+/* */
+"view_report_title_site" = "Lloc de cria";
+
+/* */
+"photo_selector_title" = "Afegeix imatges";
+
+/* */
+"photo_selector_take_photo_button" = "Fes foto";
+
+/* */
+"photo_selector_attach_photo_button" = "Adjunta foto";
+
+/* */
+"photo_selector_remove_attachment" = "Elimina adjunt";
+
+/* */
+"photo_selector_remove_this_photo" = "Elimina";
+
+/* */
+"photo_selector_from_thisreport" = "d'aquest informe";
+
+/* */
+"photo_selector_remove_button_label" = "Elimina";
+
+/* */
+"rss_internet_connection_warning" = "Sense connexió a internet.\n\nPer veure el contingut, connecta't i selecciona 'actualitza' al menú";
+
+/* */
+"rss_title_tigatrapp" = "Notícies d'AtrapaelTigre.com";
+
+/* */
+"task_list_title" = "Missions";
+
+/* */
+"task_list_pending" = "Pendents";
+
+/* */
+"task_list_completed" = "Completades";
+
+/* */
+"delete_task_from_list_question" = "Elimina missió de la llista";
+
+/* */
+"delete" = "Elimina";
+
+/* */
+"new_mission" = "Nova missió Tigatrapp!";
+
+/* */
+"mission_button_left_survey" = "Envia respostes";
+
+/* */
+"mission_button_left_url" = "Visita la pàgina";
+
+/* */
+"mission_button_middle" = "Fes més endavant";
+
+/* */
+"mission_button_right" = "Elimina missió";
+
+/* */
+"mission_button_mark_complete" = "Marca la com completada";
+
+/* */
+"toast__mission_already_complete" = "Aquesta missió ja s'ha realitzat. Gràcies!";
+
+/* */
+"toast_mission_expired" = "Aquesta misión ha expirat.";
+
+/* */
+"menu_option_task_list" = "Missions";
+
+/* */
+"menu_option_tigatrapp_news" = "Notícies";
+
+/* */
+"menu_option_settings" = "Ajustos";
+
+/* */
+"menu_option_help" = "Ajuda";
+
+/* */
+"menu_option_about" = "Sobre";
+
+/* */
+"menu_option_share" = "Comparteix";
+
+/* */
+"menu_option_filter" = "Filtra";
+
+/* */
+"menu_option_show_pending_tasks_only" = "Només missions pendents";
+
+/* */
+"menu_option_show_all_tasks" = "Totes";
+
+/* */
+"menu_option_map_type_label" = "Tipus de mapa";
+
+/* */
+"menu_option_map_type_satellite" = "Imatge";
+
+/* */
+"menu_option_map_type_street" = "Topogràfic";
+
+/* */
+"menu_option_share_map" = "Comparteix mapa";
+
+/* */
+"menu_option_save_map" = "Guarda mapa";
+
+/* */
+"menu_map_save" = "Guarda";
+
+/* */
+"menu_map_share" = "Comparteix";
+
+/* */
+"menu_toggle_view" = "Imatge";
+
+/* */
+"menu_option_refresh" = "Actualitza";
+
+/* */
+"settings_language_title" = "Idioma";
+
+/* */
+"settings_language_detail" = "Selecciona idioma";
+
+/* */
+"settings_language_button" = "Selecciona";
+
+/* */
+"settings_sync_title" = "Sincronitza";
+
+/* */
+"settings_sync_detail" = "Forçar connexió amb servidor per enviar dades i descarregar missions";
+
+/* */
+"settings_sync_button" = "Sinc.";
+
+/* */
+"settings_syncing" = "Sincronitzant dades.";
+
+/* */
+"on" = "Encès";
+
+/* */
+"off" = "Apagat";
+
+/* */
+"sample_my_locations" = "Geolocalització";
+
+/* */
+"sampling_is_off" = "Permetre enviament de dades aproximades de la meva localització en background";
+
+/* */
+"sampling_is_on" = "Permetre enviament de dades aproximades de la meva localització en background";
+
+/* */
+"added_current_loc" = "Posició actual guardada";
+
+/* */
+"refresh" = "Actualitza";
+
+/* */
+"report_deleted" = "Informe esborrat";
+
+/* */
+"edit" = "Edita";
+
+/* */
+"edit_title_adult" = "Troballa de mosquit tigre";
+
+/* */
+"edit_title_site" = "Lloc de cria";
+
+/* */
+"cd_help_icon" = "Ajuda";
+
+/* */
+"open" = "Obre";
+
+/* */
+"spinner_prompt" = "Selecciona resposta";
+
+/* */
+"spinner_nothing_selected" = "Selecciona";
+
+/* */
+"help" = "Ajuda";
+
+/* */
+"photo_credit_gallery" = "Fotografia de R. Eritja (www.eritja.com)";
+
+/* */
+"photo_credit" = "Fotografies de R. Eritja (www.eritja.com)";
+
+/* */
+"nolocnogps_alert" = "No s'ha pogut detectar la teva posició perquè ni el GPS ni la ubicació per xarxa mòbil i/o Wi-Fi estan activats. Activa'ls o senyala la posició al mapa";
+
+/* */
+"progtitle_report" = "Enviant";
+
+/* */
+"nolocation_alert_report" = "No s'ha pogut detectar la teva posició. Espera uns segons i torna-ho a intentar o senyala la posició al mapa";
+
+/* */
+"upload_error_report" = "Error d'enviament. El teu informe s'ha guardat al mòbil i s'enviarà més tard. Gràcies per participar";
+
+/* */
+"offline_report" = "Sense connexió a internet. El teu informe s'enviarà automàticament quan torni la connexió. Gràcies per participar";
+
+/* */
+"about" = "Informació";
+
+/* */
+"add_note" = "Descripció o nota opcional per acompanyar el teu informe";
+
+/* */
+"app_directory" = "Tigatrapp";
+
+/* */
+"app_name" = "Tigatrapp";
+
+/* */
+"button_submit_CD" = "Botó per enviar el teu informe al centre de recerca";
+
+/* */
+"cancel" = "Anul·la";
+
+/* */
+"ceab_CD" = "CEAB logo";
+
+/* */
+"data_saved" = "Dades guardades com ";
+
+/* */
+"data_SD_error" = "Error al guardar l'arxiu a la targeta SD";
+
+/* */
+"data_SD_unavailable" = "Targeta SD No Disponible – l'arxiu no es pot guardar";
+
+/* */
+"dipsalut_CD" = "Dipsalut logo";
+
+/* */
+"dontknow" = "No ho sé";
+
+/* */
+"fecyt_CD" = "FECYT logo";
+
+/* */
+"funded_by" = "Finançat per:";
+
+/* */
+"funding_and_support" = "Finançament i Suport";
+
+/* */
+"gallery" = "Galeria d'Imatges";
+
+/* */
+"GPL" = "Veure GPL";
+
+/* */
+"gpl_heading" = "GPL";
+
+/* */
+"LGPL" = "Veure LGPL";
+
+/* */
+"license" = "Llicència";
+
+/* */
+"mailing_spec_title" = "Envia una mostra";
+
+/* */
+"movelab" = "MoveLab\nCentre d'Estudis Avançats de Blanes (CEAB-CSIC)";
+
+/* */
+"movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
+
+/* */
+"movelab_address2" = "Blanes. Girona. E-17300";
+
+/* */
+"movelab_banner_CD" = "MoveLab logo";
+
+/* */
+"no" = "No";
+
+/* */
+"noGPSnoNetAlert" = "El GPS i la recepció de xarxa telefònica estan desactivats. No se't pot localitzar sense com a mínim un d'ells activat. Vols activar-los?";
+
+/* */
+"notes_title" = "Missatge";
+
+/* */
+"ok" = "OK";
+
+/* */
+"project_email" = "info@atrapaeltigre.com";
+
+/* */
+"project_website" = "http://atrapaeltigre.com/";
+
+/* */
+"report_sent" = "Si cliques OK, les teves dades s'enviaran al grup de recerca responsable del projecte. Part de les dades es faran públiques al mapa web del mosquit tigre a la pàgina web www.atrapaeltigre.com";
+
+/* */
+"report_sent_confirmation" = "Gràcies per participar";
+
+/* */
+"reportGallery_CD" = "Botó per accedir a la galeria d'imatges del mosquit tigre";
+
+/* */
+"saved_image_prefix" = "elMeuMapa";
+
+/* */
+"scm_CD" = "SCM logo";
+
+/* */
+"send_spec_text" = "Enviaràs el teu mosquit per correu postal al centre de recerca?";
+
+/* */
+"share_with" = "Comparteix";
+
+/* */
+"submit" = "Envia";
+
+/* */
+"supported_by" = "Amb el suport de:";
+
+/* */
+"confirmation_q2_adult_headthorax" = "Té una ratlla blanca al cap i al tòrax?";
+
+/* */
+"type_here" = "Utilitza aquest espai per afegir una nota o comentari si és necessari";
+
+/* */
+"view_gpl_english" = "Veure GPL versió oficial";
+
+/* */
+"yes" = "Sí";
+
+/* */
+"your_report_id_is" = "El codi de la teva Tigre troballa és: ";
+
+/* */
+"photo_credits" = "Les fotografies de l'App Tigatrapp han estat cedides per R. Eritja (www.eritja.com).";
+
+/* */
+"copyright" = "\n<p>Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga i Frederic Bartumeus</p>\n    ";
