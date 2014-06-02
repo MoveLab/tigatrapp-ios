@@ -54,19 +54,30 @@
         imageView.image = [UIImage imageNamed:[imagesArray objectAtIndex:i]];
         [pageView addSubview:imageView];
         
+        UILabel *credit = [[UILabel alloc] initWithFrame:CGRectMake(20.0,0.0,scrollviewWidth-40.0,18.0)];
+        credit.numberOfLines = 0;
+        credit.textAlignment = NSTextAlignmentRight;
+        credit.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
+        credit.text = [LocalText with:@"photo_credit_gallery"];
+        [pageView addSubview:credit];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0,230.0,scrollviewWidth-40.0,scrollviewHeight-200.0)];
-        label.numberOfLines = 0;
         label.font = [UIFont fontWithName:@"Futura-Medium" size:15.0];
         
         
-        NSString *theString = NSLocalizedString([labelsArray objectAtIndex:i],nil);
+        //NSString *theString = NSLocalizedString([labelsArray objectAtIndex:i],nil);
+
+        NSString *theString = [LocalText with:[labelsArray objectAtIndex:i]];
+
         theString = [theString stringByReplacingOccurrencesOfString:@" +" withString:@" "
                                                             options:NSRegularExpressionSearch
                                                               range:NSMakeRange(0, theString.length)];
+        theString = [theString stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+
         
-        NSLog(@"stringo=%@",theString);
         label.text = theString;
+        label.numberOfLines = 0;
+        [label sizeToFit];
         [pageView addSubview:label];
         
         [_scrollView addSubview:pageView];

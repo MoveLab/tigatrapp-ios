@@ -20,4 +20,14 @@
     return nowString;
 }
 
++ (NSString *) dateToString:(NSDate *)date {
+    NSString *nowString;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd MMM yyyy HH:mm:ss"];
+    nowString = [dateFormatter stringFromDate:date];
+    dateFormatter=nil;
+    return nowString;
+}
+
+
 @end

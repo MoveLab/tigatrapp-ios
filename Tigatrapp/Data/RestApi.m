@@ -29,13 +29,27 @@ static RestApi *sharedInstance = nil;
     return _imagesToUpload;
 }
 
+- (NSMutableSet *)imagesUploading {
+    if (!_imagesUploading) {
+        _imagesUploading = [[NSMutableSet alloc] init];
+    }
+    return _imagesToUpload;
+}
+
 - (NSMutableSet *)reportsToUpload {
-    // lazy instantiation
     if (!_reportsToUpload) {
         _reportsToUpload = [[NSMutableSet alloc] init];
         [self loadReportsToUpload];
     }
-    return _reportsToUpload;
+    return _imagesToUpload;
+}
+
+
+- (NSMutableSet *)reportsUploading {
+    if (!_reportsUploading) {
+        _reportsUploading = [[NSMutableSet alloc] init];
+    }
+    return _reportsUploading;
 }
 
 
@@ -43,6 +57,9 @@ static RestApi *sharedInstance = nil;
 
 - (void) callApiWithName:(NSString *)name andParameters:(NSDictionary *)parameters {
     
+    [_reportsUploading addObject:parameters];
+    [_reportsToUpload removeObject:parameters];
+
     NSString *queryEsc = [NSString stringWithFormat:@"%@%@/?format=json",C_API,name];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
@@ -68,8 +85,12 @@ static RestApi *sharedInstance = nil;
         
         if (herror) {
             if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
+            [_reportsToUpload addObject:parameters];
+            [_reportsUploading removeObject:parameters];
+
         } else {
-            [_reportsToUpload removeObject:parameters];
+            [_reportsUploading removeObject:parameters];
+
             if (SHOW_LOGS) NSLog(@"Report pujat: %@",responseDict);
         }
         
@@ -80,6 +101,9 @@ static RestApi *sharedInstance = nil;
 }
 
 - (void) callPhotosApiWithParameters:(NSDictionary *)parameters {
+    
+    [_imagesUploading addObject:parameters];
+    [_imagesToUpload removeObject:parameters];
     
     NSString *queryEsc = [NSString stringWithFormat:@"%@photos/?format=json",C_API];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -127,11 +151,12 @@ static RestApi *sharedInstance = nil;
 
         if ([returnString isEqualToString:@"\"uploaded\""]) {
             if (SHOW_LOGS) NSLog(@"image Uploaded");
-            [_imagesToUpload removeObject:parameters];
+            [_imagesUploading removeObject:parameters];
         } else {
             if (SHOW_LOGS) NSLog(@"couldn't load image. Error %@ ",returnString);
+            [_imagesToUpload addObject:parameters];
+            [_imagesUploading removeObject:parameters];
         }
-        
     }];
     
     [postDataTask resume];
@@ -142,7 +167,7 @@ static RestApi *sharedInstance = nil;
     NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:udid,@"user_UUID",nil];
 
-    [self callApiWithName:@"users" andParameters:parameters];
+   // [self callApiWithName:@"users" andParameters:parameters];
 }
 
 - (void) callReports {

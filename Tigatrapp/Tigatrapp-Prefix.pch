@@ -15,6 +15,8 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#import "LocalText.h"
+
 #define PACKAGE_VERSION 0
 #define C_API    @"http://tigaserver.atrapaeltigre.com/api/"
 #define C_GRAY   [UIColor colorWithRed:249.0f/255.0f green:249.0f/255.0f blue:249.0f/255.0f alpha:1.0f]

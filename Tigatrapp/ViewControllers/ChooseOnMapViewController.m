@@ -50,6 +50,11 @@
                                           initWithTarget:self action:@selector(handleLongPress:)];
     lpgr.minimumPressDuration = 0.5;
     [_mapView addGestureRecognizer:lpgr];
+    
+    [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_street"] forSegmentAtIndex:0];
+    [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_satellite"] forSegmentAtIndex:1];
+    
+    _removeButton.title = [LocalText with:@"delete"];
 
 }
 

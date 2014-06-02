@@ -21,7 +21,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *informacionAdicionalLabel;
 @property (nonatomic, weak) IBOutlet UILabel *hacerUnaFotografiaLabel;
 @property (nonatomic, weak) IBOutlet UILabel *numberOfImagesLabel;
-@property (nonatomic, weak) IBOutlet UILabel *añadirUnaNotaLabel;
+@property (nonatomic, weak) IBOutlet UILabel *notaLabel;
 @property (nonatomic, weak) IBOutlet UIButton *enviarButton;
 
 @property (nonatomic, strong) Report *report;

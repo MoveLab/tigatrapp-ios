@@ -15,6 +15,7 @@
 #import "UserReports.h"
 #import "CurrentLocation.h"
 
+#define COMMIT_ALERT 87
 #define DELETE_ALERT 88
 
 @interface NewMosquitoViewController ()
@@ -37,19 +38,32 @@
     
     if (self.sourceReport == nil) {
         self.report = [[Report alloc] initWithDictionary:nil];
-        _reportarMosquitoLabel.text = @"Nou mosquit tigre";
+        _reportarMosquitoLabel.text = [LocalText with:@"activity_label_report_new"];
         _report.type = @"adult";
+        _enviarButton.titleLabel.text = [LocalText with:@"submit"];
     } else {
         self.report = [[Report alloc] initWithDictionary:[_sourceReport dictionaryIncludingImages:YES] ];
         self.report.versionNumber = [NSNumber numberWithInt:[self.report.versionNumber intValue]+1];
-        _reportarMosquitoLabel.text = [NSString stringWithFormat:@"Troballa de mosquit tigre\n%@",[_report niceCreationTime]];
+        _reportarMosquitoLabel.text = [NSString stringWithFormat:@"%@\n%@"
+                                       ,[LocalText with:@"view_report_title_adult"]
+                                       ,[_report niceCreationTime]];
+        _enviarButton.titleLabel.text = [LocalText with:@"update"];
     }
+    
+    _checklistLabel.text = [LocalText with:@"checklist_label_editing"];
+    _localizacionLabel.text = [LocalText with:@"location_label_editing"];
+    _actualLabel.text = [LocalText with:@"location_current_label_button"];
+    _seleccionarEnElMapaLabel.text = [LocalText with:@"location_select_label_button"];
+    _informacionAdicionalLabel.text = [LocalText with:@"additional_information"];
+    _hacerUnaFotografiaLabel.text = [LocalText with:@"photo_check_label"];
+    _notaLabel.text = [LocalText with:@"note_check_label"];
+    
     self.tableView.tableFooterView = [UIView new];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     if (_report.images.count>0) {
-        _numberOfImagesLabel.text = [NSString stringWithFormat:@"%lu",_report.images.count];
+        _numberOfImagesLabel.text = [NSString stringWithFormat:@"%d",_report.images.count];
     } else {
         _numberOfImagesLabel.text = @"";
     }
@@ -79,9 +93,12 @@
             _report.selectedLocationLat = nil;
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
-                                                            message:[NSString stringWithFormat:@"Posición actual guardada\n\nLat: %f\nLon: %f",[CurrentLocation sharedInstance].currentLatitude,[CurrentLocation sharedInstance].currentLongitude]
+                                                            message:[NSString stringWithFormat:@"%@\n\nLat: %f\nLon: %f"
+                                                                     ,[LocalText with:@"added_current_loc"]
+                                                                     ,[CurrentLocation sharedInstance].currentLatitude
+                                                                     ,[CurrentLocation sharedInstance].currentLongitude]
                                                            delegate:self
-                                                  cancelButtonTitle:@"OK"
+                                                  cancelButtonTitle:[LocalText with:@"ok"]
                                                   otherButtonTitles:nil];
             [alert show];
 
@@ -89,7 +106,7 @@
             _report.locationChoice = nil;
 
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
-                                                            message:@"Turn on Location Services to allow Tigatrapp to determine your location"
+                                                            message:[LocalText with:@"turn_on_location"]
                                                            delegate:self
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
@@ -104,10 +121,10 @@
 -(IBAction)pressDelete:(id)sender {
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
-                                                    message:@"Elimina informe?"
+                                                    message:[LocalText with:@"delete_report_warning"]
                                                    delegate:self
-                                          cancelButtonTitle:@"Elimina"
-                                          otherButtonTitles:@"Anul·la",nil];
+                                          cancelButtonTitle:[LocalText with:@"delete_report"]
+                                          otherButtonTitles:[LocalText with:@"cancel"],nil];
     alert.tag = DELETE_ALERT;
     [alert show];
     
@@ -122,7 +139,19 @@
             }
             [self.navigationController popViewControllerAnimated:YES];
         }
-        
+    } else if (alertView.tag == COMMIT_ALERT) {
+        if (buttonIndex == 0) {
+            if (_sourceReport!=nil) {
+                if (self.sourceReport==nil) {
+                    [[UserReports sharedInstance] addReport:_report];
+                    [self.navigationController popViewControllerAnimated:YES];
+                } else {
+                    [[UserReports sharedInstance].reports removeObject:_sourceReport];
+                    [[UserReports sharedInstance] addReport:_report];
+                    [self.navigationController popViewControllerAnimated:YES];
+                }
+            }
+        }
     }
 }
 
@@ -130,23 +159,27 @@
 
 - (BOOL) checkAnswers {
     
-    NSString *check = @"Per poder enviar aquest albirament has de:\n\n";
+    NSString *check = [LocalText with:@"toast_report_before_submitting_adult"];
     
     if (_report.responses.count <3) {
-        check = [NSString stringWithFormat:@"%@-Completar-ne la descripció\n",check];
+        check = [NSString stringWithFormat:@"%@\n%@"
+                 ,check
+                 ,[LocalText with:@"toast_complete_checklist"]];
     }
     
     if ((_report.locationChoice==nil)
         ||([_report.locationChoice isEqualToString:@"current"] && (_report.currentLocationLat==nil))
         ||([_report.locationChoice isEqualToString:@"selected"] && (_report.selectedLocationLat==nil))) {
-        check = [NSString stringWithFormat:@"%@-Especificar-ne una posició\n",check];
+        check = [NSString stringWithFormat:@"%@\n%@"
+                 ,check
+                 ,[LocalText with:@"toast_specify_location"]];
     }
     
     if (check.length > 60) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                         message:check
                                                        delegate:self
-                                              cancelButtonTitle:@"OK"
+                                              cancelButtonTitle:[LocalText with:@"ok"]
                                               otherButtonTitles:nil];
         [alert show];
         return NO;
@@ -161,14 +194,16 @@
     _report.currentLocationLat = [NSNumber numberWithFloat:[CurrentLocation sharedInstance].currentLatitude];
     
     if ([self checkAnswers]) {
-        if (self.sourceReport==nil) {
-            [[UserReports sharedInstance] addReport:_report];
-            [self.navigationController popViewControllerAnimated:YES];
-        } else {
-            [[UserReports sharedInstance].reports removeObject:_sourceReport];
-            [[UserReports sharedInstance] addReport:_report];
-            [self.navigationController popViewControllerAnimated:YES];
-        }
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+                                                        message:[LocalText with:@"report_sent"]
+                                                       delegate:self
+                                              cancelButtonTitle:[LocalText with:@"ok"]
+                                              otherButtonTitles:[LocalText with:@"cancel"],nil];
+        alert.tag = COMMIT_ALERT;
+        [alert show];
+        
+
     }
     
 }
@@ -187,7 +222,7 @@
 {
 
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
-                                   initWithTitle:@"Volver"
+                                   initWithTitle:[LocalText with:@"back"]
                                    style:UIBarButtonItemStylePlain
                                    target:nil
                                    action:nil];

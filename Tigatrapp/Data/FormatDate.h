@@ -11,5 +11,6 @@
 @interface FormatDate : NSObject
 
 + (NSString *) nowToString;
++ (NSString *) dateToString:(NSDate *)date;
 
 @end

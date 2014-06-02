@@ -28,10 +28,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *urlAddress = [NSString stringWithFormat:@"http://tigaserver.atrapaeltigre.com/help/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
-    NSURL *url = [NSURL URLWithString:urlAddress];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [self.webView loadRequest:requestObj];
+    if (_urlString.length>10) {
+        NSURL *url = [NSURL URLWithString:_urlString];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:requestObj];
+    } else {
+        [self.webView setBackgroundColor:[UIColor clearColor]];
+        [self.webView loadHTMLString:_htmlString baseURL:nil];
+    }
 }
 
 -(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {

@@ -29,7 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"mosquitoImages"];
-
+    [_takePhotoButton setTitle:[LocalText with:@"photo_selector_take_photo_button"] forState:UIControlStateNormal];
+    [_pickPhotoButton setTitle:[LocalText with:@"photo_selector_attach_photo_button"] forState:UIControlStateNormal];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -122,7 +123,7 @@
 {
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
-                                   initWithTitle:@"Volver"
+                                   initWithTitle:[LocalText with:@"back"]
                                    style:UIBarButtonItemStylePlain
                                    target:nil
                                    action:nil];

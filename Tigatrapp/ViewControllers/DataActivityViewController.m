@@ -42,21 +42,22 @@
     
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
-                                   initWithTitle:@"Volver"
+                                   initWithTitle:[LocalText with:@"back"]
                                    style:UIBarButtonItemStylePlain
                                    target:nil
                                    action:nil];
     self.navigationItem.backBarButtonItem = backButton;
-
+    
+    [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_street"] forSegmentAtIndex:0];
+    [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_satellite"] forSegmentAtIndex:1];
+    
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"selected annotations = %d",[_mapView selectedAnnotations].count);
-    
     for (ActivityMapAnnotation *annotation in [_mapView selectedAnnotations]) {
         if ([[UserReports sharedInstance] reportWithId:annotation.reportId]==nil) {
-            NSLog(@"elimino annotation %@",annotation.subtitle);
+            if (SHOW_LOGS) NSLog(@"elimino annotation %@",annotation.subtitle);
             [_mapView removeAnnotation:annotation];
         }
     }
@@ -80,11 +81,18 @@
 }
 
 - (IBAction)pressShareButton:(id)sender {
-    
-}
+    UIGraphicsBeginImageContextWithOptions(_mapView.frame.size, NO, 0.0);
+    [_mapView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
 
-- (IBAction)pressPictureButton:(id)sender {
+    NSArray *activityItems;
+    activityItems = @[image];
+    UIActivityViewController *activityController = [[UIActivityViewController alloc]
+                                                    initWithActivityItems:activityItems
+                                                    applicationActivities:nil];
     
+    [self presentViewController:activityController animated:YES completion:nil];
 }
 
 #pragma mark - MKMapView delegate

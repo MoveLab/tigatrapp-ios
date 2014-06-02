@@ -5,6 +5,14 @@
   Created by jordi on 29/05/14.
   Copyright (c) 2014 ibeji. All rights reserved.
 */
+
+"back" = "Back";
+"menu" = "Menu";
+
+"additional_information" = "Additional information";
+
+"turn_on_location" = "Turn on Location Services to allow Tigatrapp to determine your location";
+
 /* */
 "internal_message_id" = "csic.ceab.movelab.tigatrapp";
 

@@ -30,6 +30,11 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     [[UserReports sharedInstance] saveReports];
+
+    NSArray *uploadingImages = [[[RestApi sharedInstance] imagesUploading] allObjects];
+    [[RestApi sharedInstance].imagesToUpload addObjectsFromArray:uploadingImages];
+    NSArray *uploadingReports = [[[RestApi sharedInstance] reportsUploading] allObjects];
+    [[RestApi sharedInstance].reportsToUpload addObjectsFromArray:uploadingReports];
     [[RestApi sharedInstance] saveImagesToUpload];
     [[RestApi sharedInstance] saveReportsToUpload];
     

@@ -16,9 +16,9 @@
 - (id)initWithReport:(Report *)report {
     if ((self = [super init])) {
         if ([report.type isEqualToString:@"adult"]) {
-            self.title = @"Troballa de mosquit tigre";
+            self.title = [LocalText with:@"view_report_title_adult"];
         } else if ([report.type isEqualToString:@"site"]) {
-            self.title = @"Troballa de lloc";
+            self.title = [LocalText with:@"view_report_title_site"];
         }
         self.subtitle = report.niceCreationTime;
         self.type = report.type;

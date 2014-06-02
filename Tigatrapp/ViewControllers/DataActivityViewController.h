@@ -16,6 +16,6 @@
 
 - (IBAction)pressSegmentedControl:(id)sender;
 - (IBAction)pressShareButton:(id)sender;
-- (IBAction)pressPictureButton:(id)sender;
+
 
 @end
