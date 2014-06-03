@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D0D2418193C996200001CDD /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D2417193C996200001CDD /* NewsViewController.m */; };
-		8D0D241B193C9B0900001CDD /* RSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D241A193C9B0900001CDD /* RSSEntry.m */; };
-		8D207176190C30CE007E3B96 /* malariamosquito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D207175190C30CE007E3B96 /* malariamosquito.jpg */; };
 		8D207179190C3429007E3B96 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D207178190C3429007E3B96 /* DetailViewController.m */; };
 		8D20717C190C536F007E3B96 /* ChooseOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */; };
 		8D20717E190C54BC007E3B96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717D190C54BC007E3B96 /* CoreLocation.framework */; };
@@ -45,9 +43,8 @@
 		8DB55897190AAB13005DBDA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DB55895190AAB13005DBDA2 /* InfoPlist.strings */; };
 		8DB55899190AAB13005DBDA2 /* TigatrappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB55898190AAB13005DBDA2 /* TigatrappTests.m */; };
 		8DB558A5190AB25C005DBDA2 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558A4190AB25C005DBDA2 /* MenuViewController.m */; };
-		8DB558A8190AB27C005DBDA2 /* NewBreedingSiteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558A7190AB27C005DBDA2 /* NewBreedingSiteTableViewController.m */; };
-		8DB558AB190AB2BD005DBDA2 /* SiteChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558AA190AB2BD005DBDA2 /* SiteChecklistViewController.m */; };
-		8DB558AE190AB313005DBDA2 /* NewMosquitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558AD190AB313005DBDA2 /* NewMosquitoViewController.m */; };
+		8DB558A8190AB27C005DBDA2 /* SiteChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558A7190AB27C005DBDA2 /* SiteChecklistViewController.m */; };
+		8DB558AE190AB313005DBDA2 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558AD190AB313005DBDA2 /* ReportViewController.m */; };
 		8DB558B1190AB335005DBDA2 /* MosquitoChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558B0190AB335005DBDA2 /* MosquitoChecklistViewController.m */; };
 		8DB558B4190AB3A2005DBDA2 /* DataActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558B3190AB3A2005DBDA2 /* DataActivityViewController.m */; };
 		8DB558B7190AB3DC005DBDA2 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558B6190AB3DC005DBDA2 /* GalleryViewController.m */; };
@@ -66,6 +63,17 @@
 		8DC9E049192EAE2F00F69D5E /* l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E03E192EAE2F00F69D5E /* l.jpg */; };
 		8DEFE8D61938D2AE00FD2BAE /* RestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFE8D51938D2AE00FD2BAE /* RestApi.m */; };
 		8DEFE8D91938EE1300FD2BAE /* FormatDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFE8D81938EE1300FD2BAE /* FormatDate.m */; };
+		8DF0D2CA193E2639008A7F70 /* consent_ca.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2C7193E2639008A7F70 /* consent_ca.html */; };
+		8DF0D2CB193E2639008A7F70 /* consent_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2C8193E2639008A7F70 /* consent_en.html */; };
+		8DF0D2CC193E2639008A7F70 /* consent_es.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2C9193E2639008A7F70 /* consent_es.html */; };
+		8DF0D2D4193E264E008A7F70 /* about_ca.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2CD193E264E008A7F70 /* about_ca.html */; };
+		8DF0D2D5193E264E008A7F70 /* about_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2CE193E264E008A7F70 /* about_en.html */; };
+		8DF0D2D6193E264E008A7F70 /* about_es.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2CF193E264E008A7F70 /* about_es.html */; };
+		8DF0D2D7193E264E008A7F70 /* license_ca.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2D0193E264E008A7F70 /* license_ca.html */; };
+		8DF0D2D8193E264E008A7F70 /* license_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2D1193E264E008A7F70 /* license_en.html */; };
+		8DF0D2D9193E264E008A7F70 /* license_es.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2D2193E264E008A7F70 /* license_es.html */; };
+		8DF0D2DA193E264E008A7F70 /* tigastyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2D3193E264E008A7F70 /* tigastyle.css */; };
+		8DF0D2DC193E265A008A7F70 /* gpl.html in Resources */ = {isa = PBXBuildFile; fileRef = 8DF0D2DB193E265A008A7F70 /* gpl.html */; };
 		8DFF536819378F17009D3389 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF536719378F17009D3389 /* HelpViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -82,9 +90,6 @@
 /* Begin PBXFileReference section */
 		8D0D2416193C996200001CDD /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		8D0D2417193C996200001CDD /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		8D0D2419193C9B0900001CDD /* RSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEntry.h; sourceTree = "<group>"; };
-		8D0D241A193C9B0900001CDD /* RSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEntry.m; sourceTree = "<group>"; };
-		8D207175190C30CE007E3B96 /* malariamosquito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = malariamosquito.jpg; sourceTree = "<group>"; };
 		8D207177190C3429007E3B96 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8D207178190C3429007E3B96 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		8D20717A190C536E007E3B96 /* ChooseOnMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseOnMapViewController.h; sourceTree = "<group>"; };
@@ -140,12 +145,10 @@
 		8DB55898190AAB13005DBDA2 /* TigatrappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TigatrappTests.m; sourceTree = "<group>"; };
 		8DB558A3190AB25C005DBDA2 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		8DB558A4190AB25C005DBDA2 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		8DB558A6190AB27C005DBDA2 /* NewBreedingSiteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBreedingSiteTableViewController.h; sourceTree = "<group>"; };
-		8DB558A7190AB27C005DBDA2 /* NewBreedingSiteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBreedingSiteTableViewController.m; sourceTree = "<group>"; };
-		8DB558A9190AB2BD005DBDA2 /* SiteChecklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteChecklistViewController.h; sourceTree = "<group>"; };
-		8DB558AA190AB2BD005DBDA2 /* SiteChecklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteChecklistViewController.m; sourceTree = "<group>"; };
-		8DB558AC190AB313005DBDA2 /* NewMosquitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMosquitoViewController.h; sourceTree = "<group>"; };
-		8DB558AD190AB313005DBDA2 /* NewMosquitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMosquitoViewController.m; sourceTree = "<group>"; };
+		8DB558A6190AB27C005DBDA2 /* SiteChecklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteChecklistViewController.h; sourceTree = "<group>"; };
+		8DB558A7190AB27C005DBDA2 /* SiteChecklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteChecklistViewController.m; sourceTree = "<group>"; };
+		8DB558AC190AB313005DBDA2 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		8DB558AD190AB313005DBDA2 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 		8DB558AF190AB335005DBDA2 /* MosquitoChecklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosquitoChecklistViewController.h; sourceTree = "<group>"; };
 		8DB558B0190AB335005DBDA2 /* MosquitoChecklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosquitoChecklistViewController.m; sourceTree = "<group>"; };
 		8DB558B2190AB3A2005DBDA2 /* DataActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataActivityViewController.h; sourceTree = "<group>"; };
@@ -171,6 +174,17 @@
 		8DEFE8D51938D2AE00FD2BAE /* RestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestApi.m; sourceTree = "<group>"; };
 		8DEFE8D71938EE1300FD2BAE /* FormatDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatDate.h; sourceTree = "<group>"; };
 		8DEFE8D81938EE1300FD2BAE /* FormatDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatDate.m; sourceTree = "<group>"; };
+		8DF0D2C7193E2639008A7F70 /* consent_ca.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent_ca.html; sourceTree = "<group>"; };
+		8DF0D2C8193E2639008A7F70 /* consent_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent_en.html; sourceTree = "<group>"; };
+		8DF0D2C9193E2639008A7F70 /* consent_es.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent_es.html; sourceTree = "<group>"; };
+		8DF0D2CD193E264E008A7F70 /* about_ca.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_ca.html; sourceTree = "<group>"; };
+		8DF0D2CE193E264E008A7F70 /* about_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_en.html; sourceTree = "<group>"; };
+		8DF0D2CF193E264E008A7F70 /* about_es.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about_es.html; sourceTree = "<group>"; };
+		8DF0D2D0193E264E008A7F70 /* license_ca.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license_ca.html; sourceTree = "<group>"; };
+		8DF0D2D1193E264E008A7F70 /* license_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license_en.html; sourceTree = "<group>"; };
+		8DF0D2D2193E264E008A7F70 /* license_es.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license_es.html; sourceTree = "<group>"; };
+		8DF0D2D3193E264E008A7F70 /* tigastyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tigastyle.css; sourceTree = "<group>"; };
+		8DF0D2DB193E265A008A7F70 /* gpl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gpl.html; sourceTree = "<group>"; };
 		8DFF536619378F17009D3389 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		8DFF536719378F17009D3389 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,8 +228,6 @@
 				8DEFE8D81938EE1300FD2BAE /* FormatDate.m */,
 				8DA5090D193C59FA0095F119 /* LocalText.h */,
 				8DA5090E193C59FA0095F119 /* LocalText.m */,
-				8D0D2419193C9B0900001CDD /* RSSEntry.h */,
-				8D0D241A193C9B0900001CDD /* RSSEntry.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -285,9 +297,9 @@
 		8DB55874190AAB13005DBDA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DF0D2C6193E2629008A7F70 /* HTML */,
 				8DA50913193C6B670095F119 /* ChecklistImages */,
 				8DC9E033192EAE2F00F69D5E /* Gallery */,
-				8D207175190C30CE007E3B96 /* malariamosquito.jpg */,
 				8DB55875190AAB13005DBDA2 /* Tigatrapp-Info.plist */,
 				8DB55876190AAB13005DBDA2 /* InfoPlist.strings */,
 				8DB55879190AAB13005DBDA2 /* main.m */,
@@ -322,12 +334,10 @@
 				8DB558A4190AB25C005DBDA2 /* MenuViewController.m */,
 				8DC9E02C192E4B0000F69D5E /* SubmenuViewController.h */,
 				8DC9E02D192E4B0000F69D5E /* SubmenuViewController.m */,
-				8DB558A6190AB27C005DBDA2 /* NewBreedingSiteTableViewController.h */,
-				8DB558A7190AB27C005DBDA2 /* NewBreedingSiteTableViewController.m */,
-				8DB558A9190AB2BD005DBDA2 /* SiteChecklistViewController.h */,
-				8DB558AA190AB2BD005DBDA2 /* SiteChecklistViewController.m */,
-				8DB558AC190AB313005DBDA2 /* NewMosquitoViewController.h */,
-				8DB558AD190AB313005DBDA2 /* NewMosquitoViewController.m */,
+				8DB558A6190AB27C005DBDA2 /* SiteChecklistViewController.h */,
+				8DB558A7190AB27C005DBDA2 /* SiteChecklistViewController.m */,
+				8DB558AC190AB313005DBDA2 /* ReportViewController.h */,
+				8DB558AD190AB313005DBDA2 /* ReportViewController.m */,
 				8DB558AF190AB335005DBDA2 /* MosquitoChecklistViewController.h */,
 				8DB558B0190AB335005DBDA2 /* MosquitoChecklistViewController.m */,
 				8D7273A419309E3300536DBF /* PickPhotoViewController.h */,
@@ -383,6 +393,24 @@
 				8DC9E03E192EAE2F00F69D5E /* l.jpg */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		8DF0D2C6193E2629008A7F70 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				8DF0D2DB193E265A008A7F70 /* gpl.html */,
+				8DF0D2CD193E264E008A7F70 /* about_ca.html */,
+				8DF0D2CE193E264E008A7F70 /* about_en.html */,
+				8DF0D2CF193E264E008A7F70 /* about_es.html */,
+				8DF0D2D0193E264E008A7F70 /* license_ca.html */,
+				8DF0D2D1193E264E008A7F70 /* license_en.html */,
+				8DF0D2D2193E264E008A7F70 /* license_es.html */,
+				8DF0D2D3193E264E008A7F70 /* tigastyle.css */,
+				8DF0D2C7193E2639008A7F70 /* consent_ca.html */,
+				8DF0D2C8193E2639008A7F70 /* consent_en.html */,
+				8DF0D2C9193E2639008A7F70 /* consent_es.html */,
+			);
+			path = HTML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,26 +493,36 @@
 			files = (
 				8DA5091A193C6B7F0095F119 /* checklist_image_adult_1.jpg in Resources */,
 				8DC9E045192EAE2F00F69D5E /* h.jpg in Resources */,
+				8DF0D2D9193E264E008A7F70 /* license_es.html in Resources */,
 				8DC9E043192EAE2F00F69D5E /* f.jpg in Resources */,
 				8DC9E047192EAE2F00F69D5E /* j.jpg in Resources */,
 				8DC9E044192EAE2F00F69D5E /* g.jpg in Resources */,
+				8DF0D2D8193E264E008A7F70 /* license_en.html in Resources */,
 				8DA5091C193C6B7F0095F119 /* checklist_image_adult_3.jpg in Resources */,
+				8DF0D2D6193E264E008A7F70 /* about_es.html in Resources */,
+				8DF0D2CB193E2639008A7F70 /* consent_en.html in Resources */,
 				8DB55886190AAB13005DBDA2 /* Images.xcassets in Resources */,
 				8DC9E048192EAE2F00F69D5E /* k.jpg in Resources */,
 				8DC9E049192EAE2F00F69D5E /* l.jpg in Resources */,
 				8DC9E042192EAE2F00F69D5E /* e.jpg in Resources */,
 				8DA5091E193C6B7F0095F119 /* checklist_image_sites_2.jpg in Resources */,
 				8DB55878190AAB13005DBDA2 /* InfoPlist.strings in Resources */,
-				8D207176190C30CE007E3B96 /* malariamosquito.jpg in Resources */,
+				8DF0D2DC193E265A008A7F70 /* gpl.html in Resources */,
+				8DF0D2D4193E264E008A7F70 /* about_ca.html in Resources */,
 				8DC9E040192EAE2F00F69D5E /* c.jpg in Resources */,
+				8DF0D2CC193E2639008A7F70 /* consent_es.html in Resources */,
 				8DA5091D193C6B7F0095F119 /* checklist_image_sites_1.jpg in Resources */,
 				8DC9E03F192EAE2F00F69D5E /* a.jpg in Resources */,
 				8DC9E046192EAE2F00F69D5E /* i.jpg in Resources */,
 				8D6BC4E21937DAFD00A04648 /* Localizable.strings in Resources */,
+				8DF0D2CA193E2639008A7F70 /* consent_ca.html in Resources */,
 				8DC9E041192EAE2F00F69D5E /* d.jpg in Resources */,
+				8DF0D2DA193E264E008A7F70 /* tigastyle.css in Resources */,
+				8DF0D2D5193E264E008A7F70 /* about_en.html in Resources */,
 				8DA5091F193C6B7F0095F119 /* checklist_image_sites_3.jpg in Resources */,
 				8DA5091B193C6B7F0095F119 /* checklist_image_adult_2.jpg in Resources */,
 				8DB55881190AAB13005DBDA2 /* Main.storyboard in Resources */,
+				8DF0D2D7193E264E008A7F70 /* license_ca.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,20 +552,18 @@
 				8DB558B1190AB335005DBDA2 /* MosquitoChecklistViewController.m in Sources */,
 				8D7273B21931CAFA00536DBF /* UserReports.m in Sources */,
 				8D7273AC1930C16900536DBF /* CurrentLocation.m in Sources */,
-				8D0D241B193C9B0900001CDD /* RSSEntry.m in Sources */,
 				8DC9E032192E6E8D00F69D5E /* ActivityMapAnnotation.m in Sources */,
 				8DB5587A190AAB13005DBDA2 /* main.m in Sources */,
 				8DA5090F193C59FA0095F119 /* LocalText.m in Sources */,
 				8DEFE8D91938EE1300FD2BAE /* FormatDate.m in Sources */,
 				8D20717C190C536F007E3B96 /* ChooseOnMapViewController.m in Sources */,
 				8D7273A619309E3300536DBF /* PickPhotoViewController.m in Sources */,
-				8DB558A8190AB27C005DBDA2 /* NewBreedingSiteTableViewController.m in Sources */,
+				8DB558A8190AB27C005DBDA2 /* SiteChecklistViewController.m in Sources */,
 				8DEFE8D61938D2AE00FD2BAE /* RestApi.m in Sources */,
-				8DB558AB190AB2BD005DBDA2 /* SiteChecklistViewController.m in Sources */,
 				8D207179190C3429007E3B96 /* DetailViewController.m in Sources */,
 				8DA5090C193C57DF0095F119 /* TermsViewController.m in Sources */,
 				8DB558A5190AB25C005DBDA2 /* MenuViewController.m in Sources */,
-				8DB558AE190AB313005DBDA2 /* NewMosquitoViewController.m in Sources */,
+				8DB558AE190AB313005DBDA2 /* ReportViewController.m in Sources */,
 				8D7273A91930B4A600536DBF /* PhotoViewController.m in Sources */,
 				8DB558B7190AB3DC005DBDA2 /* GalleryViewController.m in Sources */,
 				8DC9E02E192E4B0000F69D5E /* SubmenuViewController.m in Sources */,

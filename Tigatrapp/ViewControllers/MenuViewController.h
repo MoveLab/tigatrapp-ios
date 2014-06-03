@@ -15,8 +15,15 @@
 @property (nonatomic, weak) IBOutlet UIButton *mapButton;
 @property (nonatomic, weak) IBOutlet UIButton *galleryButton;
 @property (nonatomic, weak) IBOutlet UIButton *webButton;
-@property (nonatomic, weak) IBOutlet UILabel *reportLabel;
-@property (nonatomic, weak) IBOutlet UILabel *utilitiesLabel;
+
+@property (nonatomic, weak) IBOutlet UILabel *breedingHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *breedingFootLabel;
+@property (nonatomic, weak) IBOutlet UILabel *mosquitoHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *mosquitoFootLabel;
+@property (nonatomic, weak) IBOutlet UILabel *mapHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *mapFootLabel;
+@property (nonatomic, weak) IBOutlet UILabel *galleryHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *galleryFootLabel;
 
 - (IBAction) pressWebButton:(id)sender;
 

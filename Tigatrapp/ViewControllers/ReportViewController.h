@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "Report.h"
 
-@interface NewMosquitoViewController : UITableViewController
+@interface ReportViewController : UITableViewController
 
 @property (nonatomic, weak) IBOutlet UILabel *reportarMosquitoLabel;
 @property (nonatomic, weak) IBOutlet UILabel *checklistLabel;
@@ -24,6 +24,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *notaLabel;
 @property (nonatomic, weak) IBOutlet UIButton *enviarButton;
 
+@property (nonatomic, strong) NSString *reportType;
 @property (nonatomic, strong) Report *report;
 @property (nonatomic, strong) Report *sourceReport;
 

@@ -49,6 +49,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITableView delegate
+
+- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [aTableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:NO];
+    if (indexPath.row == 4) {
+        NSArray *activityItems;
+        activityItems = @[@"http://atrapaeltrigre.com"];
+        UIActivityViewController *activityController =
+        [[UIActivityViewController alloc]
+         initWithActivityItems:activityItems
+         applicationActivities:nil];
+        
+        [self presentViewController:activityController animated:YES completion:nil];
+        
+    }
+}
 
 #pragma mark - Navigation
 
@@ -68,9 +86,11 @@
     if ([segue.identifier isEqualToString:@"helpSegue"]) {
         HelpViewController *viewController = segue.destinationViewController;
         viewController.urlString = [NSString stringWithFormat:@"http://tigaserver.atrapaeltigre.com/help/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
+        
     } else if ([segue.identifier isEqualToString:@"aboutSegue"]) {
         HelpViewController *viewController = segue.destinationViewController;
         viewController.urlString = [NSString stringWithFormat:@"http://tigaserver.atrapaeltigre.com/about/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
+        viewController.fallbackFile = [NSString stringWithFormat:@"about_%@",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] ];
     }
 
 

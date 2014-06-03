@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TermsViewController : UIViewController
+@interface TermsViewController : UIViewController <UIWebViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UILabel *acceptLabel;
+@property (nonatomic, weak) IBOutlet UILabel *denyLabel;
+@property (nonatomic, weak) IBOutlet UIWebView *webView;
+
+- (IBAction)pressAccept:(id)sender;
+- (IBAction)pressDeny:(id)sender;
 
 @end

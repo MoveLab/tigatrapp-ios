@@ -26,37 +26,37 @@
 "language_selector_spanish" = "Español";
 
 /* */
-"gallery_array" = "Female tiger mosquito. Tiger mosquitoes (1) are small and black with white stripes, \n        (2) they have a white stripe on the head and thorax, and (3) they have white stripes on the abdomen \n        and legs. There are other similar insects, so it is important to avoid confusing them!";
+"gallery_array" = "Female tiger mosquito. Tiger mosquitoes (1) are small and black with white stripes,        (2) they have a white stripe on the head and thorax, and (3) they have white stripes on the abdomen and legs. There are other similar insects, so it is important to avoid confusing them!";
 
 /* */
-"gallery_array_1" = "Female tiger mosquito. Note the stripes on the abdomen. \n        Remember that the tiger mosquito is very small, \n        not more than 5 mm (including legs, about half the size of a 1 cent coin).";
+"gallery_array_1" = "Female tiger mosquito. Note the stripes on the abdomen. Remember that the tiger mosquito is very small, not more than 5 mm (including legs, about half the size of a 1 cent coin).";
 
 /* */
-"gallery_array_2" = "Female tiger mosquito ready to bite. \n        Note the white stripe on the head and thorax, and the stripes on the legs .";
+"gallery_array_2" = "Female tiger mosquito ready to bite. Note the white stripe on the head and thorax, and the stripes on the legs .";
 
 /* */
-"gallery_array_3" = "Female tiger mosquito biting. Note \n        the characteristic white stripe on the head and thorax. ";
+"gallery_array_3" = "Female tiger mosquito biting. Note the characteristic white stripe on the head and thorax. ";
 
 /* */
-"gallery_array_4" = "Female tiger mosquito biting. \n        Note the characteristic white stripe on the head and thorax. ";
+"gallery_array_4" = "Female tiger mosquito biting. Note the characteristic white stripe on the head and thorax. ";
 
 /* */
-"gallery_array_5" = "Two female tiger mosquitoes biting. Remember that only the females bite. \n        Tiger mosquitoes usually bite during the day (not when it's dark)\n         and they usually bite legs.";
+"gallery_array_5" = "Two female tiger mosquitoes biting. Remember that only the females bite. Tiger mosquitoes usually bite during the day (not when it's dark) and they usually bite legs.";
 
 /* */
-"gallery_array_6" = "Female tiger mosquito biting. \n        The blood that accumulates in the abdomen will trigger the laying of eggs.";
+"gallery_array_6" = "Female tiger mosquito biting. The blood that accumulates in the abdomen will trigger the laying of eggs.";
 
 /* */
-"gallery_array_7" = "Tiger mosquito laying eggs. Note the eggs' dark color and elongated shape. \n        The eggs are so small that they are almost invisible to the naked eye. \n        Remember that the tiger mosquito lays eggs in small containers, \n        on dry walls by stagnant and dirty water.";
+"gallery_array_7" = "Tiger mosquito laying eggs. Note the eggs' dark color and elongated shape. The eggs are so small that they are almost invisible to the naked eye. Remember that the tiger mosquito lays eggs in small containers, on dry walls by stagnant and dirty water.";
 
 /* */
-"gallery_array_8" = "Tiger mosquito larvae (more elongated) and pupae (more rounded).\n        Note that they are aquatic. \n        The larvae emerge from the eggs when they are covered with water and eventually make \n        the transition to pupae.";
+"gallery_array_8" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). Note that they are aquatic. The larvae emerge from the eggs when they are covered with water and eventually make       the transition to pupae.";
 
 /* */
-"gallery_array_9" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). \n        Remember that to keep tiger mosquitos out of your home you need to avoid having standing \n        water in which the larvae can develop!";
+"gallery_array_9" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). Remember that to keep tiger mosquitos out of your home you need to avoid having standing water in which the larvae can develop!";
 
 /* */
-"gallery_array_10" = "Two tiger mosquito pupae. \n        This is the phase in which metamorphosis occurs, and the adult\n         mosquito emerges from the pupa and enters the aerial environment.";
+"gallery_array_10" = "Two tiger mosquito pupae. This is the phase in which metamorphosis occurs, and the adult mosquito emerges from the pupa and enters the aerial environment.";
 
 /* */
 "toast_report_before_submitting_site" = "Before submitting this breeding site report, please:";
@@ -230,7 +230,7 @@
 "site_report_help_html" = "\n<p><b>HELP:</b> <br/> \n<b>Found a public space where you think the tiger mosquito can breed? Fill out this report and send in your data. Fields marked with an asterisk (*) are required.</b> \n</p> \n<p> \n<ul> \n<li><b>Description</b>: The questions here will help you decide if what you've found is really a tiger mosquito breeding site.</li> \n<br/> \n<li><b>Location</b>: Choose current location if you are still at the site. (Make sure you have GPS enabled on your phone.) Otherwise, select the site's location on the map.</li> \n<br/> \n<li><b>Photo(s)</b>: Take a photo of the site now or attach one from a file.</li> \n<br/> \n<li><b>Notes</b>: Add a note if you want to send additional information about your finding.</li> \n</ul> \n</p> \n<p>Once sent, you can view and edit your report on your phone by selecting the map activity from the main screen and then clicking on a report icon. The information you submit will also be published map on a public tiger mosquito map at <a href=\"www.atrapaeltigre.com\"> www.atrapaeltigre.com </a>.</p>\n       ";
 
 /* */
-"site_report_item_help_1" = "      \n<p>Tiger mosquito larvae and pupae live in deposits and small containers of standing water that is dirty (and has no fish). Examples: storm drains, fountains, basins, wells, buckets, etc.. </ P> \n<p>Tiger mosquito larvae are generally not found on the beach or in rivers, lakes, ponds, or wetlands (although you may find other types of larvae in these places).</p>       \n";
+"site_report_item_help_1" = " <p>Tiger mosquito larvae and pupae live in deposits and small containers of standing water that is dirty (and has no fish). Examples: storm drains, fountains, basins, wells, buckets, etc.. </ P> <p>Tiger mosquito larvae are generally not found on the beach or in rivers, lakes, ponds, or wetlands (although you may find other types of larvae in these places).</p>       \n";
 
 /* */
 "site_report_item_help_2" = "   \n<p>The larvae and pupae need stagnant water and organic matter (food) to survive. Avoid letting water accumulate in or around you home.</p>\n   ";
@@ -296,13 +296,13 @@
 "photo_selector_remove_button_label" = "Remove";
 
 /* */
-"rss_internet_connection_warning" = "No internet connection.\n\nTo view the feed, please connect to the internet and select 'refresh' from the menu.";
+"rss_internet_connection_warning" = "No internet connection.\n\nTo view the feed, please connect to the internet";
 
 /* */
 "rss_title_tigatrapp" = "Latest from TigaTrapp!";
 
 /* */
-"task_list_title" = "Mission List";
+"task_list_title" = "Missions";
 
 /* */
 "task_list_pending" = "Pending";
@@ -341,7 +341,7 @@
 "toast_mission_expired" = "This mission has expired.";
 
 /* */
-"menu_option_task_list" = "Mission List";
+"menu_option_task_list" = "Missions";
 
 /* */
 "menu_option_tigatrapp_news" = "News";

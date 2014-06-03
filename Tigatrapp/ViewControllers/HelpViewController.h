@@ -12,5 +12,6 @@
 
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) NSString *urlString;
+@property (nonatomic, strong) NSString *fallbackFile;
 @property (nonatomic, strong) NSString *htmlString;
 @end

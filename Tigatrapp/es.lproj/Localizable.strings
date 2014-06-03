@@ -6,12 +6,12 @@
   Copyright (c) 2014 ibeji. All rights reserved.
 */
 
-"back" = "Back";
-"menu" = "Menu";
+"back" = "Volver";
+"menu" = "Menú";
 
-"additional_information" = "Additional information";
+"additional_information" = "Información adicional";
 
-"turn_on_location" = "Turn on Location Services to allow Tigatrapp to determine your location";
+"turn_on_location" = "Active la Localización para permitir a Tigatrapp determinar su posición";
 
 /* */
 "consent_button_label" = "He leído y acepto las condiciones de uso";
@@ -20,37 +20,37 @@
 "decline_button_label" = "No estoy de acuerdo";
 
 /* */
-"gallery_array" = "Hembra de mosquito tigre. Sólo los mosquitos que: 1) son pequeños, \n        negros y con rayas blancas, 2) tienen una raya blanca en la cabeza y en el tórax y 3) tienen  \n        rayas blancas en el abdomen y en \n        las patas son mosquito tigre. Hay otros \n        insectos parecidos, !no los ¡confundas!";
+"gallery_array" = "Hembra de mosquito tigre. Sólo los mosquitos que: 1) son pequeños, negros y con rayas blancas, 2) tienen una raya blanca en la cabeza y en el tórax y 3) tienen rayas blancas en el abdomen y en las patas son mosquito tigre. Hay otros insectos parecidos, ¡no los confundas!";
 
 /* */
-"gallery_array_1" = "Hembra de mosquito tigre. Observa las rayas en el abdomen. \n           Recuerda que el mosquito tigre es muy pequeño, \n           no mide más de 5 mm (con patas incluidas, aproximadamente la mitad de una moneda de 1 céntimo).";
+"gallery_array_1" = "Hembra de mosquito tigre. Observa las rayas en el abdomen. Recuerda que el mosquito tigre es muy pequeño, no mide más de 5 mm (con patas incluidas, aproximadamente la mitad de una moneda de 1 céntimo).";
 
 /* */
-"gallery_array_2" = "Hembra de mosquito tigre preparada para picar. \n              Observa la raya blanca en la cabeza y en el tórax y las rayas en las patas.";
+"gallery_array_2" = "Hembra de mosquito tigre preparada para picar. Observa la raya blanca en la cabeza y en el tórax y las rayas en las patas.";
 
 /* */
-"gallery_array_3" = "Hembra de mosquito tigre picando. \n        Observa la característica raya blanca en la cabeza y en el tórax.";
+"gallery_array_3" = "Hembra de mosquito tigre picando. Observa la característica raya blanca en la cabeza y en el tórax.";
 
 /* */
-"gallery_array_4" = "Hembra de mosquito tigre picando. \n        Observa la característica raya blanca en la cabeza y en el tórax.";
+"gallery_array_4" = "Hembra de mosquito tigre picando. Observa la característica raya blanca en la cabeza y en el tórax.";
 
 /* */
-"gallery_array_5" = "Dos hembras de mosquito tigre picando. Recuerda que sólo pican las hembras. \n        En el caso del mosquito tigre, acostumbran a hacerlo durante el día (y no cuando oscurece) y normalmente \n        pican en las piernas.";
+"gallery_array_5" = "Dos hembras de mosquito tigre picando. Recuerda que sólo pican las hembras. En el caso del mosquito tigre, acostumbran a hacerlo durante el día (y no cuando oscurece) y normalmente pican en las piernas.";
 
 /* */
-"gallery_array_6" = "Hembra de mosquito tigre picando. La sangre que acumula en el abdomen \n        servirá para generar una puesta de huevos.";
+"gallery_array_6" = "Hembra de mosquito tigre picando. La sangre que acumula en el abdomen  servirá para generar una puesta de huevos.";
 
 /* */
-"gallery_array_7" = "Puesta de huevos de mosquito tigre. Observa el color oscuro y la forma alargada. \n        Los huevos son tan pequeños que son casi invisibles a simple vista. \n        Recuerda que el mosquito tigre pone los huevos en recipientes pequeños, en paredes  \n        secas cerca de agua estancada y sucia.";
+"gallery_array_7" = "Puesta de huevos de mosquito tigre. Observa el color oscuro y la forma alargada. Los huevos son tan pequeños que son casi invisibles a simple vista. Recuerda que el mosquito tigre pone los huevos en recipientes pequeños, en paredes secas cerca de agua estancada y sucia.";
 
 /* */
-"gallery_array_8" = "Larvas (más alargadas) y pupas (más redondeadas) de mosquito tigre. Observa que son acuáticas. \n        Las larvas emergen de los huevos cuando éstos quedan cubiertos de agua y con el tiempo mudan a pupas.";
+"gallery_array_8" = "Larvas (más alargadas) y pupas (más redondeadas) de mosquito tigre. Observa que son acuáticas. Las larvas emergen de los huevos cuando éstos quedan cubiertos de agua y con el tiempo mudan a pupas.";
 
 /* */
-"gallery_array_9" = "Larvas(más alargadas) y pupas (más redondeadas) de mosquito tigre. \n        Recuerda evitar tener pequeñas acumulaciones de agua en casa.";
+"gallery_array_9" = "Larvas (más alargadas) y pupas (más redondeadas) de mosquito tigre. Recuerda evitar tener pequeñas acumulaciones de agua en casa.";
 
 /* */
-"gallery_array_10" = "Dos pupas de mosquito tigre. En esta fase se produce la metamorfosis, \n        y el mosquito adulto emerge de la pupa hacia el medio aéreo.";
+"gallery_array_10" = "Dos pupas de mosquito tigre. En esta fase se produce la metamorfosis, y el mosquito adulto emerge de la pupa hacia el medio aéreo.";
 
 /* */
 "toast_report_before_submitting_site" = "Para enviar este lugar de cría:";
@@ -194,7 +194,7 @@
 "site_report_help_html" = "\n<p><b>AYUDA:</b><br/>\n<b>¿Has encontrado un lugar público donde crees que el mosquito tigre puede criar? Responde el informe y envía los datos. Es necesario completar los campos con asterisco (*).</b>\n</p>\n<ul> \n<li><b>Descripción</b>: responde el formulario para facilitar la interpretación de los datos.</li> \n<br/>\n<li><b>Localización</b>: elige posición actual si el lugar de cría se encuentra en el lugar donde tienes el teléfono, o señala la posición en el mapa si lo has encontrado en otro lugar. Activa el GPS si quieres que la posición de tu hallazgo sea más precisa.</li>  \n<br/>\n<li><b>Imágenes</b>: haz una foto o adjunta una foto del lugar de cría hecha con otro dispositivo.</li> \n<br/>\n<li><b>Notas</b>: si quieres, describe mejor tu hallazgo.</li>\n</ul> \n</p>\n<p>Una vez enviado, podrás consultar y editar el informe en tu mapa. Los datos que envíes serán publicados en el mapa del mosquito tigre en la web www.atrapaeltigre.com.</p>        \n       ";
 
 /* */
-"site_report_item_help_1" = "  \n<p>Las larvas y pupas de mosquito tigre viven en depósitos o recipientes pequeños, con agua estancada o sucia (sin peces). Ejemplos: sumideros, fuentes, depósitos, pozos, cubos, etc.</p> \n<p>El mosquito tigre no cría en playas, ríos, lagos, humedales o estanques. Las larvas que encuentres allí no son de mosquito tigre.</p>    \n       ";
+"site_report_item_help_1" = "<p>Las larvas y pupas de mosquito tigre viven en depósitos o recipientes pequeños, con agua estancada o sucia (sin peces). Ejemplos: sumideros, fuentes, depósitos, pozos, cubos, etc.</p> <p>El mosquito tigre no cría en playas, ríos, lagos, humedales o estanques. Las larvas que encuentres allí no son de mosquito tigre.</p>    \n       ";
 
 /* */
 "site_report_item_help_2" = "      \n<p>Las larvas y las pupas necesitan agua estancada con materia orgánica (alimento) para vivir. Evita tener pequeñas acumulaciones de agua en tu casa para combatir el mosquito tigre.</p> \n";
@@ -284,7 +284,7 @@
 "photo_selector_remove_button_label" = "Elimina";
 
 /* */
-"rss_internet_connection_warning" = "Sin conexión a internet.\n\nPara ver el contenido, conéctate y selecciona 'actualiza' en el menú";
+"rss_internet_connection_warning" = "Sin conexión a internet.\n\nPara ver el contenido, conéctate.";
 
 /* */
 "rss_title_tigatrapp" = "Noticias de AtrapaelTigre.com";

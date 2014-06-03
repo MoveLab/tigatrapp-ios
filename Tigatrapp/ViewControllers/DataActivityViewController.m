@@ -10,7 +10,7 @@
 #import "ActivityMapAnnotation.h"
 #import "UserReports.h"
 #import "Report.h"
-#import "NewMosquitoViewController.h"
+#import "ReportViewController.h"
 
 @interface DataActivityViewController ()
 
@@ -111,22 +111,33 @@
     
     annotationView.canShowCallout = YES;
     annotationView.centerOffset = CGPointMake(0, -20);
-    
+   
+    /*
     UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     [rightButton setImage:[UIImage imageNamed:@"chevron.png"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
     [rightButton setTintColor:[UIColor lightGrayColor]];
     annotationView.rightCalloutAccessoryView = rightButton;
+    */
     
     ActivityMapAnnotation *mapAnnotation = (ActivityMapAnnotation *) annotation;
     
     if ([mapAnnotation.type isEqualToString:@"adult"]) {
         annotationView.image = [UIImage imageNamed:@"mappoint1"];
         annotationView.annotation = annotation;
+        UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mosquito"]];
+        myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
+        annotationView.leftCalloutAccessoryView = myImageView;
     } else if ([mapAnnotation.type isEqualToString:@"site"]) {
         annotationView.image = [UIImage imageNamed:@"mappoint2"];
         annotationView.annotation = annotation;
+        UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"aigues"]];
+        myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
+        annotationView.leftCalloutAccessoryView = myImageView;
+        
     }
+    
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     
     return annotationView;
 }
@@ -138,7 +149,8 @@
     Report *report = [[UserReports sharedInstance] reportWithId:annotation.reportId];
     [report print];
     
-    NewMosquitoViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
+    ReportViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
+    mvc.reportType = annotation.type;
     mvc.sourceReport = report;
     
     [self.navigationController pushViewController:mvc animated:YES];

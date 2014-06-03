@@ -177,7 +177,7 @@ static RestApi *sharedInstance = nil;
         [self callApiWithName:@"reports" andParameters:reportDictionary];
     }
 
-    [self callImages];
+    //[self callImages];
     
 }
 

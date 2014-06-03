@@ -27,12 +27,45 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _acceptLabel.text = [LocalText with:@"consent_button_label"];
+    _denyLabel.text = [LocalText with:@"decline_button_label"];
+
+    [self.webView setBackgroundColor:[UIColor clearColor]];
+    NSString *filename = [NSString stringWithFormat:@"consent_%@",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] ];
+    
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:filename ofType:@"html"];
+    
+    NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:htmlString baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pressAccept:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"Terms"];
+    [[NSUserDefaults standardUserDefaults] synchronize];    
+}
+
+- (IBAction)pressDeny:(id)sender {
+    exit(0);
+}
+
+#pragma mark - UIWebView delegate
+
+-(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
+    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
+        [[UIApplication sharedApplication] openURL:[inRequest URL]];
+        return NO;
+    }
+    
+    return YES;
 }
 
 /*

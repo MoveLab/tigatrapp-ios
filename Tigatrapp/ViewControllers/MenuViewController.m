@@ -8,10 +8,10 @@
 
 #import "MenuViewController.h"
 #import "CurrentLocation.h"
+#import "ReportViewController.h"
 #import "RestApi.h"
 
 @interface MenuViewController ()
-@property (nonatomic, strong) UIActionSheet *actionSheet;
 @end
 
 @implementation MenuViewController
@@ -28,8 +28,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [[CurrentLocation sharedInstance] startLocation];
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Terms"]) {
+        [self performSegueWithIdentifier:@"termsSegue" sender:self];
+    }
+    
+    _breedingHeaderLabel.text = [LocalText with:@"switchboard_button_text_report"];
+    _breedingFootLabel.text = [LocalText with:@"switchboard_button_text_sites"];
+    
+    _mosquitoHeaderLabel.text = [LocalText with:@"switchboard_button_text_report"];
+    _mosquitoFootLabel.text = [LocalText with:@"switchboard_button_text_adult"];
+    
+    _mapHeaderLabel.text = [LocalText with:@"switchboard_button_text_map"];
+    _mapFootLabel.text = @"";
+    
+    _galleryHeaderLabel.text = [LocalText with:@"switchboard_button_text_gallery"];
+    _galleryFootLabel.text = @"";
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,28 +61,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction) pressMoreOptions:(id)sender {
-    [_actionSheet showInView:self.view];
-}
-
-#pragma mark - Action sheet delegate
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    switch (buttonIndex) {
-        case 0:
-            //  [self FBShare];
-            break;
-        default:
-            break;
-    }
-}
-
 #pragma mark - Navigation
 
 
 - (IBAction) pressWebButton:(id)sender {
-    
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://atrapaeltigre.com"]];
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -76,12 +75,20 @@
     // Pass the selected object to the new view controller.
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
-                                  initWithTitle:@"Volver"
+                                   initWithTitle:[LocalText with:@"back"]
                                   style:UIBarButtonItemStylePlain
                                   target:nil
                                   action:nil];
     self.navigationItem.backBarButtonItem = backButton;
 
+    if ([segue.identifier isEqualToString:@"mosquitoSegue"]) {
+        ReportViewController *viewController = segue.destinationViewController;
+        viewController.reportType = @"adult";
+    } else if ([segue.identifier isEqualToString:@"siteSegue"]) {
+        ReportViewController *viewController = segue.destinationViewController;
+        viewController.reportType = @"site";
+    }
+    
 }
 
 

@@ -121,7 +121,11 @@
         annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
     }
     
-    annotationView.image = [UIImage imageNamed:@"mappoint1"];
+    if ([_report.type isEqualToString:@"adult"]) {
+        annotationView.image = [UIImage imageNamed:@"mappoint1"];
+    } else {
+        annotationView.image = [UIImage imageNamed:@"mappoint2"];
+    }
     annotationView.annotation = annotation;
     
     return annotationView;
