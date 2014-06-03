@@ -154,6 +154,7 @@
 }
 
 - (void) print {
+    /*
     NSLog(@"===========================");
     NSLog(@"user           :%@", self.user);
     NSLog(@"versionUUID    :%@", self.versionUUID);
@@ -178,6 +179,7 @@
     NSLog(@"responses      :%@", self.responses);
     NSLog(@"images         :%lu", self.images.count);
     NSLog(@"===========================");
+     */
 }
 
 

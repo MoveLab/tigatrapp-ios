@@ -20,46 +20,23 @@ static RestApi *sharedInstance = nil;
     return sharedInstance;
 }
 
-- (NSMutableSet *)imagesToUpload {
-    // lazy instantiation
-    if (!_imagesToUpload) {
-        _imagesToUpload = [[NSMutableSet alloc] init];
-        [self loadImagesToUpload];
-    }
-    return _imagesToUpload;
-}
-
-- (NSMutableSet *)imagesUploading {
-    if (!_imagesUploading) {
-        _imagesUploading = [[NSMutableSet alloc] init];
-    }
-    return _imagesToUpload;
-}
-
-- (NSMutableSet *)reportsToUpload {
-    if (!_reportsToUpload) {
-        _reportsToUpload = [[NSMutableSet alloc] init];
+- (id) init {
+    self = [super init];
+    if (self) {
+        self.imagesUploading = [[NSMutableSet alloc] init];
+        self.imagesToUpload = [[NSMutableSet alloc] init];
+        self.reportsUploading = [[NSMutableSet alloc] init];
+        self.reportsToUpload = [[NSMutableSet alloc] init];
         [self loadReportsToUpload];
+        [self loadImagesToUpload];
+
     }
-    return _imagesToUpload;
+    return self;
 }
-
-
-- (NSMutableSet *)reportsUploading {
-    if (!_reportsUploading) {
-        _reportsUploading = [[NSMutableSet alloc] init];
-    }
-    return _reportsUploading;
-}
-
-
 
 
 - (void) callApiWithName:(NSString *)name andParameters:(NSDictionary *)parameters {
     
-    [_reportsUploading addObject:parameters];
-    [_reportsToUpload removeObject:parameters];
-
     NSString *queryEsc = [NSString stringWithFormat:@"%@%@/?format=json",C_API,name];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
@@ -100,10 +77,9 @@ static RestApi *sharedInstance = nil;
     [postDataTask resume];
 }
 
+
+
 - (void) callPhotosApiWithParameters:(NSDictionary *)parameters {
-    
-    [_imagesUploading addObject:parameters];
-    [_imagesToUpload removeObject:parameters];
     
     NSString *queryEsc = [NSString stringWithFormat:@"%@photos/?format=json",C_API];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -164,28 +140,102 @@ static RestApi *sharedInstance = nil;
 
 
 - (void) callUsers {
+    
     NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:udid,@"user_UUID",nil];
+    NSString *queryEsc = [NSString stringWithFormat:@"%@users/?format=json",C_API];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:@"Token 3791ad3995d31cfb56add03030a804a7436079cc" forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"POST"];
+    
+    NSError *error;
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error];
+    [request setHTTPBody:postData];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error users %@",[error localizedDescription]);
+        } else {
+            if (SHOW_LOGS) NSLog(@"user ok %@",responseDict);
+        }
+        
+        
+    }];
+    
+    [postDataTask resume];
 
-   // [self callApiWithName:@"users" andParameters:parameters];
 }
+/*
+- (void) callReports {
+    if ([_reportsUploading count]==0) {
+        for (NSDictionary *reportDictionary in _reportsToUpload) {
+            NSLog(@"report to upload %@",reportDictionary);
+            [self callApiWithName:@"reports" andParameters:reportDictionary];
+        }
+    }
+}
+ */
 
 - (void) callReports {
-    
-    for (NSDictionary *reportDictionary in _reportsToUpload) {
-        NSLog(@"report to upload %@",reportDictionary);
-        [self callApiWithName:@"reports" andParameters:reportDictionary];
+    NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
+    if ([_reportsUploading count]==0) {
+        [_reportsUploading addObjectsFromArray:[_reportsToUpload allObjects]];
+        NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
+        [_reportsToUpload removeAllObjects];
+        NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
+        for (NSDictionary *reportDictionary in _reportsUploading) {
+            NSLog(@"report to upload %@",reportDictionary);
+            [self callApiWithName:@"reports" andParameters:reportDictionary];
+        }
     }
-
-    //[self callImages];
-    
 }
 
 - (void) callImages {
-    for (NSDictionary *imageDictionary in _imagesToUpload) {
-        NSLog(@"image to upload %@",[imageDictionary valueForKey:@"report"]);
-        [self callPhotosApiWithParameters:imageDictionary];
+    NSLog(@"images to upload = %d uploading=%d", _imagesToUpload.count, _imagesUploading.count);
+    if ([_imagesUploading count] == 0) {
+        [_imagesUploading addObjectsFromArray:[_imagesToUpload allObjects]];
+        [_imagesToUpload removeAllObjects];
+        NSLog(@"images to upload = %d uploading=%d", _imagesToUpload.count, _imagesUploading.count);
+        for (NSDictionary *imageDictionary in _imagesUploading) {
+            NSLog(@"image to upload from report %@",[imageDictionary valueForKey:@"report"]);
+            [self callPhotosApiWithParameters:imageDictionary];
+        }
     }
+}
+
+- (void) status {
+    NSLog(@"=========================================================");
+    
+    for (NSDictionary *imageDictionary in _imagesToUpload) {
+        NSLog(@"image to upload from report %@",[imageDictionary valueForKey:@"report"]);
+    }
+    for (NSDictionary *imageDictionary in _imagesUploading) {
+        NSLog(@"image uploading from report %@",[imageDictionary valueForKey:@"report"]);
+    }
+    for (NSDictionary *imageDictionary in _reportsToUpload) {
+        NSLog(@"report to upload %@ version %d",[imageDictionary valueForKey:@"report_id"]
+              , [[imageDictionary valueForKey:@"version_number"] intValue]);
+    }
+    for (NSDictionary *imageDictionary in _reportsUploading) {
+        NSLog(@"report uploading %@ version %d",[imageDictionary valueForKey:@"report_id"]
+              , [[imageDictionary valueForKey:@"version_number"] intValue]);
+    }
+
+    NSLog(@"=========================================================");
+
 }
 
 
@@ -201,11 +251,21 @@ static RestApi *sharedInstance = nil;
 }
 
 
+
+- (void) upload {
+    [self callReports];
+    [self callImages];
+}
+
+
 - (void)saveReportsToUpload {
     
     NSMutableArray *archiveArray = [[NSMutableArray alloc] init];
     
     for (NSDictionary *reportDictionary in self.reportsToUpload) {
+        [archiveArray addObject:reportDictionary];
+    }
+    for (NSDictionary *reportDictionary in self.reportsUploading) {
         [archiveArray addObject:reportDictionary];
     }
     
@@ -217,7 +277,10 @@ static RestApi *sharedInstance = nil;
     
     NSMutableArray *archiveArray = [[NSMutableArray alloc] init];
     
-    for (NSDictionary *reportDictionary in self.reportsToUpload) {
+    for (NSDictionary *reportDictionary in self.imagesToUpload) {
+        [archiveArray addObject:reportDictionary];
+    }
+    for (NSDictionary *reportDictionary in self.imagesUploading) {
         [archiveArray addObject:reportDictionary];
     }
     

@@ -18,6 +18,7 @@
 
 #define COMMIT_ALERT 87
 #define DELETE_ALERT 88
+#define THANKS_ALERT 89
 
 @interface ReportViewController ()
 @end
@@ -72,6 +73,8 @@
 
     }
 
+    NSLog(@"old version = %d newvwesion = %d",[_sourceReport.versionNumber intValue]
+          ,[_report.versionNumber intValue]);
     
     _checklistLabel.text = [LocalText with:@"checklist_label_editing"];
     _localizacionLabel.text = [LocalText with:@"location_label_editing"];
@@ -164,20 +167,32 @@
     } else if (alertView.tag == COMMIT_ALERT) {
         if (buttonIndex == 0) {
             if (self.sourceReport==nil) {
+                if (SHOW_LOGS) NSLog(@"insertant versio %d",[_report.versionNumber intValue]);
                 [[UserReports sharedInstance] addReport:_report];
-                [self.navigationController popViewControllerAnimated:YES];
             } else {
+                if (SHOW_LOGS) NSLog(@"insertant versio %d",[_report.versionNumber intValue]);
                 [[UserReports sharedInstance].reports removeObject:_sourceReport];
                 [[UserReports sharedInstance] addReport:_report];
-                [self.navigationController popViewControllerAnimated:YES];
             }
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+                                                            message:[LocalText with:@"report_sent_confirmation"]
+                                                           delegate:self
+                                                  cancelButtonTitle:[LocalText with:@"ok"]
+                                                  otherButtonTitles:nil];
+            alert.tag = THANKS_ALERT;
+            [alert show];
+
         }
+    } else if (alertView.tag == THANKS_ALERT) {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
 #pragma mark - Validation and send
 
 - (BOOL) checkAnswers {
+    
+    BOOL fail = NO;
     
     NSString *check;
     if ([_report.type isEqualToString:@"adult"]) {
@@ -190,6 +205,7 @@
         check = [NSString stringWithFormat:@"%@\n%@"
                  ,check
                  ,[LocalText with:@"toast_complete_checklist"]];
+        fail = YES;
     }
     
     if ((_report.locationChoice==nil)
@@ -198,15 +214,17 @@
         check = [NSString stringWithFormat:@"%@\n%@"
                  ,check
                  ,[LocalText with:@"toast_specify_location"]];
+        fail = YES;
     }
     
     if ([_report.type isEqualToString:@"site"] && [_report.images count]==0) {
         check = [NSString stringWithFormat:@"%@\n%@"
                  ,check
                  ,[LocalText with:@"toast_attach_photo"]];
+        fail = YES;
     }
     
-    if (check.length > 60) {
+    if (fail) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                         message:check
                                                        delegate:self

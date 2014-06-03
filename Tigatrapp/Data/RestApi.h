@@ -17,10 +17,13 @@
 @property (nonatomic, strong) NSMutableSet *imagesUploading;
 @property (nonatomic, strong) NSMutableSet *reportsUploading;
 
+-(id) init;
+
 - (void) callUsers;
-- (void) callReports;
 
 - (void)saveReportsToUpload;
 - (void)saveImagesToUpload;
 
+- (void) upload;
+- (void) status;
 @end

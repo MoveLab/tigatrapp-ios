@@ -45,7 +45,7 @@ static UserReports *sharedInstance = nil;
     [reportDictionary setObject:[FormatDate nowToString] forKey:@"phone_upload_time"];
     [[[RestApi sharedInstance] reportsToUpload] addObject:reportDictionary];
 
-    [[RestApi sharedInstance] callReports];
+    [[RestApi sharedInstance] upload];
 }
 
 - (void) deleteReport:(Report *)report {

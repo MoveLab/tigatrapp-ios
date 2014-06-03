@@ -28,11 +28,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[RestApi sharedInstance] init];
+    
     [[CurrentLocation sharedInstance] startLocation];
     
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Terms"]) {
         [self performSegueWithIdentifier:@"termsSegue" sender:self];
     }
+    
+    [[RestApi sharedInstance] callUsers];
     
     _breedingHeaderLabel.text = [LocalText with:@"switchboard_button_text_report"];
     _breedingFootLabel.text = [LocalText with:@"switchboard_button_text_sites"];
@@ -49,9 +54,8 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"images pending to upload:%d",[[RestApi sharedInstance].imagesToUpload count]);
-    NSLog(@"reports pending to upload:%d",[[RestApi sharedInstance].reportsToUpload count]);
-    
+    [[RestApi sharedInstance] upload];
+    [[RestApi sharedInstance] status];
 }
 
 
