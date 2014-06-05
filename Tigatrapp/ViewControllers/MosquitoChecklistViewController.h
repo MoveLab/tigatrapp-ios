@@ -18,11 +18,9 @@
 @property (nonatomic, weak) IBOutlet UISegmentedControl *firstSegmentedControl;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *secondSegmentedControl;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *thirdSegmentedControl;
-@property (nonatomic, weak) IBOutlet UIButton *doneButton;
 
 @property (nonatomic, weak) Report *report;
 
-- (IBAction)pressOK:(id)sender;
 - (IBAction)pressSegment:(UISegmentedControl *)segmentedControl;
 
 @end

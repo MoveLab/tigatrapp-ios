@@ -34,6 +34,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,6 +49,7 @@
         } else {
             self.report = [[Report alloc] initWithDictionary:[_sourceReport dictionaryIncludingImages:YES] ];
             self.report.versionNumber = [NSNumber numberWithInt:[self.report.versionNumber intValue]+1];
+            self.report.versionUUID =  [[NSUUID UUID] UUIDString];
             _reportarMosquitoLabel.text = [NSString stringWithFormat:@"%@\n%@"
                                            ,[LocalText with:@"view_report_title_adult"]
                                            ,[_report niceCreationTime]];
@@ -64,6 +66,7 @@
         } else {
             self.report = [[Report alloc] initWithDictionary:[_sourceReport dictionaryIncludingImages:YES] ];
             self.report.versionNumber = [NSNumber numberWithInt:[self.report.versionNumber intValue]+1];
+            self.report.versionUUID =  [[NSUUID UUID] UUIDString];
             _reportarMosquitoLabel.text = [NSString stringWithFormat:@"%@\n%@"
                                            ,[LocalText with:@"view_report_title_site"]
                                            ,[_report niceCreationTime]];
@@ -72,9 +75,6 @@
         _hacerUnaFotografiaLabel.text = [LocalText with:@"photo_label_star"];
 
     }
-
-    NSLog(@"old version = %d newvwesion = %d",[_sourceReport.versionNumber intValue]
-          ,[_report.versionNumber intValue]);
     
     _checklistLabel.text = [LocalText with:@"checklist_label_editing"];
     _localizacionLabel.text = [LocalText with:@"location_label_editing"];
@@ -84,6 +84,15 @@
     _notaLabel.text = [LocalText with:@"note_check_label"];
     
     self.tableView.tableFooterView = [UIView new];
+    
+    if ([_report.versionNumber intValue]>1 && [_report.locationChoice isEqualToString:@"current"]) {
+        _report.locationChoice = @"selected";
+        _report.selectedLocationLon = [_report.currentLocationLon copy];
+        _report.selectedLocationLat = [_report.currentLocationLat copy];
+        _report.currentLocationLon = nil;
+        _report.currentLocationLat = nil;
+    }
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -99,6 +108,37 @@
         _actualSwitch.on = NO;
     }
     
+    if (_report.responses.count == 3) {
+        _checklistIcon.alpha = 1.0;
+    } else {
+        _checklistIcon.alpha = 0.2;
+    }
+    
+    if (_report.note.length > 0) {
+        _noteIcon.alpha = 1.0;
+    } else {
+        _noteIcon.alpha = 0.2;
+    }
+    
+    if (_report.images.count > 0 ) {
+        _photoIcon.alpha = 1.0;
+    } else {
+        _photoIcon.alpha = 0.2;
+    }
+    
+    if ([_report.locationChoice isEqualToString:@"current"]) {
+        _mapIcon.alpha = 0.2;
+        _currentIcon.alpha = 1.0;
+    } else if ([_report.locationChoice isEqualToString:@"selected"]
+               && [_report.selectedLocationLat floatValue]!=[_sourceReport.currentLocationLat floatValue]             && [_report.selectedLocationLon floatValue]!=[_sourceReport.currentLocationLon floatValue]) {
+        _mapIcon.alpha = 1.0;
+        _currentIcon.alpha = 0.2;
+    } else {
+        _mapIcon.alpha = 0.2;
+        _currentIcon.alpha = 0.2;
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -112,10 +152,14 @@
 -(IBAction)pressSwitch:(id)sender  {
     if (_actualSwitch.isOn) {
         
-        if([CLLocationManager locationServicesEnabled]) {
+        if([[CurrentLocation sharedInstance] locationEnabled]) {
             _report.locationChoice = @"current";
             _report.selectedLocationLon = nil;
             _report.selectedLocationLat = nil;
+
+            _mapIcon.alpha = 0.2;
+            _currentIcon.alpha = 1.0;
+
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                             message:[NSString stringWithFormat:@"%@\n\nLat: %f\nLon: %f"
@@ -129,6 +173,8 @@
 
         } else {
             _report.locationChoice = nil;
+            _actualSwitch.on = NO;
+            _currentIcon.alpha = 0.2;
 
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                             message:[LocalText with:@"turn_on_location"]
@@ -140,6 +186,7 @@
         
     } else {
         _report.locationChoice = nil;
+        _currentIcon.alpha = 0.2;
     }
 }
 

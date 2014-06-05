@@ -17,7 +17,6 @@
 @property (nonatomic, strong) NSMutableSet *imagesUploading;
 @property (nonatomic, strong) NSMutableSet *reportsUploading;
 
--(id) init;
 
 - (void) callUsers;
 

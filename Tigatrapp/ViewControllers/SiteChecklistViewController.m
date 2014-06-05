@@ -53,9 +53,13 @@
     [_secondSegmentedControl setSelectedSegmentIndex:UISegmentedControlNoSegment];
     [_thirdSegmentedControl setSelectedSegmentIndex:UISegmentedControlNoSegment];
     
-    [self setInitialValueForPicker];
-    [self setInitialValueForSegmentedControl:_secondSegmentedControl withQuestion:_secondQuestionLabel.text];
-    [self setInitialValueForSegmentedControl:_thirdSegmentedControl withQuestion:_thirdQuestionLabel.text];
+    if (_report.answer1) [_pickerView selectRow:[_report.answer1 intValue] inComponent:0 animated:NO];
+    if (_report.answer2) [_secondSegmentedControl setSelectedSegmentIndex:[_report.answer2 intValue]];
+    if (_report.answer3) [_thirdSegmentedControl setSelectedSegmentIndex:[_report.answer3 intValue]];
+    
+    //[self setInitialValueForPicker];
+    //[self setInitialValueForSegmentedControl:_secondSegmentedControl withQuestion:_secondQuestionLabel.text];
+    //[self setInitialValueForSegmentedControl:_thirdSegmentedControl withQuestion:_thirdQuestionLabel.text];
         
 }
 
@@ -75,71 +79,40 @@
 }
 
 
+- (void) renewResponses {
+    // en bloc per evitar problemes amb els idiomes
+    
+    [_report.responses removeAllObjects];
+    
+    _report.answer1 = [NSNumber numberWithInt:[_pickerView selectedRowInComponent:0]];
+    NSDictionary *response1 = @{@"question":_firstQuestionLabel.text
+                                , @"answer":[_pickerArray objectAtIndex:[_pickerView selectedRowInComponent:0]]};
+    [_report.responses addObject:response1];
+    
+    if ([_secondSegmentedControl selectedSegmentIndex] != UISegmentedControlNoSegment) {
+        _report.answer2 = [NSNumber numberWithInt:_secondSegmentedControl.selectedSegmentIndex];
+        NSDictionary *response2 = @{@"question":_secondQuestionLabel.text
+                                    , @"answer":[_secondSegmentedControl titleForSegmentAtIndex:_secondSegmentedControl.selectedSegmentIndex]};
+        [_report.responses addObject:response2];
+        
+    }
+    
+    if ([_thirdSegmentedControl selectedSegmentIndex ] != UISegmentedControlNoSegment) {
+        _report.answer3 = [NSNumber numberWithInt:_thirdSegmentedControl.selectedSegmentIndex];
+        NSDictionary *response3 = @{@"question":_thirdQuestionLabel.text
+                                    , @"answer":[_thirdSegmentedControl titleForSegmentAtIndex:_thirdSegmentedControl.selectedSegmentIndex]};
+        [_report.responses addObject:response3];
+    }
+    
+}
+
+
+
 #pragma mark - UISegmentController actions
 
-- (void) setInitialValueForSegmentedControl:(UISegmentedControl *)segmentedControl withQuestion:(NSString *)question {
-    NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question = \"%@\""
-                                                            ,question
-                                                            ]];
-    NSArray *responseArray = [_report.responses filteredArrayUsingPredicate:filter];
-    
-    if (responseArray.count > 0) {
-        NSDictionary *response = [responseArray objectAtIndex:0];
-        if ([[response valueForKey:@"answer"] isEqualToString:[LocalText with:@"yes"]]) {
-            [segmentedControl setSelectedSegmentIndex:0];
-        } else if  ([[response valueForKey:@"answer"] isEqualToString:[LocalText with:@"no"]]) {
-            [segmentedControl setSelectedSegmentIndex:1];
-        } else if  ([[response valueForKey:@"answer"] isEqualToString:[LocalText with:@"dontknow"]]) {
-            [segmentedControl setSelectedSegmentIndex:2];
-        }
-    }
-}
-
-- (void) setInitialValueForPicker {
-    
-    
-    NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question = \"%@\""
-                                                            ,[LocalText with:@"site_report_q1"]
-                                                            ]];
-    NSArray *responseArray = [_report.responses filteredArrayUsingPredicate:filter];
-    NSLog(@"reponseArray %@",responseArray);
-    
-    if (responseArray.count > 0) {
-
-        NSDictionary *response = [responseArray objectAtIndex:0];
-        NSString *answer = [response objectForKey:@"answer"];
-        for (int i=0; i<_pickerArray.count; i++) {
-            if ([[_pickerArray objectAtIndex:i] isEqualToString:answer]) {
-                [_pickerView selectRow:i inComponent:0 animated:NO];
-            }
-        }
-    }
-}
 
 - (IBAction)pressSegment:(UISegmentedControl *)segmentedControl {
-    
-    NSString *question;
-    if (segmentedControl.tag == 2) {
-        question = _secondQuestionLabel.text;
-    } else if (segmentedControl.tag == 3) {
-        question = _thirdQuestionLabel.text;
-    } else {
-        question = @"error";
-    }
-    
-    NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question = \"%@\""
-                                                            ,question
-                                                            ]];
-    NSArray *responseArray = [_report.responses filteredArrayUsingPredicate:filter];
-    
-    if (responseArray.count > 0) {
-        [_report.responses removeObjectsInArray:responseArray];
-    }
-    
-    NSDictionary *newResponse = @{@"question":question
-                                  , @"answer":[segmentedControl titleForSegmentAtIndex:segmentedControl.selectedSegmentIndex]};
-    [_report.responses addObject:newResponse];
-    
+    [self renewResponses];
 }
 
 #pragma mark - UITableViewDelegate
@@ -162,22 +135,7 @@
 
 - (void)pickerView:(UIPickerView *)pV didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
-    NSString *question = [LocalText with:@"site_report_q1"];;
-    
-    NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question = \"%@\""
-                                                            ,question
-                                                            ]];
-    NSArray *responseArray = [_report.responses filteredArrayUsingPredicate:filter];
-    
-    if (responseArray.count > 0) {
-        [_report.responses removeObjectsInArray:responseArray];
-    }
-    
-    NSDictionary *newResponse = @{@"question":question
-                                  , @"answer":[_pickerArray objectAtIndex:row]};
-    NSLog(@"response=%@",newResponse);
-    [_report.responses addObject:newResponse];
+    [self renewResponses];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -189,13 +147,6 @@
 {
     return _pickerArray.count;
 }
-
-/*
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    return [_pickerArray objectAtIndex:row];
-}
-*/
 
 #pragma mark - Navigation
 

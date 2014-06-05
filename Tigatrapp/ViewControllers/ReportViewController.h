@@ -24,6 +24,13 @@
 @property (nonatomic, weak) IBOutlet UILabel *notaLabel;
 @property (nonatomic, weak) IBOutlet UIButton *enviarButton;
 
+@property (nonatomic, weak) IBOutlet UIImageView *checklistIcon;
+@property (nonatomic, weak) IBOutlet UIImageView *currentIcon;
+@property (nonatomic, weak) IBOutlet UIImageView *mapIcon;
+@property (nonatomic, weak) IBOutlet UIImageView *photoIcon;
+@property (nonatomic, weak) IBOutlet UIImageView *noteIcon;
+
+
 @property (nonatomic, strong) NSString *reportType;
 @property (nonatomic, strong) Report *report;
 @property (nonatomic, strong) Report *sourceReport;

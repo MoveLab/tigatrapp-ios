@@ -37,13 +37,16 @@
         [_mapView addAnnotation:_annotation];
         _annotation.coordinate = region.center;
         
-    } else {
+    } else if ([[CurrentLocation sharedInstance] locationEnabled]) {
         region.center.latitude = [CurrentLocation sharedInstance].currentLatitude;
         region.center.longitude = [CurrentLocation sharedInstance].currentLongitude;
+    } else { //Blanes
+        region.center.latitude = 41.6749;
+        region.center.longitude = 2.785559;
     }
     
-    region.span.latitudeDelta = 0.01;
-    region.span.longitudeDelta = 0.01;
+    region.span.latitudeDelta = 0.1;
+    region.span.longitudeDelta = 0.1;
     [_mapView setRegion:region animated:YES];
     
     UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]

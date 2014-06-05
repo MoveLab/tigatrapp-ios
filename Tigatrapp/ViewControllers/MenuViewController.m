@@ -29,8 +29,6 @@
 {
     [super viewDidLoad];
     
-    [[RestApi sharedInstance] init];
-    
     [[CurrentLocation sharedInstance] startLocation];
     
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Terms"]) {

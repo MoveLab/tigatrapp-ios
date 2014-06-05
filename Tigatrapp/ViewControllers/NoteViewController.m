@@ -35,7 +35,7 @@
     
 }
 
-- (void) viewDidDisappear:(BOOL)animated {
+- (void) viewWillDisappear:(BOOL)animated {
     _report.note = _textView.text;
 }
 

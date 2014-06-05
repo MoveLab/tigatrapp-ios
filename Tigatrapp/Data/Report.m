@@ -35,6 +35,9 @@
 @synthesize appLanguage;
 @synthesize responses;
 @synthesize user;
+@synthesize answer1;
+@synthesize answer2;
+@synthesize answer3;
 
 - (id) initWithDictionary:(NSDictionary *)dictionary {
     
@@ -88,6 +91,9 @@
             if ([dictionary valueForKey:@"app_language"]) self.appLanguage = [dictionary valueForKey:@"app_language"];
             if ([dictionary valueForKey:@"responses"]) [self.responses addObjectsFromArray:[dictionary valueForKey:@"responses"]];
             if ([dictionary valueForKey:@"images"]) [self.images addObjectsFromArray:[dictionary valueForKey:@"images"]];
+            if ([dictionary valueForKey:@"answer1"]) self.answer1 = [dictionary valueForKey:@"answer1"];
+            if ([dictionary valueForKey:@"answer2"]) self.answer2 = [dictionary valueForKey:@"answer2"];
+            if ([dictionary valueForKey:@"answer3"]) self.answer3 = [dictionary valueForKey:@"answer3"];
         }
     }
     return self;
@@ -148,6 +154,9 @@
     
     if (imagesIncluded) {
         if (self.images) [dictionary setObject:self.images forKey:@"images"];
+        if (self.answer1) [dictionary setObject:self.answer1 forKey:@"answer1"];
+        if (self.answer2) [dictionary setObject:self.answer2 forKey:@"answer2"];
+        if (self.answer3) [dictionary setObject:self.answer3 forKey:@"answer3"];
     }
     
     return dictionary;

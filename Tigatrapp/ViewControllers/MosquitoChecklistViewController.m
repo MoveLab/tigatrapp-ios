@@ -37,7 +37,6 @@
     _firstQuestionLabel.text = [LocalText with:@"confirmation_q1_adult_sizecolor"];
     _secondQuestionLabel.text = [LocalText with:@"confirmation_q2_adult_headthorax"];
     _thirdQuestionLabel.text = [LocalText with:@"adult_report_q3"];
-    _doneButton.titleLabel.text = [LocalText with:@"ok"];
     
     [_firstSegmentedControl setTitle:[LocalText with:@"yes"] forSegmentAtIndex:0];
     [_firstSegmentedControl setTitle:[LocalText with:@"no"] forSegmentAtIndex:1];
@@ -52,11 +51,10 @@
     [_firstSegmentedControl setSelectedSegmentIndex:UISegmentedControlNoSegment];
     [_secondSegmentedControl setSelectedSegmentIndex:UISegmentedControlNoSegment];
     [_thirdSegmentedControl setSelectedSegmentIndex:UISegmentedControlNoSegment];
-
-    [self setInitialValueForSegmentedControl:_firstSegmentedControl withQuestion:_firstQuestionLabel.text];
-    [self setInitialValueForSegmentedControl:_secondSegmentedControl withQuestion:_secondQuestionLabel.text];
-    [self setInitialValueForSegmentedControl:_thirdSegmentedControl withQuestion:_thirdQuestionLabel.text];
     
+    if (_report.answer1) [_firstSegmentedControl setSelectedSegmentIndex:[_report.answer1 intValue]];
+    if (_report.answer2) [_secondSegmentedControl setSelectedSegmentIndex:[_report.answer2 intValue]];
+    if (_report.answer3) [_thirdSegmentedControl setSelectedSegmentIndex:[_report.answer3 intValue]];
 }
 
 
@@ -70,57 +68,40 @@
 #pragma mark - ok button
 
 
-- (IBAction)pressOK:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+- (void) renewResponses {
+    // en bloc per evitar problemes amb els idiomes
+    
+    [_report.responses removeAllObjects];
+    
+    if ([_firstSegmentedControl selectedSegmentIndex] != UISegmentedControlNoSegment) {
+        _report.answer1 = [NSNumber numberWithLong:_firstSegmentedControl.selectedSegmentIndex];
+        NSDictionary *response1 = @{@"question":_firstQuestionLabel.text
+                                    , @"answer":[_firstSegmentedControl titleForSegmentAtIndex:_firstSegmentedControl.selectedSegmentIndex]};
+        [_report.responses addObject:response1];
+    }
+    
+    if ([_secondSegmentedControl selectedSegmentIndex] != UISegmentedControlNoSegment) {
+        _report.answer2 = [NSNumber numberWithInt:_secondSegmentedControl.selectedSegmentIndex];
+        NSDictionary *response2 = @{@"question":_secondQuestionLabel.text
+                                    , @"answer":[_secondSegmentedControl titleForSegmentAtIndex:_secondSegmentedControl.selectedSegmentIndex]};
+        [_report.responses addObject:response2];
+        
+    }
+    
+    if ([_thirdSegmentedControl selectedSegmentIndex ] != UISegmentedControlNoSegment) {
+        _report.answer3 = [NSNumber numberWithInt:_thirdSegmentedControl.selectedSegmentIndex];
+        NSDictionary *response3 = @{@"question":_thirdQuestionLabel.text
+                                    , @"answer":[_thirdSegmentedControl titleForSegmentAtIndex:_thirdSegmentedControl.selectedSegmentIndex]};
+        [_report.responses addObject:response3];
+    }
+    
 }
-
 
 #pragma mark - UISegmentController actions
 
-- (void) setInitialValueForSegmentedControl:(UISegmentedControl *)segmentedControl withQuestion:(NSString *)question {
-    NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question = \"%@\""
-                                                            ,question
-                                                            ]];
-    NSArray *responseArray = [_report.responses filteredArrayUsingPredicate:filter];
-    
-    if (responseArray.count > 0) {
-        NSDictionary *response = [responseArray objectAtIndex:0];
-        if ([[response valueForKey:@"answer"] isEqualToString:[LocalText with:@"yes"]]) {
-            [segmentedControl setSelectedSegmentIndex:0];
-        } else if  ([[response valueForKey:@"answer"] isEqualToString:[LocalText with:@"no"]]) {
-            [segmentedControl setSelectedSegmentIndex:1];
-        } else if  ([[response valueForKey:@"answer"] isEqualToString:[LocalText with:@"dontknow"]]) {
-            [segmentedControl setSelectedSegmentIndex:2];
-        }
-    }
-}
 
 - (IBAction)pressSegment:(UISegmentedControl *)segmentedControl {
-
-    NSString *question;
-    if (segmentedControl.tag == 1) {
-        question = _firstQuestionLabel.text;
-    } else if (segmentedControl.tag == 2) {
-        question = _secondQuestionLabel.text;
-    } else if (segmentedControl.tag == 3) {
-        question = _thirdQuestionLabel.text;
-    } else {
-        question = @"error";
-    }
-    
-    NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question = \"%@\""
-                                                            ,question
-                                                            ]];
-    NSArray *responseArray = [_report.responses filteredArrayUsingPredicate:filter];
-    
-    if (responseArray.count > 0) {
-        [_report.responses removeObjectsInArray:responseArray];
-    }
-    
-    NSDictionary *newResponse = @{@"question":question
-                                  , @"answer":[segmentedControl titleForSegmentAtIndex:segmentedControl.selectedSegmentIndex]};
-    [_report.responses addObject:newResponse];
-
+    [self renewResponses];
 }
 
 #pragma mark - UITableViewDelegate

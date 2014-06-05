@@ -29,7 +29,6 @@ static RestApi *sharedInstance = nil;
         self.reportsToUpload = [[NSMutableSet alloc] init];
         [self loadReportsToUpload];
         [self loadImagesToUpload];
-
     }
     return self;
 }
@@ -70,7 +69,8 @@ static RestApi *sharedInstance = nil;
 
             if (SHOW_LOGS) NSLog(@"Report pujat: %@",responseDict);
         }
-        
+        [self saveReportsToUpload];
+
         
     }];
     
@@ -133,6 +133,7 @@ static RestApi *sharedInstance = nil;
             [_imagesToUpload addObject:parameters];
             [_imagesUploading removeObject:parameters];
         }
+        [self saveImagesToUpload];
     }];
     
     [postDataTask resume];

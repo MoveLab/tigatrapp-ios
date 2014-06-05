@@ -35,6 +35,10 @@
 @property (nonatomic, strong) NSMutableArray *responses;
 @property (nonatomic, strong) NSString *user;
 @property (nonatomic, strong) NSMutableArray *images;
+@property (nonatomic, strong) NSNumber *answer1;
+@property (nonatomic, strong) NSNumber *answer2;
+@property (nonatomic, strong) NSNumber *answer3;
+
 
 - (id) initWithDictionary:(NSDictionary *)dictionary;
 - (void) print;
