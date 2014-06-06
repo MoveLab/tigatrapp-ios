@@ -30,7 +30,8 @@
     // Do any additional setup after loading the view.
     
     MKCoordinateRegion region;
-    if ([_report.locationChoice isEqualToString:@"selected"]) {
+    if ([_report.locationChoice isEqualToString:@"selected"]
+        ||[_report.locationChoice isEqualToString:@"was_current"]) {
         region.center.latitude = [_report.selectedLocationLat floatValue];
         region.center.longitude = [_report.selectedLocationLon floatValue];
         _annotation = [[ActivityMapAnnotation alloc] init];

@@ -179,46 +179,32 @@ static RestApi *sharedInstance = nil;
     [postDataTask resume];
 
 }
-/*
-- (void) callReports {
-    if ([_reportsUploading count]==0) {
-        for (NSDictionary *reportDictionary in _reportsToUpload) {
-            NSLog(@"report to upload %@",reportDictionary);
-            [self callApiWithName:@"reports" andParameters:reportDictionary];
-        }
-    }
-}
- */
 
 - (void) callReports {
-    NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
     if ([_reportsUploading count]==0) {
         [_reportsUploading addObjectsFromArray:[_reportsToUpload allObjects]];
-        NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
         [_reportsToUpload removeAllObjects];
-        NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
         for (NSDictionary *reportDictionary in _reportsUploading) {
-            NSLog(@"report to upload %@",reportDictionary);
             [self callApiWithName:@"reports" andParameters:reportDictionary];
         }
     }
+    if (SHOW_LOGS) NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
 }
 
 - (void) callImages {
-    NSLog(@"images to upload = %d uploading=%d", _imagesToUpload.count, _imagesUploading.count);
     if ([_imagesUploading count] == 0) {
         [_imagesUploading addObjectsFromArray:[_imagesToUpload allObjects]];
         [_imagesToUpload removeAllObjects];
-        NSLog(@"images to upload = %d uploading=%d", _imagesToUpload.count, _imagesUploading.count);
         for (NSDictionary *imageDictionary in _imagesUploading) {
-            NSLog(@"image to upload from report %@",[imageDictionary valueForKey:@"report"]);
             [self callPhotosApiWithParameters:imageDictionary];
         }
     }
+    if (SHOW_LOGS) NSLog(@"images to upload = %d uploading=%d", _imagesToUpload.count, _imagesUploading.count);
+
 }
 
+
 - (void) status {
-    NSLog(@"=========================================================");
     
     for (NSDictionary *imageDictionary in _imagesToUpload) {
         NSLog(@"image to upload from report %@",[imageDictionary valueForKey:@"report"]);
@@ -235,7 +221,6 @@ static RestApi *sharedInstance = nil;
               , [[imageDictionary valueForKey:@"version_number"] intValue]);
     }
 
-    NSLog(@"=========================================================");
 
 }
 

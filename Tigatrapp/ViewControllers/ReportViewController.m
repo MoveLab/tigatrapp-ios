@@ -86,9 +86,9 @@
     self.tableView.tableFooterView = [UIView new];
     
     if ([_report.versionNumber intValue]>1 && [_report.locationChoice isEqualToString:@"current"]) {
-        _report.locationChoice = @"selected";
-        _report.selectedLocationLon = [_report.currentLocationLon copy];
-        _report.selectedLocationLat = [_report.currentLocationLat copy];
+        _report.locationChoice = @"was_current";
+        _report.selectedLocationLon = [NSNumber numberWithFloat:[_report.currentLocationLon floatValue]];
+        _report.selectedLocationLat = [NSNumber numberWithFloat:[_report.currentLocationLat floatValue]];
         _report.currentLocationLon = nil;
         _report.currentLocationLat = nil;
     }
@@ -96,6 +96,7 @@
 }
 
 - (void) viewWillAppear:(BOOL)animated {
+    
     if (_report.images.count>0) {
         _numberOfImagesLabel.text = [NSString stringWithFormat:@"%d",_report.images.count];
     } else {
@@ -129,8 +130,7 @@
     if ([_report.locationChoice isEqualToString:@"current"]) {
         _mapIcon.alpha = 0.2;
         _currentIcon.alpha = 1.0;
-    } else if ([_report.locationChoice isEqualToString:@"selected"]
-               && [_report.selectedLocationLat floatValue]!=[_sourceReport.currentLocationLat floatValue]             && [_report.selectedLocationLon floatValue]!=[_sourceReport.currentLocationLon floatValue]) {
+    } else if ([_report.locationChoice isEqualToString:@"selected"]) {
         _mapIcon.alpha = 1.0;
         _currentIcon.alpha = 0.2;
     } else {
@@ -212,6 +212,15 @@
             [self.navigationController popViewControllerAnimated:YES];
         }
     } else if (alertView.tag == COMMIT_ALERT) {
+        
+        if ([_report.locationChoice isEqualToString:@"was_current"]) {
+            _report.locationChoice = @"current";
+            _report.currentLocationLon = [NSNumber numberWithFloat:[_report.selectedLocationLon floatValue]];
+            _report.currentLocationLat = [NSNumber numberWithFloat:[_report.selectedLocationLat floatValue]];
+            _report.selectedLocationLon = nil;
+            _report.selectedLocationLat = nil;
+        }
+        
         if (buttonIndex == 0) {
             if (self.sourceReport==nil) {
                 if (SHOW_LOGS) NSLog(@"insertant versio %d",[_report.versionNumber intValue]);
@@ -321,6 +330,11 @@
 }
 
 #pragma mark - Navigation
+
+
+- (void)backControl:(id) sender {
+    NSLog(@"goiing back");
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

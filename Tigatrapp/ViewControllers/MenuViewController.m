@@ -53,7 +53,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [[RestApi sharedInstance] upload];
-    [[RestApi sharedInstance] status];
+    if (SHOW_LOGS) [[RestApi sharedInstance] status];
 }
 
 
