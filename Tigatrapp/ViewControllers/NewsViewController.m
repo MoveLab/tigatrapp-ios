@@ -43,8 +43,13 @@
     self.feeds = [NSMutableArray array];
     self.tableView.tableFooterView = [UIView new];
 
+    NSURL *url;
     
-    NSURL *url = [NSURL URLWithString:@"http://atrapaeltigre.com/web/feed/"];
+    if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"ca"]) {
+        url = [NSURL URLWithString:@"http://atrapaeltigre.com/web/ca/feed/"];
+    } else {
+        url = [NSURL URLWithString:@"http://atrapaeltigre.com/web/feed/"];
+    }
     
     NSError *error = nil;
     NSData *feedData = [[NSData alloc] initWithContentsOfURL:url options:NSDataReadingUncached error:&error];
@@ -96,7 +101,7 @@
     UILabel *titleLabel = (UILabel *)[cell viewWithTag:1];
     UILabel *dateLabel = (UILabel *)[cell viewWithTag:2];
     titleLabel.text = [entry objectForKey:@"title"];
-    dateLabel.text = [entry objectForKey:@"pubDate"];
+    dateLabel.text = [FormatDate rssStringToString:[entry objectForKey:@"pubDate"]];
     
     return cell;
 }
@@ -163,9 +168,9 @@
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
     
     if ([elementName isEqualToString:@"item"]) {
-        [_item setObject:_thetitle forKey:@"title"];
-        [_item setObject:_link forKey:@"link"];
-        [_item setObject:_pubDate forKey:@"pubDate"];
+        [_item setObject:[_thetitle stringByReplacingOccurrencesOfString:@"\n" withString:@" "] forKey:@"title"];
+        [_item setObject:[_link stringByReplacingOccurrencesOfString:@"\n" withString:@" "] forKey:@"link"];
+        [_item setObject:[_pubDate stringByReplacingOccurrencesOfString:@"\n" withString:@" "] forKey:@"pubDate"];
         [_feeds addObject:[_item copy]];
     }
 }

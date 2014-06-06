@@ -12,5 +12,7 @@
 
 + (NSString *) nowToString;
 + (NSString *) dateToString:(NSDate *)date;
++ (NSString *) rssStringToString:(NSString *)dateRSS;
+
 
 @end

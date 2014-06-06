@@ -29,5 +29,15 @@
     return nowString;
 }
 
++ (NSString *) rssStringToString:(NSString *)dateRSS {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [dateFormatter setDateFormat:@"EEE, d MMM yyyy HH:mm:ss Z"];
+    NSDate *theDate = [dateFormatter dateFromString:dateRSS];
+    
+    [dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm:ss"];
+    return [dateFormatter stringFromDate:theDate];
+}
 
 @end
