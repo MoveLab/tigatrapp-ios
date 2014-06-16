@@ -164,7 +164,7 @@
 "site_report_q1" = "Tipo de lugar de cría";
 
 /* */
-"site_report_q2" = "¿Contiene agua?";
+"site_report_q2" = "¿Contiene agua estancada?";
 
 /* */
 "site_report_q3" = "¿Contiene larvas o pupas de mosquito (de cualquier especie)?";

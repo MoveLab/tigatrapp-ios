@@ -188,7 +188,6 @@ static RestApi *sharedInstance = nil;
             [self callApiWithName:@"reports" andParameters:reportDictionary];
         }
     }
-    if (SHOW_LOGS) NSLog(@"reports to upload = %d uploading=%d", _reportsToUpload.count, _reportsUploading.count);
 }
 
 - (void) callImages {
@@ -199,41 +198,39 @@ static RestApi *sharedInstance = nil;
             [self callPhotosApiWithParameters:imageDictionary];
         }
     }
-    if (SHOW_LOGS) NSLog(@"images to upload = %d uploading=%d", _imagesToUpload.count, _imagesUploading.count);
-
 }
 
 
 - (void) status {
     
-    for (NSDictionary *imageDictionary in _imagesToUpload) {
-        NSLog(@"image to upload from report %@",[imageDictionary valueForKey:@"report"]);
+    if (SHOW_LOGS) {
+        for (NSDictionary *imageDictionary in _imagesToUpload) {
+            NSLog(@"image to upload from report %@",[imageDictionary valueForKey:@"report"]);
+        }
+        for (NSDictionary *imageDictionary in _imagesUploading) {
+            NSLog(@"image uploading from report %@",[imageDictionary valueForKey:@"report"]);
+        }
+        for (NSDictionary *imageDictionary in _reportsToUpload) {
+            NSLog(@"report to upload %@ version %d",[imageDictionary valueForKey:@"report_id"]
+                  , [[imageDictionary valueForKey:@"version_number"] intValue]);
+        }
+        for (NSDictionary *imageDictionary in _reportsUploading) {
+            NSLog(@"report uploading %@ version %d",[imageDictionary valueForKey:@"report_id"]
+                  , [[imageDictionary valueForKey:@"version_number"] intValue]);
+        }
     }
-    for (NSDictionary *imageDictionary in _imagesUploading) {
-        NSLog(@"image uploading from report %@",[imageDictionary valueForKey:@"report"]);
-    }
-    for (NSDictionary *imageDictionary in _reportsToUpload) {
-        NSLog(@"report to upload %@ version %d",[imageDictionary valueForKey:@"report_id"]
-              , [[imageDictionary valueForKey:@"version_number"] intValue]);
-    }
-    for (NSDictionary *imageDictionary in _reportsUploading) {
-        NSLog(@"report uploading %@ version %d",[imageDictionary valueForKey:@"report_id"]
-              , [[imageDictionary valueForKey:@"version_number"] intValue]);
-    }
-
-
 }
 
 
 #pragma mark - NSURLSessionDelegate
 
 - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error {
-    NSLog(@"URLSession:(NSURLSession *)session didBecomeInvalidWithError %@",[error localizedDescription]);
+    if (SHOW_LOGS) NSLog(@"URLSession:(NSURLSession *)session didBecomeInvalidWithError %@",[error localizedDescription]);
 }
 
 
 - (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session {
-    NSLog(@"URLSessionDidFinishEventsForBackgroundURLSession");
+    if (SHOW_LOGS) NSLog(@"URLSessionDidFinishEventsForBackgroundURLSession");
 }
 
 

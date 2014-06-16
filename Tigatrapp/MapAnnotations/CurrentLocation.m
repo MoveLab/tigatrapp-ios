@@ -22,6 +22,9 @@ static CurrentLocation *sharedInstance = nil;
 -(void) startLocation {
     
     // location
+    
+    _locationEnabled = NO;
+    
     self.locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     _locationManager.distanceFilter = kCLDistanceFilterNone;
@@ -30,7 +33,6 @@ static CurrentLocation *sharedInstance = nil;
     if([CLLocationManager locationServicesEnabled]){
         
         if (SHOW_LOGS) NSLog(@"Location enabled");
-        _locationEnabled = YES;
         [_locationManager startUpdatingLocation];
         
     }
@@ -53,7 +55,6 @@ static CurrentLocation *sharedInstance = nil;
         
     } else if (status == kCLAuthorizationStatusAuthorized) {
         //hooray! begin startTracking
-        _locationEnabled = YES;
         if (SHOW_LOGS) NSLog(@"We have access to location services");
         [_locationManager startUpdatingLocation];
     }
@@ -61,7 +62,7 @@ static CurrentLocation *sharedInstance = nil;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    
+    _locationEnabled = YES;
      CLLocation *location  = [locations lastObject];
     //if (SHOW_LOGS) NSLog(@"LocationManager at %f %f",location.coordinate.latitude,location.coordinate.longitude);
     _currentLatitude = location.coordinate.latitude;

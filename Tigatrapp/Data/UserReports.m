@@ -33,7 +33,6 @@ static UserReports *sharedInstance = nil;
 
 - (void) addReport:(Report *)report {
     [self.reports addObject:report];
-    if (SHOW_LOGS) [report print];
     [self saveReports];
 
     for (NSData *image in report.images) {
@@ -50,11 +49,12 @@ static UserReports *sharedInstance = nil;
 
 - (void) deleteReport:(Report *)report {
     if (SHOW_LOGS) NSLog(@"delete report");
-    if (SHOW_LOGS) [report print];
     
-    NSMutableDictionary *reportDictionary = [report dictionaryIncludingImages:NO];
+    NSMutableDictionary *reportDictionary = [[NSMutableDictionary alloc] initWithDictionary:[report dictionaryIncludingImages:NO]];
     [reportDictionary setObject:[FormatDate nowToString] forKey:@"phone_upload_time"];
     [reportDictionary setObject:@-1 forKey:@"version_number"];
+    [reportDictionary setObject:[[NSUUID UUID] UUIDString] forKey:@"version_UUID"];
+
     [[[RestApi sharedInstance] reportsToUpload] addObject:reportDictionary];
     
     [self.reports removeObject:report];

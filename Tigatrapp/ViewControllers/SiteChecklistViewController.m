@@ -84,13 +84,13 @@
     
     [_report.responses removeAllObjects];
     
-    _report.answer1 = [NSNumber numberWithInt:[_pickerView selectedRowInComponent:0]];
+    _report.answer1 = [NSNumber numberWithInt:(int)[_pickerView selectedRowInComponent:0]];
     NSDictionary *response1 = @{@"question":_firstQuestionLabel.text
                                 , @"answer":[_pickerArray objectAtIndex:[_pickerView selectedRowInComponent:0]]};
     [_report.responses addObject:response1];
     
     if ([_secondSegmentedControl selectedSegmentIndex] != UISegmentedControlNoSegment) {
-        _report.answer2 = [NSNumber numberWithInt:_secondSegmentedControl.selectedSegmentIndex];
+        _report.answer2 = [NSNumber numberWithInt:(int)_secondSegmentedControl.selectedSegmentIndex];
         NSDictionary *response2 = @{@"question":_secondQuestionLabel.text
                                     , @"answer":[_secondSegmentedControl titleForSegmentAtIndex:_secondSegmentedControl.selectedSegmentIndex]};
         [_report.responses addObject:response2];
@@ -98,7 +98,7 @@
     }
     
     if ([_thirdSegmentedControl selectedSegmentIndex ] != UISegmentedControlNoSegment) {
-        _report.answer3 = [NSNumber numberWithInt:_thirdSegmentedControl.selectedSegmentIndex];
+        _report.answer3 = [NSNumber numberWithInt:(int)_thirdSegmentedControl.selectedSegmentIndex];
         NSDictionary *response3 = @{@"question":_thirdQuestionLabel.text
                                     , @"answer":[_thirdSegmentedControl titleForSegmentAtIndex:_thirdSegmentedControl.selectedSegmentIndex]};
         [_report.responses addObject:response3];
@@ -162,10 +162,7 @@
                                    action:nil];
     self.navigationItem.backBarButtonItem = backButton;
     
-    if ([segue.identifier isEqualToString:@"helpSegue"]) {
-        HelpViewController *viewController = segue.destinationViewController;
-        viewController.htmlString = [LocalText with:@"site_report_help_html"];
-    } else if ([segue.identifier isEqualToString:@"helpQ1Segue"]) {
+    if ([segue.identifier isEqualToString:@"helpQ1Segue"]) {
         HelpImageViewController *viewController = segue.destinationViewController;
         viewController.imageName = @"checklist_image_sites_1.jpg";
         viewController.caption = [LocalText with:@"site_report_item_help_1"];

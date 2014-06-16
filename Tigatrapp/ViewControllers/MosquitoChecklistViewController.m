@@ -81,7 +81,7 @@
     }
     
     if ([_secondSegmentedControl selectedSegmentIndex] != UISegmentedControlNoSegment) {
-        _report.answer2 = [NSNumber numberWithInt:_secondSegmentedControl.selectedSegmentIndex];
+        _report.answer2 = [NSNumber numberWithInt:(int)_secondSegmentedControl.selectedSegmentIndex];
         NSDictionary *response2 = @{@"question":_secondQuestionLabel.text
                                     , @"answer":[_secondSegmentedControl titleForSegmentAtIndex:_secondSegmentedControl.selectedSegmentIndex]};
         [_report.responses addObject:response2];
@@ -89,7 +89,7 @@
     }
     
     if ([_thirdSegmentedControl selectedSegmentIndex ] != UISegmentedControlNoSegment) {
-        _report.answer3 = [NSNumber numberWithInt:_thirdSegmentedControl.selectedSegmentIndex];
+        _report.answer3 = [NSNumber numberWithInt:(int)_thirdSegmentedControl.selectedSegmentIndex];
         NSDictionary *response3 = @{@"question":_thirdQuestionLabel.text
                                     , @"answer":[_thirdSegmentedControl titleForSegmentAtIndex:_thirdSegmentedControl.selectedSegmentIndex]};
         [_report.responses addObject:response3];
@@ -126,10 +126,7 @@
                                    action:nil];
     self.navigationItem.backBarButtonItem = backButton;
 
-    if ([segue.identifier isEqualToString:@"helpSegue"]) {
-        HelpViewController *viewController = segue.destinationViewController;
-        viewController.htmlString = [LocalText with:@"adult_report_help_html"];
-    } else if ([segue.identifier isEqualToString:@"helpSegueQ1"]) {
+    if ([segue.identifier isEqualToString:@"helpSegueQ1"]) {
         HelpImageViewController *viewController = segue.destinationViewController;
         viewController.imageName = @"checklist_image_adult_1.jpg";
         viewController.caption = [LocalText with:@"q1_sizecolor_text"];

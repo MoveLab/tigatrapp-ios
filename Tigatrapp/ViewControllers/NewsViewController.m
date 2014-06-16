@@ -182,10 +182,10 @@
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
     NSString *info = [NSString stringWithFormat:
                       @"Error %i, Description: %@, Line: %i, Column: %i",
-                      [parseError code],
+                      (int) [parseError code],
                       [[parser parserError] localizedDescription],
-                      [parser lineNumber],
-                      [parser columnNumber]];
+                      (int) [parser lineNumber],
+                      (int) [parser columnNumber]];
     
     NSLog(@"RSS Feed Parse Error: %@", info);
 }

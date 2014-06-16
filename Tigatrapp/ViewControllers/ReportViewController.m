@@ -15,6 +15,7 @@
 #import "Report.h"
 #import "UserReports.h"
 #import "CurrentLocation.h"
+#import "HelpViewController.h"
 
 #define COMMIT_ALERT 87
 #define DELETE_ALERT 88
@@ -98,7 +99,7 @@
 - (void) viewWillAppear:(BOOL)animated {
     
     if (_report.images.count>0) {
-        _numberOfImagesLabel.text = [NSString stringWithFormat:@"%d",_report.images.count];
+        _numberOfImagesLabel.text = [NSString stringWithFormat:@"%d",(int)_report.images.count];
     } else {
         _numberOfImagesLabel.text = @"";
     }
@@ -159,7 +160,6 @@
 
             _mapIcon.alpha = 0.2;
             _currentIcon.alpha = 1.0;
-
             
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
                                                             message:[NSString stringWithFormat:@"%@\n\nLat: %f\nLon: %f"
@@ -361,6 +361,13 @@
     } else if ([segue.identifier isEqualToString:@"noteSegue"]) {
         NoteViewController *viewController = segue.destinationViewController;
         viewController.report = _report;
+    } else if ([segue.identifier isEqualToString:@"helpSegue"]) {
+        HelpViewController *viewController = segue.destinationViewController;
+        if ([_reportType isEqualToString:@"adult"]) {
+            viewController.htmlString = [LocalText with:@"adult_report_help_html"];
+        } else {
+            viewController.htmlString = [LocalText with:@"site_report_help_html"];
+        }
     }
 }
 

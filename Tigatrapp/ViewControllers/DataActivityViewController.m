@@ -147,7 +147,6 @@
 
     ActivityMapAnnotation *annotation = view.annotation;
     Report *report = [[UserReports sharedInstance] reportWithId:annotation.reportId];
-    [report print];
     
     ReportViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
     mvc.reportType = annotation.type;

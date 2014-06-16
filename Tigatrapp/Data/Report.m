@@ -110,6 +110,7 @@
     return [dateFormat stringFromDate:date];
 }
 
+/*
 - (NSString *) defineReportId {
     int nextReportId;
     
@@ -123,6 +124,7 @@
     
     return [[[NSString stringWithFormat:@"0x%04x",nextReportId] stringByReplacingOccurrencesOfString:@"0" withString:@"z"] substringFromIndex:2];
 }
+ */
 
 - (NSMutableDictionary *) dictionaryIncludingImages:(BOOL)imagesIncluded {
     
@@ -162,8 +164,47 @@
     return dictionary;
 }
 
-- (void) print {
+- (NSString *) defineReportId {
+
+    
+    // I am removing potentially confusing characters 0, o, and O
+    NSArray *digits = @[ @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"A",
+        @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M",
+        @"N", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z",
+        @"a", @"b", @"c", @"d", @"e", @"f", @"g", @"h", @"i", @"j", @"k", @"l",
+        @"m", @"n", @"p", @"q", @"r", @"s", @"t", @"u", @"v", @"w", @"x", @"y", @"z"];
+    
     /*
+     * I am giving the report IDs 4 digits using the set of 62 alphanumeric
+     * characters taking (capitalization into account). If we would receive
+     * 1000 reports, the probability of at least two ending up with the same
+     * random ID is about .03 (based on the Taylor approximation solution to
+     * the birthday paradox: 1- exp((-(1000^2))/((62^4)*2))). For 100
+     * reports, the probability is about .0003. Since each report is also
+     * linked to a unique userID, and since the only consequence of a double
+     * ID would be to make it harder for us to link a mailed sample to a
+     * report -- assuming the report with the double ID included a mailed
+     * sample -- this seems like a reasonable risk to take. We could reduce
+     * the probability by adding digits, but then it would be harder for
+     * users to record their report IDs.
+     *
+     * UPDATE: I now removed 0 and o and O to avoid confusion, so the
+     * probabilities would need to be recaclulated...
+     */
+    
+    return ([NSString stringWithFormat:@"%@%@%@%@"
+             ,[digits objectAtIndex:(arc4random() % 58)]
+             ,[digits objectAtIndex:(arc4random() % 58)]
+             ,[digits objectAtIndex:(arc4random() % 58)]
+             ,[digits objectAtIndex:(arc4random() % 58)]
+             ]);
+}
+
+
+
+
+- (void) print {
+ 
     NSLog(@"===========================");
     NSLog(@"user           :%@", self.user);
     NSLog(@"versionUUID    :%@", self.versionUUID);
@@ -188,7 +229,7 @@
     NSLog(@"responses      :%@", self.responses);
     NSLog(@"images         :%lu", self.images.count);
     NSLog(@"===========================");
-     */
+ 
 }
 
 
