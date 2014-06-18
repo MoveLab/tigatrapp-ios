@@ -111,14 +111,6 @@
     
     annotationView.canShowCallout = YES;
     annotationView.centerOffset = CGPointMake(0, -20);
-   
-    /*
-    UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    [rightButton setImage:[UIImage imageNamed:@"chevron.png"] forState:UIControlStateNormal];
-    [rightButton addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
-    [rightButton setTintColor:[UIColor lightGrayColor]];
-    annotationView.rightCalloutAccessoryView = rightButton;
-    */
     
     ActivityMapAnnotation *mapAnnotation = (ActivityMapAnnotation *) annotation;
     

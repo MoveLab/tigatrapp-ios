@@ -64,9 +64,6 @@
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0,230.0,scrollviewWidth-40.0,scrollviewHeight-200.0)];
         label.font = [UIFont fontWithName:@"Futura-Medium" size:15.0];
         
-        
-        //NSString *theString = NSLocalizedString([labelsArray objectAtIndex:i],nil);
-
         NSString *theString = [LocalText with:[labelsArray objectAtIndex:i]];
 
         theString = [theString stringByReplacingOccurrencesOfString:@" +" withString:@" "

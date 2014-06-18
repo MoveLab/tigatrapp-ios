@@ -110,22 +110,6 @@
     return [dateFormat stringFromDate:date];
 }
 
-/*
-- (NSString *) defineReportId {
-    int nextReportId;
-    
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"reportId"]) {
-        nextReportId = 1+[[[NSUserDefaults standardUserDefaults] objectForKey:@"reportId"] intValue];
-    } else {
-        nextReportId = 1;
-    }
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:nextReportId] forKey:@"reportId"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    return [[[NSString stringWithFormat:@"0x%04x",nextReportId] stringByReplacingOccurrencesOfString:@"0" withString:@"z"] substringFromIndex:2];
-}
- */
-
 - (NSMutableDictionary *) dictionaryIncludingImages:(BOOL)imagesIncluded {
     
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];

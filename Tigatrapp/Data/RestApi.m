@@ -45,7 +45,7 @@ static RestApi *sharedInstance = nil;
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:10.0];
     
-    [request setValue:@"Token 3791ad3995d31cfb56add03030a804a7436079cc" forHTTPHeaderField:@"Authorization"];
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPMethod:@"POST"];
@@ -90,7 +90,7 @@ static RestApi *sharedInstance = nil;
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:10.0];
     
-    [request setValue:@"Token 3791ad3995d31cfb56add03030a804a7436079cc" forHTTPHeaderField:@"Authorization"];
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPMethod:@"POST"];
     
@@ -153,7 +153,7 @@ static RestApi *sharedInstance = nil;
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:10.0];
     
-    [request setValue:@"Token 3791ad3995d31cfb56add03030a804a7436079cc" forHTTPHeaderField:@"Authorization"];
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPMethod:@"POST"];
