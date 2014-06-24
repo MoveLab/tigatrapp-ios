@@ -1,0 +1,626 @@
+/* 
+  Localizable.strings
+  Tigatrapp
+
+  Created by jordi on 29/05/14.
+  Copyright (c) 2014 OMA Technologies, Ibeji digital, John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus
+*/
+
+"back" = "Back";
+"menu" = "Menu";
+
+"additional_information" = "Additional information";
+
+"turn_on_location" = "Turn on Location Services to allow Tigatrapp to determine your location";
+
+/* */
+"internal_message_id" = "csic.ceab.movelab.tigatrapp";
+
+/* */
+"language_selector_english" = "English";
+
+/* */
+"language_selector_catalan" = "Català";
+
+/* */
+"language_selector_spanish" = "Español";
+
+/* */
+"gallery_array" = "Female tiger mosquito. Tiger mosquitoes (1) are small and black with white stripes,        (2) they have a white stripe on the head and thorax, and (3) they have white stripes on the abdomen and legs. There are other similar insects, so it is important to avoid confusing them!";
+
+/* */
+"gallery_array_1" = "Female tiger mosquito. Note the stripes on the abdomen. Remember that the tiger mosquito is very small, not more than 5 mm (including legs, about half the size of a 1 cent coin).";
+
+/* */
+"gallery_array_2" = "Female tiger mosquito ready to bite. Note the white stripe on the head and thorax, and the stripes on the legs .";
+
+/* */
+"gallery_array_3" = "Female tiger mosquito biting. Note the characteristic white stripe on the head and thorax. ";
+
+/* */
+"gallery_array_4" = "Female tiger mosquito biting. Note the characteristic white stripe on the head and thorax. ";
+
+/* */
+"gallery_array_5" = "Two female tiger mosquitoes biting. Remember that only the females bite. Tiger mosquitoes usually bite during the day (not when it's dark) and they usually bite legs.";
+
+/* */
+"gallery_array_6" = "Female tiger mosquito biting. The blood that accumulates in the abdomen will trigger the laying of eggs.";
+
+/* */
+"gallery_array_7" = "Tiger mosquito laying eggs. Note the eggs' dark color and elongated shape. The eggs are so small that they are almost invisible to the naked eye. Remember that the tiger mosquito lays eggs in small containers, on dry walls by stagnant and dirty water.";
+
+/* */
+"gallery_array_8" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). Note that they are aquatic. The larvae emerge from the eggs when they are covered with water and eventually make       the transition to pupae.";
+
+/* */
+"gallery_array_9" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). Remember that to keep tiger mosquitos out of your home you need to avoid having standing water in which the larvae can develop!";
+
+/* */
+"gallery_array_10" = "Two tiger mosquito pupae. This is the phase in which metamorphosis occurs, and the adult mosquito emerges from the pupa and enters the aerial environment.";
+
+/* */
+"toast_report_before_submitting_site" = "Before submitting this breeding site report, please:";
+
+/* */
+"toast_report_before_submitting_adult" = "Before submitting this tiger mosquito report, please:";
+
+/* */
+"toast_complete_checklist" = "- complete the checklist";
+
+/* */
+"toast_specify_location" = "- specify a location";
+
+/* */
+"toast_attach_photo" = "- attach a photo of the breeding site";
+
+/* */
+"consent_button_label" = "I have read and I accept these conditions";
+
+/* */
+"decline_button_label" = "I decline to consent";
+
+/* */
+"dataMap_CD" = "My Data";
+
+/* */
+"switchboard_button_text_report" = "REPORT";
+
+/* */
+"switchboard_button_text_sites" = "BREEDING SITE";
+
+/* */
+"switchboard_button_text_adult" = "TIGER MOSQUITO";
+
+/* */
+"switchboard_button_text_map" = "MY MAP";
+
+/* */
+"switchboard_button_text_gallery" = "GALLERY";
+
+/* */
+"activity_label_report_editing" = "Tigatrapp: Report Editor";
+
+/* */
+"activity_label_report_new" = "Tigatrapp: New Report";
+
+/* */
+"activity_label_map" = "Tigatrapp: My Report Map";
+
+/* */
+"activity_label_gallery" = "Tigatrapp: Gallery";
+
+/* */
+"checklist_label_editing" = "Description*";
+
+/* */
+"location_label_editing" = "Location*";
+
+/* */
+"photo_check_label_editing" = "Photo(s)";
+
+/* */
+"note_check_label_editing" = "Note";
+
+/* */
+"report_title_adult" = "Tiger Mosquito";
+
+/* */
+"report_title_site" = "Breeding Site";
+
+/* */
+"checklist_label" = "Add description*";
+
+/* */
+"location_label" = "Add location*";
+
+/* */
+"location_current_label" = "Current";
+
+/* */
+"location_select_label" = "Choose on map";
+
+/* */
+"location_current_label_button" = "Current";
+
+/* */
+"location_select_label_button" = "Select";
+
+/* */
+"location_menu_title" = "Use current location or select location from map?";
+
+/* */
+"photo_check_label" = "Add photo(s)";
+
+/* */
+"note_check_label" = "Add note";
+
+/* */
+"update" = "Update";
+
+/* */
+"created_on" = "Sent:";
+
+/* */
+"delete_report_warning" = "Are you sure you want to delete this report?";
+
+/* */
+"word_report" = "Report";
+
+/* */
+"photo_label" = "Photo(s)";
+
+/* */
+"photo_label_star" = "Photo(s)*";
+
+/* */
+"site_report_q1" = "Type of breeding site";
+
+/* */
+"site_report_q2" = "Does it have stagnant water inside?";
+
+/* */
+"site_report_q3" = "Have you seen mosquito larvae (not necessarily tiger mosquito) inside?";
+
+/* */
+"q2_abdomenlegs_text" = "Tiger mosquitoes have white stripes on their abdomens and legs.";
+
+/* */
+"identifying_mosquitoes_title" = "Identifying Tiger Mosquitoes";
+
+/* */
+"confirmation_q1_adult_sizecolor" = "Is it small and black with white stripes?";
+
+/* */
+"q1_sizecolor_text" = "Tiger mosquitoes are small and black with white stripes.";
+
+/* */
+"confirmation_q2_adult_headthorax" = "Does it have a white stripe on the head and thorax?";
+
+/* */
+"adult_report_q3" = "Does it have white stripes on the abdomen and legs?";
+
+/* */
+"embornals" = "Storm drain";
+
+/* */
+"fonts" = "Fountain";
+
+/* */
+"basses" = "Basin";
+
+/* */
+"bidons" = "Bucket";
+
+/* */
+"pous" = "Well";
+
+/* */
+"altres" = "Other";
+
+/* */
+"report_checklist_title_adult" = "Adult Checklist";
+
+/* */
+"report_checklist_title_site" = "Site Checklist";
+
+/* */
+"adult_report_help_html" = "        \n<p><b>HELP:</b> <br/> \n<b>Think you've found a tiger mosquito? Fill out this report and send in your data. Fields marked with an asterisk (*) are required.</b> \n</p> \n<p> \n<ul> \n<li><b>Description</b>: The questions here will help you decide if what you've found is really a tiger mosquito.</li> \n<br/> \n<li><b>Location</b>: Choose current location if you are still in the place where you found the mosquito. (Make sure you have GPS enabled on your phone.) Otherwise, select the mosquito's location on the map.</li> \n<br/> \n<li><b>Photo(s)</b>: Take a photo of the mosquito now or attach one from a file.</li> \n<br/> \n<li><b>Notes</b>: Add a note if you want to send additional information about your finding.</li> \n</ul> \n</p> \n<p>Once sent, you can view and edit your report on your phone by selecting the map activity from the main screen and then clicking on a report icon. The information you submit will also be published map on a public tiger mosquito map at <a href=\"www.atrapaeltigre.com\"> www.atrapaeltigre.com </a>.</p>\n   ";
+
+/* */
+"site_report_help_html" = "\n<p><b>HELP:</b> <br/> \n<b>Found a public space where you think the tiger mosquito can breed? Fill out this report and send in your data. Fields marked with an asterisk (*) are required.</b> \n</p> \n<p> \n<ul> \n<li><b>Description</b>: The questions here will help you decide if what you've found is really a tiger mosquito breeding site.</li> \n<br/> \n<li><b>Location</b>: Choose current location if you are still at the site. (Make sure you have GPS enabled on your phone.) Otherwise, select the site's location on the map.</li> \n<br/> \n<li><b>Photo(s)</b>: Take a photo of the site now or attach one from a file.</li> \n<br/> \n<li><b>Notes</b>: Add a note if you want to send additional information about your finding.</li> \n</ul> \n</p> \n<p>Once sent, you can view and edit your report on your phone by selecting the map activity from the main screen and then clicking on a report icon. The information you submit will also be published map on a public tiger mosquito map at <a href=\"www.atrapaeltigre.com\"> www.atrapaeltigre.com </a>.</p>\n       ";
+
+/* */
+"site_report_item_help_1" = " <p>Tiger mosquito larvae and pupae live in deposits and small containers of standing water that is dirty (and has no fish). Examples: storm drains, fountains, basins, wells, buckets, etc.. </ P> <p>Tiger mosquito larvae are generally not found on the beach or in rivers, lakes, ponds, or wetlands (although you may find other types of larvae in these places).</p>       \n";
+
+/* */
+"site_report_item_help_2" = "   \n<p>The larvae and pupae need stagnant water and organic matter (food) to survive. Avoid letting water accumulate in or around you home.</p>\n   ";
+
+/* */
+"site_report_item_help_3" = "     \n<p>The mosquito larvae are easy to recognize. They are elongated and smaller than a 1-cent coin, and they swim and do pirouettes in the water. They move a lot and come to the surface of the water to breathe.</p>    \n";
+
+/* */
+"return_to_map" = "Back";
+
+/* */
+"delete_report" = "Delete";
+
+/* */
+"edit_report" = "Edit";
+
+/* */
+"report_not_saved_warning" = "This report has not been saved. Are you sure you want to exit?";
+
+/* */
+"exit_question" = "Exit?";
+
+/* */
+"no_note_attached" = "No note attached";
+
+/* */
+"no_photo_attached" = "No photo attached";
+
+/* */
+"checklist_tab_title" = "Checklist";
+
+/* */
+"photos_tab_title" = "Photos";
+
+/* */
+"notes_tab_title" = "Notes";
+
+/* */
+"view_report_title_adult" = "Adult Report";
+
+/* */
+"view_report_title_site" = "Breeding Site Report";
+
+/* */
+"photo_selector_title" = "Report Photos";
+
+/* */
+"photo_selector_take_photo_button" = "Take new photo";
+
+/* */
+"photo_selector_attach_photo_button" = "Attach from file";
+
+/* */
+"photo_selector_remove_attachment" = "Remove Attachment";
+
+/* */
+"photo_selector_remove_this_photo" = "Remove this photo";
+
+/* */
+"photo_selector_from_thisreport" = "from this report";
+
+/* */
+"photo_selector_remove_button_label" = "Remove";
+
+/* */
+"rss_internet_connection_warning" = "No internet connection.\n\nTo view the feed, please connect to the internet";
+
+/* */
+"rss_title_tigatrapp" = "Latest from TigaTrapp!";
+
+/* */
+"task_list_title" = "Missions";
+
+/* */
+"task_list_pending" = "Pending";
+
+/* */
+"task_list_completed" = "Complete";
+
+/* */
+"delete_task_from_list_question" = "Delete mission from list?";
+
+/* */
+"delete" = "Delete";
+
+/* */
+"new_mission" = "New Tigatrapp mission!";
+
+/* */
+"mission_button_left_survey" = "Submit responses";
+
+/* */
+"mission_button_left_url" = "Visit webpage";
+
+/* */
+"mission_button_middle" = "Do mission later";
+
+/* */
+"mission_button_right" = "Delete mission";
+
+/* */
+"mission_button_mark_complete" = "Mark complete";
+
+/* */
+"toast__mission_already_complete" = "You have already completed this mission. Thank you!";
+
+/* */
+"toast_mission_expired" = "This mission has expired.";
+
+/* */
+"menu_option_task_list" = "Missions";
+
+/* */
+"menu_option_tigatrapp_news" = "News";
+
+/* */
+"menu_option_settings" = "Settings";
+
+/* */
+"menu_option_help" = "Help";
+
+/* */
+"menu_option_about" = "About";
+
+/* */
+"menu_option_share" = "Share";
+
+/* */
+"menu_option_filter" = "Filter";
+
+/* */
+"menu_option_show_pending_tasks_only" = "Show pending tasks only";
+
+/* */
+"menu_option_show_all_tasks" = "Show all tasks";
+
+/* */
+"menu_option_map_type_label" = "Map Type";
+
+/* */
+"menu_option_map_type_satellite" = "Satellite Map";
+
+/* */
+"menu_option_map_type_street" = "Street Map";
+
+/* */
+"menu_option_share_map" = "Share Map";
+
+/* */
+"menu_option_save_map" = "Save Map";
+
+/* */
+"menu_map_save" = "Save";
+
+/* */
+"menu_map_share" = "Share";
+
+/* */
+"menu_toggle_view" = "Satellite";
+
+/* */
+"menu_option_refresh" = "Refresh";
+
+/* */
+"settings_language_title" = "Language";
+
+/* */
+"settings_language_detail" = "Choose language";
+
+/* */
+"settings_language_button" = "Choose";
+
+/* */
+"settings_sync_title" = "Synchronize";
+
+/* */
+"settings_sync_detail" = "Synchronize data with the Tigatrapp server to receive new missions and the latest Tigatrapp news.";
+
+/* */
+"settings_sync_button" = "Sync.";
+
+/* */
+"settings_syncing" = "Synchronizing data.";
+
+/* */
+"on" = "On";
+
+/* */
+"off" = "Off";
+
+/* */
+"sample_my_locations" = "Sample my locations";
+
+/* */
+"sampling_is_off" = "Location sampling is off";
+
+/* */
+"sampling_is_on" = "Location sampling is on";
+
+/* */
+"added_current_loc" = "Added current location.";
+
+/* */
+"refresh" = "Refresh";
+
+/* */
+"report_deleted" = "Report deleted";
+
+/* */
+"edit" = "Edit";
+
+/* */
+"edit_title_adult" = "Adult Mosquito";
+
+/* */
+"edit_title_site" = "Breeding Site";
+
+/* */
+"cd_help_icon" = "Help Icon";
+
+/* */
+"open" = "Open";
+
+/* */
+"spinner_prompt" = "Select Response";
+
+/* */
+"spinner_nothing_selected" = "Nothing selected";
+
+/* */
+"help" = "Help";
+
+/* */
+"photo_credit_gallery" = "Photo by R. Eritja (www.eritja.com)";
+
+/* */
+"photo_credit" = "Fotografies de R. Eritja (www.eritja.com)";
+
+/* */
+"nolocnogps_alert" = "Your locatioin cannot be detected because GPS and network receivers are both off. Please activate them or choose a location on the map.";
+
+/* */
+"progtitle_report" = "Enviant";
+
+/* */
+"nolocation_alert_report" = "Your location has not yet been detected. Please wait a few more seconds and try again or else select location from map..";
+
+/* */
+"upload_error_report" = "Transmission error. Your data has been saved on the device and will be sent later. Thank you!";
+
+/* */
+"offline_report" = "No internet connection. Your report will be sent automatically when there is a connection available. Thank you!";
+
+/* */
+"about" = "About";
+
+/* */
+"add_note" = "If you want, you can write a message here for the research team. For example, you can describe the  mosquito in more detail.";
+
+/* */
+"app_directory" = "Tigatrapp";
+
+/* */
+"app_name" = "Tigatrapp";
+
+/* */
+"button_submit_CD" = "Button for sending report to research center";
+
+/* */
+"cancel" = "Cancel";
+
+/* */
+"ceab_CD" = "CEAB logo";
+
+/* */
+"data_saved" = "Data saved as ";
+
+/* */
+"data_SD_error" = "SD card error";
+
+/* */
+"data_SD_unavailable" = "SD card not available – data cannot be saved.";
+
+/* */
+"dipsalut_CD" = "Dipsalut logo";
+
+/* */
+"dontknow" = "Not sure";
+
+/* */
+"fecyt_CD" = "FECYT logo";
+
+/* */
+"funded_by" = "Financed by:";
+
+/* */
+"funding_and_support" = "Financing and Support";
+
+/* */
+"gallery" = "Image Gallery";
+
+/* */
+"GPL" = "View GPL";
+
+/* */
+"gpl_heading" = "GPL";
+
+/* */
+"LGPL" = "View LGPL";
+
+/* */
+"license" = "License";
+
+/* */
+"mailing_spec_title" = "Send sample";
+
+/* */
+"movelab" = "MoveLab\nCentre d'Estudis Avançats de Blanes (CEAB-CSIC)";
+
+/* */
+"movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
+
+/* */
+"movelab_address2" = "Blanes. Girona. E-17300";
+
+/* */
+"movelab_banner_CD" = "MoveLab logo";
+
+/* */
+"no" = "No";
+
+/* */
+"noGPSnoNetAlert" = "Your GPS and network receivers are off so it Is not possible to detect your location. Activate them now?";
+
+/* */
+"notes_title" = "Message";
+
+/* */
+"ok" = "OK";
+
+/* */
+"project_email" = "info@atrapaeltigre.com";
+
+/* */
+"project_website" = "http://atrapaeltigre.com/";
+
+/* */
+"report_sent" = "If you select OK, your report will be sent to the lab.";
+
+/* */
+"report_sent_confirmation" = "Report sent. Thank you!";
+
+/* */
+"reportGallery_CD" = "Image gallery button";
+
+/* */
+"saved_image_prefix" = "myMap";
+
+/* */
+"scm_CD" = "SCM logo";
+
+/* */
+"send_spec_text" = "Will you send your mosquito by post to the lab?";
+
+/* */
+"share_with" = "Share";
+
+/* */
+"submit" = "Send";
+
+/* */
+"supported_by" = "With support from:";
+
+/* */
+"q3_headthorax_text" = "Tiger  mosquitoes have a white stripe on the head and thorax.";
+
+/* */
+"type_here" = "Use this space to include a note or comments if necessary.";
+
+/* */
+"view_gpl_english" = "View Official Version of GPL";
+
+/* */
+"yes" = "Yes";
+
+/* */
+"your_report_id_is" = "Your report ID is: ";
+
+/* */
+"photo_credits" = "The photographs in Tigatrapp were provided by R. Eritja (www.eritja.com).";
+
+/* */
+"copyright" = "\n<p>Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga ansd Frederic Bartumeus</p>\n    ";
