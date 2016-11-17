@@ -1,613 +1,835 @@
-/* 
-  Localizable.strings
-  Tigatrapp
+/*
+ * Loco ios export: iOS Localizable.strings
+ * Project: strings.xml conversion
+ * Release: Working copy
+ * Locale: en, English
+ * Exported by: Unregistered user
+ * Exported at: Tue, 08 Nov 2016 17:20:39 +0000
+ */
 
-  Created by jordi on 29/05/14.
-  Copyright (c) 2014 OMA Technologies, Ibeji digital, John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus
-*/
-
-"back" = "Enrera";
-"menu" = "Menú";
-"additional_information" = "Informació addicional";
-"turn_on_location" = "Activeu la Localització per permetre a Tigatrapp determinar la seva posició";
+"legend_nearby_observations" = "Observacions properes";
+"legend_my_observations" = "Les meves observacions";
 
 
-/* */
+
+/* Intro and Consent */
 "consent_button_label" = "He llegit i accepto les condicions d'ús";
 
-/* */
+/*  */
 "decline_button_label" = "No hi estic d'acord";
 
-/* */
-"gallery_array" = "Femella de mosquit tigre. Només els mosquits que: 1) són petits, negres i amb ratlles blanques, 2) tenen una ratlla blanca al cap i al tòrax i 3) tenen ratlles blanques a l'abdomen i a les potes són mosquit tigre. Hi ha altres insectes semblants, cal evitar confondre'ls!";
+/*  */
+"mosquito_alert_pop" = "<p><b>AtrapaelTigre és ara Mosquito Alert!</b></p>\n<p>Som els mateixos, però el projecte ha crescut. Amb aquest canvi, hem incorporat un nou protagonista: ja no només podreu notificar possibles troballes de mosquit tigre (<i>Aedes albopictus</i>), sinó també del mosquit de la febre groga (<i>Aedes aegypti</i>).<p>\n<p>Trobareu tota la informació a www.mosquitoalert.com</p>\n<p>Gràcies pel vostre interès i participació,</p>\n<p>Equip coordinador Mosquito Alert</p>";
 
-/* */
-"gallery_array_1" = "Femella de mosquit tigre. Observa les ratlles a l'abdomen. Recorda que el mosquit tigre és molt petit, no fa més de 5 mm (amb potes incloses, aproximadament la meitat d'una moneda d'1 cèntim).";
+/* Gallery */
+"gallery_array0" = "Per identificar el mosquit tigre i el mosquit de la febre groga cal fixar-se en la part del cos que queda just després del cap, el tòrax. El mosquit de la febre groga (esquerra) té 4 línies blanques, mentre que el mosquit tigre (dreta) només té una línia blanca.\n<b>Foto: Vincent Robert (CC BY 2.0)</b>";
 
-/* */
-"gallery_array_2" = "Femella de mosquit tigre preparada per picar. Observa la ratlla blanca al cap i al tòrax i les ratlles a les potes.";
+/*  */
+"gallery_array1" = "Mosquit tigre (<i>Aedes albopictus</i>). És de color negre amb taques i línies blanques. Fíxa't en la línia blanca del cap i la del tòrax. Aquesta femella té l'abdomen inflat de sang després d'haver fet una picada. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_3" = "Femella de mosquit tigre picant. Observa la característica ratlla blanca al cap i al tòrax. ";
+/*  */
+"gallery_array2" = "Mosquit de la febre groga (<i>Aedes aegypti</i>). És de color marró fosc amb taques i línies blanques. Just després del seu cap, al tòrax, té 4 línies blanques en forma de lira. <b>Foto: James Gathany (ECDC PD)</b>";
 
-/* */
-"gallery_array_4" = "Femella de mosquit tigre picant. Observa la característica ratlla blanca al cap i al tòrax. ";
+/*  */
+"gallery_array3" = "Mosquit tigre (<i>Aedes albopictus</i>). Observa el color de fons negre que el caracteritza. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_5" = "Dues femelles de mosquit tigre picant. Recorda que només piquen les femelles. En el cas del mosquit tigre, acostumen a fer-ho durant el dia (i no quan és fosc) i normalment piquen a les cames. ";
+/*  */
+"gallery_array4" = "Mosquit de la febre groga (<i>Aedes aegypti</i>). Observa el color marró de fons que el caracteritza. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_6" = "Femella de mosquit tigre picant. La sang que acumula a l'abdomen servirà per generar una posta d'ous. ";
+/*  */
+"gallery_array5" = "Femelles de mosquit tigre picant. Només piquen les femelles i ho fan durant el dia. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_7" = "Posta d'ous de mosquit tigre. Observa el color fosc i la forma allargada. Els ous són tan petits que són quasi invisibles a ull nu. Recorda que el mosquit tigre posa els ous en recipients petits, en parets seques prop d'aigua estancada i bruta. ";
+/*  */
+"gallery_array6" = "Femelles de mosquit de la febre groga (<i>Aedes aegypti</i>). <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_8" = "Larves (més allargades) i pupes (més arrodonides) de mosquit tigre. Observa que són aquàtiques. Les larves emergeixen dels ous quan aquests queden coberts d'aigua i amb el temps fan la muda a pupes. ";
+/*  */
+"gallery_array7" = "Mosquit tigre (esquerra: mascle; dreta: femella). Els mascles tenen plomalls al cap. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_9" = "Larves (més allargades) i pupes (més arrodonides) de mosquit tigre. Recorda que per evitar tenir mosquit tigre a casa, cal evitar les petites acumulacions d'aigua.";
+/*  */
+"gallery_array8" = "Posta d’ous de mosquits del gènere <i>Aedes</i>. Les femelles ponen els ous en sec a sobre de les parets de recipients petits que tenen aigua estancada. Els ous són tan petits que és difícil veure'ls a simple vista. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
-"gallery_array_10" = "Dues pupes de mosquit tigre. En aquesta fase es produeix la metamorfosi, i el mosquit adult emergeix de la pupa cap al medi aeri. ";
+/*  */
+"gallery_array9" = "Larves (allargades) i pupes (arrodonides) de mosquits del gènere <i>Aedes</i>. Les larves són aquàtiques i en poc temps es transformen en pupes i després en adults. <b>Foto: Roger Eritja (©)</b>";
 
-/* */
+/*  */
+"gallery_array10" = "Larves (allargades) i pupes (arrodonides) de mosquits del gènere <i>Aedes</i>. <b>Foto: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array11" = "Mosquit tigre transformant-se de pupa a mosquit adult. Aquest procés es coneix amb el nom de metamorfosi. <b>Foto: Roger Eritja (©)</b>";
+
+/* Toasts */
 "toast_report_before_submitting_site" = "Per enviar aquest lloc de cria:";
 
-/* */
-"toast_report_before_submitting_adult" = "Per enviar aquest albirament d'adult:";
+/*  */
+"toast_report_before_submitting_adult" = "Per enviar aquesta troballa d'adult:";
 
-/* */
+/*  */
 "toast_complete_checklist" = "- Completa descripció";
 
-/* */
+/*  */
 "toast_specify_location" = "- Especifica posició";
 
-/* */
+/*  */
 "toast_attach_photo" = "- Adjunta imatge";
 
-/* */
+/* Switchboard */
 "dataMap_CD" = "Les meves dades";
 
-/* */
+/*  */
 "switchboard_button_text_report" = "ENVIA";
 
-/* */
+/*  */
 "switchboard_button_text_sites" = "LLOC DE CRIA";
 
-/* */
-"switchboard_button_text_adult" = "MOSQUIT TIGRE";
+/*  */
+"switchboard_button_text_adult" = "MOSQUIT";
 
-/* */
+/*  */
 "switchboard_button_text_map" = "EL MEU MAPA";
 
-/* */
+/*  */
 "switchboard_button_text_gallery" = "GALERIA";
 
-/* */
-"activity_label_report_editing" = "Tigatrapp: Edita informe";
+/*  */
+"switchboard_demo_popup" = "Estàs utilitzant la versió demo (de proves) de Mosquito Alert. Amb aquesta versió antiga no es poden enviar dades. Si vols participar al projecte compartint dades, clica OK per instal·lar-te la versió completa (si ja la tens instal·lada, pots desinstal·lar-te la versió demo quan vulguis).";
 
-/* */
-"activity_label_report_new" = "Tigatrapp: Nou informe";
+/* activity labels */
+"activity_label_report_editing" = "Mosquito Alert: Edita informe";
 
-/* */
-"activity_label_map" = "Tigatrapp: El meu Mapa";
+/*  */
+"activity_label_report_new" = "Mosquito Alert: Nou informe";
 
-/* */
-"activity_label_gallery" = "Tigatrapp: Galeria";
+/*  */
+"activity_label_map" = "Mosquito Alert: El meu Mapa";
 
-/* */
+/*  */
+"activity_label_gallery" = "Mosquito Alert: Galeria";
+
+/* Reports */
 "checklist_label_editing" = "Descripció*";
 
-/* */
+/*  */
 "location_label_editing" = "Localització*";
 
-/* */
+/*  */
 "photo_check_label_editing" = "Imatges";
 
-/* */
+/*  */
 "note_check_label_editing" = "Nota";
 
-/* */
-"report_title_adult" = "Mosquit tigre";
+/*  */
+"report_title_adult" = "Mosquit";
 
-/* */
+/*  */
 "report_title_site" = "Lloc de cria";
 
-/* */
+/*  */
 "checklist_label" = "Completa descripció*";
 
-/* */
+/*  */
 "location_label" = "Afegeix localització*";
 
-/* */
-"location_current_label" = "Utilitza GPS";
+/*  */
+"location_current_label" = "On estic ara";
 
-/* */
-"location_select_label" = "Seleciona al mapa";
+/*  */
+"location_select_label" = "En un altre lloc";
 
-/* */
+/*  */
 "location_current_label_button" = "Actual";
 
-/* */
+/*  */
 "location_select_label_button" = "Senyala";
 
-/* */
+/*  */
 "location_menu_title" = "Utilitza posició actual o senyala posició al mapa";
 
-/* */
+/*  */
 "photo_check_label" = "Adjunta imatges";
 
-/* */
+/*  */
 "note_check_label" = "Afegeix nota";
 
-/* */
+/*  */
 "update" = "Actualitza";
 
-/* */
+/*  */
 "created_on" = "Enviat:";
 
-/* */
+/*  */
 "delete_report_warning" = "Elimina informe?";
 
-/* */
+/*  */
 "word_report" = "Informe";
 
-/* */
+/*  */
 "photo_label" = "Imatges";
 
-/* */
+/*  */
 "photo_label_star" = "Imatges*";
 
-/* */
-"site_report_q1" = "Selecciona lloc de cria";
+/*  */
+"site_report_q1" = "És un embornal o claveguera?";
 
-/* */
-"site_report_q2" = "Conté aigua estancada?";
+/*  */
+"site_report_q2" = "Es troba a la via pública?";
 
-/* */
-"site_report_q3" = "Conté larves o pupes de mosquit (de qualsevol espècie)?";
+/*  */
+"site_report_q3" = "Conté aigua estancada i/o larves de mosquit?";
 
-/* */
-"adult_report_q3" = "Té ratlles blanques a l'abdomen i a les potes?";
+/*  */
+"site_report_q4" = "Has vist mosquits a prop (a menys de 10 metres)?";
 
-/* */
-"q3_headthorax_text" = "El mosquit tigre té una ratlla blanca al cap i al tòrax. Evita enviar dades d'altres insectes.";
+/*  */
+"site_report_q3_response1" = "Hi ha aigua i veig larves de mosquit";
 
-/* */
-"q2_abdomenlegs_text" = "El mosquit tigre té ratlles blanques a l'abdomen i a les potes. Evita enviar dades d'altres insectes.";
+/*  */
+"site_report_q3_response2" = "Hi ha aigua però no veig larves de mosquit";
 
-/* */
+/*  */
+"site_report_q3_response3" = "No hi ha aigua";
+
+/*  */
+"adult_report_q3" = "Com és l’abdomen del mosquit? Consulta el botó (i) i selecciona una resposta:";
+
+/*  */
+"adult_report_q3a1" = "Amb línies i taques blanques fines";
+
+/*  */
+"adult_report_q3a2" = "Amb línies i taques blanques gruixudes";
+
+/*  */
+"adult_report_q3a3" = "No té línies ni taques blanques";
+
+/*  */
+"adult_report_q3a4" = "No ho sé";
+
+/*  */
+"confirmation_q2_adult_headthorax" = "Mira just després del seu cap, al tòrax. Té una sola línia blanca? Consulta el botó (i) i selecciona una resposta:";
+
+/*  */
+"q2_headthorax_text_help" = "<p>El mosquit tigre té una sola línia blanca al cap i al tòrax. El mosquit de la febre groga té una línia blanca al cap i 4 línies blanques que dibuixen una lira al tòrax.</p>\n\n<p><b>Il·lustracions: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0). Foto dreta: James Gathany (ECDC, PD)</b></p>";
+
+/*  */
+"q3_abdomenlegs_text" = "<p>El mosquit tigre i el mosquit de la febre groga tenen línies i taques blanques a l'abdomen. Les del mosquit tigre són més fines que les del mosquit de la febre groga.</p>\n\n<p><b>Il·lustracions: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
 "identifying_mosquitoes_title" = "Descripció del mosquit";
 
-/* */
-"confirmation_q1_adult_sizecolor" = "És petit i negre amb ratlles blanques?";
+/*  */
+"confirmation_q1_adult_sizecolor" = "De quin color és? Consulta el botó (i) i selecciona una resposta:";
 
-/* */
-"q1_sizecolor_text" = "El mosquit tigre és petit i negre amb ratlles blanques. Normalment és actiu només de dia i acostuma a picar a les cames. Evita enviar dades d'altres insectes.";
+/*  */
+"adult_report_q1a1" = "Negre amb línies blanques al cos i les potes";
 
-/* */
-"adult_report_help_html" = "\n<p><b>AJUDA:</b><br/>\n<b>Creus que has trobat un mosquit tigre? Respon l'informe i envia les dades. Els camps amb asterisc (*) són obligatoris.</b>\n</p>\n<p>\n<ul>\n<li><b>Descripció</b>: respon el formulari, t'ajudarà a saber si és un mosquit tigre i facilitarà la interpretació de les dades.</li> \n<br/>\n<li><b>Localització</b>: escull posició actual si el mosquit l'has atrapat al lloc on es troba el telèfon, o senyala la posició al mapa si l'has trobat a un altre lloc. Activa el GPS si vols que la posició de la teva troballa sigui més precisa.</li>  \n<br/>\n<li><b>Imatges</b>: fes una foto  o adjunta una foto del mosquit que hagis fet amb un altre dispositiu.</li>\n<br/>\n<li><b>Notes</b>: si vols, descriu millor la teva troballa.</li>\n</ul>\n</p> \n<p>Un cop enviat, podràs consultar i editar l'informe al teu mapa. Les dades que enviïs seran publicades al mapa del mosquit tigre a la web <a href=\"www.atrapaeltigre.com\">www.atrapaeltigre.com</a>.</p>        \n   ";
+/*  */
+"adult_report_q1a2" = "Marró amb línies blanques al cos i les potes";
 
-/* */
-"site_report_help_html" = "\n<p><b>AJUDA:</b><br/> \n<b>Has trobat un lloc públic on creus que el mosquit tigre pot criar? Respon l'informe i envia les dades. És necessari completar els camps amb asterisc (*).</b>\n</p>\n<ul> \n<li><b>Descripció</b>: respon el formulari per facilitar la interpretació de les dades.</li> \n<br/>\n<li><b>Localització</b>: escull posició actual si el lloc de cria es troba al lloc on tens el telèfon, o senyala la posició al mapa si l'has trobat a un altre lloc. Activa el GPS si vols que la posició de la teva troballa sigui més precisa.</li>  \n<br/>\n<li><b>Imatges</b>: fes una foto o adjunta una foto de lloc de cria feta amb un altre dispositiu.</li> \n<br/>\n<li><b>Notes</b>: si vols, descriu millor la teva troballa.</li>\n</ul> \n</p>\n<p>Un cop enviat, podràs consultar i editar l'informe al teu mapa. Les dades que enviïs seran publicades al mapa del mosquit tigre a la web www.atrapaeltigre.com.</p>        \n       ";
+/*  */
+"adult_report_q1a3" = "Cap dels dos";
 
-/* */
-"site_report_item_help_1" = "<p>Les larves i pupes de mosquit tigre viuen en dipòsits o recipients petits, amb aigua estancada o bruta (sense peixos). Exemples: embornals, fonts, dipòsits, pous, galledes, etc.</p><p>El mosquit tigre no cria a la platja, ni als rius, ni als llacs, ni als aiguamolls o estanys. Les larves que hi trobis no són de mosquit tigre.</p>    ";
+/*  */
+"adult_report_q1a4" = "No ho sé";
 
-/* */
-"site_report_item_help_2" = " <p>Les larves i pupes necessiten aigua estancada i amb matèria orgànica (aliment) per viure. Evita tenir petites acumulacions d'aigua a casa teva.</p> \n";
+/*  */
+"adult_report_q2a1" = "Sí";
 
-/* */
-"site_report_item_help_3" = " <p>Les larves de mosquit són fàcils de reconèixer. Són allargades, més petites que una moneda d'1 cèntim i naden fent piruetes. Es belluguen molt i pugen a la superfície de l'aigua per respirar.</p>\n\n<p>Si trobes larves de mosquit en un recipient (de qualsevol espècie), has trobat un potencial lloc de cria de mosquit tigre. Si evites tenir petites acumulacions d'aigua a casa teva, estaràs combatent el mosquit tigre.</p> \n       ";
+/*  */
+"adult_report_q2a2" = "No, en té 4 en forma de lira";
 
-/* */
-"embornals" = "Embornals";
+/*  */
+"adult_report_q2a3" = "Cap dels dos";
 
-/* */
-"fonts" = "Fonts";
+/*  */
+"adult_report_q2a4" = "No ho sé";
 
-/* */
-"basses" = "Basses artificials petites";
+/*  */
+"q1_sizecolor_text_help" = "<p>El mosquit tigre i el mosquit de la febre groga són petits i de color fosc amb taques blanques a l'abdomen i a les potes. El mosquit tigre és de color negre, mentre que el mosquit de la febre groga és de color marró fosc.</p>\n\n<p><b>Il·lustracions: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
 
-/* */
-"bidons" = "Bidons";
+/*  */
+"adult_report_help_html" = "<p><b>AJUDA:</b><br/>\n<p>Si has trobat un mosquit tigre o un mosquit de la febre groga, segueix els passos següents:</p>\n\n<p>\n<ul>\n<li><b>Pas 1 - Com és el teu mosquit?</b>: respon les quatre preguntes per saber més detalls del mosquit que has trobat.</li> \n<br/>\n<li><b>Pas 2 - On l'has trobat?</b>: selecciona \"On estic ara\" si has trobat el mosquit on estàs situat ara mateix. En aquest cas, l'app detecta la teva ubicació actual. Activa el GPS del teu dispositiu si vols que la ubicació sigui més precisa. Si has vist un mosquit en un altre lloc i li has fet una foto i la tens guardada, selecciona \"En un altre lloc\" i ubica'l al mapa.</li>  \n<br/>\n<li><b>Pas 3 - Afegeix una foto</b>: fes una foto amb la càmera del teu mòbil o tauleta, o adjunta-la si la tens guardada. Per fer una bona foto, agafa el mosquit per les potes i intenta fer-li una foto de cara i una de costat.</li>\n<br/>\n<li><b>Pas 4 - Vols afegir algun comentari?</b>: pots afegir més detalls de la teva troballa. Si us plau, no afegeixis informació de caràcter personal.</li>\n</ul>\n</p> \n<p>Pots consultar i editar les teves troballes a \"EL MEU MAPA\". Les dades que enviïs es publicaran al mapa de <a href=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>.</p>";
 
-/* */
-"pous" = "Pous";
+/*  */
+"site_report_help_html" = "<p><b>AJUDA:</b><br/> \nSi has trobat un possible lloc de cria, especialment un embornal o una claveguera amb aigua a la via pública, segueix els passos següents:\n</p>\n<ul> \n<li><b>Pas 1 - Com és el lloc de cria?</b>: respon les quatre preguntes per saber més detalls del teu lloc de cria.</li> \n<br/>\n<li><b>Pas 2 - On l'has trobat?</b>: selecciona \"On estic ara\" si estàs davant del lloc de cria. En aquest cas, l'app detecta la teva ubicació actual. Activa el GPS del teu dispositiu si vols que la ubicació de la teva troballa sigui més precisa. Si has vist un punt de cria en un altre lloc i has fet una foto i l'has guardat, selecciona \"En un altre lloc\" i situa'l al mapa.</li>  \n<br/>\n<li><b>Pas 3 - Afegeix una foto</b>: fes una foto amb la càmera del mòbil o tauleta, o adjunta-la si la tens guardada. Si hi ha aigua i/o larves de mosquit, intenta que es vegin a la foto.</li> \n<br/>\n<li><b>Pas 4 - Vols afegir algun comentari?</b>: pots afegir més detalls de la teva troballa. Si us plau, no afegeixis informació de caràcter personal.</li>\n</ul> \n</p>\n<p>Pots consultar i editar les teves troballes a \"EL MEU MAPA\". Les dades que enviïs es publicaran al mapa de <a href=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>.</p>";
 
-/* */
+/*  */
+"site_report_item_help_1" = "<p>Els embornals o clavegueres són el principal lloc de cria del mosquit tigre i del mosquit de la febre groga perquè acumulen aigua estancada al seu interior. Aquests mosquits no crien a les platges, rius, llacs ni aiguamolls.</p>\n<p>Algunes imatges han estat cedides per l'Agència Salut Pública de Barcelona.</p>";
+
+/*  */
+"site_report_item_help_2" = "Es consideren de la via pública aquells espais de lliure concurrència de la gent com carrers, places, parcs o espais verds. Els solars i les propietats privades no es consideren de la via pública.";
+
+/*  */
+"site_report_item_help_3" = "Les larves de mosquit necessiten aigua estancada i tèrbola durant uns dies per viure i passar a adults.";
+
+/*  */
+"site_report_item_help_4" = "El mosquit tigre i el mosquit de la febre groga normalment no es desplacen molt, uns 500 metres des del seu punt de cria. Per això els adults es troben propers als seus llocs de cria.";
+
+/*  */
+"site_q1_a1_embornals" = "Sí";
+
+/*  */
+"fonts" = "Font ornamental";
+
+/*  */
+"basses" = "Bassa petita o similar";
+
+/*  */
+"bidons" = "Recipient petit";
+
+/*  */
 "altres" = "Altres";
 
-/* */
+/*  */
 "report_checklist_title_adult" = "Descripció del mosquit";
 
-/* */
+/*  */
 "report_checklist_title_site" = "Descripció del lloc de cria";
 
-/* */
+/* View Report */
 "return_to_map" = "Torna";
 
-/* */
+/*  */
 "delete_report" = "Elimina";
 
-/* */
+/*  */
 "edit_report" = "Edita";
 
-/* */
-"report_not_saved_warning" = "L'informe no s'ha guardat. Vols sortit igualment?";
+/*  */
+"report_not_saved_warning" = "L'informe no s'ha guardat. Vols sortir igualment?";
 
-/* */
+/*  */
 "exit_question" = "Sortir?";
 
-/* */
+/*  */
 "no_note_attached" = "Cap nota adjunta";
 
-/* */
+/*  */
 "no_photo_attached" = "Cap imatge adjunta";
 
-/* */
+/*  */
 "checklist_tab_title" = "Descripció";
 
-/* */
+/*  */
 "photos_tab_title" = "Imatges";
 
-/* */
+/*  */
 "notes_tab_title" = "Notes";
 
-/* */
-"view_report_title_adult" = "Troballa de mosquit tigre";
+/*  */
+"view_report_title_adult" = "Troballa de mosquit.";
 
-/* */
+/*  */
 "view_report_title_site" = "Lloc de cria";
 
-/* */
+/* Photo Selector */
 "photo_selector_title" = "Afegeix imatges";
 
-/* */
+/*  */
 "photo_selector_take_photo_button" = "Fes foto";
 
-/* */
+/*  */
 "photo_selector_attach_photo_button" = "Adjunta foto";
 
-/* */
+/*  */
 "photo_selector_remove_attachment" = "Elimina adjunt";
 
-/* */
+/*  */
 "photo_selector_remove_this_photo" = "Elimina";
 
-/* */
+/*  */
 "photo_selector_from_thisreport" = "d'aquest informe";
 
-/* */
+/*  */
 "photo_selector_remove_button_label" = "Elimina";
 
-/* */
-"rss_internet_connection_warning" = "Sense connexió a internet.\n\nPer veure el contingut, connecta't.";
+/* RSS Feeds */
+"rss_internet_connection_warning" = "Sense connexió a internet.\n\nPer veure el contingut, connecta't i selecciona 'actualitza' al menú";
 
-/* */
-"rss_title_tigatrapp" = "Notícies d'AtrapaelTigre.com";
+/*  */
+"rss_title_tigatrapp" = "Notícies de mosquitoalert.com";
 
-/* */
+/* Tasks */
 "task_list_title" = "Missions";
 
-/* */
+/*  */
 "task_list_pending" = "Pendents";
 
-/* */
+/*  */
 "task_list_completed" = "Completades";
 
-/* */
+/*  */
 "delete_task_from_list_question" = "Elimina missió de la llista";
 
-/* */
+/*  */
 "delete" = "Elimina";
 
-/* */
-"new_mission" = "Nova missió Tigatrapp!";
+/*  */
+"new_mission" = "Nova missió Mosquito Alert!";
 
-/* */
-"mission_button_left_survey" = "Envia respostes";
+/*  */
+"mission_button_left_survey" = "Envia ara";
 
-/* */
+/*  */
 "mission_button_left_url" = "Visita la pàgina";
 
-/* */
-"mission_button_middle" = "Fes més endavant";
+/*  */
+"mission_button_middle" = "Envia més tard";
 
-/* */
+/*  */
 "mission_button_right" = "Elimina missió";
 
-/* */
-"mission_button_mark_complete" = "Marca la com completada";
+/*  */
+"mission_button_mark_complete" = "Missió realizada";
 
-/* */
+/*  */
 "toast__mission_already_complete" = "Aquesta missió ja s'ha realitzat. Gràcies!";
 
-/* */
-"toast_mission_expired" = "Aquesta misión ha expirat.";
+/*  */
+"toast_mission_expired" = "Aquesta missió ha expirat.";
 
-/* */
+/* Menu */
 "menu_option_task_list" = "Missions";
 
-/* */
+/*  */
 "menu_option_tigatrapp_news" = "Notícies";
 
-/* */
+/*  */
 "menu_option_settings" = "Ajustos";
 
-/* */
+/*  */
 "menu_option_help" = "Ajuda";
 
-/* */
+/*  */
 "menu_option_about" = "Sobre";
 
-/* */
+/*  */
 "menu_option_share" = "Comparteix";
 
-/* */
+/*  */
 "menu_option_filter" = "Filtra";
 
-/* */
+/*  */
 "menu_option_show_pending_tasks_only" = "Només missions pendents";
 
-/* */
+/*  */
 "menu_option_show_all_tasks" = "Totes";
 
-/* */
+/*  */
 "menu_option_map_type_label" = "Tipus de mapa";
 
-/* */
+/*  */
 "menu_option_map_type_satellite" = "Imatge";
 
-/* */
+/*  */
 "menu_option_map_type_street" = "Topogràfic";
 
-/* */
+/*  */
 "menu_option_share_map" = "Comparteix mapa";
 
-/* */
+/*  */
 "menu_option_save_map" = "Guarda mapa";
 
-/* */
+/*  */
 "menu_map_save" = "Guarda";
 
-/* */
+/*  */
 "menu_map_share" = "Comparteix";
 
-/* */
+/*  */
 "menu_toggle_view" = "Imatge";
 
-/* */
+/*  */
 "menu_option_refresh" = "Actualitza";
 
-/* */
+/* Settings */
 "settings_language_title" = "Idioma";
 
-/* */
+/*  */
 "settings_language_detail" = "Selecciona idioma";
 
-/* */
+/*  */
 "settings_language_button" = "Selecciona";
 
-/* */
+/*  */
 "settings_sync_title" = "Sincronitza";
 
-/* */
+/*  */
 "settings_sync_detail" = "Forçar connexió amb servidor per enviar dades i descarregar missions";
 
-/* */
+/*  */
 "settings_sync_button" = "Sinc.";
 
-/* */
-"settings_syncing" = "Sincronitzant dades.";
+/*  */
+"settings_syncing" = "Sincronitzant dades";
 
-/* */
+/*  */
 "on" = "Encès";
 
-/* */
+/*  */
 "off" = "Apagat";
 
-/* */
+/*  */
 "sample_my_locations" = "Geolocalització";
 
-/* */
+/*  */
 "sampling_is_off" = "Permetre enviament de dades aproximades de la meva localització en background";
 
-/* */
+/*  */
 "sampling_is_on" = "Permetre enviament de dades aproximades de la meva localització en background";
 
-/* */
+/*  */
+"sync_error" = "Error de connexió a internet. Les teves dades s'enviaran automàticament més tard.";
+
+/*  */
+"offline_sync" = "Sense connexió a internet. Les teves dades s'enviaran automàticament quan torni la connexió.";
+
+/*  */
+"sync_success" = "Sincronitzat";
+
+/*  */
+"deletion_network_error" = "Informe borrado pero error de conexión en internet. Tus datos se enviarán automáticamente más tarde.";
+
+/*  */
+"deletion_no_network" = "Informe borrado pero sin conexión en internet. Tus datos se enviarán automáticamente cuando vuelva la conexión.";
+
+/* Misc */
 "added_current_loc" = "Posició actual guardada";
 
-/* */
+/*  */
 "refresh" = "Actualitza";
 
-/* */
+/*  */
 "report_deleted" = "Informe esborrat";
 
-/* */
+/*  */
 "edit" = "Edita";
 
-/* */
-"edit_title_adult" = "Troballa de mosquit tigre";
+/*  */
+"edit_title_adult" = "Mosquit";
 
-/* */
+/*  */
 "edit_title_site" = "Lloc de cria";
 
-/* */
+/*  */
 "cd_help_icon" = "Ajuda";
 
-/* */
+/*  */
 "open" = "Obre";
 
-/* */
+/*  */
 "spinner_prompt" = "Selecciona resposta";
 
-/* */
+/*  */
 "spinner_nothing_selected" = "Selecciona";
 
-/* */
+/*  */
 "help" = "Ajuda";
 
-/* */
+/*  */
 "photo_credit_gallery" = "Fotografia de R. Eritja (www.eritja.com)";
 
-/* */
+/*  */
 "photo_credit" = "Fotografies de R. Eritja (www.eritja.com)";
 
-/* */
+/*  */
 "nolocnogps_alert" = "No s'ha pogut detectar la teva posició perquè ni el GPS ni la ubicació per xarxa mòbil i/o Wi-Fi estan activats. Activa'ls o senyala la posició al mapa";
 
-/* */
+/*  */
 "progtitle_report" = "Enviant";
 
-/* */
+/*  */
 "nolocation_alert_report" = "No s'ha pogut detectar la teva posició. Espera uns segons i torna-ho a intentar o senyala la posició al mapa";
 
-/* */
+/*  */
 "upload_error_report" = "Error d'enviament. El teu informe s'ha guardat al mòbil i s'enviarà més tard. Gràcies per participar";
 
-/* */
+/*  */
 "offline_report" = "Sense connexió a internet. El teu informe s'enviarà automàticament quan torni la connexió. Gràcies per participar";
 
-/* */
+/*  */
 "about" = "Informació";
 
-/* */
-"add_note" = "Descripció o nota opcional per acompanyar el teu informe";
+/*  */
+"add_note" = "Descripció o nota opcional per acompanyar el teu informe. No afegeixis informació o dades personals.";
 
-/* */
-"app_directory" = "Tigatrapp";
-
-/* */
-"app_name" = "Tigatrapp";
-
-/* */
+/*  */
 "button_submit_CD" = "Botó per enviar el teu informe al centre de recerca";
 
-/* */
+/*  */
 "cancel" = "Anul·la";
 
-/* */
+/*  */
 "ceab_CD" = "CEAB logo";
 
-/* */
-"data_saved" = "Dades guardades com ";
+/*  */
+"data_saved" = "Dades guardades com";
 
-/* */
+/*  */
 "data_SD_error" = "Error al guardar l'arxiu a la targeta SD";
 
-/* */
+/*  */
 "data_SD_unavailable" = "Targeta SD No Disponible – l'arxiu no es pot guardar";
 
-/* */
+/*  */
 "dipsalut_CD" = "Dipsalut logo";
 
-/* */
+/*  */
 "dontknow" = "No ho sé";
 
-/* */
+/*  */
 "fecyt_CD" = "FECYT logo";
 
-/* */
+/*  */
 "funded_by" = "Finançat per:";
 
-/* */
+/*  */
 "funding_and_support" = "Finançament i Suport";
 
-/* */
+/*  */
 "gallery" = "Galeria d'Imatges";
 
-/* */
+/*  */
 "GPL" = "Veure GPL";
 
-/* */
+/*  */
 "gpl_heading" = "GPL";
 
-/* */
+/*  */
 "LGPL" = "Veure LGPL";
 
-/* */
+/*  */
 "license" = "Llicència";
 
-/* */
+/*  */
 "mailing_spec_title" = "Envia una mostra";
 
-/* */
+/*  */
 "movelab" = "MoveLab\nCentre d'Estudis Avançats de Blanes (CEAB-CSIC)";
 
-/* */
+/*  */
 "movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
 
-/* */
+/*  */
 "movelab_address2" = "Blanes. Girona. E-17300";
 
-/* */
+/*  */
 "movelab_banner_CD" = "MoveLab logo";
 
-/* */
+/*  */
 "no" = "No";
 
-/* */
+/*  */
 "noGPSnoNetAlert" = "El GPS i la recepció de xarxa telefònica estan desactivats. No se't pot localitzar sense com a mínim un d'ells activat. Vols activar-los?";
 
-/* */
+/*  */
 "notes_title" = "Missatge";
 
-/* */
+/*  */
 "ok" = "OK";
 
-/* */
-"project_email" = "info@atrapaeltigre.com";
+/*  */
+"project_email" = "info@mosquitoalert.com";
 
-/* */
-"project_website" = "http://atrapaeltigre.com/";
+/*  */
+"project_website" = "http://mosquitoalert.com/";
 
-/* */
-"report_sent" = "Si cliques OK, les teves dades s'enviaran al grup de recerca responsable del projecte. Part de les dades es faran públiques al mapa web del mosquit tigre a la pàgina web www.atrapaeltigre.com";
+/*  */
+"report_sent" = "Si cliques OK, les teves dades s'enviaran al grup de recerca responsable del projecte. Part de les dades es faran públiques al mapa web a www.mosquitoalert.com";
 
-/* */
-"report_sent_confirmation" = "Gràcies per participar";
+/*  */
+"report_sent_confirmation" = "Gràcies per participar. Trobaràs més informació a la pàgina web de www.mosquitoalert.com.";
 
-/* */
-"reportGallery_CD" = "Botó per accedir a la galeria d'imatges del mosquit tigre";
+/*  */
+"reportGallery_CD" = "Botó per accedir a la galeria d'imatges";
 
-/* */
-"saved_image_prefix" = "elMeuMapa";
+/*  */
+"saved_image_prefix" = "mosquitoalert";
 
-/* */
+/*  */
 "scm_CD" = "SCM logo";
 
-/* */
+/*  */
 "send_spec_text" = "Enviaràs el teu mosquit per correu postal al centre de recerca?";
 
-/* */
+/*  */
 "share_with" = "Comparteix";
 
-/* */
+/*  */
 "submit" = "Envia";
 
-/* */
+/*  */
 "supported_by" = "Amb el suport de:";
 
-/* */
-"confirmation_q2_adult_headthorax" = "Té una ratlla blanca al cap i al tòrax?";
+/*  */
+"type_here" = "Utilitza aquest espai per afegir una nota o comentari si és necessari. No afegeixis informació o dades personals.";
 
-/* */
-"type_here" = "Utilitza aquest espai per afegir una nota o comentari si és necessari";
-
-/* */
+/*  */
 "view_gpl_english" = "Veure GPL versió oficial";
 
-/* */
+/*  */
 "yes" = "Sí";
 
-/* */
-"your_report_id_is" = "El codi de la teva Tigre troballa és: ";
+/*  */
+"your_report_id_is" = "El codi de la teva Tigre troballa és:";
 
-/* */
-"photo_credits" = "Les fotografies de l'App Tigatrapp han estat cedides per R. Eritja (www.eritja.com).";
+/*  */
+"photo_credits" = "Part de les fotografies de l'App Mosquito Alert han estat cedides per R. Eritja (www.eritja.com).";
 
-/* */
-"copyright" = "\n<p>Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga i Frederic Bartumeus</p>\n    ";
+/*  */
+"copyright" = "Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga i Frederic Bartumeus";
+
+/* DO NOT TRANSLATE */
+"app_name" = "app_name";
+
+/*  */
+"app_directory" = "app_directory";
+
+/*  */
+"debug_mode" = "debug_mode";
+
+/*  */
+"private_mode" = "private_mode";
+
+/*  */
+"package_prefix" = "package_prefix";
+
+/*  */
+"content_provider_auth_missions" = "content_provider_auth_missions";
+
+/*  */
+"content_provider_auth_reports" = "content_provider_auth_reports";
+
+/*  */
+"content_provider_auth_tracks" = "content_provider_auth_tracks";
+
+/*  */
+"internal_action" = "internal_action";
+
+/*  */
+"language_selector_english" = "language_selector_english";
+
+/*  */
+"language_selector_catalan" = "language_selector_catalan";
+
+/*  */
+"language_selector_spanish" = "language_selector_spanish";
+
+/*  */
+"photo_share_message" = "photo_share_message";
+
+/*  */
+"language_selector_chinese_hk" = "language_selector_chinese_hk";
+
+/*  */
+"paso1" = "1. Com és el lloc de cria?";
+
+/*  */
+"paso2" = "2. On l'has trobat?";
+
+/*  */
+"paso3" = "3. Afegeix una foto";
+
+/*  */
+"paso4" = "4. Vols afegir un comentari?";
+
+/*  */
+"paso1_2" = "1. Com és el teu mosquit?";
+
+/*  */
+"site_q1_a2_embornals" = "No, és un altre lloc de cria";
+
+/*  */
+"q2_a1" = "Sí";
+
+/*  */
+"q2_a2_site_report" = "No";
+
+/*  */
+"q4_a1_site_report" = "Sí";
+
+/*  */
+"q4_a2_site_report" = "No";
+
+/*  */
+"switchboard_button_validations_photos" = "VALIDA";
+
+/*  */
+"switchboard_button_notifications_site" = "NOTIFICACIONS";
+
+/*  */
+"switchboard_button_missions_site" = "MISSIONS";
+
+/*  */
+"header_title" = "Mosquito Alert";
+
+/*  */
+"menu_option_gallery" = "Galeria";
+
+/*  */
+"back" = "Torna";
+
+/*  */
+"notifications_new" = "Rebudes";
+
+/*  */
+"notifications_old" = "Antigues";
+
+/*  */
+"task_expires" = "Expira";
+
+/*  */
+"task_complete_checklist" = "Completa el qüestionari";
+
+/*  */
+"menu" = "Menú";
+
+/*  */
+"additional_information" = "Informació adicional";
+
+/*  */
+"turn_on_location" = "Activa la Localització del teu dispositiu perquè Mosquito Alert determini la teva posició";
+
+/* Tasks */
+"task_list_title2" = "Notificacions";
+
+/*  */
+"html_consent_form" = "[if !mso]&gt;\n&lt;style&gt;\nv\\:* {behavior:url(#default#VML);}\no\\:* {behavior:url(#default#VML);}\nw\\:* {behavior:url(#default#VML);}\n.shape {behavior:url(#default#VML);}\n&lt;/style&gt;\n&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n&lt;/style&gt;\n&lt;![endif]\n<b>Mosquito Alert</b>\nParticipa en l'estudi i seguiment del mosquit tigre i del mosquit de la febre groga amb l'App Mosquito Alert, enviant dades de llocs de cria i troballes d’aquestes dues espècies de mosquit. Informa't de les últimes novetats i aprèn a combatre aquestes espècies a casa teva.\n\nFamiliaritza't amb el mosquit tigre, amb el mosquit de la febre groga i amb els seus llocs de cria. Trobaràs tot el necessari a l'App i a la web del projecte.\nParticipa compartint dades. Envia informes de nous llocs de cria en espais públics i de troballes d’aquestes dues espècies. Formaràs part del mapa participatiu de mosquit tigre i del mosquit de la febre groga.\nMantén les teves dades actualitzades amb l'opció d'edició del teu mapa.\nValida fotos d’altres participants. No et preocupis si tens dubtes, varies persones avaluen la mateixa foto.  \nI moltes coses més: des de missions especials fins a notícies actualitzades del projecte Mosquito Alert i d’aquestes dues espècies.\n\nExplora Mosquito Alert i si tens dubtes consulta la pàgina d'ajuda o la web mosquitoalert.com.\nPer participar, cal que acceptis les condicions d'ús i la política de privacitat  de Mosquito Alert que es troba a webserver.mosquitoalert.com/policies/ca/. Si ho has llegit i hi estàs d'acord, si us plau, indica-ho a través del formulari que es mostra a continuació:\n\n<b>FORMULARI DE CONSENTIMENT</b>\nHe llegit i accepto les condicions d'ús i la política de privacitat de Mosquito Alert.\nEntenc que per participar al projecte Mosquito Alert a través de l'aplicació Mosquito Alert haig de ser major d'edat o estar supervisat per un adult.\nEntenc que Mosquito Alert recull i comparteix amb tercers o el públic general la següent informació:\n\nEls informes que jo envio sobre llocs de cria, mosquits tigre, mosquits de la febre groga i missions. Això inclou la localització dels meus informes (que pot coincidir amb la meva localització) quan envio informes, així com també qualsevol imatge, nota o qualsevol altra informació o mitjà que jo adjunti.\nInformació aproximada de la meva localització, obtinguda a intervals de temps aleatoris. Aquesta informació es recull amb fins científics per tal de conèixer l’àrea que està sent explorada pels ciutadans i per estudiar la dispersió del mosquit tigre i del mosquit de la febre groga. Per evitar la recol·lecció precisa de la ubicació dels voluntaris, les latituds i longituds s'arrodoneixen als 0,05 graus més propers abans de transmetre la ubicació des del dispositiu. Així, és impossible determinar la ubicació real, dins d'una àrea aproximada de 20 km2. En qualsevol cas, els voluntaris poden desactivar aquesta opció, activada per defecte, en la configuració de l'aplicació.\nInformació sobre el meu model de telèfon, estat de la bateria, configuració d'idioma i instal·lació de Mosquito Alert. Aquesta informació s'utilitza per ajudar l'equip d'investigació a millorar l'aplicació.\n\nEntenc que Mosquito Alert recull i envia dades sobre la meva posició aproximada, així com dades geolocalitzades d'albiraments de mosquit tigre, del mosquit de la febre groga i de llocs de cria en espais públics que jo mateix documento i comparteixo. Entenc que Mosquito Alert em permet també enviar i compartir, de manera voluntària, fotografies d’aquestes dues espècies i de llocs de cria, missatges pels científics que descriguin els meus albiraments i respostes a qüestionaris.\nEntenc que les dades i imatges recollides i compartides a través de Mosquito Alert no són de caràcter personal, ja que no es recull informació referent a persones físiques identificades o identificables, segons el que estableix la Llei orgànica 15/1999. Entenc que està sota la meva responsabilitat la correcta utilització de Mosquito Alert i que no haig ni de recollir, ni d'enviar, a través de Mosquito Alert, imatges o dades personals, ni fer un ús indegut, o fora de la legalitat, o diferent al qual Mosquito Alert està destinat.\nEntenc que la utilització del telèfon mòbil mentre condueixo està prohibida i que pot augmentar el risc d'accidents, morts o danys. Entenc que no haig d'utilitzar l'aplicació o el meu telèfon mòbil en cap cas mentre condueixo, i estic d'acord en no fer-ho. Entenc també que la seguretat és la prioritat més important en tots els aspectes d'aquest projecte i estic d'acord en utilitzar el meu telèfon mòbil en tot moment d'una manera segura.\nEntenc que tota la informació que comparteixo a través de Mosquito Alert passarà a formar part d'un conjunt de dades, propietat de l'equip del projecte Mosquito Alert, i que l'equip del projecte utilitzarà aquesta base de dades per a la investigació científica sobre ecologia, medi ambient i salut pública. També entenc que l'equip del projecte Mosquito Alert pot distribuir aquest conjunt de dades a terceres persones o públic general d'acord amb les condicions d'ús i la política de privacitat de Mosquito Alert.\nEntenc que la informació que recull i envia Mosquito Alert pot ser publicada al portal web www.mosquitoalert.com i en d'altres portals i suports. Entenc que la informació subministrada pot ser utilitzada per a fins científics, ambientals i de sanitat pública. En cap cas aquesta informació serà utilitzada per a fins comercials.\nEntenc que l'objectiu d'aquest projecte d'investigació i ciència ciutadana és estudiar la presència i dispersió del mosquit tigre i del mosquit de la febre groga, així com aspectes relacionats amb la participació ciutadana i les ciències ciutadanes. Entenc que no rebré cap tipus de compensació econòmica per la meva participació i que no podré cancel·lar ni rectificar la informació ja compartida, ja que aquesta en cap cas es pot associar a la meva persona física. Entenc que es prendran les mesures raonables per tal de protegir la meva privacitat en tota la informació que enviï pel projecte d'investigació.\nAmb el consentiment d'aquest formulari declaro que sóc major d'edat i que he llegit i entenc que:\n\nLa meva participació és voluntària i puc deixar de participar en qualsevol moment. La meva negativa a participar no donarà lloc a cap tipus de penalització. La meva participació està sotmesa a les condicions d'ús i la política de privacitat de Mosquito Alert.\nLa prestació del meu consentiment no implica la renúncia a qualsevol dret o eximeix a les institucions del projecte, els seus agents o a l'investigador responsable d'aquest projecte, de qualsevol responsabilitat per culpa.\n\nPresto el meu consentiment a ser un participant d'aquest projecte d'investigació sota les condicions d'ús i la política de privacitat de Mosquito Alert.";
+
+/*  */
+"html_terms_of_use" = "Acord de l'usuari\n\nMosquit Alert (d'ara en endavant, \"el Projecte\", en qualsevol dels noms que hagi pogut tenir en el passat o pugui adquirir en el futur) és un projecte de ciència ciutadana coordinat pel Centre d'Estudis Avançats de Blanes del Consell Superior d'Investigacions Científiques (CEAB-CSIC) i el CREAF.\nEl Projecte depèn de la recollida de dades per part de la ciutadania sobre el mosquit tigre i el mosquit de la febre groga. Els ciutadans participen enviant i compartint, entre d'altres, dades i imatges, a través de les diferents aplicacions del Projecte per a dispositius mòbils o altres dispositius electrònics. Per a això, caldrà ser major d'edat o participar sota la supervisió d'un adult i estar d'acord amb la política de privacitat del Projecte, així com amb els termes d'ús:\n\nEl mosquit tigre i el mosquit de la febre groga poden ser vectors de malalties com el dengue, el chikungunya o el Zika. El Projecte contribueix en la seva lluita, a partir de la recollida de dades i imatges (entre d'altres), l'anàlisi o estudi d'aquesta informació i la posada en marxa o col·laboració amb accions de sensibilització, seguiment o control. En ser vectors de malalties, en participar en el Projecte has extremar precaucions i no apropar-te de manera activa a aquestes espècies (directament o mitjançant els seus llocs de cria). Al lloc web del Projecte s'informa de com enviar dades i fotografies, entre d'altres, atrapant prèviament a aquestes espècies per evitar la seva picada. Acceptes que és la teva responsabilitat no apropar-te a aquestes espècies de manera activa.\nEn compartir les teves dades i obres (ex. fotografies) amb el Projecte, acceptes els presents termes d'ús, acceptes que les obres (ex. fotografies) es difonguin de manera anònima sense constar el teu nom o pseudònim i concedeixes als membres del Projecte una llicència sobre la teva obra de durada igual als drets d'autor vigents aplicables per poder explotar l'obra sense cap restricció i cedir-la a tercers en tot el món, lliure de royalties, no-exclusiva i sub-llicenciable. En qualsevol cas, aquests termes no impliquen per a l'autor original cap restricció sobre l'ús de les seves obres, i pot explotar-la per altres mitjans de manera compatible a la cessió concedida per aquest document.\nPer norma general, qualsevol creació original protegible per drets d'autor serà difosa pel Projecte amb llicència CC-BY, indicant autor anònim i el nom del Projecte (exemple: Anònim, CC-by Mosquito Alert), i encara que aquestes continguin nom d'autor o l’autor consti en les seves metadades. Quan sigui possible, part de les bases de dades o taules resultants de les contribucions dels usuaris seran difoses, per norma general, sota llicència CC0. En el cas que sigui necessari l'accés o cessió a terceres persones (professionals encarregats del seguiment i control d'aquests mosquits, personal investigador, gestors de salut pública, etc.) d'informació recopilada pel Projecte i considerada sensible (no difosa sota llicència CC0 ), s'establiran els protocols i / o llicències adequades per a la seva difusió.\nGaranteixes que tens els drets legals necessaris sobre les dades i les obres que comparteixes amb el Projecte i que aquestes no són difamatòries, ni infringeixen cap llei. La participació al Projecte és anònima per garantir la protecció de la privacitat dels participants. Per això, garanteixes que no afegiràs informació personal teva o de terceres persones en les dades o obres que envies al Projecte. Entens que aquestes dades o obres poden ser cedides a tercers, i que des del Projecte no es pot garantir la capacitat d'eliminar qualsevol possible dada personal que enviïs per error.\nAcceptes indemnitzar els particulars, a les institucions i/o als membres del Projecte i col·laboradors de qualsevol càrrega legal i/o monetària i de qualsevol altra despesa en què pogués incórrer com a resultat del teu incompliment de la garantia anterior.";
+
+/*  */
+"html_privacy" = " \n\n\n\nPolítica de privacitat\n\nEl projecte Mosquit Alert (d'ara en endavant, \"el Projecte\", en qualsevol dels noms que hagi pogut tenir en el passat o pugui adquirir en el futur) recull, entre altres, dades i imatges compartides pels voluntaris i els posa a disposició de terceres parts i del públic general. Per tal de protegir la privacitat dels seus voluntaris, s'evita la recopilació d'informació que pugui identificar de manera individual a una persona física determinada. Així, en l'enviament de dades i fotografies, no es demanen noms, adreces, contrasenyes o qualsevol altra informació personal dels voluntaris. Sí que es recullen les ubicacions exactes de les observacions ciutadanes durant l'enviament d'informes, que poden coincidir amb la ubicació exacta dels voluntaris, però aquesta informació es vincula només a l'informe i a un identificador d'usuari generat de forma aleatòria. El Projecte també recull la ubicació aproximada dels voluntaris a intervals aleatoris en el temps (per tal d'avaluar les àrees geogràfiques cobertes o explorades pels voluntaris), però aquesta informació també es vincula únicament a un identificador d'usuari generat de manera aleatòria. Els voluntaris poden incloure notes i fotografies en els seus informes, però és la seva responsabilitat no incloure en aquestes notes i fotografies, qualsevol informació que desitgin mantenir en privat o qualsevol informació que violi els drets de privacitat dels altres o sigui incompatible amb l'acord de l'usuari del Projecte.\nEl Projecte disposa de mecanismes per evitar que les dades de caràcter personal que poguessin haver enviat els usuaris per error, tot i les mesures d'anonimització, no siguin compartits amb el públic general. Tot i això, si en algun cas particular aquestes mesures no evitessin, per error, la publicació d'una dada de caràcter personal, s'anima a les persones que així ho detectin a notificar-ho als responsables del Projecte, per a procedir a eliminar la seva aparició de l'espai públic si fos possible. El Projecte no pot garantir l'eliminació de les dades de caràcter personal que puguin ser recopilades pel Projecte malgrat les mesures d'anonimització, ni que aquests no siguin visibles pels integrants del Projecte o per qualsevol dels seus col·laboradors o terceres persones amb accés al conjunt de les dades del Projecte.\nS'adverteix que en el cas de compartir les seves observacions (informes) en qualsevol mitjà públic, com per exemple en xarxes socials, els voluntaris estarien relacionant les seves observacions amb les seves dades personals (ex. compte personal en xarxes socials), invalidant per decisió del propi voluntari, el fet que la seva participació al Projecte és anònima.\nLa llista detallada de la informació recopilada és la següent:\n\nInformes recollits i enviats pels voluntaris en relació a llocs de cria i albiraments de possibles mosquits tigre o de la febre groga, així com les missions específiques i les seves respostes. Això inclou la ubicació precisa de les observacions dels voluntaris i les fotografies, notes o qualsevol altra informació que el voluntari afegeixi a l'informe.\nInformació sobre la ubicació aproximada dels voluntaris, mostrejada a intervals de temps aleatoris. Aquesta informació es recull amb finalitats científiques, per conèixer les àrees geogràfiques explorades pels voluntaris (esforç de mostreig, és a dir, en quines zones hi ha o no participació i en quina mesura, per poder-ho relacionar amb el nombre d'observacions en aquesta mateixa zona, per exemple amb tècniques de modelització o estadístiques), i per millorar el coneixement sobre vies de dispersió del mosquit tigre relacionades amb la mobilitat humana (és a dir, entendre millor la relació entre la mobilitat de les persones a gran escala i la dispersió d'aquestes espècies en el territori). Aquesta informació és de gran interès científic. Per evitar la recol·lecció precisa de la ubicació dels voluntaris, les latituds i longituds s'arrodoneixen als 0,05 graus més propers abans de transmetre la ubicació des del dispositiu. Així, és impossible determinar la ubicació real, dins d'una àrea de 0,05 graus de latitud per 0,05 graus de longitud (~20 km2, aproximadament la mida d'una ciutat petita com Blanes). En qualsevol cas, els voluntaris poden desactivar aquesta opció, activada per defecte, en la configuració de l'aplicació.\nInformació sobre el model de telèfon, bateria, configuració d'idioma, i la instal·lació de l'app del Projecte (és a dir, la versió instal·lada, el sistema operatiu i la versió en la qual s'instal·la). Aquesta informació s'utilitza per ajudar l'equip d'investigació a millorar l'aplicació.";
+
+/*  */
+"html_about" = " \nSobre Mosquito Alert\n\n\n \n\nSobre Mosquito Alert\n\nAquest projecte està coordinat per les institucions CREAF, CEAB-CSIC i ICREA.\n\nDes de 2015 el projecte està impulsat per l’ Obra Social “la Caixa”.\n\n\nEl projecte està cofinançat per l’ Organisme Autònom de Salut Pública de la Diputació de Girona (Dipsalut), el Ministeri d’Economia i Competitivitat i la Fundación Española para la Ciencia y la Tecnología (FECYT).";
+
+/*  */
+"html_help" = " \nMosquito Alert Ajuda\n\n\n \nPARTICIPA\nLluita contra els mosquits que transmeten malalties. Si veus un mosquit tigre (<i>Aedes albopictus</i>) o un mosquit de la febre groga (<i>Aedes aegypti</i>) notifica-ho amb l’app Mosquito Alert. També pots avisar si veus un lloc de cria a la via pública.\nAprèn a identificar aquests mosquits\nT’ensenyem a diferenciar-los d’altres mosquits d’una manera molt senzilla a la nostra pàgina web mosquitoalert.com. Consulta els nostres trucs per fer bones fotos.\nEnvia les teves troballes\nUtilitza els botons “ENVIA” per enviar informes de llocs de cria en espais públics i informes de mosquit tigre o de mosquit de la febre groga. Trobaràs més informació a la icona (i).\nActualitza els teus informes\nSi vols modificar o eliminar algun informe, entra a “EL MEU MAPA” i selecciona’l. A \"EL MEU MAPA\" també veuràs marcadors de color blau, que són les troballes que han fet els teus veïns els últims 30 dies i a 2.5 km de radi de la teva posició actual.\n\nValida fotos\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif]\nValida fotos d’altres participants. No et preocupis si tens dubtes, varies persones avaluen la mateixa foto.  \n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n&lt;/style&gt;\n&lt;![endif]\n\nParticipa a les missions i rep notificacions\nAl llarg de al temporada rebràs missions especials al teu mòbil. En qualsevol moment podràs realitzar la missió, deixar-la per més endavant o eliminar-la si no vols fer-la. Podràs veure les missions pendents al menú principal. També rebràs notificacions sobre els teus propis informes per part d'entomòlegs experts i informació científica i de gestió (en el teu territori o en altres) sobre aquestes dues espècies.\nExplora altres opcions\nA cada pantalla podràs accedir a més opcions pitjant el botó de configuració. Per exemple, a “EL MEU MAPA” pots canviar el tipus de mapa, pots compartir l’app des de la pàgina principal o bé pots consultar les últimes notícies de la plataforma Mosquito Alert.\nON VAN LES DADES QUE ENVIES?\nEls avisos que enviïs a través de l’app, tant si tenen foto com si no, s’envien al servidor de Mosquito Alert i apareixeran de manera automàtica al mapa de la plataforma mosquitoalert.com. Aquesta informació és molt útil per conèixer la distribució del mosquit tigre i del mosquit de la febre groga. Pot ser compartida amb tercers o amb el públic general. L’app Mosquito Alert també recull dades de la posició aproximada del teu dispositiu en intervals de temps aleatoris. Aquesta informació s’utilitza per conèixer i generar un mapa de les zones explorades pels usuaris de Mosquito Alert i per saber més de les vies de dispersió d’aquests mosquits. Les dades de la posició actual són aproximades i es recullen rodejant la teva posició actual real als 0.05 graus de latitud i longitud més propers. Amb aquest mètode es pot saber la teva ubicació dins d’una àrea de la mida d’una ciutat petita, però en cap cas es sap la teva posició exacta a dins d’aquesta àrea. Les localitzacions estan unides només al teu identificador, generat de manera aleatòria, però a cap informació que permeti saber la teva identificació personal.\nVOLS MÉS INFORMACIÓ?\nVisita la nostra pàgina web mosquitoalert.com o escriu-nos a info@mosquitoalert.com";
+
+/*  */
+"html_license" = "[if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n   &lt;w:UseFELayout/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;}\n&lt;/style&gt;\n&lt;![endif]\nMosquito Alert\nMosquito Alert (anteriorment Tigatrapp) és una aplicació que busca aprofitar el gran potencial de la ciutadania per a col·laborar en la recerca del mosquit tigre i del mosquit de la febre groga, gràcies a l'ús de les noves tecnologies. És, per tant, un exemple del potencial de les ciències ciutadanes. L'aplicació ha sigut desenvolupada per l’equip de Mosquito Alert, coordinat per les institucions <b>CREAF</b>, <b>CEAB-CSIC</b> i <b>ICREA</b>. El codi font està en part basat en codi de l'aplicació \"<b>Space Mapper</b>\" (desenvolupada per John R.B. Palmer), i codi de \"<b>The Human Mobility Project</b>\" (Chang Y. Chung, Kathleen Li i Necati E. Ozgencil). Versions recents de l’app han estat gestionades per l’equip de Mosquito Alert i desenvolupades per Omatech amb la col·laboració de SciFabric LTD. La traducció al xinès ha estat possible gràcies a la col·laboració de Sabrina Wong i Mendel Wong. Mendel Wong també ha participat en l’elaboració del codi per migrar a Gradle. El codi font de l’app està disponible al repositori GitHub del Movement Ecology Lab a https://github.com/MoveLab.\nCopyright © 2013-2016 John R.B. Palmer, Aitana Oltra, Joan Garriga i Frederic Bartumeus\nMosquito Alert és programari lliure: es pot redistribuir i/o modificar sota els termes de la llicència general pública GNU General Public License publicada per Free Software Foundation (versió 3 de la llicència o superior)\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses.\nThe code incorporated from Space Mapper is subject to the following terms:\nCopyright © 2012, 2013 John R.B. Palmer\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses.\nThe code incorporated from the Human Mobility Project is subject to the following terms:\nCopyright © 2010, 2011 Human Mobility Project\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n ";
+
+/*  */
+"switchboard_button_validation_photos2" = "FOTOS";
+
+/* Label to map points of other citizens in 'My Map' */
+"tag_to_map_points_of_citizens_albopictus" = "Mosquit Tigre";
+
+/*  */
+"tag_to_map_points_of_citizens_aegypti" = "Mosquit Febre Groga";
+
+/*  */
+"tag_to_map_points_of_citizens_none" = "Cap";
+
+/*  */
+"my_map_legend_label_my_observations_my_observations" = "Les meves observacions";
+
+/*  */
+"my_map_legend_label_nearby_observations_nearby_observations" = "Observacions properes";
+
+/*  */
+"ios_photo_initial_warning_we_need_to_access_your_photo_library_to_get_and_store_your_mosquito_and_br" = "Necessitem accedir a la galeria de fotos per guardar les fotos de mosquits i punts de cria.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"ios_photo_initial_warning_2_we_need_to_access_your_location" = "Necesitem accedir a la teva posició per localitzar els teus informes i per trobar informes al voltant d'allà on estiguis.";

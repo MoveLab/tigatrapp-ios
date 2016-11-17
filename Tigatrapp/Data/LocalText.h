@@ -12,4 +12,5 @@
 
 +(NSString *) with:(NSString *)string;
 
++ (NSString *) currentLoc;
 @end

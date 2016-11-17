@@ -40,6 +40,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    self.title = [LocalText with:@"header_title"];
+
     self.feeds = [NSMutableArray array];
     self.tableView.tableFooterView = [UIView new];
 
@@ -62,7 +64,7 @@
         [_parser parse];
     } else {
         if (SHOW_LOGS) NSLog(@"Error url %@",[error localizedDescription]);
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                         message:[LocalText with:@"rss_internet_connection_warning"]
                                                        delegate:self
                                               cancelButtonTitle:[LocalText with:@"ok"]
@@ -113,7 +115,7 @@
     NSDictionary *entry = [_feeds objectAtIndex:indexPath.row];
     NSString *urlString = [entry objectForKey:@"link"];
     NSString* trimmedUrlString = [urlString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    NSLog(@"urlString = (%@)",trimmedUrlString);
+    //NSLog(@"urlString = (%@)",trimmedUrlString);
     if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:trimmedUrlString]])
         NSLog(@"Failed to open url:");
 

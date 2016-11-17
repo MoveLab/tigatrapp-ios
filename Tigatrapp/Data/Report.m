@@ -38,6 +38,8 @@
 @synthesize answer1;
 @synthesize answer2;
 @synthesize answer3;
+@synthesize answer4;
+@synthesize mission;
 
 - (id) initWithDictionary:(NSDictionary *)dictionary {
     
@@ -94,6 +96,12 @@
             if ([dictionary valueForKey:@"answer1"]) self.answer1 = [dictionary valueForKey:@"answer1"];
             if ([dictionary valueForKey:@"answer2"]) self.answer2 = [dictionary valueForKey:@"answer2"];
             if ([dictionary valueForKey:@"answer3"]) self.answer3 = [dictionary valueForKey:@"answer3"];
+            if ([dictionary valueForKey:@"answer4"]) self.answer4 = [dictionary valueForKey:@"answer4"];
+            if ([dictionary valueForKey:@"mission"]) self.mission = [dictionary valueForKey:@"mission"];
+            
+            if (self.reportId == nil) self.reportId = [self defineReportId];
+            
+            
         }
     }
     return self;
@@ -143,7 +151,9 @@
         if (self.answer1) [dictionary setObject:self.answer1 forKey:@"answer1"];
         if (self.answer2) [dictionary setObject:self.answer2 forKey:@"answer2"];
         if (self.answer3) [dictionary setObject:self.answer3 forKey:@"answer3"];
+        if (self.answer4) [dictionary setObject:self.answer4 forKey:@"answer4"];
     }
+    if (self.mission) [dictionary setObject:self.mission forKey:@"mission"];
     
     return dictionary;
 }
@@ -211,7 +221,8 @@
     NSLog(@"selectedLon    :%f", [self.selectedLocationLon floatValue]);
     NSLog(@"note           :%@", self.note);
     NSLog(@"responses      :%@", self.responses);
-    NSLog(@"images         :%lu", self.images.count);
+    NSLog(@"images         :%lu", (unsigned long)self.images.count);
+    NSLog(@"mission        :%d", [self.mission intValue]);
     NSLog(@"===========================");
  
 }

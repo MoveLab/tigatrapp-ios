@@ -8,6 +8,8 @@
 
 #import "PickPhotoViewController.h"
 #import "PhotoViewController.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <Photos/Photos.h>
 
 @interface PickPhotoViewController ()
 @property (nonatomic) int selectedImageIndex;
@@ -34,8 +36,12 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    
+    
     [_collectionView reloadData];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -84,11 +90,28 @@
 #pragma mark - Photo
 
 -(IBAction) pickPhoto:(id) sender {
+    
     UIImagePickerController * picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     [self presentViewController:picker animated:YES completion:nil];
+
+    /*
+    ALAssetsLibrary *lib = [[ALAssetsLibrary alloc] init];
+    [lib enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+
+
+        NSLog(@"%zd", [group numberOfAssets]);
+    } failureBlock:^(NSError *error) {
+        if (error.code == ALAssetsLibraryAccessUserDeniedError) {
+            NSLog(@"user denied access, code: %zd", error.code);
+        } else {
+            NSLog(@"Other error code: %zd", error.code);
+        }
+    }];
+     */
 }
+
 
 -(IBAction) takePhoto:(id) sender {
     UIImagePickerController * picker = [[UIImagePickerController alloc] init];
@@ -102,10 +125,18 @@
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
  
+    NSLog(@"torno image picker info %@", info);
+    
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     //NSData *imageData = UIImagePNGRepresentation(image);
     NSData* imageData = UIImageJPEGRepresentation(image, 0.4); //0.4 is the compression rate.
     [_report.images addObject:imageData];
+
+    // guardar foto a carpeta
+    [self insertImage:image intoAlbumNamed:@"Mosquito Alert"];
+    
+    
+    
     [_collectionView reloadData];
     [self dismissViewControllerAnimated:YES completion:^{}];
     
@@ -114,6 +145,67 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
+
+#pragma mark Photos
+
+- (void)insertImage:(UIImage *)image intoAlbumNamed:(NSString *)albumName {
+    //Fetch a collection in the photos library that has the title "albumNmame"
+    PHAssetCollection *collection = [self fetchAssetCollectionWithAlbumName: albumName];
+    
+    if (collection == nil) {
+        //If we were unable to find a collection named "albumName" we'll create it before inserting the image
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle: albumName];
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (error != nil) {
+                NSLog(@"Error inserting image into album: %@", error.localizedDescription);
+            }
+            
+            if (success) {
+                //Fetch the newly created collection (which we *assume* exists here)
+                PHAssetCollection *newCollection = [self fetchAssetCollectionWithAlbumName:albumName];
+                [self insertImage:image intoAssetCollection: newCollection];
+            }
+        }];
+    } else {
+        //If we found the existing AssetCollection with the title "albumName", insert into it
+        [self insertImage:image intoAssetCollection: collection];
+    }
+}
+
+- (PHAssetCollection *)fetchAssetCollectionWithAlbumName:(NSString *)albumName {
+    PHFetchOptions *fetchOptions = [PHFetchOptions new];
+    //Provide the predicate to match the title of the album.
+    fetchOptions.predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"title == '%@'", albumName]];
+    
+    //Fetch the album using the fetch option
+    PHFetchResult *fetchResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:fetchOptions];
+    
+    //Assuming the album exists and no album shares it's name, it should be the only result fetched
+    return fetchResult.firstObject;
+}
+
+- (void)insertImage:(UIImage *)image intoAssetCollection:(PHAssetCollection *)collection {
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        
+        //This will request a PHAsset be created for the UIImage
+        PHAssetCreationRequest *creationRequest = [PHAssetCreationRequest creationRequestForAssetFromImage:image];
+        
+        //Create a change request to insert the new PHAsset in the collection
+        PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:collection];
+        
+        //Add the PHAsset placeholder into the creation request.
+        //The placeholder is used because the actual PHAsset hasn't been created yet
+        if (request != nil && creationRequest.placeholderForCreatedAsset != nil) {
+            [request addAssets: @[creationRequest.placeholderForCreatedAsset]];
+        }
+    } completionHandler:^(BOOL success, NSError * _Nullable error) {
+        if (error != nil) {
+            NSLog(@"Error inserting image into asset collection: %@", error.localizedDescription);
+        }
+    }];
 }
 
 

@@ -29,6 +29,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = [LocalText with:@"header_title"];
+    
+    
     MKCoordinateRegion region;
     if ([_report.locationChoice isEqualToString:@"selected"]
         ||[_report.locationChoice isEqualToString:@"was_current"]) {
@@ -124,7 +127,7 @@
     }
     
     if ([_report.type isEqualToString:@"adult"]) {
-        annotationView.image = [UIImage imageNamed:@"mappoint1"];
+        annotationView.image = [UIImage imageNamed:@"mappoint2"];
     } else {
         annotationView.image = [UIImage imageNamed:@"mappoint2"];
     }

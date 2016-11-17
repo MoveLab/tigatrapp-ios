@@ -28,11 +28,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSArray *imagesArray = @[@"a.jpg",@"c.jpg",@"d.jpg",@"e.jpg",@"f.jpg",@"g.jpg"
+    self.title = [LocalText with:@"header_title"];
+    
+    NSArray *imagesArray = @[@"a.jpg",@"b.jpg",@"c.jpg",@"d.jpg",@"e.jpg",@"f.jpg",@"g.jpg"
                              ,@"h.jpg",@"i.jpg",@"j.jpg",@"k.jpg",@"l.jpg"];
-    NSArray *labelsArray = @[@"gallery_array",@"gallery_array_1",@"gallery_array_2",@"gallery_array_3",@"gallery_array_4"
-                             ,@"gallery_array_5",@"gallery_array_6",@"gallery_array_7",@"gallery_array_8"
-                             ,@"gallery_array_9",@"gallery_array_10"];
+    NSArray *labelsArray = @[@"gallery_array0",@"gallery_array1",@"gallery_array2",@"gallery_array3",@"gallery_array4"
+                             ,@"gallery_array5",@"gallery_array6",@"gallery_array7",@"gallery_array8"
+                             ,@"gallery_array9",@"gallery_array10",@"gallery_array11"];
     
     _pageControl.numberOfPages = imagesArray.count;
     
@@ -54,15 +56,15 @@
         imageView.image = [UIImage imageNamed:[imagesArray objectAtIndex:i]];
         [pageView addSubview:imageView];
         
-        UILabel *credit = [[UILabel alloc] initWithFrame:CGRectMake(20.0,0.0,scrollviewWidth-40.0,18.0)];
-        credit.numberOfLines = 0;
-        credit.textAlignment = NSTextAlignmentRight;
-        credit.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
-        credit.text = [LocalText with:@"photo_credit_gallery"];
-        [pageView addSubview:credit];
+        //UILabel *credit = [[UILabel alloc] initWithFrame:CGRectMake(20.0,0.0,scrollviewWidth-40.0,18.0)];
+        //credit.numberOfLines = 0;
+        //credit.textAlignment = NSTextAlignmentRight;
+        //credit.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
+        //credit.text = [LocalText with:@"photo_credit_gallery"];
+        //[pageView addSubview:credit];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0,230.0,scrollviewWidth-40.0,scrollviewHeight-200.0)];
-        label.font = [UIFont fontWithName:@"Futura-Medium" size:15.0];
+        
         
         NSString *theString = [LocalText with:[labelsArray objectAtIndex:i]];
 
@@ -71,8 +73,10 @@
                                                               range:NSMakeRange(0, theString.length)];
         theString = [theString stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
 
+        NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[theString dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
         
-        label.text = theString;
+        label.attributedText = attrStr;
+        label.font = [UIFont fontWithName:@"Futura-Medium" size:15.0];
         label.numberOfLines = 0;
         [label sizeToFit];
         [pageView addSubview:label];

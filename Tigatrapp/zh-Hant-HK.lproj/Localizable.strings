@@ -1,0 +1,834 @@
+/*
+ * Loco ios export: iOS Localizable.strings
+ * Project: strings.xml conversion
+ * Release: Working copy
+ * Locale: en, English
+ * Exported by: Unregistered user
+ * Exported at: Tue, 08 Nov 2016 17:21:52 +0000
+ */
+
+"legend_nearby_observations" = "鄰近用戶的觀察";
+"legend_my_observations" = "我的觀察";
+
+
+/* Intro and Consent */
+"consent_button_label" = "我已閱讀並接受這些條款";
+
+/*  */
+"decline_button_label" = "我拒絕同意";
+
+/*  */
+"mosquito_alert_pop" = "<p><b>AtrapaelTigre 已改名為 Mosquito Alert!</b></p>\n<p>我們均源自同一個團隊，但我們已進行項目拓展，並添加了新原素：現在你不單只可以報告白紋伊蚊 (<i>Aedes albopictus</i>) ，你亦可同時報告埃及斑蚊 (<i>Aedes aegypti</i>)的蹤影。<p>\n<p>你可瀏覽 www.mosquitoalert.com 以了解更多相關資訊</p>\n<p>謝謝你的支持和參與</p>\n<p>Mosquito Alert 團隊</p>";
+
+/* Gallery */
+"gallery_array0" = "埃及斑蚊<i>Aedes aegypti</i>(左) 和 白紋伊蚊<i>Aedes albopictus</i>(右)的最大分別為：埃及斑蚊的胸部有數條白色呈豎琴形的條紋，而白紋伊蚊的胸部只有一條白色條紋。<b>照片來源: Vincent Robert (CC BY 2.0)</b>";
+
+/*  */
+"gallery_array1" = "白紋伊蚊(<i>Aedes albopictus</i>). 牠的特徵包括佈滿白點和白色條紋的黑色身軀，以及在頭部和胸腔部份的白線。另外，雌性白紋伊蚊的腹部是充滿血的。 <b> Photo: Roger Eritja (©)</ b>";
+
+/*  */
+"gallery_array2" = "埃及斑蚊 (<i>Aedes aegypti</i>) . 牠的特徵包括佈滿白點和白色條紋的深棕色身軀。以及在牠頭部上方(即其軀幹)有四條豎琴形的白色條紋。 <b>Photo: James Gathany (ECDC, domini públic)</b>";
+
+/*  */
+"gallery_array3" = "觀察白紋伊蚊 (<i>Ae. albopictus</i>)特有的黑色身軀。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array4" = "觀察埃及斑蚊 (<i>Aedes aegypti</i>) 特有的深棕色身軀。<b>照片來源: Mark Yokoyama (CC BY 2.0)</b>";
+
+/*  */
+"gallery_array5" = "那些蚊子會叮人？只有雌性的蚊子會，而在這情況下為白紋伊蚊 (<i>Ae. albopictus</i>)。都市<i>伊蚊</i>通常只會於日間，而非夜間出沒，而牠們主要叮人的腿部位置。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array6" = "兩隻雌性的埃及斑蚊(<i>Aedes aegypti</i>)。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array7" = "雄性(左) 和 雌性(右) 白紋伊蚊 (<i>Ae. albopictus</i>) 的分別－雄性白紋伊蚊的頭部具有羽毛。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array8" = "伊蚊<i>Aedes</i>的蚊卵。這些蚊卵細得幾乎無法目測。都市中的伊蚊通常會在積水附近乾爽的渠道生卵。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array9" = "伊蚊<i>Aedes</i>的幼蟲(外形較長) 或蛹(外形較圓)。注意，牠們兩者皆為水生動物－當蚊卵被水覆蓋，它便會轉化為幼蟲，而幼蟲最終亦會轉化為蛹。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array10" = "伊蚊<i>Aedes</i> 在水中的幼蟲(外形較長)和蛹(外形較圓). <b>照片來源:Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array11" = "生物的變態(型態改變): 成年蚊子 (白紋伊蚊 <i>Ae. albopictus</i>)破蛹而出。要預防伊蚊<i>Aedes</i>出現於家居環境，請移除積水和定期清理容易載有積水的器皿. <b>照片來源: Roger Eritja (©)</b>";
+
+/* Toasts */
+"toast_report_before_submitting_site" = "在提交蚊子滋生地的報告前，請：";
+
+/*  */
+"toast_report_before_submitting_adult" = "在提交蚊子報告前，請：";
+
+/*  */
+"toast_complete_checklist" = "- 請完成資料一覽表";
+
+/*  */
+"toast_specify_location" = "- 請具體說明其位置";
+
+/*  */
+"toast_attach_photo" = "- 請上載一張蚊子滋生地的照片";
+
+/* Switchboard */
+"dataMap_CD" = "我的數據";
+
+/*  */
+"switchboard_button_text_report" = "報告";
+
+/*  */
+"switchboard_button_text_sites" = "滋生地方";
+
+/*  */
+"switchboard_button_text_adult" = "蚊子";
+
+/*  */
+"switchboard_button_text_map" = "我的地圖";
+
+/*  */
+"switchboard_button_text_gallery" = "照片庫";
+
+/*  */
+"switchboard_demo_popup" = "這是Mosquito Alert的簡易測試版。在這個版本中，你不能共享任何數據。如果你參與這個項目共享數據，請點擊確定以安裝完整的Mosquito Alert應用程式。(如果你經已安裝完整的版本，你可以刪除我們的演示簡易測試版。)";
+
+/* activity labels */
+"activity_label_report_editing" = "Mosquito Alert:編輯報告";
+
+/*  */
+"activity_label_report_new" = "Mosquito Alert:新報告";
+
+/*  */
+"activity_label_map" = "Mosquito Alert:我的報告地圖";
+
+/*  */
+"activity_label_gallery" = "Mosquito Alert:照片庫";
+
+/* Reports */
+"checklist_label_editing" = "描述*";
+
+/*  */
+"location_label_editing" = "位置*";
+
+/*  */
+"photo_check_label_editing" = "照片";
+
+/*  */
+"note_check_label_editing" = "備注";
+
+/*  */
+"report_title_adult" = "蚊子";
+
+/*  */
+"report_title_site" = "滋生地方";
+
+/*  */
+"checklist_label" = "新增描述*";
+
+/*  */
+"location_label" = "新増位置*";
+
+/*  */
+"location_current_label" = "目前位置";
+
+/*  */
+"location_select_label" = "在地圖上選擇另一位置";
+
+/*  */
+"location_current_label_button" = "目前位置";
+
+/*  */
+"location_select_label_button" = "選擇";
+
+/*  */
+"location_menu_title" = "選擇目前位置或是在地圖上選擇另一位置?";
+
+/*  */
+"photo_check_label" = "新增照片";
+
+/*  */
+"note_check_label" = "新增備注";
+
+/*  */
+"update" = "更新";
+
+/*  */
+"created_on" = "已傳送:";
+
+/*  */
+"delete_report_warning" = "你確定要刪除此報告嗎？";
+
+/*  */
+"word_report" = "報告";
+
+/*  */
+"photo_label" = "照片";
+
+/*  */
+"photo_label_star" = "照片*";
+
+/*  */
+"site_report_q1" = "這繁殖地是否排水渠或下水道？";
+
+/*  */
+"site_report_q2" = "這繁殖地是否公共空間？";
+
+/*  */
+"site_report_q3" = "這繁殖地有沒有藏有積水，和/或任何蚊子品種旳幼蟲或蛹？";
+
+/*  */
+"site_report_q4" = "你有否在周遭地方見到成年蚊子(少於十米內)？";
+
+/*  */
+"site_report_q3_response1" = "同時有積水和幼蟲或蛹";
+
+/*  */
+"site_report_q3_response2" = "有積水，但沒有幼蟲或蛹";
+
+/*  */
+"site_report_q3_response3" = "沒有積水";
+
+/*  */
+"adult_report_q3" = "蚊子的腹部是什麼樣子？檢查(i)按鈕，然後選擇一個答案：";
+
+/*  */
+"adult_report_q3a1" = "有白色條紋和小斑點";
+
+/*  */
+"adult_report_q3a2" = "有白色條紋和大斑點";
+
+/*  */
+"adult_report_q3a3" = "皆不是";
+
+/*  */
+"adult_report_q3a4" = "不確定";
+
+/*  */
+"confirmation_q2_adult_headthorax" = "蚊子的胸部是什麼樣子？是否帶有一條白色條紋？檢查(i)按鈕，然後選擇答案：";
+
+/*  */
+"q2_headthorax_text_help" = "<p>白紋伊蚊 (<i>Ae. albopictus</i>) 的頭部和胸部帶有一條白色條紋，而埃及斑蚊 (<i>Ae. aegypti</i>)的胸部則有四條白色條紋，組成豎琴形的條紋 。</p>\n\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0). Right photo: James Gathany (ECDC, public domain)</b></p>";
+
+/*  */
+"q3_abdomenlegs_text" = "<p>白紋伊蚊和埃及斑蚊的腹部皆有白色斑點和白色條紋，但白紋伊蚊的條紋較埃及斑蚊的幼小。</p>\n\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
+"identifying_mosquitoes_title" = "關於蚊子";
+
+/*  */
+"confirmation_q1_adult_sizecolor" = "你的蚊子是什麼顏色？檢查(i)按鈕，然後選擇一個答案：";
+
+/*  */
+"adult_report_q1a1" = "黑色身軀，並且在腹部和腿部有白色條紋";
+
+/*  */
+"adult_report_q1a2" = "棕色身軀，並且在腹部和腿部有白色條紋";
+
+/*  */
+"adult_report_q1a3" = "皆不是";
+
+/*  */
+"adult_report_q1a4" = "不確定";
+
+/*  */
+"adult_report_q2a1" = "是";
+
+/*  */
+"adult_report_q2a2" = "否，蚊子有四條白色條紋組成豎琴形";
+
+/*  */
+"adult_report_q2a3" = "皆不是";
+
+/*  */
+"adult_report_q2a4" = "不確定";
+
+/*  */
+"q1_sizecolor_text_help" = "<p>白紋伊蚊(<i>學名：Aedes albopictus</i>）和埃及斑蚊（<i>學名：Aedes aegypti</i>）的特徵是細小以及其帶有白色點紋的深色身軀。白紋伊蚊的身軀為黑色，而埃及斑蚊的為深棕色。</p>\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
+"adult_report_help_html" = "<p><b>協助:</b> <br/> \n如果你發現蚊子，請按照以下步驟填寫表格:</p>\n\n<p> \n<ul>\n<li><b>步驟1 - 蚊子的外貌</ b>: 請回答下列四條問題讓我們了解更多</li> \n<br/>\n<li><b>步驟 2 - 發現蚊子的位置</ b>:如果你現在身處的位置為發現蚊子的位置，請選擇”目前位置”。你可以啟用GPS全球定位系统以增加位置準確性。如果你在另一位置發現蚊子，並有儲存該位置的照片作紀錄，請選擇”別處”，並在地圖上附加位置。 </li> \n<br/>\n<li><b>步驟3 - 新增照片</ b>: 請以手機拍攝照片或直接上載你已儲存的照片。你可以抓住蚊子的腿部，然後從正面和側面拍攝以便識別。</li> \n<br/>\n<li><b>步驟 4 - 添加備注</ b>: 你可以於備注欄作任何額外補充，但謹記不要填寫你的個人資料。</li> \n</ul>\n</p>\n\n <p>你可以在”我的地圖”瀏覽和編輯你的發現。你提交的資料將於地圖上顯示\n<ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>。</p>";
+
+/*  */
+"site_report_help_html" = "<p><b>協助:</b> <br/> \n如果你發現蚊子滋生地，尤其是位於公共場所存有積水的的排水道或溝渠，請按照以下步驟填寫表格:\n<p> \n<ul>\n<li><b>步驟1 - 滋生地的外貌</ b>: 請回答下列四條問題讓我們了解更多</li> \n<br/>\n<li><b>步驟 2 - 發現滋生地的位置</ b>:如果你現在身處的位置為發現蚊子的位置，請選擇”目前位置”。你可以啟用GPS全球定位系统以增加位置準確性。如果你在另一位置發現蚊子，並有儲存該位置的照片作紀錄，請選擇”別處”，並在地圖上附加位置。 </li> \n<br/>\n<li><b>步驟3 - 新增照片</ b>: 請以手機拍攝照片或直接上載你已儲存的照片。可以的話，請儘量拍攝一張能顯示積水和/或幼蟲和蛹滋生情況的照片。</li> \n<br/>\n<li><b>步驟 4 - 添加備注</ b>: 你可以在此提供更多你發現的細節。謹記，切勿不要附加任何個人資料。</li> \n</ul>\n</p>\n\n <p>你可以在”我的地圖”瀏覽和編輯你的發現。你提交的資料將於地圖上顯示 <ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>。</p>\n<p>你可以在”我的地圖”瀏覽和編輯你的發現。你提交的資料將於地圖上顯示\n<ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>。</p>";
+
+/*  */
+"site_report_item_help_1" = "<p>都市<i>伊蚊</i>(<i>Ae. albopictus 白紋伊蚊</i> 和 <i>Ae. aegypti 埃及伊蚊</i>)多數於含積水，但比水桶還小的室外地方產卵。含積水的排水道或溝渠是<i>伊蚊</i>的主要繁殖地方。\n<p>都市<i>伊蚊</i>不會於海灘，河流，湖泊，池塘，或濕地繁殖。\n<p>以下照片由巴塞羅那公共衛生局慷慨提供。</p>";
+
+/*  */
+"site_report_item_help_2" = "公共空間是指那些可以供公眾㆟士自由進出的地方，如道路，廣場，公園，和綠化空間等。它們不包括私人地段或其他私有財產。";
+
+/*  */
+"site_report_item_help_3" = "都市<I>伊蚊< / i>的幼蟲和蛹在變態(型態改變)成蟲前之前，因為生存的原故，需要居住在積水或渾水數天。";
+
+/*  */
+"site_report_item_help_4" = "白紋伊蚊一般不會遠距離移動 ——大多數500米範圍內，因此，成年白紋伊蚊常被發現於滋生地附近的位置，";
+
+/*  */
+"site_q1_a1_embornals" = "是";
+
+/*  */
+"fonts" = "噴泉";
+
+/*  */
+"basses" = "細小的水盆或類似的貯水容器";
+
+/*  */
+"bidons" = "細小的容器";
+
+/*  */
+"altres" = "其他";
+
+/*  */
+"report_checklist_title_adult" = "成年蚊子編目";
+
+/*  */
+"report_checklist_title_site" = "地點編目";
+
+/* View Report */
+"return_to_map" = "返回";
+
+/*  */
+"delete_report" = "刪除";
+
+/*  */
+"edit_report" = "編輯";
+
+/*  */
+"report_not_saved_warning" = "報告尚未儲存，你確定要離開？";
+
+/*  */
+"exit_question" = "離開？";
+
+/*  */
+"no_note_attached" = "沒有備注附加";
+
+/*  */
+"no_photo_attached" = "沒有照片附加";
+
+/*  */
+"checklist_tab_title" = "編目";
+
+/*  */
+"photos_tab_title" = "照片";
+
+/*  */
+"notes_tab_title" = "備注";
+
+/*  */
+"view_report_title_adult" = "蚊子報告";
+
+/*  */
+"view_report_title_site" = "蚊子滋生地";
+
+/* Photo Selector */
+"photo_selector_title" = "報告照片";
+
+/*  */
+"photo_selector_take_photo_button" = "拍攝照片";
+
+/*  */
+"photo_selector_attach_photo_button" = "從相薄附加";
+
+/*  */
+"photo_selector_remove_attachment" = "移除附件";
+
+/*  */
+"photo_selector_remove_this_photo" = "移除照片";
+
+/*  */
+"photo_selector_from_thisreport" = "從這報告";
+
+/*  */
+"photo_selector_remove_button_label" = "移除";
+
+/* RSS Feeds */
+"rss_internet_connection_warning" = "沒有網絡連接\n請連接到互聯網，並從目錄中選擇“重新整理”";
+
+/*  */
+"rss_title_tigatrapp" = "mosquitoalert.com 的最新消息";
+
+/* Tasks */
+"task_list_title" = "任務";
+
+/*  */
+"task_list_pending" = "有待確認";
+
+/*  */
+"task_list_completed" = "完成";
+
+/*  */
+"delete_task_from_list_question" = "從凊單中刪除任務？";
+
+/*  */
+"delete" = "刪除";
+
+/*  */
+"new_mission" = "有新 Mosquito Alert 任務！";
+
+/*  */
+"mission_button_left_survey" = "提交報告";
+
+/*  */
+"mission_button_left_url" = "瀏覽網頁";
+
+/*  */
+"mission_button_middle" = "稍後才繼續任務";
+
+/*  */
+"mission_button_right" = "刪除任務";
+
+/*  */
+"mission_button_mark_complete" = "標記完成";
+
+/*  */
+"toast__mission_already_complete" = "你已完成這項任務，謝謝！";
+
+/*  */
+"toast_mission_expired" = "這個任務已因過期不存在";
+
+/* Menu */
+"menu_option_task_list" = "任務";
+
+/*  */
+"menu_option_tigatrapp_news" = "最新消息";
+
+/*  */
+"menu_option_settings" = "設定";
+
+/*  */
+"menu_option_help" = "協助";
+
+/*  */
+"menu_option_about" = "關於";
+
+/*  */
+"menu_option_share" = "分享";
+
+/*  */
+"menu_option_filter" = "過濾";
+
+/*  */
+"menu_option_show_pending_tasks_only" = "顯示尚未完成的任務";
+
+/*  */
+"menu_option_show_all_tasks" = "顯示所有任務";
+
+/*  */
+"menu_option_map_type_label" = "地圖類型";
+
+/*  */
+"menu_option_map_type_satellite" = "衛星地圖";
+
+/*  */
+"menu_option_map_type_street" = "街道地圖";
+
+/*  */
+"menu_option_share_map" = "分享地圖";
+
+/*  */
+"menu_option_save_map" = "儲存地圖";
+
+/*  */
+"menu_map_save" = "儲存";
+
+/*  */
+"menu_map_share" = "分享";
+
+/*  */
+"menu_toggle_view" = "衛星";
+
+/*  */
+"menu_option_refresh" = "重新整理";
+
+/* Settings */
+"settings_language_title" = "語言";
+
+/*  */
+"settings_language_detail" = "選擇語言";
+
+/*  */
+"settings_language_button" = "選擇";
+
+/*  */
+"settings_sync_title" = "同步";
+
+/*  */
+"settings_sync_detail" = "數據已與Mosquito Alert伺服器同步，你將會收到Mosquito Alert的最新消息和任務。";
+
+/*  */
+"settings_sync_button" = "同步";
+
+/*  */
+"settings_syncing" = "正在同步";
+
+/*  */
+"on" = "可用";
+
+/*  */
+"off" = "不可用";
+
+/*  */
+"sample_my_locations" = "採樣我的位置";
+
+/*  */
+"sampling_is_off" = "位置採樣不可用";
+
+/*  */
+"sampling_is_on" = "位置採樣可用";
+
+/*  */
+"sync_error" = "傳送過程中有故障，你的數據將於稍後再次自動進行同步";
+
+/*  */
+"offline_sync" = "沒有網絡連接。你的數據將在有可用的連接網絡時自動進行同步";
+
+/*  */
+"sync_success" = "同步成功";
+
+/*  */
+"deletion_network_error" = "報告已從手機刪除，但傳送過程中有故障。你的數據將於稍後再次自動進行同步";
+
+/*  */
+"deletion_no_network" = "報告已從手機刪除，但傳送過程中未能連接至互聯網。你的數據將在有可用的連接網絡時自動進行同步";
+
+/* Misc */
+"added_current_loc" = "已新增目前位置";
+
+/*  */
+"refresh" = "重新整理";
+
+/*  */
+"report_deleted" = "已刪除報告";
+
+/*  */
+"edit" = "編輯";
+
+/*  */
+"edit_title_adult" = "蚊子";
+
+/*  */
+"edit_title_site" = "蚊子滋生地";
+
+/*  */
+"cd_help_icon" = "協助";
+
+/*  */
+"open" = "開啟";
+
+/*  */
+"spinner_prompt" = "選擇回應";
+
+/*  */
+"spinner_nothing_selected" = "未有選擇任何項目";
+
+/*  */
+"help" = "協助";
+
+/*  */
+"photo_credit_gallery" = "照片來源: R. Eritja (www.eritja.com)";
+
+/*  */
+"photo_credit" = "照片來源: R. Eritja (www.eritja.com)";
+
+/*  */
+"nolocnogps_alert" = "你的全球定位系統和網絡接收器處於關閉狀態，因此我們偵測不到你的位置－請啟用它們以開始自動偵測位置功能。你亦可以在地圖上選擇你的位置";
+
+/*  */
+"progtitle_report" = "傳送中";
+
+/*  */
+"nolocation_alert_report" = "我們暫時未能偵測到你的位置，請稍等一會兒，然後再試一次。你亦可以在地圖上選擇你的位置";
+
+/*  */
+"upload_error_report" = "傳送過程出現錯誤。你的數據已被儲存，並會於稍後時間再次傳送，謝謝！";
+
+/*  */
+"offline_report" = "沒有網絡連接。你的數據將在有可用的連接網絡時自動進行同步，謝謝！";
+
+/*  */
+"about" = "關於";
+
+/*  */
+"add_note" = "你可以於此備注欄作任何額外補充(如更仔細描述你見到的蚊子)以便團隊作進一步研究，但謹記不要填寫你的個人資料。";
+
+/*  */
+"button_submit_CD" = "發送報告至研究中心的按鈕";
+
+/*  */
+"cancel" = "取消";
+
+/*  */
+"ceab_CD" = "CEAB 標誌";
+
+/*  */
+"data_saved" = "已儲存數據為";
+
+/*  */
+"data_SD_error" = "SD咭出現問題";
+
+/*  */
+"data_SD_unavailable" = "未能使用SD咭 － 數據未能儲存";
+
+/*  */
+"dipsalut_CD" = "Dipsalut 標誌";
+
+/*  */
+"dontknow" = "不確定";
+
+/*  */
+"fecyt_CD" = "FECYT 標誌";
+
+/*  */
+"funded_by" = "由 資助：";
+
+/*  */
+"funding_and_support" = "資助和支持";
+
+/*  */
+"gallery" = "圖片庫";
+
+/*  */
+"GPL" = "瀏覽 GPL";
+
+/*  */
+"gpl_heading" = "GPL";
+
+/*  */
+"LGPL" = "瀏覽 LGPL";
+
+/*  */
+"license" = "許可証";
+
+/*  */
+"mailing_spec_title" = "寄送樣本";
+
+/*  */
+"movelab" = "MoveLab\nCentre d'Estudis Avançats de Blanes (CEAB-CSIC)";
+
+/*  */
+"movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
+
+/*  */
+"movelab_address2" = "Blanes. Girona. E-17300";
+
+/*  */
+"movelab_banner_CD" = "MoveLab 標誌";
+
+/*  */
+"no" = "否";
+
+/*  */
+"noGPSnoNetAlert" = "你的全球定位系統和網絡接收器處於關閉狀態，因此我們不能偵測到你的位置。現在啟用它們？";
+
+/*  */
+"notes_title" = "訊息";
+
+/*  */
+"ok" = "確定";
+
+/*  */
+"project_email" = "info@mosquitoalert.com";
+
+/*  */
+"project_website" = "http://mosquitoalert.com/";
+
+/*  */
+"report_sent" = "如果你選擇確定，我們的項目團隊將收到你的報告，而部分內容將於www.mosquitoalert.com的網上公眾地圖發怖。";
+
+/*  */
+"report_sent_confirmation" = "報告經已發送。謝謝！請瀏覽我們的項目網站去獲取更多資訊。";
+
+/*  */
+"reportGallery_CD" = "圖片庫按鈕";
+
+/*  */
+"saved_image_prefix" = "mosquitoalert";
+
+/*  */
+"scm_CD" = "SCM 標誌";
+
+/*  */
+"send_spec_text" = "你會否把蚊子樣本以郵寄方式傳送至我們的實驗室作分析用途？";
+
+/*  */
+"share_with" = "分享";
+
+/*  */
+"submit" = "發送";
+
+/*  */
+"supported_by" = "由: 支持";
+
+/*  */
+"type_here" = "你可以於此欄作任何額外補充或發表意見，但謹記不要填寫你的個人資料。";
+
+/*  */
+"view_gpl_english" = "瀏覽 GPL 的官方版本";
+
+/*  */
+"yes" = "是";
+
+/*  */
+"your_report_id_is" = "你的報告編號是：";
+
+/*  */
+"photo_credits" = "Mosquito Alert 的相片由 R. Eritja (www.eritja.com)提供。";
+
+/*  */
+"copyright" = "版權 &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus";
+
+/* DO NOT TRANSLATE */
+"app_name" = "Mosquito Alert";
+
+/*  */
+"app_directory" = "MosquitoAlert";
+
+/*  */
+"debug_mode" = "true";
+
+/*  */
+"private_mode" = "false";
+
+/*  */
+"package_prefix" = "ceab.movelab.tigabib.";
+
+/*  */
+"content_provider_auth_missions" = "ceab.movelab.tigabib.cp.missions";
+
+/*  */
+"content_provider_auth_reports" = "ceab.movelab.tigabib.cp.reports";
+
+/*  */
+"content_provider_auth_tracks" = "ceab.movelab.tigabib.cp.tracks";
+
+/*  */
+"internal_action" = "ceab.movelab.tigatrapp.tigabib.INTERNAL_ACTION";
+
+/*  */
+"language_selector_english" = "英文";
+
+/*  */
+"language_selector_catalan" = "加泰羅尼亞文";
+
+/*  */
+"language_selector_spanish" = "西班牙文";
+
+/*  */
+"photo_share_message" = "通過 @Mosquito_Alert";
+
+/*  */
+"language_selector_chinese_hk" = "中文 (香港)";
+
+/*  */
+"paso1" = "1. 請描述滋生地點的表面情況？";
+
+/*  */
+"paso2" = "3. 你在那裡找到牠？";
+
+/*  */
+"paso3" = "3. 新增圖片";
+
+/*  */
+"paso4" = "4. 你希望附註任何評論嗎？";
+
+/*  */
+"paso1_2" = "1.  請描述蚊子的外貌？";
+
+/*  */
+"site_q1_a2_embornals" = "否，這是另一類滋生地。";
+
+/*  */
+"q2_a1" = "是";
+
+/*  */
+"q2_a2_site_report" = "否";
+
+/*  */
+"q4_a1_site_report" = "是";
+
+/*  */
+"q4_a2_site_report" = "否";
+
+/*  */
+"switchboard_button_validations_photos" = "驗證";
+
+/*  */
+"switchboard_button_notifications_site" = "通知";
+
+/*  */
+"switchboard_button_missions_site" = "任務";
+
+/*  */
+"header_title" = "Mosquito Alert";
+
+/*  */
+"menu_option_gallery" = "圖片庫";
+
+/*  */
+"back" = "返回";
+
+/*  */
+"notifications_new" = "新";
+
+/*  */
+"notifications_old" = "舊";
+
+/*  */
+"task_expires" = "到期";
+
+/*  */
+"task_complete_checklist" = "完成資料一覽表";
+
+/*  */
+"menu" = "選項欄";
+
+/*  */
+"additional_information" = "附加資料";
+
+/*  */
+"turn_on_location" = "開啟位置設定以便Mosquito Alert判斷你的位置";
+
+/* Tasks */
+"task_list_title2" = "通知";
+
+/*  */
+"html_consent_form" = "[if !mso]&gt;\n&lt;style&gt;\nv\\:* {behavior:url(#default#VML);}\no\\:* {behavior:url(#default#VML);}\nw\\:* {behavior:url(#default#VML);}\n.shape {behavior:url(#default#VML);}\n&lt;/style&gt;\n&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n&lt;/style&gt;\n&lt;![endif]\n<b>Mosquito Alert</b>\n<b>想參與監測白紋伊蚊和埃及伊蚊的工作？Mosquito Alert能讓你分享有關蚊子滋生地點和蚊子蹤跡的資訊予公眾和研究員。此軟件亦會為你帶來有關蚊子的最新資訊和家居防蚊措施</b>\n\n進一步了解白紋伊蚊和埃及伊蚊的滋生地點。你會在我們的網站和軟件找到所需資訊。\n 分享數據。 當你在公共地方見到白紋伊蚊和埃及伊蚊的蹤跡或其滋生地點，請向我們發送報告。這將協助我們建立一個龐大啲蚊子分佈地圖。\n以你的手機或平版電腦在本軟件的地圖視窗儲存和編輯你的數據。\n 驗證來自其他參與者的圖片。 如果你不肯定你的答案請不要擔心：所有照片均由幾個人同時進行驗證。\n更多: 由參與特別任務至緊貼有關白紋伊蚊，埃及伊蚊和本計劃的最新消息。 \n\n 探索Mosquito Alert。如果你有任何問題，歡迎訪問我們的求助頁或瀏覽mosquitoalert.com.\n要參與Mosquito Alert計劃，你必須同意我們的 使用條款和 隱私政策它們已被上載至webserver.mosquitoalert.com/policies/en/.如果你已閱讀並同意這些條款，請提交以下表格：\n\n<b> 同意書</b>\n 我已閱讀並同意Mosquito Alert 使用條款 and 隱私政策.\n我明白我必須為一位成年人，或者在成年人監察下才可以參與Mosquito App計劃。\n我明白Mosquito Alert計劃會收集，並分享以下資料予公眾和相關的第三方: \n\n 所有我收集和傳送的資料，包括蚊子滋生地點，成年蚊子的踪跡，和任務。這包括我提交的實際位置，任何備注，相片，或連同報告傳送的附件。\n 軟件於不定時段收集到有關我的大概位置。此資訊將應用於科學用途，如建立參與者監測蚊子的地理區域分佈圖，以及了解白紋伊蚊和埃及伊蚊的傳播路線。為避免收集參與者的實際位置，此計劃會在參與者傳送數據前四捨五入他們的位置至最近的0.05經緯度。此舉令系統只能粗略的作0.05經度和0.05緯度定位(約20平方公里). 在任何情況下，雖然這個選項是自動啟用的，但參與者可以選擇隨時停用。\n 有關我電話型號，電池用量，語言設定，應用程式安裝的資訊(如我安裝了那個版本的應用程式，安裝在那個操作系統和操作系統版本)。這些資訊將有助此計劃的研究團隊完善應用程式。\n\n我明白Mosquito Alert，根據the Organic Law 15/1999不會收集任何能識別用戶身為的資料。我明白善用Mosquito Alert，包括決不收集和傳送他人的個人資料，是我的責任。我同意絕不以不當或違法的方式使用Mosquito Alert，或以它作其他用途。\n我明白駕駛時使用手機會增加事故，死亡，或損害的風險，因此是嚴厲禁止的，我明白並同意在駕駛時不使用手機或此應用程式。我亦明白到安全比此應用程式更為至上，而我同意在任何時候都會安全使用手機。\n我明白Mosquito Alert團隊將擁有我通過此計劃分享的所有資料，而它們將用於生態，環境，和公共衛生等範疇的研究。我亦明白Mosquito Alert團隊有可能會分享資料予第三方或公眾。所有數據將按照 使用條款 和 隱私政策.分享\n我明白此公民科學計劃的目的是研究白紋伊蚊和埃及伊蚊的傳播途徑，以及公民科學和公民參與等議題。我明白我不會因參與此計劃而得到任何報酬，而我不能在分享數據後更改和刪除它，但這些數據都不會跟我的個人身分有任何連繫。我明白為保障我的私隱，此計劃會實施合理措施。\n 通過同意這些條款，我確定我巳達到法定年齡去參與此計劃，而我已閱讀並理解： \n\n 我的參與是自願的，而我可以撤回我的同意書，並在任何時候終止參與此計劃，而這將不會導致任何處罰。我的參與是受本同意書的條件和Mosquito Alert的 使用條款 和  隱私政策.限制。\n 我的同意書並不意味著任何機構有免除疏忽或法律責任的權利。\n\n在同意書的條件和Mosquito alert的背景下，我願意參加此計劃。 使用條款和 隱私政策.\n ";
+
+/*  */
+"html_terms_of_use" = "用戶協議 \n \nMosquito Alert (不論其以往或將來有機會使用的簡稱，在下文將稱為：計劃) 是一項由Centre for Advanced Studies of Blanes (Spanish Research Council (CEAB-CSIC)的一部分)，和CREAF合辦的公民科學項目。 \n本計劃有賴公眾收集有關白紋伊蚊和埃及伊蚊的數據。你可以通過手提電話或其他電子產品傳送並分享圖片和數據來參與這項計劃。 你必須確保自己為一位成年人，或由一位成年人監督之下參與這項計劃。你亦必須同意本計劃的私隱政策以及下列條款： \n \n白紋伊蚊和埃及斑蚊是多種疾病的傳播媒介，例如登革熱、屈公熱和寨卡病毒。本計畫將會從多方面入手對付上述疾病──我們將會收集有關數據和圖片，再加以研究和分析；並且會和各個宣傳、監測及防護單位緊密合作。在參與本計劃時，請謹記我們的目標是帶有傳播性病毒的蚊子，因此我們建議參與者避免直接接觸蚊子，或靠近牠們的繁殖地。我們的網址已上載有關安全捕捉蚊子、避免被牠們叮咬的詳細資訊，並且附上傳送相片給我們的方法。請留意，本計劃將不會為任何參與者主動靠近蚊子的行為而負責。 \n當參與者遞交數據和其他資料（如：相片）時，請先同意相關資料的使用條款──有關資料將可能以匿名形式對外公佈和使用；而本計劃的人員將對相關資料具有免版税、非專屬和可轉授權的許可，並能在現行的版權法下，無限制地使用或轉送有關資料予全球其他地方。請注意，本計劃的參與者為其所遞交的資料的原創者，因此上述條款並不適用於參與者身上。在不和這份文件抵觸下，參與者能自由地使用其所創造和擁有的資料。 \n在一般情況下，任何受版權法保護的原創作品即使本身包含原創人的姓名，亦將自動以匿名方式，並同時標以本計劃及其CC-BY認証才作公眾分享 (例：匿名, CC-BY Mosquito Alert)。若情況許可，任何參與者提供的資料或數據庫內容將得到CC0 認証才分享予公眾。若相關的第三方(如負責蚊子監控的專業，研究員，或公共衛生主任等)需傳送或存取一些未受CC0 認証的敏感資料，我們將建立其他守則或/和相應的認証。 \n你必須保證分享的數據和作品不包含任何誹謗或觸犯法律的內容。你亦須保證本計劃擁有使用你分享的內容的權利。為保障參與者的私隱，本計劃的性質為匿名。你須保證不會在分享予本計劃的內容裏增添任何個人或他人的資訊。你亦須凊楚明白到你所分享的內容有機會會傳送至第三方，而本計劃不能確保用戶誤發的個人資料必定能得以刪除。 \n你需承擔任何個人，機構，本計劃成員，及其合作夥伴因你違反上述協議而導致的訴訟費，損害賠償，及其他費用。";
+
+/*  */
+"html_privacy" = "隱私政策\n \nThe Mosquito Alert 計劃(不論其以往或將來有機會使用的簡稱，在下文將稱為：計劃)用以收集志願參與者分享的數據和照片予公眾和其他相關人士。為保障志願參與者的私隱, 此計劃希望避免收集任何能夠識別參與者身分的個人資料。因此，在發送送訊息或圖片時， 我們會提醒參與者不要提供其名字，地址，密碼，或者任何個人資料。 此計劃會於參與者發送報告時收集其實際位置 ，但所有收集到的位置只會連接至隨機產生的用戶身分。此計劃亦會不定時收集參與者的大概位置 (以掌握用戶的位置分佈)，但同樣地，所有收集到的位置只會連接至隨機產生的用戶身分。參與者可以在發送報告時同時摘寫備注或傳送圖片作附件，但必須謹記不應發送任何會洩漏個人私隱，侵犯他人隱私權，或與此計劃使用條款不一致的資訊。 \n除了上述的匿名措施，此計劃有機制防止參與者因誤失而發送的個人私隱資料遭公開洩漏。 如果在特殊情況有任何參與者的個人私隱資料遭公開洩漏，我們將鼓勵發現此特殊情況的成員提知此計劃的員工，以便他們盡可能從公共數據庫移除相關資料。此計劃不能保證 一定能夠從公共數據庫移除相關的個人資料(儘管此計劃已設有匿名措施)，也無法保證此計劃的員工或相關的第三方不能存取項目數據。 \n我們注意到在參與者於公共空間，如社交媒體，分享其觀察(報告)時，有機會牽涉到他們的個人資料(如社交網絡的帳戶)，亦即該參與者自願放棄其匿名保障措施。\n以下為收集到的資訊的完整列表： \n \n所有參與者收集和傳送的資料，包括蚊子滋生地點，成年蚊子的踪跡，和任務。這包括參與者提交的實際位置，任何備注，相片，或連同報告傳送的附件。 \n於不定時段收集到的參與者大概位置。此資訊將應用於科學用途，如建立參與者監測蚊子的地理區域分佈圖 (取樣工作，也就是說，在哪些領域有參與者參與，和在什麼程度才能夠在同一地區把參與者人數與觀測次數連係)，以及了解白紋伊蚊和埃及伊蚊的傳播路線(以掌握人類大規模移動和蚊子傳播之間的關係)。此資訊將極有利科學研究。為避免收集參與者的實際位置，此計劃會在參與者傳送數據前四捨五入他們的位置至最近的0.05經緯度。此舉令系統只能粗略的作0.05經度和0.05緯度定位(約20平方公里，即西班牙小鎮布拉內斯的大小). 在任何情況下，雖然這個選項是自動啟用的，但參與者可以選擇隨時停用。 \n有關參與者電話型號，電池用量，語言設定，應用程式安裝的資訊(如參與者安裝了那個版本的應用程式，安裝在那個操作系統和操作系統版本)。這些資訊將有助此計劃的研究團隊完善應用程式。";
+
+/*  */
+"html_about" = "  \n\n\n\nAbout Mosquito Alert\n\n此計劃由下列機構協作: CREAF, CEAB-CSIC 和 ICREA.\n\n自2015，此計劃由Obra Social “la Caixa”資助。\n\n\n此計劃亦由Independent Public Health Body of Girona Provincial Council (Dipsalut), the Ministry of Economy and Competitiveness 和 the Spanish Foundation for Science and Technology (FECYT)共出資。";
+
+/*  */
+"html_help" = " \nMosquito Alert 幫助\n\n\n \n參與\n一起消除蚊傳疾病吧！如果你發現任何白紋伊蚊(<i>Aedes albopictus</i>) 或埃及伊蚊 (<i>Aedes aegypti</i>)的踪跡，請以Mosquito Alert app通知我們。假若你在公共道路見到任何蚊子滋生地點，亦同樣可以跟我們匯報。\n了解如何識別牠們\n我們的網站mosquitoalert.com會教你如何輕鬆地區分不同品種的蚊子。你還可以學習到不同的小貼士以拍攝更佳的照片。\n發送你的報告\n當發現任何白紋伊蚊，埃及伊蚊，或蚊子滋生地點的踪跡，請使用“報告”按鈕來傳送你的的發現。你可以通過點擊（i）圖標去了解更多資訊。\n及時更新您的報告\n如果你想編輯或移除任何報告，請選擇\"我的地圖\"按鈕。於\"我的地圖\"上的藍點，是你周遭2.5公里範圍內，其他用戶在最近30天發送的報告。\n驗證圖片\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n&lt;/style&gt;\n&lt;![endif]\n驗證來自其他參與者的圖片。 如果你不肯定你的答案請不要擔心：所有照片均由幾個人同時進行驗證。\n參與任務和接收通知\n你將會不時收到特別任務的通知，而你可以自由選擇參與，放棄，抑或移除該任務。尚未完成的任務會於主目錄顯示。你亦會收到來自昆蟲學專家對你報告的通知，或有關這蚊子品種(在你所處的區域)的科學和處理資訊。\n探索其他選項\n你可以通過選項頁面去使用各項附加功能。例如，你可以在瀏覽 “我的地圖”時以選項頁面去選擇不同類型的地圖，從主屏幕共享應用程式，或察看到Mosquito Alert的最新消息。\n你發送的數據會傳送至那裏？\n通過此應用程式提交的報告(不論有沒有照片附件)，將傳送至Mosquito Alert的伺服器，並自動上载至mosquitoalert.com 的地圖。你所提供的資訊對我們掌握白紋伊蚊和埃及伊蚊的分佈將有莫大幫助，而這些保貴的資訊也可給予公眾和相關人仕作進一步參考。Mosquito Alert 應用程式會不定時收集你的大概位置以掌握用戶的位置分怖，並了解白紋伊蚊和埃及伊蚊的傳播路線。我們只會四捨五入至最近的0.05經緯度以收集你的大概位置 ，例如十八區區域，並非你的實際位置，以保障所有用戶的私隱。所有收集到的大概位置只會鏈接至隨機產生的用戶身分。我們不會收集任何能夠識別用戶身分的個人資料。\n想了解更多？\n請瀏覽我們的網站 mosquitoalert.com或傳送電郵至info@mosquitoalert.com";
+
+/*  */
+"html_license" = "[if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n   &lt;w:UseFELayout/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;}\n&lt;/style&gt;\n&lt;![endif]\n<b>Mosquito Alert</b>\nMosquito Alert (前身為Tigatrapp)是一個運用公民科學和新科技來研究白紋伊蚊和埃及伊蚊傳播的應用程式。此程式由Mosquito Alert team研發，並由不同機構配合<b>CREAF</b>, <b>CEAB-CSIC</b> and <b>ICREA</b>. 此軟件的部份代碼來自<b>Space Mapper</b> (John R.B. Palmer),和<b>Human Mobility Project</b> (Chang Y. Chung, Kathleen Li and Necati E. Ozgencil). 本軟件的最新版本由the Mosquito Alert team 管理，並由Omatech及SciFabric LTD 共同研發。本軟件有賴Sabrina Wong 和 Mendel Wong 作中文翻譯才能得以推出。Mendel Wong亦同時參與Gradle migration的編碼工作。The Mosquito Alert 的編碼能從下列途徑免費索取: Movement Ecology Lab’s GitHub repositories https://github.com/MoveLab.\n 版權; 2013-2016 John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus\nMosquito Alert 是一個免費軟件，你可以依照Free Software Foundation 發佈的GNU General Public License (第三版，或更新的版本) 傳播或/和修改它。\n本軟件的發佈是希望為社會帶來正面及有用的影響，但我們不會因此作出任何擔保，包括有關適銷性和適於特定用途的默示擔保。詳情請參閱GNU General Public License。\n你應該已連同此軟件收到一份GNU General Public License。如果沒有，請參閱http://www.gnu.org/licenses。\n由Space Mapper 合併得來的編碼須遵守以下條款：\n 版權; 2012, 2013 John R.B. Palmer\nThe Mosquito Alert 是一個免費軟件，你可以依照Free Software Foundation 發佈的GNU General Public License (第三版，或更新的版本) 傳播或/和修改它。\n 本軟件的發佈是希望為社會帶來正面及有用的影響，但我們不會因此作出任何擔保，包括有關適銷性和適於特定用途的默示擔保。詳情請參閱GNU General Public License。\n 你應該已連同此軟件收到一份GNU General Public License。如果沒有，請參閱http://www.gnu.org/licenses。\n 由Human Mobility Project 合併得來的編碼須遵守以下條款： \n 版權; 2010, 2011 Human Mobility Project\n特此授權，任何獲得此軟件副本和相關文件的人都可以免費和不受任何限制使用它，包括使用，複製，修改，合併，發佈，分發，授權和/或銷售軟件的副本。本軟件所授予以上權利的人都必須遵守以下規定: \n以上的版權聲明及此許可聲明必須包括在所有軟件副本或軟件的主要部分。\n這軟件是在法律許可之程度內排除一切擔保而推出旳。這包括明示或默示擔保，包括但不限於適銷性，適用於特別用途及非侵權擔保。在任何情況，作者及作權人都不會作出對任何有關本軟件使用和其他相關項目擔保，包括任何索償，損失，或其他有關但不限於契約及侵權法的法律責任。";
+
+/*  */
+"switchboard_button_validation_photos2" = "相片";
+
+/* Label to map points of other citizens in 'My Map' */
+"tag_to_map_points_of_citizens_albopictus" = "白紋伊蚊";
+
+/*  */
+"tag_to_map_points_of_citizens_aegypti" = "埃及伊蚊";
+
+/*  */
+"tag_to_map_points_of_citizens_none" = "沒有";
+
+/*  */
+"my_map_legend_label_my_observations_my_observations" = "我的觀察";
+
+/*  */
+"my_map_legend_label_nearby_observations_nearby_observations" = "鄰近用戶的觀察";
+
+/*  */
+"ios_photo_initial_warning_we_need_to_access_your_photo_library_to_get_and_store_your_mosquito_and_br" = "我們需要從你的照片庫存取蚊子及其滋生㆞點的照片.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"ios_photo_initial_warning_2_we_need_to_access_your_location" = "我們需要從定位服務存取你的位置及報告，以整合鄰近位置的報告資料.";

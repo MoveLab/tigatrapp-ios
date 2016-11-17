@@ -3,16 +3,16 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
+      "filename" : "mosquitoalert_960.png",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "launch640x960.png",
       "scale" : "2x"
     },
     {
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "retina4",
-      "filename" : "launch640x1136.png",
+      "filename" : "mosquitoalert_1136.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
       "scale" : "2x"

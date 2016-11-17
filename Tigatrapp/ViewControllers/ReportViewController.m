@@ -8,6 +8,7 @@
 
 #import "ReportViewController.h"
 #import "MosquitoChecklistViewController.h"
+#import "Mosquito2ndChecklistViewController.h"
 #import "SiteChecklistViewController.h"
 #import "PickPhotoViewController.h"
 #import "NoteViewController.h"
@@ -39,6 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = [LocalText with:@"header_title"];
     
     if ([_reportType isEqualToString:@"adult"]) {
         if (self.sourceReport == nil) {
@@ -93,6 +96,9 @@
         _report.currentLocationLon = nil;
         _report.currentLocationLat = nil;
     }
+    
+    
+    if (SHOW_LOGS) [_report print];
     
 }
 
@@ -161,7 +167,7 @@
             _mapIcon.alpha = 0.2;
             _currentIcon.alpha = 1.0;
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                             message:[NSString stringWithFormat:@"%@\n\nLat: %f\nLon: %f"
                                                                      ,[LocalText with:@"added_current_loc"]
                                                                      ,[CurrentLocation sharedInstance].currentLatitude
@@ -176,7 +182,7 @@
             _actualSwitch.on = NO;
             _currentIcon.alpha = 0.2;
 
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                             message:[LocalText with:@"turn_on_location"]
                                                            delegate:self
                                                   cancelButtonTitle:@"OK"
@@ -192,7 +198,7 @@
 
 -(IBAction)pressDelete:(id)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                     message:[LocalText with:@"delete_report_warning"]
                                                    delegate:self
                                           cancelButtonTitle:[LocalText with:@"delete_report"]
@@ -230,7 +236,7 @@
                 [[UserReports sharedInstance].reports removeObject:_sourceReport];
                 [[UserReports sharedInstance] addReport:_report];
             }
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                             message:[LocalText with:@"report_sent_confirmation"]
                                                            delegate:self
                                                   cancelButtonTitle:[LocalText with:@"ok"]
@@ -257,7 +263,18 @@
         check = [LocalText with:@"toast_report_before_submitting_site"];
     }
     
-    if (_report.responses.count <3) {
+    int questionsToAnswer;
+    if ([_reportType isEqualToString:@"adult"]) {
+        if (_report.packageVersion == 0) {
+            questionsToAnswer = 3;
+        } else {
+            questionsToAnswer = 3;
+        }
+    } else {
+        questionsToAnswer = 4;
+    }
+    
+    if (_report.responses.count < questionsToAnswer) {
         check = [NSString stringWithFormat:@"%@\n%@"
                  ,check
                  ,[LocalText with:@"toast_complete_checklist"]];
@@ -281,7 +298,7 @@
     }
     
     if (fail) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                         message:check
                                                        delegate:self
                                               cancelButtonTitle:[LocalText with:@"ok"]
@@ -300,7 +317,7 @@
     
     if ([self checkAnswers]) {
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tigatrapp"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[LocalText with:@"header_title"]
                                                         message:[LocalText with:@"report_sent"]
                                                        delegate:self
                                               cancelButtonTitle:[LocalText with:@"ok"]
@@ -322,7 +339,11 @@
     
     if (indexPath.section==0 && indexPath.row == 1) {
         if ([_reportType isEqualToString:@"adult"]) {
-            [self performSegueWithIdentifier: @"mosquitoSegue" sender: self];
+            if ([_report.packageVersion isEqualToString:@"0"]) {
+                [self performSegueWithIdentifier: @"mosquitoSegue" sender: self];
+            } else {
+                [self performSegueWithIdentifier: @"mosquito2ndSegue" sender: self];
+            }
         } else {
             [self performSegueWithIdentifier: @"siteSegue" sender: self];
         }
@@ -349,6 +370,9 @@
     if ([segue.identifier isEqualToString:@"mosquitoSegue"]) {
         MosquitoChecklistViewController *viewController = segue.destinationViewController;
         viewController.report = _report;
+    } else if ([segue.identifier isEqualToString:@"mosquito2ndSegue"]) {
+            Mosquito2ndChecklistViewController *viewController = segue.destinationViewController;
+            viewController.report = _report;
     } else if ([segue.identifier isEqualToString:@"siteSegue"]) {
         SiteChecklistViewController *viewController = segue.destinationViewController;
         viewController.report = _report;

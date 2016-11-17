@@ -38,11 +38,14 @@
 @property (nonatomic, strong) NSNumber *answer1;
 @property (nonatomic, strong) NSNumber *answer2;
 @property (nonatomic, strong) NSNumber *answer3;
+@property (nonatomic, strong) NSNumber *answer4;
+@property (nonatomic, strong) NSNumber *mission;
 
 
 - (id) initWithDictionary:(NSDictionary *)dictionary;
 - (NSMutableDictionary *) dictionaryIncludingImages:(BOOL)imagesIncluded;
 - (NSString *)niceCreationTime;
 - (void) print;
+- (NSString *) defineReportId ;
 
 @end

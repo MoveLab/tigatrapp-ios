@@ -20,5 +20,6 @@
 @property (nonatomic, assign) Report *report;
 
 - (id)initWithReport:(Report *)report;
+- (void)updateCoordinates:(Report *)report;
 
 @end

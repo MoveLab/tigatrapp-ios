@@ -1,0 +1,10 @@
+/* Localized versions of Info.plist keys */
+
+/*  */
+"NSPhotoLibraryUsageDescription" = "Necesitamos acceder a la galeria de fotos para acceder y guardar las fotos de mosquitos y puntos de cría.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"NSLocationWhenInUseUsageDescription" = "Necesitamos acceder a tu posición para localizar tus informes y para encontrar informes cerca de donde estés.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"NSCameraUsageDescription" = "Necesitamos acceder a la cámara para que puedas fotografiar tus mosquitos y lugares de cría.";

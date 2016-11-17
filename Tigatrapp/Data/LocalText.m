@@ -14,4 +14,19 @@
     return NSLocalizedString(string,nil);
 }
 
++ (NSString *) currentLoc {
+    
+    if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"ca"]) {
+        return @"ca";
+    } else if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"es"]) {
+        return @"es";
+    } else {
+        return @"en";
+    }
+
+    
+}
+
+
+
 @end

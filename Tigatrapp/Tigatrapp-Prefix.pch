@@ -17,11 +17,17 @@
 
 #import "LocalText.h"
 
-#define PACKAGE_VERSION 0
-#define C_API    @"http://tigaserver.atrapaeltigre.com/api/"
-//#define C_TOKEN  @"Token 3791ad3995d31cfb56add03030a804a7436079cc"
+#define PACKAGE_VERSION 1 // 0 = versio ios . 1 = versio nova
+#define C_API @"http://webserver.mosquitoalert.com/api/"
+//#define C_API    @"http://humboldt.ceab.csic.es/api/"
+//#define C_API    @"http://tigaserver.atrapaeltigre.com/api/"
+//#define C_TOKEN  @"Token 3791ad3995d31cfb56add03030a804a7436079cc" ??
 #define C_TOKEN  @"Token D4w29W49rMKC7L6vYQ3ua3rd6fQ12YZ6n70P"
 
+
+
+
 #define C_GRAY   [UIColor colorWithRed:249.0f/255.0f green:249.0f/255.0f blue:249.0f/255.0f alpha:1.0f]
+#define C_GRAYLINE   [UIColor colorWithRed:209.0f/255.0f green:209.0f/255.0f blue:209.0f/255.0f alpha:1.0f]
 #define C_YELLOW [UIColor colorWithRed:244.0f/255.0f green:179.0f/255.0f blue:0.0f/255.0f alpha:1.0f]
 #define SHOW_LOGS NO

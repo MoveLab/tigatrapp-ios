@@ -19,6 +19,7 @@ static CurrentLocation *sharedInstance = nil;
     return sharedInstance;
 }
 
+
 -(void) startLocation {
     
     // location
@@ -29,6 +30,12 @@ static CurrentLocation *sharedInstance = nil;
     _locationManager.delegate = self;
     _locationManager.distanceFilter = kCLDistanceFilterNone;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
+
+    
+    if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [_locationManager requestWhenInUseAuthorization];
+    } else {
+    }
 
     if([CLLocationManager locationServicesEnabled]){
         

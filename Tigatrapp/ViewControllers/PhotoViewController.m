@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = [LocalText with:@"header_title"];
+
     _imageView.image = [UIImage imageWithData:[_report.images objectAtIndex:_imageIndex]];
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
     _imageView.clipsToBounds = YES;

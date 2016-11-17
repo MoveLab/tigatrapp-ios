@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = [LocalText with:@"header_title"];
+
 
     self.automaticallyAdjustsScrollViewInsets = NO;
 

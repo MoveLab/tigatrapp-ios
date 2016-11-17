@@ -1,0 +1,776 @@
+/*
+* Loco ios export: iOS Localizable.strings
+* Project: strings 2.xml conversion
+* Release: Working copy
+* Locale: en, English
+* Exported by: Unregistered user
+* Exported at: Thu, 08 Sep 2016 08:07:11 +0100
+*/
+
+/* Intro and Consent */
+"consent_button_label" = "我已閱讀並接受這些條款";
+
+/*  */
+"decline_button_label" = "我拒絕同意";
+
+/*  */
+"mosquito_alert_pop" = "<p><b>AtrapaelTigre 已改名為 Mosquito Alert!</b></p>\n<p>我們均源自同一個團隊，但我們已進行項目拓展，並添加了新原素：現在你不單只可以報告白紋伊蚊 (<i>Aedes albopictus</i>) ，你亦可同時報告埃及斑蚊 (<i>Aedes aegypti</i>)的蹤影。<p>\n<p>你可瀏覽 www.mosquitoalert.com 以了解更多相關資訊</p>\n<p>謝謝你的支持和參與</p>\n<p>Mosquito Alert 團隊</p>";
+
+/* Gallery */
+"gallery_array0" = "埃及斑蚊<i>Aedes aegypti</i>(左) 和 白紋伊蚊<i>Aedes albopictus</i>(右)的最大分別為：埃及斑蚊的胸部有數條白色呈豎琴形的條紋，而白紋伊蚊的胸部只有一條白色條紋。<b>照片來源: Vincent Robert (CC BY 2.0)</b>";
+
+/*  */
+"gallery_array1" = "白紋伊蚊(<i>Aedes albopictus</i>). 牠的特徵包括佈滿白點和白色條紋的黑色身軀，以及在頭部和胸腔部份的白線。另外，雌性白紋伊蚊的腹部是充滿血的。 <b> Photo: Roger Eritja (©)</ b>";
+
+/*  */
+"gallery_array2" = "埃及斑蚊 (<i>Aedes aegypti</i>) . 牠的特徵包括佈滿白點和白色條紋的深棕色身軀。以及在牠頭部上方(即其軀幹)有四條豎琴形的白色條紋。 <b>Photo: James Gathany (ECDC, domini públic)</b>";
+
+/*  */
+"gallery_array3" = "觀察白紋伊蚊 (<i>Ae. albopictus</i>)特有的黑色身軀。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array4" = "觀察埃及斑蚊 (<i>Aedes aegypti</i>) 特有的深棕色身軀。<b>照片來源: Mark Yokoyama (CC BY 2.0)</b>";
+
+/*  */
+"gallery_array5" = "那些蚊子會叮人？只有雌性的蚊子會，而在這情況下為白紋伊蚊 (<i>Ae. albopictus</i>)。都市<i>伊蚊</i>通常只會於日間，而非夜間出沒，而牠們主要叮人的腿部位置。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array6" = "兩隻雌性的埃及斑蚊(<i>Aedes aegypti</i>)。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array7" = "雄性(左) 和 雌性(右) 白紋伊蚊 (<i>Ae. albopictus</i>) 的分別－雄性白紋伊蚊的頭部具有羽毛。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array8" = "伊蚊<i>Aedes</i>的蚊卵。這些蚊卵細得幾乎無法目測。都市中的伊蚊通常會在積水附近乾爽的渠道生卵。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array9" = "伊蚊<i>Aedes</i>的幼蟲(外形較長) 或蛹(外形較圓)。注意，牠們兩者皆為水生動物－當蚊卵被水覆蓋，它便會轉化為幼蟲，而幼蟲最終亦會轉化為蛹。<b>照片來源: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array10" = "伊蚊<i>Aedes</i> 在水中的幼蟲(外形較長)和蛹(外形較圓). <b>照片來源:Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array11" = "生物的變態(型態改變): 成年蚊子 (白紋伊蚊 <i>Ae. albopictus</i>)破蛹而出。要預防伊蚊<i>Aedes</i>出現於家居環境，請移除積水和定期清理容易載有積水的器皿. <b>照片來源: Roger Eritja (©)</b>";
+
+/* Toasts */
+"toast_report_before_submitting_site" = "在提交蚊子滋生地的報告前，請：";
+
+/*  */
+"toast_report_before_submitting_adult" = "在提交蚊子報告前，請：";
+
+/*  */
+"toast_complete_checklist" = "- 請完成資料一覽表";
+
+/*  */
+"toast_specify_location" = "- 請具體說明其位置";
+
+/*  */
+"toast_attach_photo" = "- 請上載一張蚊子滋生地的照片";
+
+/* Switchboard */
+"dataMap_CD" = "我的數據";
+
+/*  */
+"switchboard_button_text_report" = "報告";
+
+/*  */
+"switchboard_button_text_sites" = "滋生地方";
+
+/*  */
+"switchboard_button_text_adult" = "蚊子";
+
+/*  */
+"switchboard_button_text_map" = "我的地圖";
+
+/*  */
+"switchboard_button_text_gallery" = "照片庫";
+
+/*  */
+"switchboard_demo_popup" = "這是Mosquito Alert的簡易測試版。在這個版本中，你不能共享任何數據。如果你參與這個項目共享數據，請點擊確定以安裝完整的Mosquito Alert應用程式。(如果你經已安裝完整的版本，你可以刪除我們的演示簡易測試版。)";
+
+/* activity labels */
+"activity_label_report_editing" = "Mosquito Alert:編輯報告";
+
+/*  */
+"activity_label_report_new" = "Mosquito Alert:新報告";
+
+/*  */
+"activity_label_map" = "Mosquito Alert:我的報告地圖";
+
+/*  */
+"activity_label_gallery" = "Mosquito Alert:照片庫";
+
+/* Reports */
+"checklist_label_editing" = "描述*";
+
+/*  */
+"location_label_editing" = "位置*";
+
+/*  */
+"photo_check_label_editing" = "照片";
+
+/*  */
+"note_check_label_editing" = "備注";
+
+/*  */
+"report_title_adult" = "蚊子";
+
+/*  */
+"report_title_site" = "滋生地方";
+
+/*  */
+"checklist_label" = "新增描述*";
+
+/*  */
+"location_label" = "新増位置*";
+
+/*  */
+"location_current_label" = "目前位置";
+
+/*  */
+"location_select_label" = "在地圖上選擇另一位置";
+
+/*  */
+"location_current_label_button" = "目前位置";
+
+/*  */
+"location_select_label_button" = "選擇";
+
+/*  */
+"location_menu_title" = "選擇目前位置或是在地圖上選擇另一位置?";
+
+/*  */
+"photo_check_label" = "新增照片";
+
+/*  */
+"note_check_label" = "新增備注";
+
+/*  */
+"update" = "更新";
+
+/*  */
+"created_on" = "已傳送:";
+
+/*  */
+"delete_report_warning" = "你確定要刪除此報告嗎？";
+
+/*  */
+"word_report" = "報告";
+
+/*  */
+"photo_label" = "照片";
+
+/*  */
+"photo_label_star" = "照片*";
+
+/*  */
+"site_report_q1" = "這繁殖地是否排水渠或下水道？";
+
+/*  */
+"site_report_q2" = "這繁殖地是否公共空間？";
+
+/*  */
+"site_report_q3" = "這繁殖地有沒有藏有積水，和/或任何蚊子品種旳幼蟲或蛹？";
+
+/*  */
+"site_report_q4" = "你有否在周遭地方見到成年蚊子(少於十米內)？";
+
+/*  */
+"site_report_q3_response1" = "同時有積水和幼蟲或蛹";
+
+/*  */
+"site_report_q3_response2" = "有積水，但沒有幼蟲或蛹";
+
+/*  */
+"site_report_q3_response3" = "沒有積水";
+
+/*  */
+"adult_report_q3" = "蚊子的腹部是什麼樣子？檢查(i)按鈕，然後選擇一個答案：";
+
+/*  */
+"adult_report_q3a1" = "有白色條紋和小斑點";
+
+/*  */
+"adult_report_q3a2" = "有白色條紋和大斑點";
+
+/*  */
+"adult_report_q3a3" = "皆不是";
+
+/*  */
+"adult_report_q3a4" = "不確定";
+
+/*  */
+"confirmation_q2_adult_headthorax" = "蚊子的胸部是什麼樣子？是否帶有一條白色條紋？檢查(i)按鈕，然後選擇答案：";
+
+/*  */
+"q2_headthorax_text_help" = "<p>白紋伊蚊 (<i>Ae. albopictus</i>) 的頭部和胸部帶有一條白色條紋，而埃及斑蚊 (<i>Ae. aegypti</i>)的胸部則有四條白色條紋，組成豎琴形的條紋 。</p>\n\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0). Right photo: James Gathany (ECDC, public domain)</b></p>";
+
+/*  */
+"q3_abdomenlegs_text" = "<p>白紋伊蚊和埃及斑蚊的腹部皆有白色斑點和白色條紋，但白紋伊蚊的條紋較埃及斑蚊的幼小。</p>\n\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
+"identifying_mosquitoes_title" = "關於蚊子";
+
+/*  */
+"confirmation_q1_adult_sizecolor" = "你的蚊子是什麼顏色？檢查(i)按鈕，然後選擇一個答案：";
+
+/*  */
+"adult_report_q1a1" = "黑色身軀，並且在腹部和腿部有白色條紋";
+
+/*  */
+"adult_report_q1a2" = "棕色身軀，並且在腹部和腿部有白色條紋";
+
+/*  */
+"adult_report_q1a3" = "皆不是";
+
+/*  */
+"adult_report_q1a4" = "不確定";
+
+/*  */
+"adult_report_q2a1" = "是";
+
+/*  */
+"adult_report_q2a2" = "否，蚊子有四條白色條紋組成豎琴形";
+
+/*  */
+"adult_report_q2a3" = "皆不是";
+
+/*  */
+"adult_report_q2a4" = "不確定";
+
+/*  */
+"q1_sizecolor_text_help" = "<p>白紋伊蚊(<i>學名：Aedes albopictus</i>）和埃及斑蚊（<i>學名：Aedes aegypti</i>）的特徵是細小以及其帶有白色點紋的深色身軀。白紋伊蚊的身軀為黑色，而埃及斑蚊的為深棕色。</p>\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
+"adult_report_help_html" = "<p><b>協助:</b> <br/> \n如果你發現蚊子，請按照以下步驟填寫表格:</p>\n\n<p> \n<ul>\n<li><b>步驟1 - 蚊子的外貌</ b>: 請回答下列四條問題讓我們了解更多</li> \n<br/>\n<li><b>步驟 2 - 發現蚊子的位置</ b>:如果你現在身處的位置為發現蚊子的位置，請選擇”目前位置”。你可以啟用GPS全球定位系统以增加位置準確性。如果你在另一位置發現蚊子，並有儲存該位置的照片作紀錄，請選擇”別處”，並在地圖上附加位置。 </li> \n<br/>\n<li><b>步驟3 - 新增照片</ b>: 請以手機拍攝照片或直接上載你已儲存的照片。你可以抓住蚊子的腿部，然後從正面和側面拍攝以便識別。</li> \n<br/>\n<li><b>步驟 4 - 添加備注</ b>: 你可以於備注欄作任何額外補充，但謹記不要填寫你的個人資料。</li> \n</ul>\n</p>\n\n <p>你可以在”我的地圖”瀏覽和編輯你的發現。你提交的資料將於地圖上顯示\n<ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>。</p>";
+
+/*  */
+"site_report_help_html" = "<p><b>協助:</b> <br/> \n如果你發現蚊子滋生地，尤其是位於公共場所存有積水的的排水道或溝渠，請按照以下步驟填寫表格:\n<p> \n<ul>\n<li><b>步驟1 - 滋生地的外貌</ b>: 請回答下列四條問題讓我們了解更多</li> \n<br/>\n<li><b>步驟 2 - 發現滋生地的位置</ b>:如果你現在身處的位置為發現蚊子的位置，請選擇”目前位置”。你可以啟用GPS全球定位系统以增加位置準確性。如果你在另一位置發現蚊子，並有儲存該位置的照片作紀錄，請選擇”別處”，並在地圖上附加位置。 </li> \n<br/>\n<li><b>步驟3 - 新增照片</ b>: 請以手機拍攝照片或直接上載你已儲存的照片。可以的話，請儘量拍攝一張能顯示積水和/或幼蟲和蛹滋生情況的照片。</li> \n<br/>\n<li><b>步驟 4 - 添加備注</ b>: 你可以在此提供更多你發現的細節。謹記，切勿不要附加任何個人資料。</li> \n</ul>\n</p>\n\n <p>你可以在”我的地圖”瀏覽和編輯你的發現。你提交的資料將於地圖上顯示 <ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>。</p>\n<p>你可以在”我的地圖”瀏覽和編輯你的發現。你提交的資料將於地圖上顯示\n<ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>。</p>";
+
+/*  */
+"site_report_item_help_1" = "<p>都市<i>伊蚊</i>(<i>Ae. albopictus 白紋伊蚊</i> 和 <i>Ae. aegypti 埃及伊蚊</i>)多數於含積水，但比水桶還小的室外地方產卵。含積水的排水道或溝渠是<i>伊蚊</i>的主要繁殖地方。\n<p>都市<i>伊蚊</i>不會於海灘，河流，湖泊，池塘，或濕地繁殖。\n<p>以下照片由巴塞羅那公共衛生局慷慨提供。</p>";
+
+/*  */
+"site_report_item_help_2" = "公共空間是指那些可以供公眾㆟士自由進出的地方，如道路，廣場，公園，和綠化空間等。它們不包括私人地段或其他私有財產。";
+
+/*  */
+"site_report_item_help_3" = "都市<I>伊蚊< / i>的幼蟲和蛹在變態(型態改變)成蟲前之前，因為生存的原故，需要居住在積水或渾水數天。";
+
+/*  */
+"site_report_item_help_4" = "白紋伊蚊一般不會遠距離移動 ——大多數500米範圍內，因此，成年白紋伊蚊常被發現於滋生地附近的位置，";
+
+/*  */
+"site_q1_a1_embornals" = "是";
+
+/*  */
+"fonts" = "噴泉";
+
+/*  */
+"basses" = "細小的水盆或類似的貯水容器";
+
+/*  */
+"bidons" = "細小的容器";
+
+/*  */
+"altres" = "其他";
+
+/*  */
+"report_checklist_title_adult" = "成年蚊子編目";
+
+/*  */
+"report_checklist_title_site" = "地點編目";
+
+/* View Report */
+"return_to_map" = "返回";
+
+/*  */
+"delete_report" = "刪除";
+
+/*  */
+"edit_report" = "編輯";
+
+/*  */
+"report_not_saved_warning" = "報告尚未儲存，你確定要離開？";
+
+/*  */
+"exit_question" = "離開？";
+
+/*  */
+"no_note_attached" = "沒有備注附加";
+
+/*  */
+"no_photo_attached" = "沒有照片附加";
+
+/*  */
+"checklist_tab_title" = "編目";
+
+/*  */
+"photos_tab_title" = "照片";
+
+/*  */
+"notes_tab_title" = "備注";
+
+/*  */
+"view_report_title_adult" = "蚊子報告";
+
+/*  */
+"view_report_title_site" = "蚊子滋生地";
+
+/* Photo Selector */
+"photo_selector_title" = "報告照片";
+
+/*  */
+"photo_selector_take_photo_button" = "拍攝照片";
+
+/*  */
+"photo_selector_attach_photo_button" = "從相薄附加";
+
+/*  */
+"photo_selector_remove_attachment" = "移除附件";
+
+/*  */
+"photo_selector_remove_this_photo" = "移除照片";
+
+/*  */
+"photo_selector_from_thisreport" = "從這報告";
+
+/*  */
+"photo_selector_remove_button_label" = "移除";
+
+/* RSS Feeds */
+"rss_internet_connection_warning" = "沒有網絡連接\n請連接到互聯網，並從目錄中選擇“重新整理”";
+
+/*  */
+"rss_title_tigatrapp" = "mosquitoalert.com 的最新消息";
+
+/* Tasks */
+"task_list_title" = "任務";
+
+/*  */
+"task_list_pending" = "有待確認";
+
+/*  */
+"task_list_completed" = "完成";
+
+/*  */
+"delete_task_from_list_question" = "從凊單中刪除任務？";
+
+/*  */
+"delete" = "刪除";
+
+/*  */
+"new_mission" = "有新 Mosquito Alert 任務！";
+
+/*  */
+"mission_button_left_survey" = "提交報告";
+
+/*  */
+"mission_button_left_url" = "瀏覽網頁";
+
+/*  */
+"mission_button_middle" = "稍後才繼續任務";
+
+/*  */
+"mission_button_right" = "刪除任務";
+
+/*  */
+"mission_button_mark_complete" = "標記完成";
+
+/*  */
+"toast__mission_already_complete" = "你已完成這項任務，謝謝！";
+
+/*  */
+"toast_mission_expired" = "這個任務已因過期不存在";
+
+/* Menu */
+"menu_option_task_list" = "任務";
+
+/*  */
+"menu_option_tigatrapp_news" = "最新消息";
+
+/*  */
+"menu_option_settings" = "設定";
+
+/*  */
+"menu_option_help" = "協助";
+
+/*  */
+"menu_option_about" = "關於";
+
+/*  */
+"menu_option_share" = "分享";
+
+/*  */
+"menu_option_filter" = "過濾";
+
+/*  */
+"menu_option_show_pending_tasks_only" = "顯示尚未完成的任務";
+
+/*  */
+"menu_option_show_all_tasks" = "顯示所有任務";
+
+/*  */
+"menu_option_map_type_label" = "地圖類型";
+
+/*  */
+"menu_option_map_type_satellite" = "衛星地圖";
+
+/*  */
+"menu_option_map_type_street" = "街道地圖";
+
+/*  */
+"menu_option_share_map" = "分享地圖";
+
+/*  */
+"menu_option_save_map" = "儲存地圖";
+
+/*  */
+"menu_map_save" = "儲存";
+
+/*  */
+"menu_map_share" = "分享";
+
+/*  */
+"menu_toggle_view" = "衛星";
+
+/*  */
+"menu_option_refresh" = "重新整理";
+
+/* Settings */
+"settings_language_title" = "語言";
+
+/*  */
+"settings_language_detail" = "選擇語言";
+
+/*  */
+"settings_language_button" = "選擇";
+
+/*  */
+"settings_sync_title" = "同步";
+
+/*  */
+"settings_sync_detail" = "數據已與Mosquito Alert伺服器同步，你將會收到Mosquito Alert的最新消息和任務。";
+
+/*  */
+"settings_sync_button" = "同步";
+
+/*  */
+"settings_syncing" = "正在同步";
+
+/*  */
+"on" = "可用";
+
+/*  */
+"off" = "不可用";
+
+/*  */
+"sample_my_locations" = "採樣我的位置";
+
+/*  */
+"sampling_is_off" = "位置採樣不可用";
+
+/*  */
+"sampling_is_on" = "位置採樣可用";
+
+/*  */
+"sync_error" = "傳送過程中有故障，你的數據將於稍後再次自動進行同步";
+
+/*  */
+"offline_sync" = "沒有網絡連接。你的數據將在有可用的連接網絡時自動進行同步";
+
+/*  */
+"sync_success" = "同步成功";
+
+/*  */
+"deletion_network_error" = "報告已從手機刪除，但傳送過程中有故障。你的數據將於稍後再次自動進行同步";
+
+/*  */
+"deletion_no_network" = "報告已從手機刪除，但傳送過程中未能連接至互聯網。你的數據將在有可用的連接網絡時自動進行同步";
+
+/* Misc */
+"added_current_loc" = "已新增目前位置";
+
+/*  */
+"refresh" = "重新整理";
+
+/*  */
+"report_deleted" = "已刪除報告";
+
+/*  */
+"edit" = "編輯";
+
+/*  */
+"edit_title_adult" = "蚊子";
+
+/*  */
+"edit_title_site" = "蚊子滋生地";
+
+/*  */
+"cd_help_icon" = "協助";
+
+/*  */
+"open" = "開啟";
+
+/*  */
+"spinner_prompt" = "選擇回應";
+
+/*  */
+"spinner_nothing_selected" = "未有選擇任何項目";
+
+/*  */
+"help" = "協助";
+
+/*  */
+"photo_credit_gallery" = "照片來源: R. Eritja (www.eritja.com)";
+
+/*  */
+"photo_credit" = "照片來源: R. Eritja (www.eritja.com)";
+
+/*  */
+"nolocnogps_alert" = "你的全球定位系統和網絡接收器處於關閉狀態，因此我們偵測不到你的位置－請啟用它們以開始自動偵測位置功能。你亦可以在地圖上選擇你的位置";
+
+/*  */
+"progtitle_report" = "傳送中";
+
+/*  */
+"nolocation_alert_report" = "我們暫時未能偵測到你的位置，請稍等一會兒，然後再試一次。你亦可以在地圖上選擇你的位置";
+
+/*  */
+"upload_error_report" = "傳送過程出現錯誤。你的數據已被儲存，並會於稍後時間再次傳送，謝謝！";
+
+/*  */
+"offline_report" = "沒有網絡連接。你的數據將在有可用的連接網絡時自動進行同步，謝謝！";
+
+/*  */
+"about" = "關於";
+
+/*  */
+"add_note" = "你可以於此備注欄作任何額外補充(如更仔細描述你見到的蚊子)以便團隊作進一步研究，但謹記不要填寫你的個人資料。";
+
+/*  */
+"button_submit_CD" = "發送報告至研究中心的按鈕";
+
+/*  */
+"cancel" = "取消";
+
+/*  */
+"ceab_CD" = "CEAB 標誌";
+
+/*  */
+"data_saved" = "已儲存數據為";
+
+/*  */
+"data_SD_error" = "SD咭出現問題";
+
+/*  */
+"data_SD_unavailable" = "未能使用SD咭 － 數據未能儲存";
+
+/*  */
+"dipsalut_CD" = "Dipsalut 標誌";
+
+/*  */
+"dontknow" = "不確定";
+
+/*  */
+"fecyt_CD" = "FECYT 標誌";
+
+/*  */
+"funded_by" = "由 資助：";
+
+/*  */
+"funding_and_support" = "資助和支持";
+
+/*  */
+"gallery" = "圖片庫";
+
+/*  */
+"GPL" = "瀏覽 GPL";
+
+/*  */
+"gpl_heading" = "GPL";
+
+/*  */
+"LGPL" = "瀏覽 LGPL";
+
+/*  */
+"license" = "許可証";
+
+/*  */
+"mailing_spec_title" = "寄送樣本";
+
+/*  */
+"movelab" = "MoveLab\nCentre d'Estudis Avançats de Blanes (CEAB-CSIC)";
+
+/*  */
+"movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
+
+/*  */
+"movelab_address2" = "Blanes. Girona. E-17300";
+
+/*  */
+"movelab_banner_CD" = "MoveLab 標誌";
+
+/*  */
+"no" = "否";
+
+/*  */
+"noGPSnoNetAlert" = "你的全球定位系統和網絡接收器處於關閉狀態，因此我們不能偵測到你的位置。現在啟用它們？";
+
+/*  */
+"notes_title" = "訊息";
+
+/*  */
+"ok" = "確定";
+
+/*  */
+"project_email" = "info@mosquitoalert.com";
+
+/*  */
+"project_website" = "http://mosquitoalert.com/";
+
+/*  */
+"report_sent" = "如果你選擇確定，我們的項目團隊將收到你的報告，而部分內容將於www.mosquitoalert.com的網上公眾地圖發怖。";
+
+/*  */
+"report_sent_confirmation" = "報告經已發送。謝謝！請瀏覽我們的項目網站去獲取更多資訊。";
+
+/*  */
+"reportGallery_CD" = "圖片庫按鈕";
+
+/*  */
+"saved_image_prefix" = "mosquitoalert";
+
+/*  */
+"scm_CD" = "SCM 標誌";
+
+/*  */
+"send_spec_text" = "你會否把蚊子樣本以郵寄方式傳送至我們的實驗室作分析用途？";
+
+/*  */
+"share_with" = "分享";
+
+/*  */
+"submit" = "發送";
+
+/*  */
+"supported_by" = "由: 支持";
+
+/*  */
+"type_here" = "你可以於此欄作任何額外補充或發表意見，但謹記不要填寫你的個人資料。";
+
+/*  */
+"view_gpl_english" = "瀏覽 GPL 的官方版本";
+
+/*  */
+"yes" = "是";
+
+/*  */
+"your_report_id_is" = "你的報告編號是：";
+
+/*  */
+"photo_credits" = "Mosquito Alert 的相片由 R. Eritja (www.eritja.com)提供。";
+
+/*  */
+"copyright" = "版權 &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus";
+
+/* DO NOT TRANSLATE */
+"app_name" = "Mosquito Alert";
+
+/*  */
+"app_directory" = "MosquitoAlert";
+
+/*  */
+"debug_mode" = "true";
+
+/*  */
+"private_mode" = "false";
+
+/*  */
+"package_prefix" = "ceab.movelab.tigabib.";
+
+/*  */
+"content_provider_auth_missions" = "ceab.movelab.tigabib.cp.missions";
+
+/*  */
+"content_provider_auth_reports" = "ceab.movelab.tigabib.cp.reports";
+
+/*  */
+"content_provider_auth_tracks" = "ceab.movelab.tigabib.cp.tracks";
+
+/*  */
+"internal_action" = "ceab.movelab.tigatrapp.tigabib.INTERNAL_ACTION";
+
+/*  */
+"language_selector_english" = "英文";
+
+/*  */
+"language_selector_catalan" = "加泰羅尼亞文";
+
+/*  */
+"language_selector_spanish" = "西班牙文";
+
+/*  */
+"photo_share_message" = "通過 @Mosquito_Alert";
+
+/*  */
+"language_selector_chinese_hk" = "中文 (香港)";
+
+/*  */
+"paso1" = "1. 請描述滋生地點的表面情況？";
+
+/*  */
+"paso2" = "3. 你在那裡找到牠？";
+
+/*  */
+"paso3" = "3. 新增圖片";
+
+/*  */
+"paso4" = "4. 你希望附註任何評論嗎？";
+
+/*  */
+"paso1_2" = "1.  請描述蚊子的外貌？";
+
+/*  */
+"switchboard_button_validations_photos" = "驗證";
+
+/*  */
+"switchboard_button_notifications_site" = "通知";
+
+/*  */
+"switchboard_button_missions_site" = "任務";
+
+/*  */
+"header_title" = "Mosquito Alert";
+
+/*  */
+"menu_option_gallery" = "圖片庫";
+
+/*  */
+"back" = "返回";
+
+/*  */
+"notifications_new" = "新";
+
+/*  */
+"notifications_old" = "舊";
+
+/*  */
+"task_expires" = "到期";
+
+/*  */
+"task_complete_checklist" = "完成資料一覽表";
+
+/*  */
+"menu" = "選項欄";
+
+/*  */
+"additional_information" = "附加資料";
+
+/*  */
+"turn_on_location" = "開啟位置設定以便Mosquito Alert判斷你的位置";
+
+/* Tasks */
+"task_list_title2" = "通知";
+
+/*  */
+"switchboard_button_validation_photos2" = "相片";

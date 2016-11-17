@@ -34,6 +34,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    
+    self.title = [LocalText with:@"header_title"];
+    
     self.tableView.tableFooterView = [UIView new];
     
     _menuLabel.text = [LocalText with:@"menu"];
@@ -41,6 +44,7 @@
     _helpLabel.text = [LocalText with:@"menu_option_help"];
     _aboutLabel.text = [LocalText with:@"menu_option_about"];
     _shareLabel.text = [LocalText with:@"menu_option_share"];
+    _galleryLabel.text = [LocalText with:@"menu_option_gallery"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,9 +59,10 @@
 {
     UITableViewCell *cell = [aTableView cellForRowAtIndexPath:indexPath];
     [cell setSelected:NO];
-    if (indexPath.row == 4) {
+    if (indexPath.row == 5)  {
+        // SHARE
         NSArray *activityItems;
-        activityItems = @[@"http://atrapaeltrigre.com"];
+        activityItems = @[[LocalText with:@"project_website"]];
         UIActivityViewController *activityController =
         [[UIActivityViewController alloc]
          initWithActivityItems:activityItems

@@ -1,627 +1,835 @@
-/* 
-  Localizable.strings
-  Tigatrapp
+/*
+ * Loco ios export: iOS Localizable.strings
+ * Project: strings.xml conversion
+ * Release: Working copy
+ * Locale: en, English
+ * Exported by: Unregistered user
+ * Exported at: Tue, 08 Nov 2016 17:19:51 +0000
+ */
 
-  Created by jordi on 29/05/14.
-  Copyright (c) 2014 OMA Technologies, Ibeji digital, John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus
-*/
-
-"back" = "Back";
-"menu" = "Menu";
-
-"additional_information" = "Additional information";
-
-"turn_on_location" = "Turn on Location Services to allow Tigatrapp to determine your location";
+"legend_nearby_observations" = "Nearby observations";
+"legend_my_observations" = "My observations";
 
 
-//* */
-"internal_message_id" = "csic.ceab.movelab.tigatrapp";
-
-/* */
-"language_selector_english" = "English";
-
-/* */
-"language_selector_catalan" = "Català";
-
-/* */
-"language_selector_spanish" = "Español";
-
-/* */
-"gallery_array" = "Female tiger mosquito. Tiger mosquitoes (1) are small and black with white stripes,        (2) they have a white stripe on the head and thorax, and (3) they have white stripes on the abdomen and legs. There are other similar insects, so it is important to avoid confusing them!";
-
-/* */
-"gallery_array_1" = "Female tiger mosquito. Note the stripes on the abdomen. Remember that the tiger mosquito is very small, not more than 5 mm (including legs, about half the size of a 1 cent coin).";
-
-/* */
-"gallery_array_2" = "Female tiger mosquito ready to bite. Note the white stripe on the head and thorax, and the stripes on the legs .";
-
-/* */
-"gallery_array_3" = "Female tiger mosquito biting. Note the characteristic white stripe on the head and thorax. ";
-
-/* */
-"gallery_array_4" = "Female tiger mosquito biting. Note the characteristic white stripe on the head and thorax. ";
-
-/* */
-"gallery_array_5" = "Two female tiger mosquitoes biting. Remember that only the females bite. Tiger mosquitoes usually bite during the day (not when it's dark) and they usually bite legs.";
-
-/* */
-"gallery_array_6" = "Female tiger mosquito biting. The blood that accumulates in the abdomen will trigger the laying of eggs.";
-
-/* */
-"gallery_array_7" = "Tiger mosquito laying eggs. Note the eggs' dark color and elongated shape. The eggs are so small that they are almost invisible to the naked eye. Remember that the tiger mosquito lays eggs in small containers, on dry walls by stagnant and dirty water.";
-
-/* */
-"gallery_array_8" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). Note that they are aquatic. The larvae emerge from the eggs when they are covered with water and eventually make       the transition to pupae.";
-
-/* */
-"gallery_array_9" = "Tiger mosquito larvae (more elongated) and pupae (more rounded). Remember that to keep tiger mosquitos out of your home you need to avoid having standing water in which the larvae can develop!";
-
-/* */
-"gallery_array_10" = "Two tiger mosquito pupae. This is the phase in which metamorphosis occurs, and the adult mosquito emerges from the pupa and enters the aerial environment.";
-
-/* */
-"toast_report_before_submitting_site" = "Before submitting this breeding site report, please:";
-
-/* */
-"toast_report_before_submitting_adult" = "Before submitting this tiger mosquito report, please:";
-
-/* */
-"toast_complete_checklist" = "- complete the checklist";
-
-/* */
-"toast_specify_location" = "- specify a location";
-
-/* */
-"toast_attach_photo" = "- attach a photo of the breeding site";
-
-/* */
+/* Intro and Consent */
 "consent_button_label" = "I have read and I accept these conditions";
 
-/* */
+/*  */
 "decline_button_label" = "I decline to consent";
 
-/* */
+/*  */
+"mosquito_alert_pop" = "<p> Help us in the fight against Dengue, Chickungunya, Yellow Fever, and Zika! Notify the presence of tiger mosquitoes (<i>Aedes albopictus</i>), yellow fever mosquitoes (<i>Aedes aegypti</i>), and their breeding sites.<p>\n<p>You can find more information at www.mosquitoalert.com</p>\n<p>Thanks for your interest and participation,</p>\n<p>The Mosquito Alert Team</p>";
+
+/* Gallery */
+"gallery_array0" = "The main difference between the yellow fever mosquito (left) and the tiger mosquito (right), is right after its head, in the thorax: The yellow fever mosquito has 4 white lines with a lyre-shaped pattern, while the tiger mosquito has a single white line. <b>Foto: Vincent Robert (CC BY 2.0)</b>";
+
+/*  */
+"gallery_array1" = "Tiger mosquito (<i>Aedes albopictus</i>). Its main characteristic is its black body with white lines and spots. Note the white line on the head and thorax. This female has the abdomen full of blood. <b> Photo: Roger Eritja (©)</ b>";
+
+/*  */
+"gallery_array2" = "Yellow fever mosquito (<i>Aedes aegypti</i>). Recognized by its dark brown color with white lines and spots. Right above its head, in the thorax, it has 4 white lines with a lyre-shaped pattern. <b>Photo: James Gathany (ECDC, domini públic)</b>";
+
+/*  */
+"gallery_array3" = "Tiger mosquito <i>Ae. albopictus</i>: Observe the black color that characterizes <i>Ae. albopictus</i>. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array4" = "Yellow fever mosquito <i>Ae. aegypti</i>: Observe the brown color that characterizes <i>Ae. aegypti</i>. <b>Foto: Mark Yokoyama (CC BY 2.0)</b>";
+
+/*  */
+"gallery_array5" = "Who bites? Only female mosquitoes, and in this case females of tiger mosquito that usually bite during the day. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array6" = "Two female yellow fever mosquitoes. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array7" = "Tiger mosquito male (left) and female (right). The males have plumes on their heads. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array8" = "<i>Aedes</i> eggs. The eggs are so small they are almost invisible to the naked eye. Female tiger and yellow fever mosquitoes lay eggs on the dry walls of small vessels near stagnant water. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array9" = "<i>Aedes</i> mosquito larvae (longer) and pupae (rounder). The larvae are aquatic and they eventually turn into pupae to finally become adult mosquitoes. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array10" = "<i>Aedes</i> larvae (longer) and pupae (rounder) in the water. <b>Photo: Roger Eritja (©)</b>";
+
+/*  */
+"gallery_array11" = "Adult tiger mosquitoes emerge from pupae into the air. This process is known as metamorphosis. <b>Photo: Roger Eritja (©)</b>";
+
+/* Toasts */
+"toast_report_before_submitting_site" = "Before submitting this breeding site report, please:";
+
+/*  */
+"toast_report_before_submitting_adult" = "Before submitting this mosquito report, please:";
+
+/*  */
+"toast_complete_checklist" = "- complete the checklist";
+
+/*  */
+"toast_specify_location" = "- specify a location";
+
+/*  */
+"toast_attach_photo" = "- attach a photo of the breeding site";
+
+/* Switchboard */
 "dataMap_CD" = "My Data";
 
-/* */
+/*  */
 "switchboard_button_text_report" = "REPORT";
 
-/* */
+/*  */
 "switchboard_button_text_sites" = "BREEDING SITE";
 
-/* */
-"switchboard_button_text_adult" = "TIGER MOSQUITO";
+/*  */
+"switchboard_button_text_adult" = "MOSQUITO";
 
-/* */
+/*  */
 "switchboard_button_text_map" = "MY MAP";
 
-/* */
+/*  */
 "switchboard_button_text_gallery" = "GALLERY";
 
-/* */
-"activity_label_report_editing" = "Tigatrapp: Report Editor";
+/*  */
+"switchboard_demo_popup" = "This is the demo version of Mosquito Alert. With this version you cannot share data. If you want to participate in the project by contributing data, please click OK to install the full Mosquito Alert application. (If you already have the full version, you can uninstall the demo at any time.)";
 
-/* */
-"activity_label_report_new" = "Tigatrapp: New Report";
+/* activity labels */
+"activity_label_report_editing" = "Mosquito Alert: Report Editor";
 
-/* */
-"activity_label_map" = "Tigatrapp: My Report Map";
+/*  */
+"activity_label_report_new" = "Mosquito Alert: New Report";
 
-/* */
-"activity_label_gallery" = "Tigatrapp: Gallery";
+/*  */
+"activity_label_map" = "Mosquito Alert: My Map";
 
-/* */
+/*  */
+"activity_label_gallery" = "Mosquito Alert: Gallery";
+
+/* Reports */
 "checklist_label_editing" = "Description*";
 
-/* */
+/*  */
 "location_label_editing" = "Location*";
 
-/* */
+/*  */
 "photo_check_label_editing" = "Photo(s)";
 
-/* */
+/*  */
 "note_check_label_editing" = "Note";
 
-/* */
-"report_title_adult" = "Tiger Mosquito";
+/*  */
+"report_title_adult" = "Mosquito";
 
-/* */
+/*  */
 "report_title_site" = "Breeding Site";
 
-/* */
+/*  */
 "checklist_label" = "Add description*";
 
-/* */
+/*  */
 "location_label" = "Add location*";
 
-/* */
-"location_current_label" = "Current";
+/*  */
+"location_current_label" = "Current location";
 
-/* */
+/*  */
 "location_select_label" = "Choose on map";
 
-/* */
+/*  */
 "location_current_label_button" = "Current";
 
-/* */
+/*  */
 "location_select_label_button" = "Select";
 
-/* */
+/*  */
 "location_menu_title" = "Use current location or select location from map?";
 
-/* */
+/*  */
 "photo_check_label" = "Add photo(s)";
 
-/* */
+/*  */
 "note_check_label" = "Add note";
 
-/* */
+/*  */
 "update" = "Update";
 
-/* */
+/*  */
 "created_on" = "Sent:";
 
-/* */
+/*  */
 "delete_report_warning" = "Are you sure you want to delete this report?";
 
-/* */
+/*  */
 "word_report" = "Report";
 
-/* */
+/*  */
 "photo_label" = "Photo(s)";
 
-/* */
+/*  */
 "photo_label_star" = "Photo(s)*";
 
-/* */
-"site_report_q1" = "Type of breeding site";
+/*  */
+"site_report_q1" = "Is this a storm drain or sewer?";
 
-/* */
-"site_report_q2" = "Does it have stagnant water inside?";
+/*  */
+"site_report_q2" = "Is it in a public area?";
 
-/* */
-"site_report_q3" = "Have you seen mosquito larvae (not necessarily tiger mosquito) inside?";
+/*  */
+"site_report_q3" = "Does it contain stagnant water and/or mosquito larvae?";
 
-/* */
-"q2_abdomenlegs_text" = "Tiger mosquitoes have white stripes on their abdomens and legs.";
+/*  */
+"site_report_q4" = "Have you seen mosquitoes nearby (<10 meters)?";
 
-/* */
-"identifying_mosquitoes_title" = "Identifying Tiger Mosquitoes";
+/*  */
+"site_report_q3_response1" = "Has stagnant water with larvae";
 
-/* */
-"confirmation_q1_adult_sizecolor" = "Is it small and black with white stripes?";
+/*  */
+"site_report_q3_response2" = "Has stagnant water, but with no larvae";
 
-/* */
-"q1_sizecolor_text" = "Tiger mosquitoes are small and black with white stripes.";
+/*  */
+"site_report_q3_response3" = "Does not contain stagnant water";
 
-/* */
-"confirmation_q2_adult_headthorax" = "Does it have a white stripe on the head and thorax?";
+/*  */
+"adult_report_q3" = "What does the abdomen of your mosquito look like? Check the (i) button and select an answer:";
 
-/* */
-"adult_report_q3" = "Does it have white stripes on the abdomen and legs?";
+/*  */
+"adult_report_q3a1" = "With white lines and thin white spots";
 
-/* */
-"embornals" = "Storm drain";
+/*  */
+"adult_report_q3a2" = "With white lines and thick white spots";
 
-/* */
+/*  */
+"adult_report_q3a3" = "Neither";
+
+/*  */
+"adult_report_q3a4" = "Not sure";
+
+/*  */
+"confirmation_q2_adult_headthorax" = "Look right after the head, at the thorax. Does it have a single white line? Check the (i) button and select an answer:";
+
+/*  */
+"q2_headthorax_text_help" = "<p>The tiger mosquito has a white line on its head and thorax. Conversely, the yellow fever mosquito has a white line on its head and 4 white lines on its thorax, forming a lyre-shaped pattern. </p>\n\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0). Right photo: James Gathany (ECDC, public domain)</b></p>";
+
+/*  */
+"q3_abdomenlegs_text" = "<p>The tiger mosquito and the yellow fever mosquito have white lines and spots on the abdomen, but those of the tiger mosquito are thinner than those of the yellow fever mosquito. </p>\n\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
+"identifying_mosquitoes_title" = "Mosquito description";
+
+/*  */
+"confirmation_q1_adult_sizecolor" = "What color is your mosquito? Check the (i) button and select an answer:";
+
+/*  */
+"adult_report_q1a1" = "Black with white lines on the body and the legs";
+
+/*  */
+"adult_report_q1a2" = "Brown with white lines on the body and the legs\n ";
+
+/*  */
+"adult_report_q1a3" = "Neither";
+
+/*  */
+"adult_report_q1a4" = "Not sure";
+
+/*  */
+"adult_report_q2a1" = "Yes";
+
+/*  */
+"adult_report_q2a2" = "No, it has 4 in a lyre-shaped pattern";
+
+/*  */
+"adult_report_q2a3" = "Neither";
+
+/*  */
+"adult_report_q2a4" = "Not sure";
+
+/*  */
+"q1_sizecolor_text_help" = "<p>The tiger mosquito and the yellow fever mosquito are small and dark with white spots. The tiger mosquito is black, while the yellow fever mosquito is dark brown. </p>\n<p><b>Illustrations: J.Luis Ordóñez, CREAF (CC-BY-NC 3.0)</b></p>";
+
+/*  */
+"adult_report_help_html" = "<p><b>HELP:</b> <br/> \nIf you have found a mosquito, follow these steps:</p>\n\n<p> \n<ul>\n<li><b>Step 1 - What does your mosquito look like?</ b>: answer the four questions to tell us more about the mosquito you've found </li> \n<br/>\n<li><b>Step 2 - Where did you find the mosquito?</ b>: select \"Current\" if you found the mosquito in the place where you are right now. In this case, the app detects your current location. Activate the GPS on your phone if you want the location to be more accurate. If you have seen a mosquito elsewhere and you've made a photo and have saved it, select \"Elsewhere\" and place it on the map.</li> \n<br/>\n<li><b>Step 3 - Add a photo </ b>: take a picture with the camera of the phone or attach it if you have it saved. To make a good photo, grab the mosquito by its legs and try to take one picture from the front and one from the side.</li> \n<br/>\n<li><b>Step 4 - Do you want to add any comments?</ b>: you can give more details about your finding. Please do not add personal information.</li> \n</ul>\n </p>\n\n <p>You can view and edit your findings in \"MY MAP\". The data you submit is posted on the map\n<ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>.</p>";
+
+/*  */
+"site_report_help_html" = "<p><b>HELP:</b> <br/> \nIf you've found a potential breeding site, especially a sewer or drain on a public space containing stagnant water, follow these steps:\n<p> \n<ul> \n<li><b>Step 1 - How does it look? </ b>: answer the four questions to know more about the breeding site.</li>\n<br/>\n<li><b>Step 2 - Where did you find it?</ b>: select \"Current\" if you're in front of a breeding site. In this case the app detects your current location. Activate the GPS on your phone if you want the location of your finding to be more accurate. If you have seen a breeding site elsewhere and have already saved a picture, select \"Elsewhere\" and place it on the map.</li> \n<br/> \n<li><b>Step 3 - Add a photo </ b>: Take a picture with the camera of your phone or attach it if you have it already saved. If there is stagnant water and/or larvae, try to make them visible in the photo.</li> \n<br/> \n<li><b>Step 4 - Do you want to add any comments?</ b>: you can give more details about your finding. Please do not add personal information.</li> \n</ul> \n</p> \n<p>You can view and edit your findings in \"MY MAP\". The data you submit is posted on the map\n<ahref=\"www.mosquitoalert.com\">www.mosquitoalert.com</a>.</p>";
+
+/*  */
+"site_report_item_help_1" = "<p>Storm drains and sewers are the most productive breeding sites for the tiger mosquito and the yellow fever mosquito because they accumulate stagnant water inside. These mosquitoes do not breed on beaches or in rivers, lakes, ponds, or wetlands.</p>       \n<p>A number of these images have been donated by the Barcelona Public Health Agency.</p>";
+
+/*  */
+"site_report_item_help_2" = "Public areas are those with free access to the public, like roads, squares, parks, and green spaces. They do not include private lots or other private properties.";
+
+/*  */
+"site_report_item_help_3" = "In order to survive, mosquito larvae need stagnant and turbid water available for several days before they become adult mosquitoes.";
+
+/*  */
+"site_report_item_help_4" = "The tiger mosquito and the yellow fever mosquito do not normally travel far from their breeding site -- usually no more than 500 meters. Therefore, adults are often found near their breeding sites.";
+
+/*  */
+"site_q1_a1_embornals" = "Yes";
+
+/*  */
 "fonts" = "Fountain";
 
-/* */
-"basses" = "Basin";
+/*  */
+"basses" = "Small basin or similar receptacle";
 
-/* */
-"bidons" = "Bucket";
+/*  */
+"bidons" = "Small container";
 
-/* */
-"pous" = "Well";
-
-/* */
+/*  */
 "altres" = "Other";
 
-/* */
-"report_checklist_title_adult" = "Adult Checklist";
+/*  */
+"report_checklist_title_adult" = "Mosquito Checklist";
 
-/* */
+/*  */
 "report_checklist_title_site" = "Site Checklist";
 
-/* */
-"adult_report_help_html" = "        \n<p><b>HELP:</b> <br/> \n<b>Think you've found a tiger mosquito? Fill out this report and send in your data. Fields marked with an asterisk (*) are required.</b> \n</p> \n<p> \n<ul> \n<li><b>Description</b>: The questions here will help you decide if what you've found is really a tiger mosquito.</li> \n<br/> \n<li><b>Location</b>: Choose current location if you are still in the place where you found the mosquito. (Make sure you have GPS enabled on your phone.) Otherwise, select the mosquito's location on the map.</li> \n<br/> \n<li><b>Photo(s)</b>: Take a photo of the mosquito now or attach one from a file.</li> \n<br/> \n<li><b>Notes</b>: Add a note if you want to send additional information about your finding.</li> \n</ul> \n</p> \n<p>Once sent, you can view and edit your report on your phone by selecting the map activity from the main screen and then clicking on a report icon. The information you submit will also be published map on a public tiger mosquito map at <a href=\"www.atrapaeltigre.com\"> www.atrapaeltigre.com </a>.</p>\n   ";
-
-/* */
-"site_report_help_html" = "\n<p><b>HELP:</b> <br/> \n<b>Found a public space where you think the tiger mosquito can breed? Fill out this report and send in your data. Fields marked with an asterisk (*) are required.</b> \n</p> \n<p> \n<ul> \n<li><b>Description</b>: The questions here will help you decide if what you've found is really a tiger mosquito breeding site.</li> \n<br/> \n<li><b>Location</b>: Choose current location if you are still at the site. (Make sure you have GPS enabled on your phone.) Otherwise, select the site's location on the map.</li> \n<br/> \n<li><b>Photo(s)</b>: Take a photo of the site now or attach one from a file.</li> \n<br/> \n<li><b>Notes</b>: Add a note if you want to send additional information about your finding.</li> \n</ul> \n</p> \n<p>Once sent, you can view and edit your report on your phone by selecting the map activity from the main screen and then clicking on a report icon. The information you submit will also be published map on a public tiger mosquito map at <a href=\"www.atrapaeltigre.com\"> www.atrapaeltigre.com </a>.</p>\n       ";
-
-/* */
-"site_report_item_help_1" = " <p>Tiger mosquito larvae and pupae live in deposits and small containers of standing water that is dirty (and has no fish). Examples: storm drains, fountains, basins, wells, buckets, etc.. </ P> <p>Tiger mosquito larvae are generally not found on the beach or in rivers, lakes, ponds, or wetlands (although you may find other types of larvae in these places).</p>       \n";
-
-/* */
-"site_report_item_help_2" = "   \n<p>The larvae and pupae need stagnant water and organic matter (food) to survive. Avoid letting water accumulate in or around you home.</p>\n   ";
-
-/* */
-"site_report_item_help_3" = "     \n<p>The mosquito larvae are easy to recognize. They are elongated and smaller than a 1-cent coin, and they swim and do pirouettes in the water. They move a lot and come to the surface of the water to breathe.</p>    \n";
-
-/* */
+/* View Report */
 "return_to_map" = "Back";
 
-/* */
+/*  */
 "delete_report" = "Delete";
 
-/* */
+/*  */
 "edit_report" = "Edit";
 
-/* */
+/*  */
 "report_not_saved_warning" = "This report has not been saved. Are you sure you want to exit?";
 
-/* */
+/*  */
 "exit_question" = "Exit?";
 
-/* */
+/*  */
 "no_note_attached" = "No note attached";
 
-/* */
+/*  */
 "no_photo_attached" = "No photo attached";
 
-/* */
+/*  */
 "checklist_tab_title" = "Checklist";
 
-/* */
+/*  */
 "photos_tab_title" = "Photos";
 
-/* */
+/*  */
 "notes_tab_title" = "Notes";
 
-/* */
-"view_report_title_adult" = "Adult Report";
+/*  */
+"view_report_title_adult" = "Mosquito report.";
 
-/* */
-"view_report_title_site" = "Breeding Site Report";
+/*  */
+"view_report_title_site" = "Breeding Site";
 
-/* */
-"photo_selector_title" = "Report Photos";
+/* Photo Selector */
+"photo_selector_title" = "Add Photos";
 
-/* */
+/*  */
 "photo_selector_take_photo_button" = "Take new photo";
 
-/* */
+/*  */
 "photo_selector_attach_photo_button" = "Attach from file";
 
-/* */
+/*  */
 "photo_selector_remove_attachment" = "Remove Attachment";
 
-/* */
+/*  */
 "photo_selector_remove_this_photo" = "Remove this photo";
 
-/* */
+/*  */
 "photo_selector_from_thisreport" = "from this report";
 
-/* */
+/*  */
 "photo_selector_remove_button_label" = "Remove";
 
-/* */
-"rss_internet_connection_warning" = "No internet connection.\n\nTo view the feed, please connect to the internet.";
+/* RSS Feeds */
+"rss_internet_connection_warning" = "No internet connection.\n\nTo view the feed, please connect to the internet and select 'refresh' from the menu.";
 
-/* */
-"rss_title_tigatrapp" = "Latest from TigaTrapp!";
+/*  */
+"rss_title_tigatrapp" = "News from mosquitoalert.com";
 
-/* */
+/* Tasks */
 "task_list_title" = "Missions";
 
-/* */
+/*  */
 "task_list_pending" = "Pending";
 
-/* */
+/*  */
 "task_list_completed" = "Complete";
 
-/* */
+/*  */
 "delete_task_from_list_question" = "Delete mission from list?";
 
-/* */
+/*  */
 "delete" = "Delete";
 
-/* */
-"new_mission" = "New Tigatrapp mission!";
+/*  */
+"new_mission" = "New Mosquito Alert mission!";
 
-/* */
+/*  */
 "mission_button_left_survey" = "Submit responses";
 
-/* */
+/*  */
 "mission_button_left_url" = "Visit webpage";
 
-/* */
+/*  */
 "mission_button_middle" = "Do mission later";
 
-/* */
+/*  */
 "mission_button_right" = "Delete mission";
 
-/* */
+/*  */
 "mission_button_mark_complete" = "Mark complete";
 
-/* */
+/*  */
 "toast__mission_already_complete" = "You have already completed this mission. Thank you!";
 
-/* */
+/*  */
 "toast_mission_expired" = "This mission has expired.";
 
-/* */
+/* Menu */
 "menu_option_task_list" = "Missions";
 
-/* */
+/*  */
 "menu_option_tigatrapp_news" = "News";
 
-/* */
+/*  */
 "menu_option_settings" = "Settings";
 
-/* */
+/*  */
 "menu_option_help" = "Help";
 
-/* */
+/*  */
 "menu_option_about" = "About";
 
-/* */
+/*  */
 "menu_option_share" = "Share";
 
-/* */
+/*  */
 "menu_option_filter" = "Filter";
 
-/* */
+/*  */
 "menu_option_show_pending_tasks_only" = "Show pending tasks only";
 
-/* */
+/*  */
 "menu_option_show_all_tasks" = "Show all tasks";
 
-/* */
+/*  */
 "menu_option_map_type_label" = "Map Type";
 
-/* */
+/*  */
 "menu_option_map_type_satellite" = "Satellite Map";
 
-/* */
+/*  */
 "menu_option_map_type_street" = "Street Map";
 
-/* */
+/*  */
 "menu_option_share_map" = "Share Map";
 
-/* */
+/*  */
 "menu_option_save_map" = "Save Map";
 
-/* */
+/*  */
 "menu_map_save" = "Save";
 
-/* */
+/*  */
 "menu_map_share" = "Share";
 
-/* */
+/*  */
 "menu_toggle_view" = "Satellite";
 
-/* */
+/*  */
 "menu_option_refresh" = "Refresh";
 
-/* */
+/* Settings */
 "settings_language_title" = "Language";
 
-/* */
+/*  */
 "settings_language_detail" = "Choose language";
 
-/* */
+/*  */
 "settings_language_button" = "Choose";
 
-/* */
+/*  */
 "settings_sync_title" = "Synchronize";
 
-/* */
-"settings_sync_detail" = "Synchronize data with the Tigatrapp server to receive new missions and the latest Tigatrapp news.";
+/*  */
+"settings_sync_detail" = "Synchronize data with the Mosquito Alert server to receive new missions and the latest Mosquito Alert news.";
 
-/* */
+/*  */
 "settings_sync_button" = "Sync.";
 
-/* */
-"settings_syncing" = "Synchronizing data.";
+/*  */
+"settings_syncing" = "Synchronizing";
 
-/* */
+/*  */
 "on" = "On";
 
-/* */
+/*  */
 "off" = "Off";
 
-/* */
+/*  */
 "sample_my_locations" = "Sample my locations";
 
-/* */
+/*  */
 "sampling_is_off" = "Location sampling is off";
 
-/* */
+/*  */
 "sampling_is_on" = "Location sampling is on";
 
-/* */
+/*  */
+"sync_error" = "Internet connection failure, transmission error. Your data will be synchronized later automatically.";
+
+/*  */
+"offline_sync" = "No internet connection. Your data will be synchronized automatically when there is a connection available.";
+
+/*  */
+"sync_success" = "Synchronized";
+
+/*  */
+"deletion_network_error" = "Report deleted from phone but there was a transmission error. Your data will be synchronized later automatically.";
+
+/*  */
+"deletion_no_network" = "Report deleted from phone but there is no internet connection. Your data will be synchronized automatically when there is a connection available.";
+
+/* Misc */
 "added_current_loc" = "Added current location.";
 
-/* */
+/*  */
 "refresh" = "Refresh";
 
-/* */
+/*  */
 "report_deleted" = "Report deleted";
 
-/* */
+/*  */
 "edit" = "Edit";
 
-/* */
-"edit_title_adult" = "Adult Mosquito";
+/*  */
+"edit_title_adult" = "Mosquito";
 
-/* */
+/*  */
 "edit_title_site" = "Breeding Site";
 
-/* */
+/*  */
 "cd_help_icon" = "Help Icon";
 
-/* */
+/*  */
 "open" = "Open";
 
-/* */
+/*  */
 "spinner_prompt" = "Select Response";
 
-/* */
+/*  */
 "spinner_nothing_selected" = "Nothing selected";
 
-/* */
+/*  */
 "help" = "Help";
 
-/* */
+/*  */
 "photo_credit_gallery" = "Photo by R. Eritja (www.eritja.com)";
 
-/* */
+/*  */
 "photo_credit" = "Fotografies de R. Eritja (www.eritja.com)";
 
-/* */
+/*  */
 "nolocnogps_alert" = "Your locatioin cannot be detected because GPS and network receivers are both off. Please activate them or choose a location on the map.";
 
-/* */
-"progtitle_report" = "Enviant";
+/*  */
+"progtitle_report" = "Sending";
 
-/* */
+/*  */
 "nolocation_alert_report" = "Your location has not yet been detected. Please wait a few more seconds and try again or else select location from map..";
 
-/* */
+/*  */
 "upload_error_report" = "Transmission error. Your data has been saved on the device and will be sent later. Thank you!";
 
-/* */
+/*  */
 "offline_report" = "No internet connection. Your report will be sent automatically when there is a connection available. Thank you!";
 
-/* */
+/*  */
 "about" = "About";
 
-/* */
-"add_note" = "If you want, you can write a message here for the research team. For example, you can describe the  mosquito in more detail.";
+/*  */
+"add_note" = "If you want, you can write a message here for the research team. For example, you can describe the mosquito in more detail. Don't add personal information.";
 
-/* */
-"app_directory" = "Tigatrapp";
-
-/* */
-"app_name" = "Tigatrapp";
-
-/* */
+/*  */
 "button_submit_CD" = "Button for sending report to research center";
 
-/* */
+/*  */
 "cancel" = "Cancel";
 
-/* */
+/*  */
 "ceab_CD" = "CEAB logo";
 
-/* */
-"data_saved" = "Data saved as ";
+/*  */
+"data_saved" = "Data saved as";
 
-/* */
+/*  */
 "data_SD_error" = "SD card error";
 
-/* */
+/*  */
 "data_SD_unavailable" = "SD card not available – data cannot be saved.";
 
-/* */
+/*  */
 "dipsalut_CD" = "Dipsalut logo";
 
-/* */
+/*  */
 "dontknow" = "Not sure";
 
-/* */
+/*  */
 "fecyt_CD" = "FECYT logo";
 
-/* */
+/*  */
 "funded_by" = "Financed by:";
 
-/* */
+/*  */
 "funding_and_support" = "Financing and Support";
 
-/* */
+/*  */
 "gallery" = "Image Gallery";
 
-/* */
+/*  */
 "GPL" = "View GPL";
 
-/* */
+/*  */
 "gpl_heading" = "GPL";
 
-/* */
+/*  */
 "LGPL" = "View LGPL";
 
-/* */
+/*  */
 "license" = "License";
 
-/* */
+/*  */
 "mailing_spec_title" = "Send sample";
 
-/* */
+/*  */
 "movelab" = "MoveLab\nCentre d'Estudis Avançats de Blanes (CEAB-CSIC)";
 
-/* */
+/*  */
 "movelab_address1" = "C/ d'accés a la Cala St. Francesc, 14";
 
-/* */
+/*  */
 "movelab_address2" = "Blanes. Girona. E-17300";
 
-/* */
+/*  */
 "movelab_banner_CD" = "MoveLab logo";
 
-/* */
+/*  */
 "no" = "No";
 
-/* */
+/*  */
 "noGPSnoNetAlert" = "Your GPS and network receivers are off so it Is not possible to detect your location. Activate them now?";
 
-/* */
+/*  */
 "notes_title" = "Message";
 
-/* */
+/*  */
 "ok" = "OK";
 
-/* */
-"project_email" = "info@atrapaeltigre.com";
+/*  */
+"project_email" = "info@mosquitoalert.com";
 
-/* */
-"project_website" = "http://atrapaeltigre.com/";
+/*  */
+"project_website" = "http://mosquitoalert.com/";
 
-/* */
-"report_sent" = "If you select OK, your report will be sent to the lab.";
+/*  */
+"report_sent" = "If you select OK, your report will be sent to the project team and parts of it will be published on the public web map at www.mosquitoalert.com.";
 
-/* */
-"report_sent_confirmation" = "Report sent. Thank you!";
+/*  */
+"report_sent_confirmation" = "Report sent. Thank you! Remember to check the project website for more information.";
 
-/* */
+/*  */
 "reportGallery_CD" = "Image gallery button";
 
-/* */
-"saved_image_prefix" = "myMap";
+/*  */
+"saved_image_prefix" = "mosquitoalert";
 
-/* */
+/*  */
 "scm_CD" = "SCM logo";
 
-/* */
+/*  */
 "send_spec_text" = "Will you send your mosquito by post to the lab?";
 
-/* */
+/*  */
 "share_with" = "Share";
 
-/* */
+/*  */
 "submit" = "Send";
 
-/* */
+/*  */
 "supported_by" = "With support from:";
 
-/* */
-"q3_headthorax_text" = "Tiger  mosquitoes have a white stripe on the head and thorax.";
+/*  */
+"type_here" = "Use this space to include a note or comments if necessary. Don't add personal information.";
 
-/* */
-"type_here" = "Use this space to include a note or comments if necessary.";
-
-/* */
+/*  */
 "view_gpl_english" = "View Official Version of GPL";
 
-/* */
+/*  */
 "yes" = "Yes";
 
-/* */
-"your_report_id_is" = "Your report ID is: ";
+/*  */
+"your_report_id_is" = "Your report ID is:";
 
-/* */
-"photo_credits" = "The photographs in Tigatrapp were provided by R. Eritja (www.eritja.com).";
+/*  */
+"photo_credits" = "The photographs in Mosquito Alert were provided by R. Eritja (www.eritja.com).";
 
-/* */
-"copyright" = "\n<p>Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga ansd Frederic Bartumeus</p>\n    ";
+/*  */
+"copyright" = "Copyright &#169; 2013, 2014 John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus";
+
+/* DO NOT TRANSLATE */
+"app_name" = "Mosquito Alert";
+
+/*  */
+"app_directory" = "MosquitoAlert";
+
+/*  */
+"debug_mode" = "true";
+
+/*  */
+"private_mode" = "false";
+
+/*  */
+"package_prefix" = "ceab.movelab.tigabib.";
+
+/*  */
+"content_provider_auth_missions" = "ceab.movelab.tigabib.cp.missions";
+
+/*  */
+"content_provider_auth_reports" = "ceab.movelab.tigabib.cp.reports";
+
+/*  */
+"content_provider_auth_tracks" = "ceab.movelab.tigabib.cp.tracks";
+
+/*  */
+"internal_action" = "ceab.movelab.tigatrapp.tigabib.INTERNAL_ACTION";
+
+/*  */
+"language_selector_english" = "English";
+
+/*  */
+"language_selector_catalan" = "Català";
+
+/*  */
+"language_selector_spanish" = "Español";
+
+/*  */
+"photo_share_message" = "via @Mosquito_Alert";
+
+/*  */
+"language_selector_chinese_hk" = "Chinese (Hong Kong)";
+
+/*  */
+"paso1" = "1. How does the breeding site look?";
+
+/*  */
+"paso2" = "3. Where did you find it?";
+
+/*  */
+"paso3" = "3. Add a picture";
+
+/*  */
+"paso4" = "4. Any comments to add?";
+
+/*  */
+"paso1_2" = "1. What does your mosquito look like?";
+
+/*  */
+"site_q1_a2_embornals" = "No, it's another type of breeding site";
+
+/*  */
+"q2_a1" = "Yes";
+
+/*  */
+"q2_a2_site_report" = "No";
+
+/*  */
+"q4_a1_site_report" = "Yes";
+
+/*  */
+"q4_a2_site_report" = "No";
+
+/*  */
+"switchboard_button_validations_photos" = "VALIDATE";
+
+/*  */
+"switchboard_button_notifications_site" = "NOTIFICATIONS";
+
+/*  */
+"switchboard_button_missions_site" = "MISSIONS";
+
+/*  */
+"header_title" = "Mosquito Alert";
+
+/*  */
+"menu_option_gallery" = "Gallery";
+
+/*  */
+"back" = "Back";
+
+/*  */
+"notifications_new" = "New";
+
+/*  */
+"notifications_old" = "Old";
+
+/*  */
+"task_expires" = "Expires";
+
+/*  */
+"task_complete_checklist" = "Complete the checklist";
+
+/*  */
+"menu" = "Menu";
+
+/*  */
+"additional_information" = "Additional information";
+
+/*  */
+"turn_on_location" = "Turn on the Location of your device to let Mosquito Alert determine your position";
+
+/* Tasks */
+"task_list_title2" = "Notifications";
+
+/*  */
+"html_consent_form" = "[if !mso]&gt;\n&lt;style&gt;\nv\\:* {behavior:url(#default#VML);}\no\\:* {behavior:url(#default#VML);}\nw\\:* {behavior:url(#default#VML);}\n.shape {behavior:url(#default#VML);}\n&lt;/style&gt;\n&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n&lt;/style&gt;\n&lt;![endif]\n<b>Mosquito Alert</b>\n<b>Want to help study and monitor tiger mosquitoes and yellow fever mosquitoes? Mosquito Alert lets you share information about mosquito breeding sites and adult mosquito sightings with researchers and the public. It also brings you the latest news on these species and helps you learn how to keep them out of your home.</b>\n\nLearn about the tiger mosquito and yellow fever mosquito and their breeding sites. You'll find everything you need in the app and on the project website.\nShare data. Send reports when you spot adult tiger mosquitoes or yellow fever mosquitoes and their breeding sites in public spaces. You will be helping to build a crowdsourced map of these species.\nStore and edit your own data in your phone or tablet from the app's mapping screen.\nValidate pictures from other participants. Do not worry if you feel unsure with your answers: pictures are validated by several people at a time.\nMuch more: from volunteering for special mosquito missions to keeping up with the latest news about tiger mosquitoes and yellow fever mosquitoes and the Mosquito Alert project.\n\nExplore Mosquito Alert and if you have any questions, just check the help page or visit mosquitoalert.com.\nTo participate, you must agree to the Mosquito Alert terms of use and privacy policy posted at webserver.mosquitoalert.com/policies/en/. If you have read and agree to these terms, please indicate your consent by submitting the form below:\n\n<b>CONSENT FORM</b>\nI have read and agree to the Mosquito Alert terms of use and privacy policy.\nI understand that I must be an adult or supervised by an adult to participate in the Mosquito Alert project through the Mosquito Alert application.\nI understand that Mosquito Alert collects and may share with third parties or the general public the following information: \n\nAll of the reports I submit on breeding sites, adult mosquito sightings, and mosquito missions. This includes the precise location of the observations submitted (which can be the same as my location) when submitting each report, and any photographs, notes or other information or media that I attach. \nCoarse information about my locations at other times, sampled at random time intervals. This information is collected for scientific purposes in order to build a map of the geographic areas that you are monitoring for tiger mosquitoes and yellow fever mosquitoes, and to learn more about the routes along which these species may be spreading. In order to make it impossible to determine precise location information from this data, the latitudes and longitudes are rounded down to the nearest 0.05 degrees before the location is transmitted from the volunteer's device. This makes it impossible to determine where the actual location was within an area of about 20 Km2. In any case, although this option is enabled by default, volunteers may deactivate it at any time.\nInformation about my phone model, battery power, language settings, and Mosquito Alert installation. This information is used to help the research team improve the app.\n\nI understand that Mosquito Alert does not collect information about identified or identifiable individuals, according to the Organic Law 15/1999. I understand that it is my responsibility to make appropriate use of Mosquito Alert and never to collect or send through Mosquito Alert images in which people may be identified or any other personal images or information. I agree not to use Mosquito Alert in an improper or unlawful manner or to use it for any purpose other than that for which it is intended. \nI understand that mobile phone use while driving is prohibited and may increase the risk of accidents, death or damages. I understand that I must not use the application or otherwise use my cell phone in any way while driving, and I agree not to do so. I also understand that safety is the top priority in all aspects of this project and I agree to use my phone at all times in a safe manner.\nI understand that all of the information I share through Mosquito Alert will become part of a dataset owned by the Mosquito Alert project team, and that the project team will use this dataset for scientific research on ecology, the environment, and public health. I also understand that the Mosquito Alert project team may distribute this dataset to third parties or the general public in accordance with the Mosquito Alert terms of use and privacy policy.\nI understand that the objective of this citizen science research project is to study the presence and spread of the tiger mosquito and the yellow fever mosquito, as well as issues related to citizen participation and citizen science. I understand that I will not receive any compensation for my participation and that I cannot cancel or modify information once I have shared it, but that this information can be in no way associated with my person. I understand that reasonable measures will be taken to protect my privacy in all the information submitted as part of the project. \nBy consenting to these terms, I declare that I have reached the age of majority in the jurisdiction within which I will be participating, and that I have read and understand that:\n\nMy participation is voluntary and I may withdraw my consent and discontinue participation in the project at any time. My refusal to participate will not result in any penalty. My participation is subject to the conditions of this consent form and the Mosquito Alert terms of use and privacy policy.\nMy consent does not imply the waiver of any rights or release the project institutions, its agents, or the project researchers of from liability for negligence.\n\nI hereby consent to participate in this research project under the conditions of this consent form and the Mosquito Alert terms of use and privacy policy.\n ";
+
+/*  */
+"html_terms_of_use" = "User Agreement\n\nMosquito Alert (hereinafter, “the Project”, in any of the names it has had in the past or may acquire in the future) is a citizen science project coordinated by the Centre for Advanced Studies of Blanes, part of the Spanish Research Council (CEAB-CSIC),and CREAF.\nThe Project relies on members of the public to collect data on the spread of tiger mosquitoes and yellow fever mosquitoes. You can participate by, among other things, sending and sharing data and images through any of the Project applications for mobile devices or other electronic devices. To do so, you must be an adult or supervised by an adult and you must agree to the Project privacy policy as well as the following terms:\n\nThe tiger and yellow fever mosquitoes can be vectors of diseases such as dengue, chikungunya and zika. The Project contributes to the fight against these diseases by, among other things, collecting data and images, analyzing and studying this information, and collaborating with awareness-raising campaigns and in surveillance and control activities. Since the target species are disease vectors, you must exercise caution while participating in the Project and must not actively approach the mosquitoes directly or through their breeding sites. The Project website contains information on how to send data and pictures by first trapping the species to avoid being bitten. It is your responsibility not to get close to these species proactively.\nBy sharing your data and works (e.g. pictures) with the Project, you agree on the present terms of use, agree that the works (e.g. pictures) may be released to the public as anonymous works without including your name or pseudonym, and grant the members of the Project a royalty-free, non-exclusive and sub-licensable license for the duration of the current applicable copyright laws to exploit the work without restrictions and transfer it to others worldwide. In any case, these terms do not imply any restriction on your use of your works, as the original author, and you may exploit your works by other means in a manner consistent with the transfer granted by this document.\nGenerally, any original creation protectable by copyright will be disseminated by the Project with a CC-BY license, indicating anonymous author and the Project name (example: Anonymous, CC-BY Mosquito Alert), even if the creations contains the author’s name in it or in its metadata. When possible, part of the databases or resulting tables from user contributions will be disseminated, as a general rule, under a CC0 license. In the case of a need to allow access or transfer to third parties (professionals responsible for the monitoring and control of these mosquitoes, researchers, public health managers, etc.) of information collected by the Project and considered sensitive (and not disseminated under a CC0 license), other protocols and/or appropriate licenses will be established.\nYou warrant that any data or works you share consist of information you have the right to make available to the Project and that this is not defamatory, and does not infringe any law. Participation in the Project is anonymous to ensure the protection of the privacy of the participants. Therefore, you warrant that you will not add personal information of yours or from third parties to the data or works you send to the Project. You understand that the data or works can be transferred to third parties, and that the Project cannot guarantee the capacity to remove any personal data you send by mistake.\nYou indemnify the individuals, institutions and the members of the Project and its partners against all legal fees, damages and other expenses that may be incurred by them as a result of your breach of the above warranty.";
+
+/*  */
+"html_privacy" = "Privacy Policy\n\nThe Mosquito Alert project (hereinafter, “the Project”, in any of the names that has had in the past or may acquire in the future) takes, amongst other things, data and images shared by volunteers and it makes this data available to third parties and the public. In order to protect the privacy of its volunteers, the Project aims to avoid collecting information from which any individual may be personally identified. Therefore, when sending data or pictures, participants are asked not to include names, addresses, passwords, or any other personal information. The Project collects the precise locations of volunteers’ observations when they submit reports, and these may be the volunteers’ actual locations at the time of sending the reports, but it links this information only to the report and to a randomly-generated user ID. It also collects rough locations of volunteers at random times (in order to assess the areas that its volunteers are monitoring mosquitoes), but these locations are again linked only to randomly-generated user IDs. Volunteers may include notes and photographs in the reports they submit, but it is their responsibility not to include in these notes and photographs any information that they wish to keep private or any information that violates the privacy rights of others or is inconsistent with the Project terms of use.\nThe Project has mechanisms to prevent personal data that users may send by mistake, despite anonymization measures, from being shared with the general public. However, if in a particular case these measures block the publication of personal data, we encourage those who detect it to notify the Project members so that they can remove this data from the public space, if possible. The Project cannot guarantee the removal of personal data that may be collected by the Project despite measures of anonymization, nor can it guarantee that such data is not visible to members of the Project or any of its employees or third parties with access to project data.\nIt is noted that in the case of observations (reports) shared by users in any public space, such as social networks, volunteers would be relating their observations with their personal data (e.g. personal account on social networks), voluntarily waiving their anonymity.\nThe full list of information collected is as follows:\n\nAll of the reports volunteers collect and submit on breeding sites, adult mosquito sightings, and missions. This includes the precise location of the observations submitted by volunteers and any photographs, notes or other information that the volunteer attaches to the report.\nRough information about volunteer locations at other times, sampled at random time intervals. This information is collected for scientific purposes in order to build a map of the geographic areas that volunteers are monitoring for mosquitoes (sampling effort, that is, in which areas there is participation or not and to what extent, to be able to relate this to the number of observations in the same area), and to learn more about the routes along which mosquitoes may be spreading and that are related to human mobility (to better understand the relationship between large scale human movement and mosquitoes dispersal). This information is of great scientific interest. In order to make it impossible to determine precise location information from this data, the latitudes and longitudes are rounded down to the nearest 0.05 degrees before the location is transmitted from the volunteer's device. This makes it impossible to determine where the actual location was within a 0.05 degree latitude by 0.05 degree longitude area (~20 Km2, the size of a small city like Blanes). In any case, although this option is enabled by default, volunteers may deactivate it at any time.\nInformation about the phone model, battery power, language settings, and app installation (i.e. which version of the app is installed and which operating system and operating system version it is installed on). This information is used to help the research team improve the application.";
+
+/*  */
+"html_about" = "  \n\n\n\nAbout Mosquito Alert\n\nThis project is coordinated by the following institutions: CREAF, CEAB-CSIC and ICREA.\n\nSince 2015 the project has been funded by Obra Social “la Caixa”.\n\n\nThe project is co-financed by the Independent Public Health Body of Girona Provincial Council (Dipsalut), the Ministry of Economy and Competitiveness and the Spanish Foundation for Science and Technology (FECYT).";
+
+/*  */
+"html_help" = " \nMosquito Alert Help\n\n\n \nPARTICIPATE\nFight against mosquito-borne diseases. If you see a tiger mosquito (<i>Aedes albopictus</i>) or a yellow fever mosquito (<i>Aedes aegypti</i>) notify it with the Mosquito Alert app. You can also do it if you seebreedingsitesat the public road.\nLearn how to identify them\nWe teach you how to easily differentiate them from other mosquitoes in our website mosquitoalert.com. You can also seedifferenttipsto make good photos.\nSend your reports\nUse the “REPORT” buttons to send reports on breeding sites in public places and sightings of adult tiger and yellow fever mosquitoes. You'll find detailed information by clicking the (i) icons.\nKeep your reports updated\nIf you want to edit or remove any report, use the “MY MAP” button and select it. In \"MY MAP\" you will also see blue markers, which are the reports sent by your neighbours over the last 30 days within a radius of 2.5 km from your current location.\nValidate pictures\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n&lt;/style&gt;\n&lt;![endif]\nValidate pictures from other participants. Do not worry if you feel unsure with your answers: pictures are validated by several people at a time.\nParticipate in missions and receive notifications\nYou will receive special missions in your device throughout the season. You will be able to do the mission, keep it undone or remove it if you don’t want to do it. Pending missions will be shown in the main menu. You will also receive notifications about your own reports by expert entomologists and scientific and management information (in your territory or other) on these two species.\nExplore other options\nIn each screen you can access additional features using the options menu. For example, in “MY MAP” you can choose the type the map, share the app from the main screen or see the latest news from Mosquito Alert.\nWHERE IS YOUR SENT DATA\nThe reports you submit using the app, with or without photos, go to the Mosquito Alert server and they appear automatically in the map of mosquitoalert.com. This information is very useful to know the distribution of the tiger mosquito and the yellow fever mosquito. It can be shared with thirds parties or the public. The Mosquito Alert app also collects coarse information on your location at random times throughout the day in order to generate a map of the areas being monitored by Mosquito Alert users, and to learn about the routes along which tiger and yellow fever mosquitoes may be spreading. These locations are masked by rounding your actual location to the nearest 0.05 degrees latitude and longitude, making it possible to know that you were in an area roughly the size of a small city like Blanes, but impossible to know where you were in that area. The locations are linked only to your randomly-generated user ID, and no personally-identifying information is collected\nDO YOU WANT MORE INFORMATION?\nCheck our website mosquitoalert.com or send us an email at info@mosquitoalert.com";
+
+/*  */
+"html_license" = "[if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:WordDocument&gt;\n  &lt;w:View&gt;Normal&lt;/w:View&gt;\n  &lt;w:Zoom&gt;0&lt;/w:Zoom&gt;\n  &lt;w:TrackMoves/&gt;\n  &lt;w:TrackFormatting/&gt;\n  &lt;w:HyphenationZone&gt;21&lt;/w:HyphenationZone&gt;\n  &lt;w:PunctuationKerning/&gt;\n  &lt;w:ValidateAgainstSchemas/&gt;\n  &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt;\n  &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt;\n  &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt;\n  &lt;w:DoNotPromoteQF/&gt;\n  &lt;w:LidThemeOther&gt;ES&lt;/w:LidThemeOther&gt;\n  &lt;w:LidThemeAsian&gt;X-NONE&lt;/w:LidThemeAsian&gt;\n  &lt;w:LidThemeComplexScript&gt;X-NONE&lt;/w:LidThemeComplexScript&gt;\n  &lt;w:Compatibility&gt;\n   &lt;w:BreakWrappedTables/&gt;\n   &lt;w:SnapToGridInCell/&gt;\n   &lt;w:WrapTextWithPunct/&gt;\n   &lt;w:UseAsianBreakRules/&gt;\n   &lt;w:DontGrowAutofit/&gt;\n   &lt;w:SplitPgBreakAndParaMark/&gt;\n   &lt;w:DontVertAlignCellWithSp/&gt;\n   &lt;w:DontBreakConstrainedForcedTables/&gt;\n   &lt;w:DontVertAlignInTxbx/&gt;\n   &lt;w:Word11KerningPairs/&gt;\n   &lt;w:CachedColBalance/&gt;\n   &lt;w:UseFELayout/&gt;\n  &lt;/w:Compatibility&gt;\n  &lt;m:mathPr&gt;\n   &lt;m:mathFont m:val=\"Cambria Math\"/&gt;\n   &lt;m:brkBin m:val=\"before\"/&gt;\n   &lt;m:brkBinSub m:val=\"--\"/&gt;\n   &lt;m:smallFrac m:val=\"off\"/&gt;\n   &lt;m:dispDef/&gt;\n   &lt;m:lMargin m:val=\"0\"/&gt;\n   &lt;m:rMargin m:val=\"0\"/&gt;\n   &lt;m:defJc m:val=\"centerGroup\"/&gt;\n   &lt;m:wrapIndent m:val=\"1440\"/&gt;\n   &lt;m:intLim m:val=\"subSup\"/&gt;\n   &lt;m:naryLim m:val=\"undOvr\"/&gt;\n  &lt;/m:mathPr&gt;&lt;/w:WordDocument&gt;\n&lt;/xml&gt;&lt;![endif]\n [if gte mso 9]&gt;&lt;xml&gt;\n &lt;w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\"&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/&gt;\n  &lt;w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/&gt;\n &lt;/w:LatentStyles&gt;\n&lt;/xml&gt;&lt;![endif] [if gte mso 10]&gt;\n&lt;style&gt;\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Tabla normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;}\n&lt;/style&gt;\n&lt;![endif]\n<b>Mosquito Alert</b>\nMosquito Alert (formerly Tigatrapp) is an application that harnesses the power of citizen scientists and new technologies to investigate the spread of tiger mosquitoes and yellow fever mosquitoes. The application was developed by the Mosquito Alert team, coordinated by the institutions <b>CREAF</b>, <b>CEAB-CSIC</b> and <b>ICREA</b>. The code is drawn in part from <b>Space Mapper</b> (John R.B. Palmer), and the <b>Human Mobility Project</b> (Chang Y. Chung, Kathleen Li and Necati E. Ozgencil). Recent versions of the app were managed by the Mosquito Alert team and developed by Omatech with the collaboration of SciFabric LTD. The translation to Chinese was possible thanks to the collaboration of Sabrina Wong and Mendel Wong. Mendel Wong also participated in the coding on the Gradle migration. The Mosquito Alert code is freely available from the Movement Ecology Lab’s GitHub repositories at https://github.com/MoveLab.\nCopyright © 2013-2016 John R.B. Palmer, Aitana Oltra, Joan Garriga and Frederic Bartumeus\nMosquito Alert is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses.\nThe code incorporated from Space Mapper is subject to the following terms:\nCopyright © 2012, 2013 John R.B. Palmer\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses.\nThe code incorporated from the Human Mobility Project is subject to the following terms:\nCopyright © 2010, 2011 Human Mobility Project\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
+
+/*  */
+"switchboard_button_validation_photos2" = "PHOTOS";
+
+/* Label to map points of other citizens in 'My Map' */
+"tag_to_map_points_of_citizens_albopictus" = "Tiger Mosquito";
+
+/*  */
+"tag_to_map_points_of_citizens_aegypti" = "Yellow Fever Mosquito";
+
+/*  */
+"tag_to_map_points_of_citizens_none" = "None";
+
+/*  */
+"my_map_legend_label_my_observations_my_observations" = "My observations";
+
+/*  */
+"my_map_legend_label_nearby_observations_nearby_observations" = "Nearby observations";
+
+/*  */
+"ios_photo_initial_warning_we_need_to_access_your_photo_library_to_get_and_store_your_mosquito_and_br" = "We need to access your photo library to get and store your mosquito and breeding sites photos.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"ios_photo_initial_warning_2_we_need_to_access_your_location" = "We need to access your location to locate your sites and reports and to find nearby reports from where you are.";
+

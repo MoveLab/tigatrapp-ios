@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelpViewController : UIViewController <UIWebViewDelegate>
-
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) NSString *urlString;
 @property (nonatomic, strong) NSString *fallbackFile;

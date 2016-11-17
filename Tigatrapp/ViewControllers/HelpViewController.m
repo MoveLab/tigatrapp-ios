@@ -27,14 +27,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.title = [LocalText with:@"header_title"];
+
     if (_urlString!=nil) {
         NSURL *url = [NSURL URLWithString:_urlString];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
         [self.webView loadRequest:requestObj];
     } else {
+        
+        NSString *html = [NSString stringWithFormat:@"<html> \n"
+        "<head> \n"
+        "<style type=\"text/css\"> \n"
+        "body {font-family: Futura; font-size: 18;}\n"
+        "</style> \n"
+        "</head><body>%@</body></html>", _htmlString];
+        
+        
         [self.webView setBackgroundColor:[UIColor clearColor]];
-        [self.webView loadHTMLString:_htmlString baseURL:nil];
+        [self.webView loadHTMLString:html baseURL:nil];
     }
 }
 

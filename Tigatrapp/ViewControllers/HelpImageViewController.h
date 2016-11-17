@@ -12,7 +12,7 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UILabel *imageLabel;
-@property (nonatomic, weak) IBOutlet NSString *caption;
-@property (nonatomic, weak) IBOutlet NSString *imageName;
+@property (nonatomic, strong) NSString *caption;
+@property (nonatomic, strong) NSString *imageName;
 
 @end

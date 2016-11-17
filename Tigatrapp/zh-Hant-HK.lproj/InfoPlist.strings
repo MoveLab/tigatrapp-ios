@@ -1,0 +1,10 @@
+/* Localized versions of Info.plist keys */
+
+/*  */
+"NSPhotoLibraryUsageDescription" = "我們需要從你的照片庫存取蚊子及其滋生㆞點的照片.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"NSLocationWhenInUseUsageDescription" = "我們需要從定位服務存取你的位置及報告，以整合鄰近位置的報告資料.";
+
+/* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
+"NSCameraUsageDescription" = "我們需要存取你的相機裝置，以讓你拍攝蚊子及其繁殖地點。";

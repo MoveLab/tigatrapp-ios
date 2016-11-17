@@ -97,11 +97,22 @@
     
 }
 
+#pragma mark - UIBarButtonItems actions
+
+- (IBAction) pressCancel:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction) pressSave:(id)sender {
+    [self renewResponses];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - UISegmentController actions
 
 
 - (IBAction)pressSegment:(UISegmentedControl *)segmentedControl {
-    [self renewResponses];
+   // [self renewResponses];
 }
 
 #pragma mark - UITableViewDelegate
@@ -119,13 +130,14 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
+    
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
                                    initWithTitle:[LocalText with:@"back"]
                                    style:UIBarButtonItemStylePlain
                                    target:nil
                                    action:nil];
     self.navigationItem.backBarButtonItem = backButton;
-
+     
     if ([segue.identifier isEqualToString:@"helpSegueQ1"]) {
         HelpImageViewController *viewController = segue.destinationViewController;
         viewController.imageName = @"checklist_image_adult_1.jpg";
@@ -139,7 +151,6 @@
         viewController.imageName = @"checklist_image_adult_3.jpg";
         viewController.caption = [LocalText with:@"q2_abdomenlegs_text"];
     }
-
 }
 
 @end

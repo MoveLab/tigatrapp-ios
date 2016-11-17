@@ -16,6 +16,11 @@
 @property (nonatomic, weak) IBOutlet UIButton *galleryButton;
 @property (nonatomic, weak) IBOutlet UIButton *webButton;
 
+@property (nonatomic, weak) IBOutlet UIButton *notificationButton;
+@property (nonatomic, weak) IBOutlet UIButton *verificationButton;
+@property (nonatomic, weak) IBOutlet UIButton *missionButton;
+
+
 @property (nonatomic, weak) IBOutlet UILabel *breedingHeaderLabel;
 @property (nonatomic, weak) IBOutlet UILabel *breedingFootLabel;
 @property (nonatomic, weak) IBOutlet UILabel *mosquitoHeaderLabel;
@@ -24,6 +29,19 @@
 @property (nonatomic, weak) IBOutlet UILabel *mapFootLabel;
 @property (nonatomic, weak) IBOutlet UILabel *galleryHeaderLabel;
 @property (nonatomic, weak) IBOutlet UILabel *galleryFootLabel;
+
+@property (nonatomic, weak) IBOutlet UILabel *notificationHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *notificationFootLabel;
+@property (nonatomic, weak) IBOutlet UILabel *verificationHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *verificationFootLabel;
+@property (nonatomic, weak) IBOutlet UILabel *missionHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *missionFootLabel;
+
+@property (nonatomic, weak) IBOutlet UILabel *missionCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel *notificationCountLabel;
+
+
+
 
 - (IBAction) pressWebButton:(id)sender;
 

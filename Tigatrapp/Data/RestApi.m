@@ -27,8 +27,20 @@ static RestApi *sharedInstance = nil;
         self.imagesToUpload = [[NSMutableSet alloc] init];
         self.reportsUploading = [[NSMutableSet alloc] init];
         self.reportsToUpload = [[NSMutableSet alloc] init];
+        self.missionsArray = [[NSMutableArray alloc] init];
+        self.ackMissionsArray = [[NSMutableArray alloc] init];
+        self.deletedMissionsArray = [[NSMutableArray alloc] init];
+        self.notificationsArray = [[NSMutableArray alloc] init];
+        self.ackNotificationsArray = [[NSMutableArray alloc] init];
+
+        self.serverNotificationsArray = [[NSArray alloc] init];
+        self.serverMissionsArray = [[NSArray alloc] init];
+        
+        [self restoreFromUserDefaults];
         [self loadReportsToUpload];
         [self loadImagesToUpload];
+        
+        
     }
     return self;
 }
@@ -54,13 +66,17 @@ static RestApi *sharedInstance = nil;
     NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error];
     [request setHTTPBody:postData];
     
+    if (error)  NSLog(@"Error preparant post report %@",[error localizedDescription]);
+    
     NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
-        
+
+        if (error)  NSLog(@"Error post report %@",[error localizedDescription]);
+
         NSError *herror;
         NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
         
         if (herror) {
-            if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
+            if (SHOW_LOGS) NSLog(@"Error return post report %@",[error localizedDescription]);
             [_reportsToUpload addObject:parameters];
             [_reportsUploading removeObject:parameters];
 
@@ -77,9 +93,8 @@ static RestApi *sharedInstance = nil;
     [postDataTask resume];
 }
 
-
-
 - (void) callPhotosApiWithParameters:(NSDictionary *)parameters {
+
     
     NSString *queryEsc = [NSString stringWithFormat:@"%@photos/?format=json",C_API];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -112,7 +127,7 @@ static RestApi *sharedInstance = nil;
     if (imageData) {
         [body appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
         [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"image.jpg\"\r\n", @"photo"] dataUsingEncoding:NSUTF8StringEncoding]];
-        [body appendData:[[NSString stringWithString:@"Content-Type: image/jpeg\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+        [body appendData:[@"Content-Type: image/jpeg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
         [body appendData:imageData];
         [body appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
     }
@@ -233,13 +248,10 @@ static RestApi *sharedInstance = nil;
     if (SHOW_LOGS) NSLog(@"URLSessionDidFinishEventsForBackgroundURLSession");
 }
 
-
-
 - (void) upload {
     [self callReports];
     [self callImages];
 }
-
 
 - (void)saveReportsToUpload {
     
@@ -280,9 +292,7 @@ static RestApi *sharedInstance = nil;
         for (NSDictionary *reportDictionary in archiveArray) {
             [_reportsToUpload addObject:reportDictionary];
         }
-        
     }
-    
 }
 
 - (void)loadImagesToUpload {
@@ -292,11 +302,273 @@ static RestApi *sharedInstance = nil;
         for (NSDictionary *reportDictionary in archiveArray) {
             [_imagesToUpload addObject:reportDictionary];
         }
-        
     }
+}
+
+- (void) updateMissions {
+    
+    NSString *queryEsc = [NSString stringWithFormat:@"%@missions/?format=json&platform=ios",C_API];
+    if (SHOW_LOGS) NSLog(@"get %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"GET"];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
+            
+        } else {
+            self.serverMissionsArray = responseDict;
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"missionsUpdated"
+                                                                object:self
+                                                              userInfo:nil];
+            
+            if (SHOW_LOGS) NSLog(@"Missions recuperades: %@",responseDict);
+        }
+        
+    }];
+    
+    [postDataTask resume];
     
 }
 
+- (void) updateNotifications {
+    
+    
+    // estrategia per evitar mutants
+    // quan es llegeixen notificacions es guarden en una llista de notificacions pendents de processar
+    // a l'entrar a la vista menu, processo les pendents i les poso a la taula rebudes
+    // d'aquesta manera, l'actualització no pot produir-se dins de l'array
+    
+    
+    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    NSString *queryEsc = [NSString stringWithFormat:@"%@user_notifications/?user_id=%@",C_API,udid];
+ 
+    //NSString *queryEsc = [NSString stringWithFormat:@"%@user_notifications/",C_API];
+    if (SHOW_LOGS) NSLog(@"get %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"GET"];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
+            
+        } else {
+            _serverNotificationsArray = responseDict;
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationsUpdated"
+                                                                object:self
+                                                              userInfo:nil];
+            if (SHOW_LOGS) NSLog(@"Notificacions recuperades: %d",(int) responseDict.count);
+        }
+        
+    }];
+    
+    [postDataTask resume];
+    
+}
+
+- (void) acknowledgeNotification:(int)notificationId {
+    
+    NSString *queryEsc = [NSString stringWithFormat:@"%@user_notifications/?id=%d&acknowledged=True",C_API,notificationId];
+    if (SHOW_LOGS) NSLog(@"POST %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"POST"];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post ack %@",[error localizedDescription]);
+            
+        } else {
+            
+            
+            if (SHOW_LOGS) NSLog(@"Restultat Notificacion ack: %@",responseDict);
+        }
+        
+    }];
+    
+    [postDataTask resume];
+    
+}
+
+- (void) restoreFromUserDefaults {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSArray *nArray = [userDefaults objectForKey:@"ackNotificationsArray"];
+    [self.ackNotificationsArray addObjectsFromArray:nArray];
+    NSArray *mArray = [userDefaults objectForKey:@"ackMissionsArray"];
+    [self.ackMissionsArray addObjectsFromArray:mArray];
+    NSArray *dmArray = [userDefaults objectForKey:@"deletedMissionsArray"];
+    [self.deletedMissionsArray addObjectsFromArray:dmArray];
+    if (SHOW_LOGS) {
+        NSLog(@"RECUPERAT DE USER DEFAULTS: ");
+        NSLog(@"- ackNotifications: %d ",  (int)_ackNotificationsArray.count);
+        NSLog(@"- ackMissions: %d ", (int)_ackMissionsArray.count);
+        NSLog(@"- deletedMissions: %d ", (int)_deletedMissionsArray.count);
+    }
+}
+
+- (void) saveAckNotificationsToUserDefaults {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:self.ackNotificationsArray forKey:@"ackNotificationsArray"];
+    [userDefaults synchronize];
+    if (SHOW_LOGS) {
+        NSLog(@"GRAVAT A USER DEFAULTS: ");
+        NSLog(@"- ackNotifications: %d ", (int)_ackNotificationsArray.count);
+    }
+}
+
+- (void) saveAckMissionsToUserDefaults {
+    if (SHOW_LOGS) {
+        NSLog(@"GRAVAT A USER DEFAULTS: ");
+        NSLog(@"- ackMissions: %d ", (int)_ackMissionsArray.count);
+        NSLog(@"- deletedMissions: %d ", (int)_deletedMissionsArray.count);
+        
+    }
+    
+    NSMutableArray *temp = [[NSMutableArray alloc] init];
+    for (NSDictionary *d in _ackMissionsArray) {
+        NSDictionary *dd = @{@"id":d[@"id"]
+                             ,@"short_description_english":d[@"short_description_english"]
+                             ,@"short_description_catalan":d[@"short_description_catalan"]
+                             ,@"short_description_spanish":d[@"short_description_spanish"]
+                                                            };
+        [temp addObject:dd];
+    }
+
+    NSMutableArray *tempDeleted = [[NSMutableArray alloc] init];
+    for (NSDictionary *d in _deletedMissionsArray) {
+        NSDictionary *dd = @{@"id":d[@"id"]
+                             ,@"short_description_english":d[@"short_description_english"]
+                             ,@"short_description_catalan":d[@"short_description_catalan"]
+                             ,@"short_description_spanish":d[@"short_description_spanish"]
+                             };
+        [tempDeleted addObject:dd];
+    }
+
+    
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:temp forKey:@"ackMissionsArray"];
+    [userDefaults setObject:tempDeleted forKey:@"deletedMissionsArray"];
+    //[userDefaults setObject:self.deletedMissionsArray forKey:@"deletedMissionsArray"];
+    [userDefaults synchronize];
+
+}
+
+- (BOOL) existsMissionWithId:(int)mission {
+    for (NSDictionary *m in self.ackMissionsArray) {
+        if ([m[@"id"] intValue] == mission) {
+            return YES;
+        }
+    }
+    for (NSDictionary *m in self.deletedMissionsArray) {
+        if ([m[@"id"] intValue] == mission) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+- (BOOL) existsNotificationWithId:(int)notification {
+    for (NSDictionary *m in self.ackNotificationsArray) {
+        if ([m[@"id"] intValue] == notification) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+
+- (void) nearbyReportsFromLat:(float)lat andLon:(float)lon andRadius:(float)radius {
+    
+    // /api/nearby_reports/?format=json&lat=[y]&lon=[x]&radius=[z]
+    
+    NSString *queryEsc = [NSString stringWithFormat:@"%@nearby_reports/?format=json&lat=%f&lon=%f&radius=%f",C_API,lat,lon,radius];
+
+    if (SHOW_LOGS) NSLog(@"GET %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"GET"];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        NSString* newStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        if (SHOW_LOGS) NSLog(@"Retorna <<%@>>",newStr);
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post ack %@",[error localizedDescription]);
+            
+        } else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"nearbyReports"
+                                                                object:self
+                                                              userInfo:@{@"response":responseDict}];
+            if (SHOW_LOGS) NSLog(@"Restultat nearby : %@",responseDict);
+        }
+        
+    }];
+    
+    [postDataTask resume];
+
+    
+}
 
 
 @end

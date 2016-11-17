@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = [LocalText with:@"header_title"];
 
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImage)];
     [tap setNumberOfTouchesRequired:1];
@@ -47,13 +49,27 @@
     float viewHeight = self.view.frame.size.height;
     
     [_imageLabel setFrame:CGRectMake(20.0, viewHeight, 280.0, 300.0)];
-    self.imageView.image = [UIImage imageNamed:_imageName];
-    self.imageLabel.text = [self stringByStrippingHTML:_caption];
-    _imageLabel.numberOfLines = 0;
-    [_imageLabel sizeToFit];
-    float labelSize = _imageLabel.frame.size.height+20.0;
-    [_imageView setFrame:CGRectMake(20.0, 20.0, 280.0, viewHeight-labelSize-20)];
-    [_imageLabel setFrame:CGRectMake(20.0, viewHeight-labelSize, 280.0, labelSize)];
+    
+    if (_imageName) {
+        self.imageView.image = [UIImage imageNamed:_imageName];
+        self.imageLabel.text = [self stringByStrippingHTML:_caption];
+        _imageLabel.numberOfLines = 0;
+        [_imageLabel sizeToFit];
+        float labelSize = _imageLabel.frame.size.height+20.0;
+        [_imageView setFrame:CGRectMake(20.0, 20.0, 280.0, viewHeight-labelSize-20)];
+        [_imageLabel setFrame:CGRectMake(20.0, viewHeight-labelSize, 280.0, labelSize)];
+        
+    } else {
+        self.imageView.image = nil;
+        self.imageLabel.text = [self stringByStrippingHTML:_caption];
+        _imageLabel.numberOfLines = 0;
+        [_imageLabel sizeToFit];
+        float labelSize = _imageLabel.frame.size.height+20.0;
+        //[_imageView setFrame:CGRectMake(20.0, 20.0, 280.0, viewHeight-labelSize-20)];
+        [_imageLabel setFrame:CGRectMake(20.0, 70.0, 280.0, labelSize)];
+
+    }
+    
     
 }
 

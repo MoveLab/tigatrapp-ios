@@ -17,6 +17,18 @@
 @property (nonatomic, strong) NSMutableSet *imagesUploading;
 @property (nonatomic, strong) NSMutableSet *reportsUploading;
 
+@property (nonatomic,strong) NSMutableArray *notificationsArray;
+@property (nonatomic,strong) NSMutableArray *ackNotificationsArray;
+
+
+@property (nonatomic,strong) NSMutableArray *missionsArray;
+@property (nonatomic,strong) NSMutableArray *ackMissionsArray;
+@property (nonatomic,strong) NSMutableArray *deletedMissionsArray;
+
+@property (nonatomic,strong) NSArray *serverNotificationsArray;
+@property (nonatomic,strong) NSArray *serverMissionsArray;
+
+
 
 - (void) callUsers;
 
@@ -25,4 +37,21 @@
 
 - (void) upload;
 - (void) status;
+
+- (void) updateMissions;
+- (void) updateNotifications;
+
+- (BOOL) existsMissionWithId:(int)mission;
+- (BOOL) existsNotificationWithId:(int)notification;
+
+- (void) acknowledgeNotification:(int)notificationId;
+- (void) saveAckNotificationsToUserDefaults;
+
+- (void) saveAckMissionsToUserDefaults;
+
+- (void) nearbyReportsFromLat:(float)lat andLon:(float)lon andRadius:(float)radius;
+
+
+
+
 @end

@@ -28,10 +28,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = [LocalText with:@"header_title"];
+
+    
     _acceptLabel.text = [LocalText with:@"consent_button_label"];
     _denyLabel.text = [LocalText with:@"decline_button_label"];
 
     [self.webView setBackgroundColor:[UIColor clearColor]];
+   // NSString *filename = [NSString stringWithFormat:@"consent_%@",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] ];
     NSString *filename = [NSString stringWithFormat:@"consent_%@",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] ];
     
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:filename ofType:@"html"];
@@ -49,7 +53,7 @@
 - (IBAction)pressAccept:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"Terms"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"newTerms"];
     [[NSUserDefaults standardUserDefaults] synchronize];    
 }
 

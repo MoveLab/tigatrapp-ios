@@ -15,5 +15,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *helpLabel;
 @property (nonatomic, weak) IBOutlet UILabel *aboutLabel;
 @property (nonatomic, weak) IBOutlet UILabel *shareLabel;
+@property (nonatomic, weak) IBOutlet UILabel *galleryLabel;
 
 @end

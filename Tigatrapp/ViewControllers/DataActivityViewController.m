@@ -11,9 +11,11 @@
 #import "UserReports.h"
 #import "Report.h"
 #import "ReportViewController.h"
+#import "RestApi.h"
 
 @interface DataActivityViewController ()
-
+@property (strong, nonatomic) NSMutableArray *annotationsArray;
+@property (nonatomic) BOOL located;
 @end
 
 @implementation DataActivityViewController
@@ -30,16 +32,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = [LocalText with:@"header_title"];
+    
     // Do any additional setup after loading the view.
-    NSMutableArray *annotationsArray = [[NSMutableArray alloc] init];
+    self.annotationsArray = [[NSMutableArray alloc] init];
     
     for (Report *report in [UserReports sharedInstance].reports) {
         ActivityMapAnnotation *annotation = [[ActivityMapAnnotation alloc] initWithReport:report];
         [_mapView addAnnotation:annotation];
-        [annotationsArray addObject:annotation];
+        [_annotationsArray addObject:annotation];
     }
-    [_mapView showAnnotations:annotationsArray animated:NO];
-    
+    [_mapView showAnnotations:_annotationsArray animated:NO];
+    if ([CLLocationManager locationServicesEnabled]) {
+        
+        self.located = NO;
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        [self.locationManager startUpdatingLocation];
+
+        [_mapView setShowsUserLocation:YES];
+        
+    } else {
+        double radius = 5000; // fixe 5km
+        [[RestApi sharedInstance] nearbyReportsFromLat:_mapView.centerCoordinate.latitude
+                                                andLon:_mapView.centerCoordinate.longitude
+                                             andRadius:radius];
+        
+    }
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
                                    initWithTitle:[LocalText with:@"back"]
@@ -52,15 +72,41 @@
     [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_satellite"] forSegmentAtIndex:1];
     
     
+    _nearbyLabel.text = [LocalText with:@"legend_nearby_observations"];
+    _ownLabel.text = [LocalText with:@"legend_my_observations"];
+    _legendView.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4];
+    _legendView.layer.cornerRadius = 4.0;
+    _legendView.layer.masksToBounds = YES;
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gotNearbyReports:)
+                                                 name:@"nearbyReports"
+                                               object:nil];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    
     for (ActivityMapAnnotation *annotation in [_mapView selectedAnnotations]) {
-        if ([[UserReports sharedInstance] reportWithId:annotation.reportId]==nil) {
-            if (SHOW_LOGS) NSLog(@"elimino annotation %@",annotation.subtitle);
-            [_mapView removeAnnotation:annotation];
+        if ([annotation.type isEqualToString:@"nearby"]) {
+            
+        } else {
+            Report *report = [[UserReports sharedInstance] reportWithId:annotation.reportId];
+            if (report == nil) {
+                if (SHOW_LOGS) NSLog(@"elimino annotation %@",annotation.subtitle);
+                [_mapView removeAnnotation:annotation];
+            } else {
+                // validar si hi ha hagut canvis de coordenades i reposicionar
+                [annotation updateCoordinates:report];
+                
+            }
+            
         }
     }
+    [_mapView showAnnotations:[_mapView selectedAnnotations] animated:NO];
+    
 }
 
 
@@ -68,6 +114,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    
+    if (!_located) {
+        self.located = YES;
+        
+        CLLocation *location = [locations lastObject];
+        
+        //double radius = MIN([self getRadius],10000); // min 10KM
+        double radius = 5000; // fixe 5km
+        [[RestApi sharedInstance] nearbyReportsFromLat:location.coordinate.latitude
+                                                andLon:location.coordinate.longitude
+                                             andRadius:radius];
+        
+    }
+
 }
 
 
@@ -99,6 +164,9 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    
+    if (annotation == _mapView.userLocation) return nil;
+    
     static NSString *AnnotationViewID = @"annotationViewID";
     
     MKAnnotationView *annotationView = (MKAnnotationView *)[_mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
@@ -115,7 +183,14 @@
     ActivityMapAnnotation *mapAnnotation = (ActivityMapAnnotation *) annotation;
     
     if ([mapAnnotation.type isEqualToString:@"adult"]) {
-        annotationView.image = [UIImage imageNamed:@"mappoint1"];
+        annotationView.image = [UIImage imageNamed:@"mappoint2"];
+        annotationView.annotation = annotation;
+        UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mosquito"]];
+        myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
+        annotationView.leftCalloutAccessoryView = myImageView;
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    } else if ([mapAnnotation.type isEqualToString:@"nearby"]) {
+        annotationView.image = [UIImage imageNamed:@"mappoint3"];
         annotationView.annotation = annotation;
         UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mosquito"]];
         myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
@@ -126,28 +201,82 @@
         UIImageView *myImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"aigues"]];
         myImageView.frame = CGRectMake(0,0,31,31); // Change the size of the image to fit the callout
         annotationView.leftCalloutAccessoryView = myImageView;
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         
     }
-    
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     
     return annotationView;
 }
 
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-
+    
     ActivityMapAnnotation *annotation = view.annotation;
-    Report *report = [[UserReports sharedInstance] reportWithId:annotation.reportId];
-    
-    ReportViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
-    mvc.reportType = annotation.type;
-    mvc.sourceReport = report;
-    
-    [self.navigationController pushViewController:mvc animated:YES];
-    
+
+    if ([annotation.type isEqualToString:@"nearby"]) {
+        // no action. just show callout
+    } else {
+        Report *report = [[UserReports sharedInstance] reportWithId:annotation.reportId];
+        
+        ReportViewController *mvc = [self.storyboard instantiateViewControllerWithIdentifier:@"NewMosquitoViewController"];
+        mvc.reportType = annotation.type;
+        mvc.sourceReport = report;
+        
+        [self.navigationController pushViewController:mvc animated:YES];
+    }
 }
 
+#pragma mark trobar centre mapa
+
+- (void) gotNearbyReports:(NSNotification *)notification {
+    NSDictionary *d = notification.userInfo;
+    
+    //NSLog(@"nr %@",d);
+    
+    NSArray *reports = d[@"response"];
+    
+    
+    for (NSDictionary *r in reports) {
+        
+        NSDictionary *d = @{@"version_UUID":r[@"version_UUID"]
+                            ,@"type":@"nearby"
+                            ,@"note":r[@"simplified_annotation"][@"classification"]
+                            ,@"location_choice":@"selected"
+                            ,@"selected_location_lat":r[@"lat"]
+                            ,@"selected_location_lon":r[@"lon"]
+                            ,@"creation_time":r[@"creation_time"]};
+        Report *report = [[Report alloc] initWithDictionary:d];
+        
+        ActivityMapAnnotation *annotation = [[ActivityMapAnnotation alloc] initWithReport:report];
+        [_mapView addAnnotation:annotation];
+        
+    }
+    [_mapView showAnnotations:_annotationsArray animated:YES];
+}
+    
+- (CLLocationCoordinate2D)getTopCenterCoordinate
+{
+    // to get coordinate from CGPoint of your map
+    CLLocationCoordinate2D topCenterCoor = [self.mapView convertPoint:CGPointMake(self.mapView.frame.size.width / 2.0f, 0) toCoordinateFromView:self.mapView];
+    return topCenterCoor;
+}
+- (CLLocationCoordinate2D)getCenterCoordinate
+{
+    CLLocationCoordinate2D centerCoor = [self.mapView centerCoordinate];
+    return centerCoor;
+}
+- (CLLocationDistance)getRadius {
+    CLLocationCoordinate2D centerCoor = [self getCenterCoordinate];
+    // init center location from center coordinate
+    CLLocation *centerLocation = [[CLLocation alloc] initWithLatitude:centerCoor.latitude longitude:centerCoor.longitude];
+    
+    CLLocationCoordinate2D topCenterCoor =  [self getTopCenterCoordinate];
+    CLLocation *topCenterLocation = [[CLLocation alloc] initWithLatitude:topCenterCoor.latitude longitude:topCenterCoor.longitude];
+    
+    CLLocationDistance radius = [centerLocation distanceFromLocation:topCenterLocation];
+    
+    return radius;
+}
 /*
 #pragma mark - Navigation
 
