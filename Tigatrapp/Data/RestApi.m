@@ -40,6 +40,7 @@ static RestApi *sharedInstance = nil;
         [self loadReportsToUpload];
         [self loadImagesToUpload];
         
+        self.currentValidationImageScale = 1.0;
         
     }
     return self;
@@ -356,6 +357,7 @@ static RestApi *sharedInstance = nil;
     // a l'entrar a la vista menu, processo les pendents i les poso a la taula rebudes
     // d'aquesta manera, l'actualització no pot produir-se dins de l'array
     
+
     
     NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     NSString *queryEsc = [NSString stringWithFormat:@"%@user_notifications/?user_id=%@",C_API,udid];
@@ -381,11 +383,27 @@ static RestApi *sharedInstance = nil;
         NSError *herror;
         NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
         
+        NSLog(@"response=>%@", responseDict);
+        
         if (herror) {
             if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
             
         } else {
-            _serverNotificationsArray = responseDict;
+            // cal fer un tractament per eliminar els <null> en els json
+            NSArray *newResponse = [[NSMutableArray alloc] init];
+            for (NSDictionary *d in responseDict) {
+                NSMutableDictionary *newD = [[NSMutableDictionary alloc] initWithDictionary:d];
+                for (NSString* key in newD.allKeys) {
+                    if ([newD objectForKey:key] == [NSNull null]) {
+                        [newD setValue:@"" forKey:key];
+                    }
+                }
+            }
+            
+            //_serverNotificationsArray = responseDict;
+            _serverNotificationsArray = newResponse;
+            
+            
             [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationsUpdated"
                                                                 object:self
                                                               userInfo:nil];
@@ -450,6 +468,11 @@ static RestApi *sharedInstance = nil;
         NSLog(@"- ackMissions: %d ", (int)_ackMissionsArray.count);
         NSLog(@"- deletedMissions: %d ", (int)_deletedMissionsArray.count);
     }
+    
+    _showValidation1Help = ([userDefaults objectForKey:@"showValidation1Help"] == nil);
+    _showValidation2Help = ([userDefaults objectForKey:@"showValidation2Help"] == nil);
+    _showValidation3Help = ([userDefaults objectForKey:@"showValidation3Help"] == nil);
+    _showValidation4Help = ([userDefaults objectForKey:@"showValidation4Help"] == nil);
 }
 
 - (void) saveAckNotificationsToUserDefaults {
@@ -569,6 +592,310 @@ static RestApi *sharedInstance = nil;
 
     
 }
+
+- (void) sendNotificationsToken {
+
+    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+
+    NSString *queryEsc = [NSString stringWithFormat:@"%@token/?token=%@&user_id=%@",C_API,_notificationsToken,udid];
+    
+    if (SHOW_LOGS) NSLog(@"GET %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"POST"];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        NSString* newStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        if (SHOW_LOGS) NSLog(@"Retorna <<%@>>",newStr);
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post ack %@",[error localizedDescription]);
+            
+        } else {
+            if (SHOW_LOGS) NSLog(@"Restultat token : %@",responseDict);
+        }
+        
+    }];
+    
+    [postDataTask resume];
+    
+}
+
+
+- (void) getMosquitoToValidate {
+    
+    
+    // http://mosquitoalert.pybossa.com/project/mosquito_alert_test
+    // http://mosquitoalert.pybossa.com/project/mosquito-alert
+    
+    // ip projecte desenvolupament 2
+    // id projecte producció 1
+    
+    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    
+    //NSString *queryEsc = @"http://crowdcrafting.org/api/project/3911/newtask";
+    NSString *queryEsc = @"http://mosquitoalert.pybossa.com/api/project/2/newtask";
+    
+    if (SHOW_LOGS) NSLog(@"GET %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"GET"];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        NSString* newStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        if (SHOW_LOGS) NSLog(@"Retorna <<%@>>",newStr);
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post ack %@",[error localizedDescription]);
+            
+        } else {
+            if (SHOW_LOGS) NSLog(@"Restultat formulari : %@",responseDict);
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"validateMosquito"
+                                                                object:self
+                                                              userInfo:responseDict];
+        }
+        
+    }];
+    
+    [postDataTask resume];
+    
+}
+
+- (void) sendMosquitoValidation:(NSDictionary *)info {
+    
+    self.imageData = nil;
+    
+    //NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    
+    NSString *queryEsc = @"http://mosquitoalert.pybossa.com/api/taskrun";
+    if (SHOW_LOGS) NSLog(@"POST %@", queryEsc);
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"POST"];
+    NSError *error;
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:info options:0 error:&error];
+    [request setHTTPBody:postData];
+    if (SHOW_LOGS) NSLog(@"posData error sendValidatoin= %@", error.localizedDescription);
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        NSString* newStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        if (SHOW_LOGS) NSLog(@"Retorna <<%@>>",newStr);
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error post ack %@",[error localizedDescription]);
+            
+        } else {
+            if (SHOW_LOGS) NSLog(@"Restultat formulari : %@",responseDict);
+            
+
+        }
+        [[RestApi sharedInstance] getMosquitoToValidate]; // seguent mosquit
+        
+    }];
+    
+    [postDataTask resume];
+    
+}
+
+- (void) getUserScore {
+    
+    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    //NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:udid,@"user_UUID",nil];
+    NSString *queryEsc = [NSString stringWithFormat:@"%@user_score/?user_id=%@",C_API,udid];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+    
+    NSURL *url= [NSURL URLWithString:queryEsc];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                       timeoutInterval:10.0];
+    
+    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setHTTPMethod:@"GET"];
+    
+    //NSError *error;
+    //NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error];
+    //[request setHTTPBody:postData];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+        
+        NSError *herror;
+        NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
+        
+        //NSLog(@"responseScore=%@",responseDict);
+        
+        if (herror) {
+            if (SHOW_LOGS) NSLog(@"Error users %@",[error localizedDescription]);
+        } else {
+            _userScore = [responseDict[@"score"] intValue];
+            _userScoreString = responseDict[@"score_label"];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"scoreUpdated"
+                                                                object:self
+                                                              userInfo:responseDict];
+            if (SHOW_LOGS) NSLog(@"score ok %@",responseDict);
+        }
+        
+        
+    }];
+    
+    [postDataTask resume];
+    
+}
+
+
+- (void) getMosquitoImage:(NSString *)uuid {
+    
+    //NSString *imageURLString = [NSString stringWithFormat:@"http://humboldt.ceab.csic.es/get_photo/q0n50KN2Tg1O0Zh/%@/medium", _info[@"info"][@"uuid"]];
+    
+    NSString *imageURLString = [NSString stringWithFormat:@"http://webserver.mosquitoalert.com/get_photo/q0n50KN2Tg1O0Zh/%@/medium", uuid];
+    
+    NSLog(@"image =%@", imageURLString);
+    _imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURLString]];
+    
+    NSLog(@"size = %lu", (unsigned long)_imageData.length);
+    
+}
+
+- (NSDictionary *) validateInfoForOption:(int)option {
+    if (option == OPTION_NO) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"no"
+                 ,@"type" : @"unknown"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_NS) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"unknown"
+                 ,@"type" : @"unknown"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+        
+    } else if (option == OPTION_TIGER_NO_TORAX) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"type" : @"tiger"
+                 ,@"mosquito": @"yes"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_TIGER_NO_ABDOMEN) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"yes"
+                 ,@"type" : @"tiger"
+                 ,@"mosquito": @"yes"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_TIGER) {
+        return @{@"tigerAbdomen" : @"yes"
+                 ,@"tigerTorax" : @"yes"
+                 ,@"type" : @"tiger"
+                 ,@"mosquito": @"yes"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_YELLOW) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"yes"
+                 ,@"type" : @"yellow"
+                 ,@"yellowTorax" : @"yes"
+                 ,@"yellowAbdomen" : @"yes"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_YELLOW_NO_TORAX) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"yes"
+                 ,@"type" : @"yellow"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_YELLOW_NO_ABDOMEN) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"yes"
+                 ,@"type" : @"yellow"
+                 ,@"yellowTorax" : @"yes"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_NOT_SURE) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"yes"
+                 ,@"type" : @"tiger-unknown"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    } else if (option == OPTION_NONE_OF_BOTH) {
+        return @{@"tigerAbdomen" : @"no"
+                 ,@"tigerTorax" : @"no"
+                 ,@"mosquito": @"yes"
+                 ,@"type" : @"mosquito-noneofboth"
+                 ,@"yellowTorax" : @"no"
+                 ,@"yellowAbdomen" : @"no"
+                 ,@"user_lang" : [LocalText currentLoc]
+                 };
+    }
+    return @{};
+}
+
 
 
 @end

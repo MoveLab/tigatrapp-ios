@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
 }
 
 - (void)didReceiveMemoryWarning

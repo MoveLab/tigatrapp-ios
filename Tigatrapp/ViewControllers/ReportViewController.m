@@ -42,7 +42,9 @@
     [super viewDidLoad];
     
     self.title = [LocalText with:@"header_title"];
-    
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
     if ([_reportType isEqualToString:@"adult"]) {
         if (self.sourceReport == nil) {
             self.report = [[Report alloc] initWithDictionary:nil];

@@ -20,7 +20,9 @@
     // Do any additional setup after loading the view.
     
     self.title = [LocalText with:@"header_title"];
-    NSLog(@"notification = %@",_notification);
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+    if (SHOW_LOGS) NSLog(@"notification = %@",_notification);
     
     NSString *html = @"<html> \n"
     "<head> \n"
@@ -29,7 +31,6 @@
     "</style> \n"
     "</head><body>";
     
-    NSLog(@"aa (%@)", _notification[@"photo_url"]);
     
     if ( _notification[@"photo_url"]  == [ NSNull null ] ) {
         html = [html stringByAppendingString:[NSString stringWithFormat:@"%@",_notification[@"expert_html"]]];
@@ -46,8 +47,7 @@
     html = [html stringByAppendingString:@"</body></html>"];
     [_webView loadHTMLString:html baseURL:nil];
     _webView.scrollView.bounces = NO;
-
-    NSLog(@"bb");
+    
     
 }
 

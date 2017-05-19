@@ -25,6 +25,10 @@
     
     self.title = [LocalText with:@"header_title"];
     
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

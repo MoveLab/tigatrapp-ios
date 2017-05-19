@@ -7,3 +7,6 @@
 "NSLocationWhenInUseUsageDescription" = "We need to access your location to locate your sites and reports and to find nearby reports from where you are.";
 /* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
 "NSCameraUsageDescription" = "We need to access your camera so you can photograph your mosquito and breeding sites.";
+
+
+

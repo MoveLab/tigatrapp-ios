@@ -36,6 +36,9 @@
 
     
     self.title = [LocalText with:@"header_title"];
+
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
     
     self.tableView.tableFooterView = [UIView new];
     
@@ -45,6 +48,9 @@
     _aboutLabel.text = [LocalText with:@"menu_option_about"];
     _shareLabel.text = [LocalText with:@"menu_option_share"];
     _galleryLabel.text = [LocalText with:@"menu_option_gallery"];
+    _webLabel.text = [LocalText with:@"go_to_web"];
+    
+        [Helper resizePortraitView:self.view];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,7 +65,10 @@
 {
     UITableViewCell *cell = [aTableView cellForRowAtIndexPath:indexPath];
     [cell setSelected:NO];
-    if (indexPath.row == 5)  {
+    
+    NSLog(@"touch index %d",indexPath.row);
+    
+    if (indexPath.row == 6)  {
         // SHARE
         NSArray *activityItems;
         activityItems = @[[LocalText with:@"project_website"]];
@@ -70,6 +79,8 @@
         
         [self presentViewController:activityController animated:YES completion:nil];
         
+    } else if (indexPath.row == 1) { // web
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.mosquitoalert.com"]];
     }
 }
 
@@ -90,11 +101,11 @@
     
     if ([segue.identifier isEqualToString:@"helpSegue"]) {
         HelpViewController *viewController = segue.destinationViewController;
-        viewController.urlString = [NSString stringWithFormat:@"http://tigaserver.atrapaeltigre.com/help/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
+        viewController.urlString = [NSString stringWithFormat:@"http://webserver.mosquitoalert.com/help/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
         
     } else if ([segue.identifier isEqualToString:@"aboutSegue"]) {
         HelpViewController *viewController = segue.destinationViewController;
-        viewController.urlString = [NSString stringWithFormat:@"http://tigaserver.atrapaeltigre.com/about/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
+        viewController.urlString = [NSString stringWithFormat:@"http://webserver.mosquitoalert.com/about/ios/%@/",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0]];
         viewController.fallbackFile = [NSString stringWithFormat:@"about_%@",[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] ];
     }
 

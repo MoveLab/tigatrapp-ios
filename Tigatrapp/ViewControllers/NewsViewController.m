@@ -41,6 +41,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     self.title = [LocalText with:@"header_title"];
+    
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
 
     self.feeds = [NSMutableArray array];
     self.tableView.tableFooterView = [UIView new];
@@ -48,9 +52,9 @@
     NSURL *url;
     
     if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"ca"]) {
-        url = [NSURL URLWithString:@"http://atrapaeltigre.com/web/ca/feed/"];
+        url = [NSURL URLWithString:@"http://www.mosquitoalert.com/web/ca/feed/"];
     } else {
-        url = [NSURL URLWithString:@"http://atrapaeltigre.com/web/feed/"];
+        url = [NSURL URLWithString:@"http://www.mosquitoalert.com/web/feed/"];
     }
     
     NSError *error = nil;

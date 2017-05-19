@@ -13,6 +13,7 @@
 		8D20717C190C536F007E3B96 /* ChooseOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */; };
 		8D20717E190C54BC007E3B96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717D190C54BC007E3B96 /* CoreLocation.framework */; };
 		8D207180190C54C8007E3B96 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717F190C54C8007E3B96 /* MapKit.framework */; };
+		8D22F32A1ECEBF1A0043052B /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D22F3291ECEBF1A0043052B /* Helper.m */; };
 		8D28BE2F1CC68300001C96AD /* MissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D28BE2E1CC68300001C96AD /* MissionsViewController.m */; };
 		8D522AB21D54659A00EC82AF /* consent_ca.html in Resources */ = {isa = PBXBuildFile; fileRef = 8D522AAF1D54659A00EC82AF /* consent_ca.html */; };
 		8D522AB31D54659A00EC82AF /* consent_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 8D522AB01D54659A00EC82AF /* consent_en.html */; };
@@ -54,6 +55,16 @@
 		8DB558B1190AB335005DBDA2 /* MosquitoChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558B0190AB335005DBDA2 /* MosquitoChecklistViewController.m */; };
 		8DB558B4190AB3A2005DBDA2 /* DataActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558B3190AB3A2005DBDA2 /* DataActivityViewController.m */; };
 		8DB558B7190AB3DC005DBDA2 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB558B6190AB3DC005DBDA2 /* GalleryViewController.m */; };
+		8DC70EDE1EC24B6400559E87 /* ValidateHelp1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EDD1EC24B6400559E87 /* ValidateHelp1ViewController.m */; };
+		8DC70EE11EC2EFAA00559E87 /* Validate1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EE01EC2EFAA00559E87 /* Validate1ViewController.m */; };
+		8DC70EE41EC2EFFD00559E87 /* Validate2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EE31EC2EFFD00559E87 /* Validate2ViewController.m */; };
+		8DC70EE71EC2F04300559E87 /* Validate3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EE61EC2F04300559E87 /* Validate3ViewController.m */; };
+		8DC70EEA1EC2F06600559E87 /* Validate4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EE91EC2F06600559E87 /* Validate4ViewController.m */; };
+		8DC70EED1EC3051700559E87 /* ValidateHelp21ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EEC1EC3051700559E87 /* ValidateHelp21ViewController.m */; };
+		8DC70EF01EC3052800559E87 /* ValidateHelp22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EEF1EC3052800559E87 /* ValidateHelp22ViewController.m */; };
+		8DC70EF31EC3055100559E87 /* ValidateHelp23ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EF21EC3055100559E87 /* ValidateHelp23ViewController.m */; };
+		8DC70EF61EC3056700559E87 /* ValidateHelp3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EF51EC3056700559E87 /* ValidateHelp3ViewController.m */; };
+		8DC70EF91EC3057E00559E87 /* ValidateHelp4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC70EF81EC3057E00559E87 /* ValidateHelp4ViewController.m */; };
 		8DC9E02E192E4B0000F69D5E /* SubmenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9E02D192E4B0000F69D5E /* SubmenuViewController.m */; };
 		8DC9E032192E6E8D00F69D5E /* ActivityMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9E031192E6E8D00F69D5E /* ActivityMapAnnotation.m */; };
 		8DC9E03F192EAE2F00F69D5E /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9E034192EAE2F00F69D5E /* a.jpg */; };
@@ -122,6 +133,8 @@
 		8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseOnMapViewController.m; sourceTree = "<group>"; };
 		8D20717D190C54BC007E3B96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D20717F190C54C8007E3B96 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D22F3281ECEBF1A0043052B /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		8D22F3291ECEBF1A0043052B /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		8D28BE2D1CC68300001C96AD /* MissionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionsViewController.h; sourceTree = "<group>"; };
 		8D28BE2E1CC68300001C96AD /* MissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionsViewController.m; sourceTree = "<group>"; };
 		8D30C22E1DD247EB0074648E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -136,6 +149,7 @@
 		8D6BC4E51937DB1600A04648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D6BC4E61937DBA300A04648 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D6BC4E71937DBB200A04648 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D6F4BB01E6461B100EE60C4 /* Tigatrapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tigatrapp.entitlements; sourceTree = "<group>"; };
 		8D7273A1192FEB0A00536DBF /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
 		8D7273A2192FEB0A00536DBF /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		8D7273A419309E3300536DBF /* PickPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickPhotoViewController.h; sourceTree = "<group>"; };
@@ -193,6 +207,26 @@
 		8DB558B3190AB3A2005DBDA2 /* DataActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataActivityViewController.m; sourceTree = "<group>"; };
 		8DB558B5190AB3DC005DBDA2 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		8DB558B6190AB3DC005DBDA2 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		8DC70EDC1EC24B6400559E87 /* ValidateHelp1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateHelp1ViewController.h; sourceTree = "<group>"; };
+		8DC70EDD1EC24B6400559E87 /* ValidateHelp1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateHelp1ViewController.m; sourceTree = "<group>"; };
+		8DC70EDF1EC2EFAA00559E87 /* Validate1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate1ViewController.h; sourceTree = "<group>"; };
+		8DC70EE01EC2EFAA00559E87 /* Validate1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate1ViewController.m; sourceTree = "<group>"; };
+		8DC70EE21EC2EFFD00559E87 /* Validate2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate2ViewController.h; sourceTree = "<group>"; };
+		8DC70EE31EC2EFFD00559E87 /* Validate2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate2ViewController.m; sourceTree = "<group>"; };
+		8DC70EE51EC2F04300559E87 /* Validate3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate3ViewController.h; sourceTree = "<group>"; };
+		8DC70EE61EC2F04300559E87 /* Validate3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate3ViewController.m; sourceTree = "<group>"; };
+		8DC70EE81EC2F06600559E87 /* Validate4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate4ViewController.h; sourceTree = "<group>"; };
+		8DC70EE91EC2F06600559E87 /* Validate4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate4ViewController.m; sourceTree = "<group>"; };
+		8DC70EEB1EC3051700559E87 /* ValidateHelp21ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateHelp21ViewController.h; sourceTree = "<group>"; };
+		8DC70EEC1EC3051700559E87 /* ValidateHelp21ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateHelp21ViewController.m; sourceTree = "<group>"; };
+		8DC70EEE1EC3052800559E87 /* ValidateHelp22ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateHelp22ViewController.h; sourceTree = "<group>"; };
+		8DC70EEF1EC3052800559E87 /* ValidateHelp22ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateHelp22ViewController.m; sourceTree = "<group>"; };
+		8DC70EF11EC3055100559E87 /* ValidateHelp23ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateHelp23ViewController.h; sourceTree = "<group>"; };
+		8DC70EF21EC3055100559E87 /* ValidateHelp23ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateHelp23ViewController.m; sourceTree = "<group>"; };
+		8DC70EF41EC3056700559E87 /* ValidateHelp3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateHelp3ViewController.h; sourceTree = "<group>"; };
+		8DC70EF51EC3056700559E87 /* ValidateHelp3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateHelp3ViewController.m; sourceTree = "<group>"; };
+		8DC70EF71EC3057E00559E87 /* ValidateHelp4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateHelp4ViewController.h; sourceTree = "<group>"; };
+		8DC70EF81EC3057E00559E87 /* ValidateHelp4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateHelp4ViewController.m; sourceTree = "<group>"; };
 		8DC9E02C192E4B0000F69D5E /* SubmenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmenuViewController.h; sourceTree = "<group>"; };
 		8DC9E02D192E4B0000F69D5E /* SubmenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmenuViewController.m; sourceTree = "<group>"; };
 		8DC9E030192E6E8D00F69D5E /* ActivityMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityMapAnnotation.h; sourceTree = "<group>"; };
@@ -287,6 +321,8 @@
 				8DEFE8D81938EE1300FD2BAE /* FormatDate.m */,
 				8DA5090D193C59FA0095F119 /* LocalText.h */,
 				8DA5090E193C59FA0095F119 /* LocalText.m */,
+				8D22F3281ECEBF1A0043052B /* Helper.h */,
+				8D22F3291ECEBF1A0043052B /* Helper.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -351,6 +387,7 @@
 		8DB55873190AAB13005DBDA2 /* Tigatrapp */ = {
 			isa = PBXGroup;
 			children = (
+				8D6F4BB01E6461B100EE60C4 /* Tigatrapp.entitlements */,
 				8D7CA0F2192FA5A400B54ECF /* Data */,
 				8DC9E02F192E6E4D00F69D5E /* MapAnnotations */,
 				8DB558A2190AB238005DBDA2 /* ViewControllers */,
@@ -445,6 +482,26 @@
 				8DECF41B1D1D51C400680683 /* NotificationsViewController.m */,
 				8DECF41D1D1D563C00680683 /* NotificationViewController.h */,
 				8DECF41E1D1D563C00680683 /* NotificationViewController.m */,
+				8DC70EDF1EC2EFAA00559E87 /* Validate1ViewController.h */,
+				8DC70EE01EC2EFAA00559E87 /* Validate1ViewController.m */,
+				8DC70EE21EC2EFFD00559E87 /* Validate2ViewController.h */,
+				8DC70EE31EC2EFFD00559E87 /* Validate2ViewController.m */,
+				8DC70EE51EC2F04300559E87 /* Validate3ViewController.h */,
+				8DC70EE61EC2F04300559E87 /* Validate3ViewController.m */,
+				8DC70EE81EC2F06600559E87 /* Validate4ViewController.h */,
+				8DC70EE91EC2F06600559E87 /* Validate4ViewController.m */,
+				8DC70EDC1EC24B6400559E87 /* ValidateHelp1ViewController.h */,
+				8DC70EDD1EC24B6400559E87 /* ValidateHelp1ViewController.m */,
+				8DC70EEB1EC3051700559E87 /* ValidateHelp21ViewController.h */,
+				8DC70EEC1EC3051700559E87 /* ValidateHelp21ViewController.m */,
+				8DC70EEE1EC3052800559E87 /* ValidateHelp22ViewController.h */,
+				8DC70EEF1EC3052800559E87 /* ValidateHelp22ViewController.m */,
+				8DC70EF11EC3055100559E87 /* ValidateHelp23ViewController.h */,
+				8DC70EF21EC3055100559E87 /* ValidateHelp23ViewController.m */,
+				8DC70EF41EC3056700559E87 /* ValidateHelp3ViewController.h */,
+				8DC70EF51EC3056700559E87 /* ValidateHelp3ViewController.m */,
+				8DC70EF71EC3057E00559E87 /* ValidateHelp4ViewController.h */,
+				8DC70EF81EC3057E00559E87 /* ValidateHelp4ViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -551,13 +608,19 @@
 				TargetAttributes = {
 					8DB55869190AAB13005DBDA2 = {
 						DevelopmentTeam = V2QSCGZ2VG;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Push = {
 								enabled = 0;
 							};
 						};
 					};
 					8DB5588A190AAB13005DBDA2 = {
+						DevelopmentTeam = V2QSCGZ2VG;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 8DB55869190AAB13005DBDA2;
 					};
 				};
@@ -659,14 +722,20 @@
 			files = (
 				8DB558B4190AB3A2005DBDA2 /* DataActivityViewController.m in Sources */,
 				8DB55884190AAB13005DBDA2 /* ViewController.m in Sources */,
+				8DC70EE11EC2EFAA00559E87 /* Validate1ViewController.m in Sources */,
 				8DFE1F301D39393C0031DE47 /* Mosquito2ndChecklistViewController.m in Sources */,
 				8DB5587E190AAB13005DBDA2 /* AppDelegate.m in Sources */,
 				8DECF41C1D1D51C400680683 /* NotificationsViewController.m in Sources */,
 				8DA50912193C694A0095F119 /* HelpImageViewController.m in Sources */,
+				8DC70EF91EC3057E00559E87 /* ValidateHelp4ViewController.m in Sources */,
+				8DC70EF01EC3052800559E87 /* ValidateHelp22ViewController.m in Sources */,
 				8D7CA0F5192FA5EB00B54ECF /* Report.m in Sources */,
+				8DC70EF61EC3056700559E87 /* ValidateHelp3ViewController.m in Sources */,
 				8DFF536819378F17009D3389 /* HelpViewController.m in Sources */,
 				8D0D2418193C996200001CDD /* NewsViewController.m in Sources */,
 				8D7273A3192FEB0A00536DBF /* NoteViewController.m in Sources */,
+				8DC70EE41EC2EFFD00559E87 /* Validate2ViewController.m in Sources */,
+				8DC70EED1EC3051700559E87 /* ValidateHelp21ViewController.m in Sources */,
 				8DB558B1190AB335005DBDA2 /* MosquitoChecklistViewController.m in Sources */,
 				8D7273B21931CAFA00536DBF /* UserReports.m in Sources */,
 				8D0C5B9D1CEE0E9F0070D04C /* PybossaViewController.m in Sources */,
@@ -674,6 +743,7 @@
 				8D7273AC1930C16900536DBF /* CurrentLocation.m in Sources */,
 				8DC9E032192E6E8D00F69D5E /* ActivityMapAnnotation.m in Sources */,
 				8DB5587A190AAB13005DBDA2 /* main.m in Sources */,
+				8DC70EE71EC2F04300559E87 /* Validate3ViewController.m in Sources */,
 				8DA5090F193C59FA0095F119 /* LocalText.m in Sources */,
 				8DEFE8D91938EE1300FD2BAE /* FormatDate.m in Sources */,
 				8D82422D1D3F5DDB00879727 /* MissionViewController.m in Sources */,
@@ -682,12 +752,16 @@
 				8DB558A8190AB27C005DBDA2 /* SiteChecklistViewController.m in Sources */,
 				8DEFE8D61938D2AE00FD2BAE /* RestApi.m in Sources */,
 				8D207179190C3429007E3B96 /* DetailViewController.m in Sources */,
+				8DC70EEA1EC2F06600559E87 /* Validate4ViewController.m in Sources */,
 				8DECF41F1D1D563C00680683 /* NotificationViewController.m in Sources */,
 				8DA5090C193C57DF0095F119 /* TermsViewController.m in Sources */,
 				8DB558A5190AB25C005DBDA2 /* MenuViewController.m in Sources */,
 				8DB558AE190AB313005DBDA2 /* ReportViewController.m in Sources */,
 				8D7273A91930B4A600536DBF /* PhotoViewController.m in Sources */,
+				8DC70EDE1EC24B6400559E87 /* ValidateHelp1ViewController.m in Sources */,
 				8DB558B7190AB3DC005DBDA2 /* GalleryViewController.m in Sources */,
+				8D22F32A1ECEBF1A0043052B /* Helper.m in Sources */,
+				8DC70EF31EC3055100559E87 /* ValidateHelp23ViewController.m in Sources */,
 				8DC9E02E192E4B0000F69D5E /* SubmenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,6 +905,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V2QSCGZ2VG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tigatrapp/Tigatrapp-Prefix.pch";
 				INFOPLIST_FILE = "Tigatrapp/Tigatrapp-Info.plist";
@@ -847,6 +922,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V2QSCGZ2VG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tigatrapp/Tigatrapp-Prefix.pch";
 				INFOPLIST_FILE = "Tigatrapp/Tigatrapp-Info.plist";
@@ -860,6 +936,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tigatrapp.app/Tigatrapp";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V2QSCGZ2VG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -882,6 +960,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tigatrapp.app/Tigatrapp";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V2QSCGZ2VG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

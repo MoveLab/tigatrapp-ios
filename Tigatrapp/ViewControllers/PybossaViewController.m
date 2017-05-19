@@ -20,13 +20,16 @@
 
     self.title = [LocalText with:@"header_title"];
     
-    //_urlString = @"http://crowdcrafting.org/project/mosquito-alert/task/1383572";
-    
+    /*
     _urlString = [NSString stringWithFormat:@"http://crowdcrafting.org/project/mosquito-alert/newtask?lang=%@&timestamp=%.0f"
                   ,[LocalText currentLoc]
                   ,[[NSDate date] timeIntervalSince1970] * 1000];
-    
+    */
+    _urlString = [NSString stringWithFormat:@"http://mosquitoalert.pybossa.com/project/mosquito-alert/newtask?lang=%@&timestamp=%.0f"
+                  ,[LocalText currentLoc]
+                  ,[[NSDate date] timeIntervalSince1970] * 1000];
 
+    
     NSURL *url = [NSURL URLWithString:_urlString];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     

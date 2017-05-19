@@ -10,7 +10,6 @@
 
 @interface LocalText : NSObject
 
-+(NSString *) with:(NSString *)string;
-
++ (NSString *) with:(NSString *)string;
 + (NSString *) currentLoc;
 @end

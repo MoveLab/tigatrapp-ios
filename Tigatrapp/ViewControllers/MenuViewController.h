@@ -40,6 +40,10 @@
 @property (nonatomic, weak) IBOutlet UILabel *missionCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel *notificationCountLabel;
 
+@property (nonatomic, weak) IBOutlet UIButton *userScoreButton;
+@property (nonatomic, weak) IBOutlet UILabel *userLevelLabel;
+@property (nonatomic, weak) IBOutlet UILabel *userScoreHeaderLabel;
+@property (nonatomic, weak) IBOutlet UILabel *userLevelHeaderLabel;
 
 
 

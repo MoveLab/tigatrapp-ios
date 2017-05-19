@@ -29,7 +29,9 @@
     // Do any additional setup after loading the view.
     
     self.title = [LocalText with:@"header_title"];
-    
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
     NSArray *imagesArray = @[@"a.jpg",@"b.jpg",@"c.jpg",@"d.jpg",@"e.jpg",@"f.jpg",@"g.jpg"
                              ,@"h.jpg",@"i.jpg",@"j.jpg",@"k.jpg",@"l.jpg"];
     NSArray *labelsArray = @[@"gallery_array0",@"gallery_array1",@"gallery_array2",@"gallery_array3",@"gallery_array4"

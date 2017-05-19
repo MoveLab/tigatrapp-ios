@@ -34,7 +34,9 @@
     [super viewDidLoad];
     
     self.title = [LocalText with:@"header_title"];
-    
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
     // Do any additional setup after loading the view.
     self.annotationsArray = [[NSMutableArray alloc] init];
     
@@ -83,6 +85,8 @@
                                              selector:@selector(gotNearbyReports:)
                                                  name:@"nearbyReports"
                                                object:nil];
+    
+        [Helper resizePortraitView:self.view];
     
 }
 

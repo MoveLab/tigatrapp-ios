@@ -32,7 +32,9 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [UIView new];
-    
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
     _titleLabel.text = [LocalText with:@"report_checklist_title_adult"];
     _firstQuestionLabel.text = [LocalText with:@"confirmation_q1_adult_sizecolor"];
     _secondQuestionLabel.text = [LocalText with:@"confirmation_q2_adult_headthorax"];

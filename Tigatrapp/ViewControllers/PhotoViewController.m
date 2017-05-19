@@ -29,6 +29,8 @@
     // Do any additional setup after loading the view.
     
     self.title = [LocalText with:@"header_title"];
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
 
     _imageView.image = [UIImage imageWithData:[_report.images objectAtIndex:_imageIndex]];
     _imageView.contentMode = UIViewContentModeScaleAspectFill;

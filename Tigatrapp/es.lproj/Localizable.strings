@@ -6,6 +6,63 @@
  * Exported by: Unregistered user
  * Exported at: Tue, 08 Nov 2016 17:21:14 +0000
  */
+"user_score_label" = "MY POINTS";
+"user_level_label" = "MY LEVEL";
+"user_score_beginner" = "BEGINNER";
+"user_score_advanced" = "ADVANCED";
+"user_score_pro" = "PRO";
+"i18n_latin_tiger" = "Aedes albopictus";
+"i18n_latin_yellow" = "Aedes aegypti";
+"i18n_recognize_thorax" = "Reconeixes el tòrax?";
+"i18n_recognize_abdomen" = "i l'abdomen?";
+"go_to_web" = "Web";
+"i18n_question1" = "¿Ves un mosquito en esta foto?";
+"i18n_easy_right" = "Parece fácil, ¿verdad?";
+"i18n_tellme" = "Pues dinos si ves un mosquito.";
+"i18n_letsgo" = "¡Vamos allá!";
+"i18n_whatmosquito" = "¿Qué mosquito es?";
+"i18n_wesearch" = "Buscamos mosquitos tigre o mosquitos de la fiebre amarilla, pero se pueden colar otras especies";
+"i18n_nextscreen" = "En la pantalla siguiente te explicamos cómo reconocerlos.";
+"i18n_ok" = "¡Vale!";
+"i18n_tiger" = "Mosquito Tigre";
+"i18n_whitestripes" = "Es pequeño (< 1 cm), negro y con rayas blancas horizontales en el abodmen";
+"i18n_whitelinehead" = "Tiene una línea blanca vertical en cabeza y tórax.";
+"i18n_stripedlegs" = "Patas rayadas.";
+"i18n_examples" = "Ejemplos";
+"i18n_thorax" = "Tórax";
+"i18n_abdomen" = "Abdomen";
+"i18n_ok2" = "¡OK!";
+"i18n_yellowfever" = "Mosquito de Fiebre Amarilla";
+"i18n_smallblackish" = "Es pequeño (< 1 cm), marrón negruzco y con rayas horizontales, blancas y anchas en el abdomen. A cada lado de estas líneas tiene manchas blancas redondas.";
+"i18n_patternchest" = "Tiene un dibujo en forma de lira en el tórax.";
+"i18n_stripedlegs2" = "Patas rayadas.";
+"i18n_examples2" = "Ejemplos";
+"i18n_thorax2" = "Tórax";
+"i18n_abdomen2" = "Abdomen";
+"i18n_ok3" = "¡OK!";
+"i18n_whichparts" = "¿Por qué partes lo has reconocido?";
+"i18n_markparts" = "La parte más identificativa del mosquito es el dibujo del tórax. ¿Reconoces el dibujo en la imagen?";
+"i18n_tigermosquito" = "Mosquito Tigre";
+"i18n_thorax3" = "Tórax";
+"i18n_yellowfever2" = "Mosquito Fiebre Amarilla";
+"i18n_thorax4" = "Tórax";
+"i18n_understood" = "¡Entendido!";
+"i18n_zoominfo" = "Toca la imagen para ampliar.";
+"i18n_step1_yes" = "Sí";
+"i18n_step1_no" = "No";
+"i18n_notsurebtn" = "No lo tengo claro";
+"i18n_tigerbtn" = "Tigre";
+"i18n_yellowfeverbtn" = "Fiebre Amarilla";
+"i18n_notsurebtn2" = "No lo tengo claro";
+"i18n_noneofbothbtn" = "Ninguno de los dos";
+"i18n_yesbtn1" = "Sí";
+"i18n_yesbtn2" = "Sí";
+"i18n_yesbtn3" = "Sí";
+"i18n_yesbtn4" = "Sí";
+"i18n_nobtn1" = "No";
+"i18n_nobtn2" = "No";
+"i18n_nobtn3" = "No";
+"i18n_nobtn4" = "No";
 
 "legend_nearby_observations" = "Observaciones cercanas";
 "legend_my_observations" = "Mis observaciones";
@@ -832,4 +889,3 @@
 
 /* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
 "ios_photo_initial_warning_2_we_need_to_access_your_location" = "Necesitamos acceder a tu posición para localizar tus informes y para encontrar informes cerca de donde estés.";
-

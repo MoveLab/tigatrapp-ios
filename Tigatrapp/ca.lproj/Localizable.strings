@@ -7,6 +7,65 @@
  * Exported at: Tue, 08 Nov 2016 17:20:39 +0000
  */
 
+"user_score_label" = "MY POINTS";
+"user_level_label" = "MY LEVEL";
+"user_score_beginner" = "BEGINNER";
+"user_score_advanced" = "ADVANCED";
+"user_score_pro" = "PRO";
+"i18n_latin_tiger" = "Aedes albopictus";
+"i18n_latin_yellow" = "Aedes aegypti";
+"i18n_recognize_thorax" = "Reconeixes el tòrax?";
+"i18n_recognize_abdomen" = "i l'abdomen?";
+"go_to_web" = "Web";
+"i18n_question1" = "Veus un mosquit en aquesta foto?";
+"i18n_easy_right" = "Sembla fàcil, oi?";
+"i18n_tellme" = "Doncs digue’ns si veus un mosquit.";
+"i18n_letsgo" = "Som-hi!";
+"i18n_whatmosquito" = "Quin mosquit podria ser?";
+"i18n_wesearch" = "Busquem mosquits tigre o de la febre groga, però es poden colar altres espècies.";
+"i18n_nextscreen" = "A la pròxima pantalla t’expliquem com reconèixer-los.";
+"i18n_ok" = "D’acord!";
+"i18n_tiger" = "Mosquit Tigre";
+"i18n_whitestripes" = "És petit (<1 cm), negre, i amb línees blanques horitzontals a l’abdomen.";
+"i18n_whitelinehead" = "Té una línea blanca vertical just després del cap, al tòrax.";
+"i18n_stripedlegs" = "Potes ratllades.";
+"i18n_examples" = "Exemples";
+"i18n_thorax" = "Tòrax";
+"i18n_abdomen" = "Abdomen";
+"i18n_ok2" = "D’acord!";
+"i18n_yellowfever" = "Mosquit de la Febre Groga";
+"i18n_smallblackish" = "És petit (<1 cm), marró tirant a negre, amb línees horitzontals blanques i gruixudes a l’abdomen.";
+"i18n_patternchest" = "Té un dibuix en forma de lira just després del cap, al tòrax.";
+"i18n_stripedlegs2" = "Potes ratllades.";
+"i18n_examples2" = "Exemples";
+"i18n_thorax2" = "Tòrax";
+"i18n_abdomen2" = "Abdomen";
+"i18n_ok3" = "D’acord!";
+"i18n_whichparts" = "Per quines parts l’has reconegut?";
+"i18n_markparts" = "Selecciona les parts del mosquit que t’han ajudat a identificar-lo: tòrax o abdomen (o ambdues).";
+"i18n_tigermosquito" = "Mosquit Tigre";
+"i18n_thorax3" = "Tòrax";
+"i18n_yellowfever2" = "Mosquit de la Febre Groga";
+"i18n_thorax4" = "Tòrax";
+"i18n_understood" = "Entès!";
+"i18n_zoominfo" = "Toca la imatge per ampliar-la";
+"i18n_step1_yes" = "Sí";
+"i18n_step1_no" = "No";
+"i18n_notsurebtn" = "No ho sé";
+"i18n_tigerbtn" = "Tigre";
+"i18n_yellowfeverbtn" = "Febre Groga";
+"i18n_notsurebtn2" = "No ho sé";
+"i18n_noneofbothbtn" = "Cap dels dos";
+"i18n_yesbtn1" = "Sí";
+"i18n_yesbtn2" = "Sí";
+"i18n_yesbtn3" = "Sí";
+"i18n_yesbtn4" = "Sí";
+"i18n_nobtn1" = "No";
+"i18n_nobtn2" = "No";
+"i18n_nobtn3" = "No";
+"i18n_nobtn4" = "No";
+
+
 "legend_nearby_observations" = "Observacions properes";
 "legend_my_observations" = "Les meves observacions";
 

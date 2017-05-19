@@ -7,6 +7,66 @@
  * Exported at: Tue, 08 Nov 2016 17:19:51 +0000
  */
 
+"user_score_label" = "MY POINTS";
+"user_level_label" = "MY LEVEL";
+"user_score_beginner" = "BEGINNER";
+"user_score_advanced" = "ADVANCED";
+"user_score_pro" = "PRO";
+"go_to_web" = "Web";
+"i18n_latin_tiger" = "Aedes albopictus";
+"i18n_latin_yellow" = "Aedes aegypti";
+"i18n_recognize_thorax" = "Reconeixes el tòrax?";
+"i18n_recognize_abdomen" = "i l'abdomen?";
+
+"i18n_question1" = "Do you see a mosquito in this photo?";
+"i18n_easy_right" = "It looks easy, right?";
+"i18n_tellme" = "So tell us if you see a mosquito.";
+"i18n_letsgo" = "Let's go!";
+"i18n_whatmosquito" = "What mosquito is it?";
+"i18n_wesearch" = "We are looking for tiger mosquitoes or yellow fever mosquitoes, but other species can also get in.";
+"i18n_nextscreen" = "On the next screen we explain how to recognize them.";
+"i18n_ok" = "OK!";
+"i18n_tiger" = "Tiger Mosquito";
+"i18n_whitestripes" = "It is small (<1 cm), black, with horizontal white lines on the abodmen.";
+"i18n_whitelinehead" = "It has a vertical white line just after the head, in the thorax.";
+"i18n_stripedlegs" = "Striped legs.";
+"i18n_examples" = "Examples";
+"i18n_thorax" = "Thorax";
+"i18n_abdomen" = "Abdomen";
+"i18n_ok2" = "OK!";
+"i18n_yellowfever" = "Yellow Fever Mosquito";
+"i18n_smallblackish" = "It is small (<1 cm), blackish brown and has horizontal white and wide lines on the abdomen. On each side of these lines there are round white spots.";
+"i18n_patternchest" = "It has a lyre-shaped pattern just after the head, in the thorax.";
+"i18n_stripedlegs2" = "Striped legs.";
+"i18n_examples2" = "Examples";
+"i18n_thorax2" = "Thorax";
+"i18n_abdomen2" = "Abdomen";
+"i18n_ok3" = "OK!";
+"i18n_whichparts" = "Which parts have you recognized?";
+"i18n_markparts" = "The most recognisable part of the mosquito is the torax drawing. Do you recognise the drawing in the picture?";
+"i18n_tigermosquito" = "Tiger Mosquito";
+"i18n_thorax3" = "Thorax";
+"i18n_yellowfever2" = "Yellow Fever Mosquito";
+"i18n_thorax4" = "Thorax";
+"i18n_understood" = "Understood!";
+"i18n_zoominfo" = "Touch the picture to enlarge it.";
+"i18n_step1_yes" = "Yes";
+"i18n_step1_no" = "No";
+"i18n_notsurebtn" = "I'm not sure";
+"i18n_tigerbtn" = "Tiger";
+"i18n_yellowfeverbtn" = "Yellow fever";
+"i18n_notsurebtn2" = "I'm not sure";
+"i18n_noneofbothbtn" = "None of both";
+"i18n_yesbtn1" = "Yes";
+"i18n_yesbtn2" = "Yes";
+"i18n_yesbtn3" = "Yes";
+"i18n_yesbtn4" = "Yes";
+"i18n_nobtn1" = "No";
+"i18n_nobtn2" = "No";
+"i18n_nobtn3" = "No";
+"i18n_nobtn4" = "No";
+
+
 "legend_nearby_observations" = "Nearby observations";
 "legend_my_observations" = "My observations";
 
@@ -222,7 +282,7 @@
 "adult_report_q1a1" = "Black with white lines on the body and the legs";
 
 /*  */
-"adult_report_q1a2" = "Brown with white lines on the body and the legs\n ";
+"adult_report_q1a2" = "Brown with white lines on the body and the legs";
 
 /*  */
 "adult_report_q1a3" = "Neither";

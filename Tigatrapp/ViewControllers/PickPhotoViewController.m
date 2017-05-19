@@ -33,6 +33,8 @@
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"mosquitoImages"];
     [_takePhotoButton setTitle:[LocalText with:@"photo_selector_take_photo_button"] forState:UIControlStateNormal];
     [_pickPhotoButton setTitle:[LocalText with:@"photo_selector_attach_photo_button"] forState:UIControlStateNormal];
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

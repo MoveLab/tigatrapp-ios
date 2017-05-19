@@ -8,3 +8,5 @@
 
 /* We need to access your location to locate your sites and reports and to find nearby reports from where you are. */
 "NSCameraUsageDescription" = "Necesitamos acceder a la cámara para que puedas fotografiar tus mosquitos y lugares de cría.";
+
+

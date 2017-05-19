@@ -30,7 +30,9 @@
     // Do any additional setup after loading the view.
     
     self.title = [LocalText with:@"header_title"];
-    
+    UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
     
     MKCoordinateRegion region;
     if ([_report.locationChoice isEqualToString:@"selected"]
