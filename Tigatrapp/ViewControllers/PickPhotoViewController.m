@@ -127,7 +127,7 @@
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
  
-    NSLog(@"torno image picker info %@", info);
+    //NSLog(@"torno image picker info %@", info);
     
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     //NSData *imageData = UIImagePNGRepresentation(image);

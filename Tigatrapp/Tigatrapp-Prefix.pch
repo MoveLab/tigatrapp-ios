@@ -31,4 +31,4 @@
 #define C_GRAYLINE   [UIColor colorWithRed:209.0f/255.0f green:209.0f/255.0f blue:209.0f/255.0f alpha:1.0f]
 //#define C_YELLOW [UIColor colorWithRed:244.0f/255.0f green:179.0f/255.0f blue:0.0f/255.0f alpha:1.0f]
 #define C_YELLOW [UIColor colorWithRed:255.0f/255.0f green:221.0f/255.0f blue:23.0f/255.0f alpha:1.0f]
-#define SHOW_LOGS YES
+#define SHOW_LOGS NO

@@ -7,17 +7,28 @@
  * Exported at: Tue, 08 Nov 2016 17:19:51 +0000
  */
 
-"user_score_label" = "MY POINTS";
-"user_level_label" = "MY LEVEL";
-"user_score_beginner" = "BEGINNER";
-"user_score_advanced" = "ADVANCED";
-"user_score_pro" = "PRO";
-"go_to_web" = "Web";
+/* loco:593654b352e1a10c328b4568 */
+"user_score_label" = "Score";
+
+/* loco:593654db52e1a107328b4568 */
+"user_level_label" = "Level";
+
+/* loco:593654f252e1a1fd318b456d */
+"user_score_beginner" = "Beginner";
+
+/* loco:5936550552e1a109328b456c */
+"user_score_advanced" = "Advanced";
+
+/* loco:5936551a52e1a138328b456a */
+"user_score_pro" = "Professional";
+
+/* loco:593e4da652e1a1b8048b4569 */
+"menu-web" = "Website";
 
 "i18n_latin_tiger" = "Aedes albopictus";
 "i18n_latin_yellow" = "Aedes aegypti";
-"i18n_recognize_thorax" = "Reconeixes el tòrax?";
-"i18n_recognize_abdomen" = "i l'abdomen?";
+"i18n_recognize_thorax" = "Do you recognize the thorax?";
+"i18n_recognize_abdomen" = "And the abdomen?";
 
 "i18n_question1" = "Do you see a mosquito in this photo?";
 "i18n_easy_right" = "It looks easy, right?";

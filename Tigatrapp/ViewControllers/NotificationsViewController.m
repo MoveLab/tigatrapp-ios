@@ -168,6 +168,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:[LocalText with:@"back"]
+                                   style:UIBarButtonItemStylePlain
+                                   target:nil
+                                   action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
 
     if ([[segue identifier] isEqualToString:@"notificationSegue"]) {
         NSIndexPath *ip = [self.tableView indexPathForSelectedRow];

@@ -12,7 +12,6 @@
 		8D207179190C3429007E3B96 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D207178190C3429007E3B96 /* DetailViewController.m */; };
 		8D20717C190C536F007E3B96 /* ChooseOnMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */; };
 		8D20717E190C54BC007E3B96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717D190C54BC007E3B96 /* CoreLocation.framework */; };
-		8D207180190C54C8007E3B96 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20717F190C54C8007E3B96 /* MapKit.framework */; };
 		8D22F32A1ECEBF1A0043052B /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D22F3291ECEBF1A0043052B /* Helper.m */; };
 		8D28BE2F1CC68300001C96AD /* MissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D28BE2E1CC68300001C96AD /* MissionsViewController.m */; };
 		8D522AB21D54659A00EC82AF /* consent_ca.html in Resources */ = {isa = PBXBuildFile; fileRef = 8D522AAF1D54659A00EC82AF /* consent_ca.html */; };
@@ -132,7 +131,6 @@
 		8D20717A190C536E007E3B96 /* ChooseOnMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseOnMapViewController.h; sourceTree = "<group>"; };
 		8D20717B190C536F007E3B96 /* ChooseOnMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseOnMapViewController.m; sourceTree = "<group>"; };
 		8D20717D190C54BC007E3B96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		8D20717F190C54C8007E3B96 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8D22F3281ECEBF1A0043052B /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		8D22F3291ECEBF1A0043052B /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		8D28BE2D1CC68300001C96AD /* MissionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionsViewController.h; sourceTree = "<group>"; };
@@ -287,7 +285,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D207180190C54C8007E3B96 /* MapKit.framework in Frameworks */,
 				8D20717E190C54BC007E3B96 /* CoreLocation.framework in Frameworks */,
 				8DB55870190AAB13005DBDA2 /* CoreGraphics.framework in Frameworks */,
 				8DB55872190AAB13005DBDA2 /* UIKit.framework in Frameworks */,
@@ -374,7 +371,6 @@
 		8DB5586C190AAB13005DBDA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D20717F190C54C8007E3B96 /* MapKit.framework */,
 				8D20717D190C54BC007E3B96 /* CoreLocation.framework */,
 				8DB5586D190AAB13005DBDA2 /* Foundation.framework */,
 				8DB5586F190AAB13005DBDA2 /* CoreGraphics.framework */,
@@ -613,8 +609,11 @@
 							com.apple.DataProtection = {
 								enabled = 0;
 							};
-							com.apple.Push = {
+							com.apple.Maps.iOS = {
 								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
 							};
 						};
 					};
@@ -903,6 +902,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Tigatrapp/Tigatrapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V2QSCGZ2VG;
@@ -920,6 +920,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Tigatrapp/Tigatrapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V2QSCGZ2VG;

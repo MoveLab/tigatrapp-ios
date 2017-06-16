@@ -383,7 +383,7 @@ static RestApi *sharedInstance = nil;
         NSError *herror;
         NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
         
-        NSLog(@"response=>%@", responseDict);
+        //NSLog(@"response=>%@", responseDict);
         
         if (herror) {
             if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
@@ -793,10 +793,10 @@ static RestApi *sharedInstance = nil;
     
     NSString *imageURLString = [NSString stringWithFormat:@"http://webserver.mosquitoalert.com/get_photo/q0n50KN2Tg1O0Zh/%@/medium", uuid];
     
-    NSLog(@"image =%@", imageURLString);
+    //NSLog(@"image =%@", imageURLString);
     _imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURLString]];
     
-    NSLog(@"size = %lu", (unsigned long)_imageData.length);
+    //NSLog(@"size = %lu", (unsigned long)_imageData.length);
     
 }
 

@@ -48,9 +48,9 @@
     _aboutLabel.text = [LocalText with:@"menu_option_about"];
     _shareLabel.text = [LocalText with:@"menu_option_share"];
     _galleryLabel.text = [LocalText with:@"menu_option_gallery"];
-    _webLabel.text = [LocalText with:@"go_to_web"];
+    _webLabel.text = [LocalText with:@"menu-web"];
     
-        [Helper resizePortraitView:self.view];
+    [Helper resizePortraitView:self.view];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,8 +65,6 @@
 {
     UITableViewCell *cell = [aTableView cellForRowAtIndexPath:indexPath];
     [cell setSelected:NO];
-    
-    NSLog(@"touch index %d",indexPath.row);
     
     if (indexPath.row == 6)  {
         // SHARE
