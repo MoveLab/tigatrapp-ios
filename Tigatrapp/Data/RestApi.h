@@ -43,6 +43,7 @@
 @property (nonatomic,strong) NSArray *serverMissionsArray;
 
 @property (nonatomic,strong) NSString *notificationsToken;
+@property (nonatomic,strong) NSString *pybossaBearer;
 
 @property (nonatomic) int userScore;
 @property (nonatomic,strong) NSString *userScoreString;
@@ -59,6 +60,8 @@
 
 @property (nonatomic) float currentValidationImageScale;
 @property (nonatomic) CGPoint currentValidationImageOffset;
+
+
 
 - (void) callUsers;
 

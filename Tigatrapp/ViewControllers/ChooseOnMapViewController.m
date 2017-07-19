@@ -65,6 +65,9 @@
     [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_satellite"] forSegmentAtIndex:1];
     
     _removeButton.title = [LocalText with:@"delete"];
+    
+    [Helper resizePortraitView:self.view];
+
 
 }
 

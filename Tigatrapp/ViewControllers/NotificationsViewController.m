@@ -46,7 +46,8 @@
     
     if (SHOW_LOGS) NSLog(@"NOTIFICACIONS  : %lu i %lu", (unsigned long)[RestApi sharedInstance].notificationsArray.count, (unsigned long)[RestApi sharedInstance].ackNotificationsArray.count);
     
-    
+    [Helper resizePortraitView:self.view];
+
     
 }
 

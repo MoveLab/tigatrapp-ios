@@ -36,6 +36,9 @@
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
     _imageView.clipsToBounds = YES;
 
+    [Helper resizePortraitView:self.view];
+
+    
 }
 
 - (void)didReceiveMemoryWarning

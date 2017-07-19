@@ -34,6 +34,8 @@
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
     [self.webView loadRequest:requestObj];
+    [Helper resizePortraitView:self.view];
+
     
 }
 

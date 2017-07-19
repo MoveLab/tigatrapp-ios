@@ -45,17 +45,17 @@
         [_mapView addAnnotation:annotation];
         [_annotationsArray addObject:annotation];
     }
-    [_mapView showAnnotations:_annotationsArray animated:NO];
     if ([CLLocationManager locationServicesEnabled]) {
-        
+        // no adapto el mapa a les mides
         self.located = NO;
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         [self.locationManager startUpdatingLocation];
-
         [_mapView setShowsUserLocation:YES];
         
     } else {
+        [_mapView showAnnotations:_annotationsArray animated:NO];
+        if (SHOW_LOGS) NSLog(@"inicialitzo mapa propers");
         double radius = 5000; // fixe 5km
         [[RestApi sharedInstance] nearbyReportsFromLat:_mapView.centerCoordinate.latitude
                                                 andLon:_mapView.centerCoordinate.longitude
@@ -74,8 +74,8 @@
     [_segmentedControl setTitle:[LocalText with:@"menu_option_map_type_satellite"] forSegmentAtIndex:1];
     
     
-    _nearbyLabel.text = [LocalText with:@"legend_nearby_observations"];
-    _ownLabel.text = [LocalText with:@"legend_my_observations"];
+    _nearbyLabel.text = [LocalText with:@"my-map-legend-label-nearby-observations-nearby-observations"];
+    _ownLabel.text = [LocalText with:@"my-map-legend-label-my-observations-my-observations"];
     _legendView.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4];
     _legendView.layer.cornerRadius = 4.0;
     _legendView.layer.masksToBounds = YES;
@@ -86,7 +86,7 @@
                                                  name:@"nearbyReports"
                                                object:nil];
     
-        [Helper resizePortraitView:self.view];
+    [Helper resizePortraitView:self.view];
     
 }
 
@@ -109,7 +109,11 @@
             
         }
     }
-    [_mapView showAnnotations:[_mapView selectedAnnotations] animated:NO];
+    if ([CLLocationManager locationServicesEnabled]) {
+        // no adapto el mapa a les mides
+    } else {
+        [_mapView showAnnotations:[_mapView selectedAnnotations] animated:NO];
+    }
     
 }
 
@@ -126,14 +130,25 @@
     
     if (!_located) {
         self.located = YES;
-        
+        if (SHOW_LOGS) NSLog(@"inicialitzo localitzacio a posicio actual");
         CLLocation *location = [locations lastObject];
-        
         //double radius = MIN([self getRadius],10000); // min 10KM
         double radius = 5000; // fixe 5km
         [[RestApi sharedInstance] nearbyReportsFromLat:location.coordinate.latitude
                                                 andLon:location.coordinate.longitude
                                              andRadius:radius];
+        
+        MKCoordinateRegion region;
+        MKCoordinateSpan span;
+        span.latitudeDelta = 0.2;
+        span.longitudeDelta = 0.2;
+        CLLocationCoordinate2D clocation;
+        clocation.latitude = location.coordinate.latitude;
+        clocation.longitude = location.coordinate.longitude;
+        region.span = span;
+        region.center = clocation;
+        [_mapView setRegion:region animated:YES];
+        
         
     }
 
@@ -230,6 +245,8 @@
     }
 }
 
+
+
 #pragma mark trobar centre mapa
 
 - (void) gotNearbyReports:(NSNotification *)notification {
@@ -255,7 +272,11 @@
         [_mapView addAnnotation:annotation];
         
     }
-    [_mapView showAnnotations:_annotationsArray animated:YES];
+    if ([CLLocationManager locationServicesEnabled]) {
+        // no adapto el mapa a les mides
+    } else {
+        [_mapView showAnnotations:_annotationsArray animated:YES];
+    }
 }
     
 - (CLLocationCoordinate2D)getTopCenterCoordinate

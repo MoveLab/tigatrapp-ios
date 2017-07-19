@@ -38,6 +38,9 @@
     _textView.text = _report.note;
     [_textView becomeFirstResponder];
     
+    [Helper resizePortraitView:self.view];
+
+    
 }
 
 - (void) viewWillDisappear:(BOOL)animated {

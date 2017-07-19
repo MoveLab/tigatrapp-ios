@@ -116,6 +116,10 @@
     
     BOOL foundScore = NO;
     
+    // actualitzo badge
+    [UIApplication sharedApplication].applicationIconBadgeNumber = [RestApi sharedInstance].serverNotificationsArray.count;
+    
+    
     if ([self.navigationController.topViewController isEqual:self]) {
         // per evitar mutatings
         // actualitzo les taules del servidor quan estic al topviewcontroller

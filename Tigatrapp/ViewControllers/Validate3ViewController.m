@@ -35,7 +35,7 @@
         [_toraxImageView setImage:[UIImage imageNamed:@"toraxGroga"]];
     }
     
-    _titleLabel.text = [LocalText with:@"i18n_recognize_thorax"];
+    _titleLabel.text = [LocalText with:@"i18n_thorax_question"];
     [_yesToraxButton setTitle:[LocalText with:@"i18n_yesbtn3"] forState:UIControlStateNormal];
     [_noToraxButton setTitle:[LocalText with:@"i18n_nobtn3"] forState:UIControlStateNormal];
 
@@ -46,7 +46,8 @@
         [userDefaults setObject:@"DONE" forKey:@"showValidation3Help"];
     }
 
-    
+    [Helper resizePortraitView:self.view];
+
 }
 - (void) drawScrollView {
     _readyToScroll = NO;
@@ -75,13 +76,8 @@
 
 
 - (void) sendValidation:(int)option {
-    
     NSDictionary *dict = [[RestApi sharedInstance] validateInfoForOption:option];
-    NSDictionary *outDict = @{@"project_id":[RestApi sharedInstance].validationInfo[@"project_id"]
-                              ,@"task_id":[RestApi sharedInstance].validationInfo[@"id"]
-                              ,@"info": dict
-                              };
-    [[RestApi sharedInstance] sendMosquitoValidation:outDict];
+    [[RestApi sharedInstance] sendMosquitoValidation:dict];
 }
 
 

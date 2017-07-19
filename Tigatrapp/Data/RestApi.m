@@ -35,6 +35,8 @@ static RestApi *sharedInstance = nil;
 
         self.serverNotificationsArray = [[NSArray alloc] init];
         self.serverMissionsArray = [[NSArray alloc] init];
+        self.userScoreString = @"user_score_beginner";
+        self.userScore = 0;
         
         [self restoreFromUserDefaults];
         [self loadReportsToUpload];
@@ -462,11 +464,17 @@ static RestApi *sharedInstance = nil;
     [self.ackMissionsArray addObjectsFromArray:mArray];
     NSArray *dmArray = [userDefaults objectForKey:@"deletedMissionsArray"];
     [self.deletedMissionsArray addObjectsFromArray:dmArray];
+    if ([userDefaults objectForKey:@"userScore"]) {
+        _userScore = [[userDefaults objectForKey:@"userScore"] intValue];
+        _userScoreString = [userDefaults objectForKey:@"userScoreString"];
+    }
     if (SHOW_LOGS) {
         NSLog(@"RECUPERAT DE USER DEFAULTS: ");
         NSLog(@"- ackNotifications: %d ",  (int)_ackNotificationsArray.count);
         NSLog(@"- ackMissions: %d ", (int)_ackMissionsArray.count);
         NSLog(@"- deletedMissions: %d ", (int)_deletedMissionsArray.count);
+        NSLog(@"- userScore: %d ", _userScore);
+        NSLog(@"- userScoreString: %@ ", _userScoreString);
     }
     
     _showValidation1Help = ([userDefaults objectForKey:@"showValidation1Help"] == nil);
@@ -522,6 +530,20 @@ static RestApi *sharedInstance = nil;
     [userDefaults synchronize];
 
 }
+
+- (void) saveUserScoreToUserDefaults {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:[NSNumber numberWithInt:_userScore] forKey:@"userScore"];
+    [userDefaults setObject:_userScoreString forKey:@"userScoreString"];
+    [userDefaults synchronize];
+    if (SHOW_LOGS) {
+        NSLog(@"GRAVAT A USER DEFAULTS: ");
+        NSLog(@"- userScore: %d ", _userScore);
+        NSLog(@"- userScoreString: %@ ", _userScoreString);
+    }
+}
+
+
 
 - (BOOL) existsMissionWithId:(int)mission {
     for (NSDictionary *m in self.ackMissionsArray) {
@@ -638,19 +660,67 @@ static RestApi *sharedInstance = nil;
 
 - (void) getMosquitoToValidate {
     
+    if ([RestApi sharedInstance].pybossaBearer != nil) {
+        // si ja tinc un bearer continuo
+       [self getMosquitoToValidateStep2];
+    } else {
+        if (SHOW_LOGS) NSLog(@"=================== getAuth =================");
+        
+        // pas 1 : trobar token"
+        NSString *queryStep1 = [NSString stringWithFormat:@"%@/api/auth/project/%@/token",C_PYBOSSA_HOST,C_PYBOSSA_PROJECT_NAME];
+        
+        if (SHOW_LOGS) NSLog(@"GET %@", queryStep1);
+        
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
+        
+        NSURL *url= [NSURL URLWithString:queryStep1];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                               cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                           timeoutInterval:10.0];
+        
+        [request setValue:C_PYBOSSA_AUTH forHTTPHeaderField:@"Authorization"];
+        [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [request setHTTPMethod:@"GET"];
+        
+        NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
+            
+            NSString* bearer = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            if (SHOW_LOGS) NSLog(@"Retorna <<%@>>",bearer);
+            
+            if (bearer.length < 3) {
+                if (SHOW_LOGS) NSLog(@"Error get auth");
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"validateMosquito"
+                                                                    object:self
+                                                                  userInfo:@{@"error":@"auth"}];
+                
+            } else {
+                [RestApi sharedInstance].pybossaBearer = [NSString stringWithFormat:@"Bearer %@",bearer];
+                [self getMosquitoToValidateStep2];
+            }
+            
+        }];
+        
+        [postDataTask resume];
+    }
+}
+
+- (void) getMosquitoToValidateStep2 {
+    
+    
+    if (SHOW_LOGS) NSLog(@"=================== getMosquito =================");
+
+    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     
     // http://mosquitoalert.pybossa.com/project/mosquito_alert_test
     // http://mosquitoalert.pybossa.com/project/mosquito-alert
-    
     // ip projecte desenvolupament 2
     // id projecte producció 1
-    
-    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    
-    //NSString *queryEsc = @"http://crowdcrafting.org/api/project/3911/newtask";
-    NSString *queryEsc = @"http://mosquitoalert.pybossa.com/api/project/2/newtask";
+    NSString *queryEsc = [NSString stringWithFormat:@"%@/api/project/%@/newtask?external_uid=%@",C_PYBOSSA_HOST, C_PYBOSSA_PROJECT_ID, udid];
     
     if (SHOW_LOGS) NSLog(@"GET %@", queryEsc);
+    if (SHOW_LOGS) NSLog(@"Authorization: %@", _pybossaBearer);
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
@@ -660,7 +730,7 @@ static RestApi *sharedInstance = nil;
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:10.0];
     
-    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request setValue:_pybossaBearer forHTTPHeaderField:@"Authorization"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPMethod:@"GET"];
@@ -675,6 +745,9 @@ static RestApi *sharedInstance = nil;
         
         if (herror) {
             if (SHOW_LOGS) NSLog(@"Error post ack %@",[error localizedDescription]);
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"validateMosquito"
+                                                                object:self
+                                                              userInfo:@{@"error":herror.localizedDescription}];
             
         } else {
             if (SHOW_LOGS) NSLog(@"Restultat formulari : %@",responseDict);
@@ -686,17 +759,30 @@ static RestApi *sharedInstance = nil;
     }];
     
     [postDataTask resume];
-    
 }
+
+
 
 - (void) sendMosquitoValidation:(NSDictionary *)info {
     
     self.imageData = nil;
     
-    //NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    if (SHOW_LOGS) NSLog(@"=================== sendMosquitoValidation =================");
     
-    NSString *queryEsc = @"http://mosquitoalert.pybossa.com/api/taskrun";
+    NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    //NSString *queryEsc = [NSString stringWithFormat:@"%@/api/taskrun?external_uid=%@", C_PYBOSSA_HOST,udid];
+    
+    NSDictionary *outDict = @{@"project_id":[RestApi sharedInstance].validationInfo[@"project_id"]
+                              ,@"task_id":[RestApi sharedInstance].validationInfo[@"id"]
+                              ,@"external_uid":udid
+                              ,@"info": info
+                              };
+    
+    
+    //NSString *queryEsc = [NSString stringWithFormat:@"%@/api/taskrun", C_PYBOSSA_HOST];
+    NSString *queryEsc = [NSString stringWithFormat:@"%@/api/taskrun?external_uid=%@", C_PYBOSSA_HOST,udid];
     if (SHOW_LOGS) NSLog(@"POST %@", queryEsc);
+    if (SHOW_LOGS) NSLog(@"info: %@", outDict);
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
@@ -706,12 +792,12 @@ static RestApi *sharedInstance = nil;
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:10.0];
     
-    [request setValue:C_TOKEN forHTTPHeaderField:@"Authorization"];
+    [request setValue:_pybossaBearer forHTTPHeaderField:@"Authorization"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPMethod:@"POST"];
     NSError *error;
-    NSData *postData = [NSJSONSerialization dataWithJSONObject:info options:0 error:&error];
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:outDict options:0 error:&error];
     [request setHTTPBody:postData];
     if (SHOW_LOGS) NSLog(@"posData error sendValidatoin= %@", error.localizedDescription);
     
@@ -742,7 +828,6 @@ static RestApi *sharedInstance = nil;
 - (void) getUserScore {
     
     NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    //NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:udid,@"user_UUID",nil];
     NSString *queryEsc = [NSString stringWithFormat:@"%@user_score/?user_id=%@",C_API,udid];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
@@ -757,27 +842,24 @@ static RestApi *sharedInstance = nil;
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setHTTPMethod:@"GET"];
     
-    //NSError *error;
-    //NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error];
-    //[request setHTTPBody:postData];
-    
     NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *jsonData, NSURLResponse *response, NSError *error) {
         
         NSError *herror;
         NSDictionary *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
         
-        //NSLog(@"responseScore=%@",responseDict);
-        
         if (herror) {
             if (SHOW_LOGS) NSLog(@"Error users %@",[error localizedDescription]);
         } else {
-            _userScore = [responseDict[@"score"] intValue];
-            _userScoreString = responseDict[@"score_label"];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"scoreUpdated"
-                                                                object:self
-                                                              userInfo:responseDict];
-            if (SHOW_LOGS) NSLog(@"score ok %@",responseDict);
+            if (responseDict != nil) {
+                _userScore = [responseDict[@"score"] intValue];
+                _userScoreString = responseDict[@"score_label"];
+                [self saveUserScoreToUserDefaults];
+            }
+            if (SHOW_LOGS) NSLog(@"score = %d ok %@",_userScore, responseDict);
         }
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"scoreUpdated"
+                                                            object:self
+                                                          userInfo:responseDict];
         
         
     }];
@@ -791,7 +873,7 @@ static RestApi *sharedInstance = nil;
     
     //NSString *imageURLString = [NSString stringWithFormat:@"http://humboldt.ceab.csic.es/get_photo/q0n50KN2Tg1O0Zh/%@/medium", _info[@"info"][@"uuid"]];
     
-    NSString *imageURLString = [NSString stringWithFormat:@"http://webserver.mosquitoalert.com/get_photo/q0n50KN2Tg1O0Zh/%@/medium", uuid];
+    NSString *imageURLString = [NSString stringWithFormat:@"%@/get_photo/q0n50KN2Tg1O0Zh/%@/medium", @"http://humboldt.ceab.csic.es", uuid];
     
     //NSLog(@"image =%@", imageURLString);
     _imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURLString]];

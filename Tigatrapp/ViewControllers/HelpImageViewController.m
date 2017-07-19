@@ -37,6 +37,9 @@
     [tap setNumberOfTapsRequired:1];
     [_imageView addGestureRecognizer:tap];
     
+    [Helper resizePortraitView:self.view];
+
+    
 }
 
 -(NSString *) stringByStrippingHTML:(NSString *)string {

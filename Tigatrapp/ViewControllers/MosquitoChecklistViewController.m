@@ -57,6 +57,9 @@
     if (_report.answer1) [_firstSegmentedControl setSelectedSegmentIndex:[_report.answer1 intValue]];
     if (_report.answer2) [_secondSegmentedControl setSelectedSegmentIndex:[_report.answer2 intValue]];
     if (_report.answer3) [_thirdSegmentedControl setSelectedSegmentIndex:[_report.answer3 intValue]];
+    
+    [Helper resizePortraitView:self.view];
+
 }
 
 

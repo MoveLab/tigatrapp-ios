@@ -30,6 +30,7 @@
     [_doneButton setTitleColor:C_YELLOW forState:UIControlStateNormal];
     _doneButton.layer.borderColor = C_GRAYLINE.CGColor;
     _doneButton.layer.borderWidth = 1.0;
+    [Helper resizePortraitView:self.view];
 
 }
 

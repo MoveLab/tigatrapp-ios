@@ -36,7 +36,7 @@
         [_abdomenImageView setImage:[UIImage imageNamed:@"abdomenGroga"]];
     }
 
-    _titleLabel.text = [LocalText with:@"i18n_recognize_abdomen"];
+    _titleLabel.text = [LocalText with:@"i18n_abdomen_question"];
     [_yesAbdomenButton setTitle:[LocalText with:@"i18n_yesbtn4"] forState:UIControlStateNormal];
     [_noAbdomenButton setTitle:[LocalText with:@"i18n_nobtn4"] forState:UIControlStateNormal];
     
@@ -47,6 +47,7 @@
         [userDefaults setObject:@"DONE" forKey:@"showValidation4Help"];
     }
 
+    [Helper resizePortraitView:self.view];
 
 }
 
@@ -77,13 +78,8 @@
 }
 
 - (void) sendValidation:(int)option {
-    
     NSDictionary *dict = [[RestApi sharedInstance] validateInfoForOption:option];
-    NSDictionary *outDict = @{@"project_id":[RestApi sharedInstance].validationInfo[@"project_id"]
-                              ,@"task_id":[RestApi sharedInstance].validationInfo[@"id"]
-                              ,@"info": dict
-                              };
-    [[RestApi sharedInstance] sendMosquitoValidation:outDict];
+    [[RestApi sharedInstance] sendMosquitoValidation:dict];
 }
 
 

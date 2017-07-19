@@ -139,6 +139,7 @@
 		8D30C22F1DD247EF0074648E /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D30C2301DD247F00074648E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D30C2311DD247F10074648E /* zh-Hant-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-HK"; path = "zh-Hant-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8D4F980B1F18D71B00F8E8D0 /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
 		8D522AAF1D54659A00EC82AF /* consent_ca.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent_ca.html; sourceTree = "<group>"; };
 		8D522AB01D54659A00EC82AF /* consent_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent_en.html; sourceTree = "<group>"; };
 		8D522AB11D54659A00EC82AF /* consent_es.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent_es.html; sourceTree = "<group>"; };
@@ -408,6 +409,7 @@
 				8DB55876190AAB13005DBDA2 /* InfoPlist.strings */,
 				8DB55879190AAB13005DBDA2 /* main.m */,
 				8DB5587B190AAB13005DBDA2 /* Tigatrapp-Prefix.pch */,
+				8D4F980B1F18D71B00F8E8D0 /* Keys.h */,
 				8D6BC4E41937DAFD00A04648 /* Localizable.strings */,
 			);
 			name = "Supporting Files";

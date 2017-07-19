@@ -50,6 +50,9 @@
         [self.webView setBackgroundColor:[UIColor clearColor]];
         [self.webView loadHTMLString:html baseURL:nil];
     }
+    
+    [Helper resizePortraitView:self.view];
+
 }
 
 #pragma mark - UIWebView delegate

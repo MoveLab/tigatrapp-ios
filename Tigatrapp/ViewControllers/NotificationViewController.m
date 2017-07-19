@@ -48,7 +48,8 @@
     [_webView loadHTMLString:html baseURL:nil];
     _webView.scrollView.bounces = NO;
     
-    
+    [Helper resizePortraitView:self.view];
+
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -73,6 +74,9 @@
         [[RestApi sharedInstance].ackNotificationsArray addObject:_notification];
         [[RestApi sharedInstance] saveAckNotificationsToUserDefaults];
         [[RestApi sharedInstance] acknowledgeNotification:notificationId];
+        // actualitzo badge
+        [UIApplication sharedApplication].applicationIconBadgeNumber = [RestApi sharedInstance].notificationsArray.count;
+
     }
     
 }

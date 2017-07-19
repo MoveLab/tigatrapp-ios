@@ -112,7 +112,8 @@
         if ([_report.answer4 intValue] == 1) [_q42Button  setSelected:YES];
     }
 
-    
+    [Helper resizePortraitView:self.view];
+
     
 }
 

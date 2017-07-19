@@ -35,6 +35,9 @@
     [_pickPhotoButton setTitle:[LocalText with:@"photo_selector_attach_photo_button"] forState:UIControlStateNormal];
     UIImage* logoImage = [UIImage imageNamed:@"atrapaeltigre_site_icon_large-1"];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+    
+    [Helper resizePortraitView:self.view];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {

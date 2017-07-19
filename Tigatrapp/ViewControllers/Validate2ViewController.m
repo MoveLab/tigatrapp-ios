@@ -43,6 +43,7 @@
         [userDefaults setObject:@"DONE" forKey:@"showValidation2Help"];
     }
 
+    [Helper resizePortraitView:self.view];
 
 }
 
@@ -75,16 +76,11 @@
 }
 
 
-
 - (void) sendValidation:(int)option {
-    
     NSDictionary *dict = [[RestApi sharedInstance] validateInfoForOption:option];
-    NSDictionary *outDict = @{@"project_id":[RestApi sharedInstance].validationInfo[@"project_id"]
-                              ,@"task_id":[RestApi sharedInstance].validationInfo[@"id"]
-                              ,@"info": dict
-                              };
-    [[RestApi sharedInstance] sendMosquitoValidation:outDict];
+    [[RestApi sharedInstance] sendMosquitoValidation:dict];
 }
+
 
 
 #pragma mark - buttons validacio

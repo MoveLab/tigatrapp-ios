@@ -85,6 +85,8 @@
         
         [_scrollView addSubview:pageView];
     }
+    [Helper resizePortraitView:self.view];
+
 }
 
 #pragma mark - scrollview delegate

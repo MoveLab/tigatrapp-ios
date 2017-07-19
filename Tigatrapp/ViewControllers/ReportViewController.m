@@ -102,6 +102,9 @@
     
     if (SHOW_LOGS) [_report print];
     
+    [Helper resizePortraitView:self.view];
+
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {

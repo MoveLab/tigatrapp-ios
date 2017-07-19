@@ -44,6 +44,9 @@
     
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:htmlString baseURL:nil];
+    
+    [Helper resizePortraitView:self.view];
+
 }
 
 - (void)didReceiveMemoryWarning

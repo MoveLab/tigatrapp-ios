@@ -32,6 +32,8 @@
     
     self.currentArray =  [RestApi sharedInstance].missionsArray;
     
+    [Helper resizePortraitView:self.view];
+
 }
 
 - (void) viewWillAppear:(BOOL)animated {

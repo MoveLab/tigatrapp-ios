@@ -215,7 +215,8 @@
      */
 
     [_scrollView setContentSize:CGSizeMake(width, y+30)];
-    
+    [Helper resizePortraitView:self.view];
+
 }
 
 - (void)didReceiveMemoryWarning {

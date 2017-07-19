@@ -52,9 +52,9 @@
     NSURL *url;
     
     if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"ca"]) {
-        url = [NSURL URLWithString:@"http://www.mosquitoalert.com/web/ca/feed/"];
+        url = [NSURL URLWithString:C_NEWS_FEED_CA];
     } else {
-        url = [NSURL URLWithString:@"http://www.mosquitoalert.com/web/feed/"];
+        url = [NSURL URLWithString:C_NEWS_FEED];
     }
     
     NSError *error = nil;
@@ -76,6 +76,8 @@
         [alert show];
     }
     
+    [Helper resizePortraitView:self.view];
+
     
 }
 

@@ -93,6 +93,8 @@
         if ([_report.answer3 intValue] == 3) [_q34Button  setSelected:YES];
     }
     
+    [Helper resizePortraitView:self.view];
+
 }
 
 

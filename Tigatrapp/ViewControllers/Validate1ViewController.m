@@ -36,7 +36,7 @@
     [RestApi sharedInstance].currentValidationImageScale = 1.0;
     [self drawScrollView];
     
-    _titleLabel.text = [LocalText with:@"Loading..."];
+    _titleLabel.text = [LocalText with:@"loading picture"];
     [_yesButton setTitle:[LocalText with:@"i18n_step1_yes"] forState:UIControlStateNormal];
     [_noButton setTitle:[LocalText with:@"i18n_step1_no"] forState:UIControlStateNormal];
     [_notSureButton setTitle:[LocalText with:@"i18n_notsurebtn"] forState:UIControlStateNormal];
@@ -51,7 +51,8 @@
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setObject:@"DONE" forKey:@"showValidation1Help"];
     }
-    
+    [Helper resizePortraitView:self.view];
+
 }
 
 - (void) drawScrollView {
@@ -72,7 +73,7 @@
         self.scrollView.contentOffset = [RestApi sharedInstance].currentValidationImageOffset;
         [_imageView setImage:[UIImage imageWithData:[RestApi sharedInstance].imageData]];
     } else {
-        _titleLabel.text = [LocalText with:@"Loading..."];
+        _titleLabel.text = [LocalText with:@"loading picture"];
         self.yesButton.hidden = YES;
         self.noButton.hidden = YES;
         self.notSureButton.hidden = YES;
@@ -97,31 +98,66 @@
 }
 
 
+- (void) alertError {
+    
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:[LocalText with:@"header_title"]
+                                 message:[LocalText with:@"pybossa_error"]
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    
+    
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:[LocalText with:@"menu_close"]
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action) {
+                                    [self.navigationController popViewControllerAnimated:YES];
+                                }];
+    
+    
+    [alert addAction:yesButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
+}
+
+
 - (void) mosquitoToValidate:(NSNotification *)notification {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        _titleLabel.text = [LocalText with:@"i18n_question1"];
-        [RestApi sharedInstance].validationInfo = notification.userInfo;
-        [[RestApi sharedInstance] getMosquitoImage:[RestApi sharedInstance].validationInfo[@"info"][@"uuid"]];
-        [RestApi sharedInstance].currentValidationImageScale = 1.0;
-        self.scrollView.zoomScale = [RestApi sharedInstance].currentValidationImageScale;
-        self.scrollView.contentOffset = CGPointMake(0, 0);
-        self.yesButton.hidden = NO;
-        self.noButton.hidden = NO;
-        self.notSureButton.hidden = NO;
-        // main thread code
-        [_imageView setImage:[UIImage imageWithData:[RestApi sharedInstance].imageData]];
+    
+    NSDictionary *info = notification.userInfo;
+    if (info == nil) {
+        if (SHOW_LOGS) NSLog(@"Info mosquit a validar buida");
+        [self alertError];
+    } else if (info[@"error"]) {
+        if (SHOW_LOGS) NSLog(@"error al validar: %@", info[@"error"]);
+        [self alertError];
+
+    } else {
+        // cas normal
         
-    });
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _titleLabel.text = [LocalText with:@"i18n_question1"];
+            [RestApi sharedInstance].validationInfo = notification.userInfo;
+            [[RestApi sharedInstance] getMosquitoImage:[RestApi sharedInstance].validationInfo[@"info"][@"uuid"]];
+            [RestApi sharedInstance].currentValidationImageScale = 1.0;
+            self.scrollView.zoomScale = [RestApi sharedInstance].currentValidationImageScale;
+            self.scrollView.contentOffset = CGPointMake(0, 0);
+            self.yesButton.hidden = NO;
+            self.noButton.hidden = NO;
+            self.notSureButton.hidden = NO;
+            // main thread code
+            [_imageView setImage:[UIImage imageWithData:[RestApi sharedInstance].imageData]];
+            
+        });
+        
+    }
+    
 }
 
 - (void) sendValidation:(int)option {
-    
     NSDictionary *dict = [[RestApi sharedInstance] validateInfoForOption:option];
-    NSDictionary *outDict = @{@"project_id":[RestApi sharedInstance].validationInfo[@"project_id"]
-                              ,@"task_id":[RestApi sharedInstance].validationInfo[@"id"]
-                              ,@"info": dict
-                              };
-    [[RestApi sharedInstance] sendMosquitoValidation:outDict];
+    [[RestApi sharedInstance] sendMosquitoValidation:dict];
 }
 
 

@@ -10,11 +10,15 @@
 
 @implementation Helper
 + (void) resizePortraitView:(UIView *)view {
-/*
+
     double viewH = view.frame.size.height;
     double viewW = view.frame.size.width;
-    view.transform = CGAffineTransformScale(CGAffineTransformIdentity, viewW/320.0, viewH/504.0);
- */
+    
+    NSLog(@"viewW %f viewH %f", viewW,viewH);
+    
+    //view.transform = CGAffineTransformScale(CGAffineTransformIdentity, viewW/320.0, viewH/504.0);
+    view.transform = CGAffineTransformScale(CGAffineTransformIdentity, viewW/320.0, viewH/568.0);
+ 
 }
 
 @end
