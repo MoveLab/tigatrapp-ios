@@ -24,15 +24,16 @@
 #define PACKAGE_VERSION 1 // 0 = versio ios . 1 = versio nova
 
 #define C_PYBOSSA_HOST @"http://mosquitoalert.pybossa.com"
-#define C_API_TEST @"http://webserver.mosquitoalert.com/api/"
-#define C_API_PROD    @"http://humboldt.ceab.csic.es/api/"
+#define C_API_PROD @"http://webserver.mosquitoalert.com/api/"
+#define C_API_TEST    @"http://humboldt.ceab.csic.es/api/"
 #define C_PYBOSSA_PROJECT_NAME_TEST @"mosquito_alert_test"
 #define C_PYBOSSA_PROJECT_NAME_PROD @"mosquito-alert"
 #define C_PYBOSSA_PROJECT_ID_TEST @"2"
 #define C_PYBOSSA_PROJECT_ID_PROD @"1"
 
-#define C_NEWS_FEED_CA @"http://www.mosquitoalert.com/web/ca/feed/"
-#define C_NEWS_FEED @"http://www.mosquitoalert.com/web/feed/"
+#define C_NEWS_FEED_CA @"http://www.mosquitoalert.com/ca/feed/"
+#define C_NEWS_FEED_ES @"http://www.mosquitoalert.com/feed/"
+#define C_NEWS_FEED_EN @"http://www.mosquitoalert.com/en/feed/"
 
 #define C_API (TEST_RUN ? C_API_TEST : C_API_PROD)
 #define C_TOKEN (TEST_RUN ? C_TOKEN_TEST : C_TOKEN_PROD)

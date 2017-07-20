@@ -53,8 +53,10 @@
     
     if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"ca"]) {
         url = [NSURL URLWithString:C_NEWS_FEED_CA];
+    } else if ([[[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0] isEqualToString:@"es"]) {
+            url = [NSURL URLWithString:C_NEWS_FEED_ES];
     } else {
-        url = [NSURL URLWithString:C_NEWS_FEED];
+        url = [NSURL URLWithString:C_NEWS_FEED_EN];
     }
     
     NSError *error = nil;
