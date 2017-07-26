@@ -58,6 +58,8 @@
 #pragma mark - Notifications
 
 - (void)registerForRemoteNotifications {
+    
+    
     if(SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(@"10.0")){
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         center.delegate = self;
@@ -69,6 +71,19 @@
     }
     else {
         // Code for old versions
+        UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                        
+                                                        UIUserNotificationTypeBadge |
+                                                        
+                                                        UIUserNotificationTypeSound);
+        
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                
+                                                                                 categories:nil];
+        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
     }
 }
 

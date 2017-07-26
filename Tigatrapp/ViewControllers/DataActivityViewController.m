@@ -184,6 +184,8 @@
 - (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
 {
     
+    if (SHOW_LOGS) NSLog(@"viewForAnnotation");
+    
     if (annotation == _mapView.userLocation) return nil;
     
     static NSString *AnnotationViewID = @"annotationViewID";
@@ -269,8 +271,12 @@
         Report *report = [[Report alloc] initWithDictionary:d];
         
         ActivityMapAnnotation *annotation = [[ActivityMapAnnotation alloc] initWithReport:report];
-        [_mapView addAnnotation:annotation];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_mapView addAnnotation:annotation];
+        });
         
+        
+        if (SHOW_LOGS) NSLog(@"nearby report at %f %f", [r[@"lat"] floatValue],[r[@"lat"] floatValue]);
     }
     if ([CLLocationManager locationServicesEnabled]) {
         // no adapto el mapa a les mides
