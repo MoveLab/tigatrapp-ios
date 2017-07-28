@@ -118,7 +118,8 @@
     
     // actualitzo badge
     [UIApplication sharedApplication].applicationIconBadgeNumber = [RestApi sharedInstance].serverNotificationsArray.count;
-    
+    if (SHOW_LOGS) NSLog(@"currentNotificationsArray count %d", (int) [RestApi sharedInstance].notificationsArray.count);
+    if (SHOW_LOGS) NSLog(@"new    NotificationsArray count %d", (int) [RestApi sharedInstance].serverNotificationsArray.count);
     
     if ([self.navigationController.topViewController isEqual:self]) {
         // per evitar mutatings
@@ -128,8 +129,8 @@
             if (SHOW_LOGS) NSLog(@"Notificacio %@",m);
             if (![[RestApi sharedInstance] existsNotificationWithId:[m[@"id"] intValue]]) {
                 [[RestApi sharedInstance].notificationsArray addObject:m];
-                [RestApi sharedInstance].userScore = [m[@"score"] intValue];
-                [RestApi sharedInstance].userScoreString = m[@"score_label"];
+                [RestApi sharedInstance].userScore = [m[@"user_score"] intValue];
+                [RestApi sharedInstance].userScoreString = m[@"user_score_label"];
                 foundScore = YES;
             }
         }
@@ -176,6 +177,8 @@
         _notificationCountLabel.text = [NSString stringWithFormat:@"%d",counter];
         if (SHOW_LOGS) NSLog(@"notificationCounter = %d", counter);
     });
+    if (SHOW_LOGS) NSLog(@"actualitzo badge a %d", (int)  [RestApi sharedInstance].notificationsArray.count);
+    [UIApplication sharedApplication].applicationIconBadgeNumber = [RestApi sharedInstance].notificationsArray.count;
 }
 
 - (void)didReceiveMemoryWarning

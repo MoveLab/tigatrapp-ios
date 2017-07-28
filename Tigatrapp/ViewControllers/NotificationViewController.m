@@ -74,10 +74,11 @@
         [[RestApi sharedInstance].ackNotificationsArray addObject:_notification];
         [[RestApi sharedInstance] saveAckNotificationsToUserDefaults];
         [[RestApi sharedInstance] acknowledgeNotification:notificationId];
-        // actualitzo badge
-        [UIApplication sharedApplication].applicationIconBadgeNumber = [RestApi sharedInstance].notificationsArray.count;
-
     }
+    // actualitzo badge
+    
+    if (SHOW_LOGS) NSLog(@"actualitzo badge a %d", (int)  [RestApi sharedInstance].notificationsArray.count);
+    [UIApplication sharedApplication].applicationIconBadgeNumber = [RestApi sharedInstance].notificationsArray.count;
     
 }
 

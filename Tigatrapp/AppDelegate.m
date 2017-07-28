@@ -114,7 +114,7 @@
     
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Push"];
     [[NSUserDefaults standardUserDefaults] setValue:devToken forKey:@"deviceToken"];
-    [[NSUserDefaults standardUserDefaults]synchronize];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     if (SHOW_LOGS) NSLog(@"Device Token of Device %@",devToken);
     [RestApi sharedInstance].notificationsToken = devToken;
     [[RestApi sharedInstance] sendNotificationsToken];

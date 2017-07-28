@@ -362,6 +362,7 @@ static RestApi *sharedInstance = nil;
 
     
     NSString *udid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+
     NSString *queryEsc = [NSString stringWithFormat:@"%@user_notifications/?user_id=%@",C_API,udid];
  
     //NSString *queryEsc = [NSString stringWithFormat:@"%@user_notifications/",C_API];
@@ -385,14 +386,14 @@ static RestApi *sharedInstance = nil;
         NSError *herror;
         NSArray *responseDict = jsonData ? [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:&herror] : nil;
         
-        //NSLog(@"response=>%@", responseDict);
+        if (SHOW_LOGS) NSLog(@"response=>%@", responseDict);
         
         if (herror) {
             if (SHOW_LOGS) NSLog(@"Error post report %@",[error localizedDescription]);
             
         } else {
             // cal fer un tractament per eliminar els <null> en els json
-            NSArray *newResponse = [[NSMutableArray alloc] init];
+            NSMutableArray *newResponse = [[NSMutableArray alloc] init];
             for (NSDictionary *d in responseDict) {
                 NSMutableDictionary *newD = [[NSMutableDictionary alloc] initWithDictionary:d];
                 for (NSString* key in newD.allKeys) {
@@ -400,16 +401,17 @@ static RestApi *sharedInstance = nil;
                         [newD setValue:@"" forKey:key];
                     }
                 }
+                [newResponse addObject:newD];
             }
             
             //_serverNotificationsArray = responseDict;
             _serverNotificationsArray = newResponse;
             
+            if (SHOW_LOGS) NSLog(@"Notificacions recuperades: %d",(int) _serverMissionsArray.count);
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationsUpdated"
                                                                 object:self
                                                               userInfo:nil];
-            if (SHOW_LOGS) NSLog(@"Notificacions recuperades: %d",(int) responseDict.count);
         }
         
     }];
